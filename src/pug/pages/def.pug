@@ -2,13 +2,14 @@ doctype html
 html(lang='en')
   head
     meta(charset="YTF-8")
-    link(href =".scss/blocks/head.scss" rel="stylesheet" type="text/css")
+    link(href =".scss/blocks/header_new.scss" rel="stylesheet" type="text/css")
+    link(href =".scss/blocks/header_def.scss" rel="stylesheet" type="text/css")
     
 
 
   body
-    include ../includes/header.pug
+    include ../includes/header_new.pug
     
     block content
     
-    include ../includes/footer.pug
+    include ../includes/header_def.pug
