@@ -1,12 +1,15 @@
-@import "blocks/header_new.scss";
-@import "blocks/header_def.scss";
-
+@import "blocks/headers_footers/header_new.scss";
+@import "blocks/headers_footers/header_def.scss";
+@import "blocks/headers_footers/footer_def.scss";
+@import "blocks/headers_footers/footer_alt.scss";
+@import "includes/var.scss";
 
 *{
     padding: 0px;
     margin: 0px;
-    
+    font-family: $regular;
+    font-size: 14px;
 }
 body{
-    background-color: #000000;
+    background-color: saddlebrown;
 }

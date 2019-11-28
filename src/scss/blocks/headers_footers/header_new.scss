@@ -1,5 +1,7 @@
+@import "includes/var.scss";
+
 header{
-    background-color: #FFFFFF;
+    background-color: $back;
     width:100%;
     display:flex;
     height: 70px;
@@ -25,14 +27,14 @@ header{
         padding-left:2%;
         text-decoration: none;
         font-size:14px;
-        color: #8F90A0;
+        color: $text;
     }
 }
 
 .headernew__nav__menu{
     a:hover{
         color: #000000;
-        font-weight:bold;
+        font-family: $bold;
     }
 }
 
@@ -46,7 +48,7 @@ header{
     margin-bottom: 18px;
     height: 30px;
     width:39.57%;
-    background-color: #FFFFFF;
+    background-color: $back;
     border: 2px solid #A7A1FF;
     border-radius: 30px;
     color: #C89DFF;
@@ -63,5 +65,5 @@ header{
     margin-left:9.35%;
     border-radius: 30px;
     background: linear-gradient(to top, #8AABFE, #C79EFF);
-    color:#FFFFFF;
+    color:$back;
 }

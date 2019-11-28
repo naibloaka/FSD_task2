@@ -1,6 +1,7 @@
 const path = require('path') // подключаемм плагин path
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
  
 module.exports = {
     entry: {
@@ -45,7 +46,17 @@ module.exports = {
                 }
             ]
             
-        }]
+        },{
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'fonts/'
+                }
+              }]
+          }]
     },
 
 
@@ -56,6 +67,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/pug/pages/index.pug',
             mode: 'development'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/fonts',  to: './fonts' }
+        ])
     ],
 }

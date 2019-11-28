@@ -2,14 +2,16 @@ doctype html
 html(lang='en')
   head
     meta(charset="YTF-8")
-    link(href =".scss/blocks/header_new.scss" rel="stylesheet" type="text/css")
-    link(href =".scss/blocks/header_def.scss" rel="stylesheet" type="text/css")
-    
-
+    <script src="https://kit.fontawesome.com/070ea8a5d3.js" crossorigin="anonymous"></script>
 
   body
-    include ../includes/header_new.pug
-    
+    include ../includes/headers_footers/header_new.pug
+    p anime
+    include ../includes/headers_footers/header_def.pug
     block content
     
-    include ../includes/header_def.pug
+    include ../includes/headers_footers/footer_def.pug
+    p anime
+    include ../includes/headers_footers/footer_alt.pug
+    p anime
+    

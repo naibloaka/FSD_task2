@@ -1,11 +1,7 @@
-footer{
-    background-color: #ffffff;
-    display: flex;
-    height: 70px;
-    width:100%;
-}
+@import "includes/var.scss";
 
-.footer__logo{
+
+.header__logo{
     margin-left:9.7%;
     margin-top:15px;
     margin-bottom: 15px;
@@ -17,7 +13,6 @@ footer{
     margin-bottom:30px;
     width: 36.8%;
     height:14px;
-    border: 1px solid black;
 }
 
 .headerdef__nav__menu{
@@ -26,24 +21,24 @@ footer{
         padding-left:2%;
         text-decoration: none;
         font-size:14px;
-        color: #8F90A0;
+        color: $text;
     }
 }
 
 .headerdef__nav__menu{
     a:hover{
         color: #000000;
-        font-weight:bold;
+        font-family: $bold;
     }
 }
 
-.headerdef__author{
-    color: #8F90A0;
+.headerdef__user{
+    color: $text;
     margin-top:20px;
     margin-bottom:20px;
     font-size:14px;
     margin-left:2.2%;
-    border-left: 1px solid #8F90A0;
+    border-left: 1px solid $text;
     height: 30px;
     width:9.9%;
     text-align:right;

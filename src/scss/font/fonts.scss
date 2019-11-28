@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Conv_Montserrat-Regular';
+	src: url('/src/fonts/Montserrat-Regular.eot.eot');
+    src: local('☺'), url('/src/fonts/Montserrat-Regular.woff') format('woff'),
+     url('/src/fonts/Montserrat-Regular.ttf') format('truetype'),
+      url('/src/fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	
+	font-family: 'Conv_Montserrat-Bold';
+	src: url('/src/fonts/Montserrat-Bold.eot');
+	src: local('☺'),
+	 url('/src/fonts/Montserrat-Bold.woff') format('woff'),
+	   url('/src/fonts/Montserrat-Bold.ttf') format('truetype'),
+	   url('/src/fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
