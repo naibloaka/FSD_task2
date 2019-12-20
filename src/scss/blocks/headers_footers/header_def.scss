@@ -16,9 +16,9 @@
 }
 
 .headerdef__nav__menu{
-    text-align: center;
+    text-align: justify;						 
+	text-align-last: justify;
     a{
-        padding-left:2%;
         text-decoration: none;
         font-size:14px;
         color: $text;

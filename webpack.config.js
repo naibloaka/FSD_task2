@@ -2,6 +2,7 @@ const path = require('path') // подключаемм плагин path
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const webpack = require('webpack')
  
 module.exports = {
     entry: {
@@ -16,6 +17,7 @@ module.exports = {
         contentBase: this.devServer,
         overlay: true // показывает ошибки прямо вместе
     },
+    
     module: {       // подключаем модули
         rules: [{   //правила для модулей
             test: /\.js$/,      //для всех js файлов
@@ -46,7 +48,8 @@ module.exports = {
                 }
             ]
             
-        },{
+        },
+        {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             use: [
               {
@@ -56,20 +59,29 @@ module.exports = {
                   outputPath: 'fonts/'
                 }
               }]
-          }]
-    },
+        }
+    ]},
 
 
     plugins:[
-      new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
           filename: "[name].css"
-      }),
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
         new HtmlWebpackPlugin({
-            template: './src/pug/pages/index.pug',
-            mode: 'development'
+            template: './src/pug/pages/numbers1.pug',
+            mode: 'development',
+            filename: 'numbers1.html'
         }),
         new CopyWebpackPlugin([
             { from: './src/fonts',  to: './fonts' }
-        ])
+        ]),
+        new HtmlWebpackPlugin({
+            template: './src/pug/pages/welcome.pug',
+            filename: 'welcome.html'
+        }),
     ],
 }

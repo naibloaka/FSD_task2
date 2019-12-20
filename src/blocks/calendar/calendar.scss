@@ -1,0 +1,31 @@
+
+.calendar{
+    height: 299px;
+    width: 320px;
+    background-color: cadetblue;
+    padding: 45px 30px 30px 30px;
+    border-radius: 5px;
+    div{
+        border: 1px solid red;
+    }
+    input{
+        background-color: chartreuse;
+        
+    }
+}
+
+.calendar__txt{
+    grid-area: txt;
+}
+
+.calendar__dates{
+    display: flex;
+}
+
+.calendar__dates__in{
+    
+}
+
+.calendar__guests{
+    grid-area: guests;
+}

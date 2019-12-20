@@ -2,6 +2,7 @@
 @import "blocks/headers_footers/header_def.scss";
 @import "blocks/headers_footers/footer_def.scss";
 @import "blocks/headers_footers/footer_alt.scss";
+@import "blocks/settings/settings.scss";
 @import "includes/var.scss";
 
 *{
@@ -12,5 +13,21 @@
     letter-spacing: 1px;
 }
 body{
-    background-color: saddlebrown;
+    background-color: $back;
 }
+
+.main{
+    height: 1356px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    .main__settings{
+        height: 1356px;
+        border:1px solid black;
+    }
+    .main__numbers{
+        height: 1356px;
+        border:1px solid black;
+    }
+}
+
