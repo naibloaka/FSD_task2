@@ -1,4 +1,4 @@
-@import "includes/var.scss";
+@import "D:/Projects/Web/task_2/src/scss/includes/var";
 
 header{
     background-color: $back;
@@ -10,26 +10,27 @@ header{
 
 
 .headernew__logo{
-    margin-left: 9.7%;
+    margin-left: 9.7222222222%;
     margin-top:15px;    
     margin-bottom:15px;
 }
 
 
 .headernew__nav{
-    width: 36.6%;
-    margin-left: 20.6%;
+    width: 36.59722%;
+    height: 21px;
+    margin-left: 20.625%;
     margin-top:25px;
     margin-bottom:30px; 
-    text-align: justify;						 
-	text-align-last: justify;
+    border: 1px solid black;
     .headernew__nav__menu{
         
         a{
             text-decoration: none;
             font-size:14px;
             color: $text;
-        }   
+        }
+           
     }
     .headernew__nav__menu{
         a:hover{
@@ -37,7 +38,17 @@ header{
             font-family: $bold;
         }
     }
+    ul{
+        height: 21px;
+        border: 1px solid black;
+        width:100%;
+        display: flex;
+        text-decoration:none;
+        justify-content: space-between;
+        
+    }
 }
+
 
 
 .headernew__buttons{

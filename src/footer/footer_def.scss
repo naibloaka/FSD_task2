@@ -64,6 +64,12 @@
     grid-area: b5;
     margin-top: 88px;
     height: 282px;
+    p{
+        margin-top:6px;
+        line-height: 24px;
+        color: $text;
+        margin-bottom: 19px;
+    }
 }
 
 .footer__block6{
@@ -102,9 +108,7 @@
 
 
 .footer__block5__text{
-    margin-top:6px;
-    line-height: 24px;
-    color: $text;
+    
 }
 
 

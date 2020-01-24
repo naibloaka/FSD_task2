@@ -1,31 +1,81 @@
+@import "./../../scss/includes/var.scss";
 
 .calendar{
-    height: 299px;
+    height: 372px;
     width: 320px;
-    background-color: cadetblue;
-    padding: 45px 30px 30px 30px;
+    background-color: $back;
+    padding-left:30px;
+    padding-right:30px;
+    border: 1px solid #E1E1E1;
     border-radius: 5px;
-    div{
-        border: 1px solid red;
-    }
-    input{
-        background-color: chartreuse;
-        
-    }
 }
 
 .calendar__txt{
-    grid-area: txt;
+    margin-top: 45px;
+    p{
+        font-family: $quicksand_bold;
+        font-size:24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
 }
 
 .calendar__dates{
     display: flex;
-}
-
-.calendar__dates__in{
+    margin-top: 20px;
     
+    label{
+        font-family: $bold;
+        font-size:12px;
+    }
+    input{
+        border-top: 2px solid #E4E4E8;
+        border-bottom:2px solid #E4E4E8;
+        border-left:1px solid #C8C8D1;
+        border-right:1px solid #C8C8D1;
+        border-radius: 5px;
+        width: 148px;
+        height: 41px;
+        margin-top:5px;
+    }
+}
+.calendar__dates__in{
+    width:150px;
+    height: 65px;
+}
+.calendar__dates__out{
+
+    width:150px;
+    height: 65px; 
+    margin-left: 20px;
+}
+.calendar__guests{
+    margin-top:20px;
+    label{
+        font-family: $bold;
+        font-size:12px;
+    }
+    input{
+        border-top: 2px solid #E4E4E8;
+        border-bottom:2px solid #E4E4E8;
+        border-left:1px solid #C8C8D1;
+        border-right:1px solid #C8C8D1;
+        border-radius: 5px;
+        width:318px;
+        height: 42px;
+        margin-top:5px;
+    }
 }
 
-.calendar__guests{
-    grid-area: guests;
+.calendar__but{
+    margin-top: 31px;
+    button{
+        width:320px;
+        height: 44px;
+        border-radius: 30px;
+        background: linear-gradient(to top, #8AABFE, #C79EFF);
+        color:$back;
+    }
+    
 }

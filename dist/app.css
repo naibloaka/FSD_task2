@@ -1,312 +1,197 @@
+@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}header{background-color:#fff;width:100%;display:flex;height:70px;box-shadow:0 0 10px rgba(0,0,0,0.2)}.headernew__logo{margin-left:9.7%;margin-top:15px;margin-bottom:15px}.headernew__nav{width:36.6%;margin-left:20.6%;margin-top:25px;margin-bottom:30px;text-align:justify;text-align-last:justify}.headernew__nav .headernew__nav__menu a{text-decoration:none;font-size:14px;color:#8F90A0}.headernew__nav .headernew__nav__menu a:hover{color:#000000;font-family:"Conv_Montserrat-Bold"}.headernew__buttons{margin-left:2%;width:200px}.headernew__buttons .headernew__button__login{margin-top:18px;margin-bottom:18px;height:30px;width:79px;background-color:#fff;border:2px solid #A7A1FF;border-radius:30px;color:#C89DFF;text-transform:uppercase;font-size:12px;font-weight:bold}.headernew__buttons .headernew__button__register{margin-left:20px;margin-top:18px;margin-bottom:18px;height:30px;width:101px;border-radius:30px;background:linear-gradient(to top, #8AABFE, #C79EFF);color:#fff}@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.header__logo{margin-left:9.7%;margin-top:15px;margin-bottom:15px}.headerdef__nav{margin-left:24.3%;margin-top:25px;margin-bottom:30px;width:36.8%;height:14px}.headerdef__nav__menu{text-align:justify;text-align-last:justify}.headerdef__nav__menu a{text-decoration:none;font-size:14px;color:#8F90A0}.headerdef__nav__menu a:hover{color:#000000;font-family:"Conv_Montserrat-Bold"}.headerdef__user{color:#8F90A0;margin-top:20px;margin-bottom:20px;font-size:14px;margin-left:2.2%;border-left:1px solid #8F90A0;height:30px;width:9.9%;text-align:right}.headerdef__user p{margin-top:8px}@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.footer{display:grid;grid-template-areas:"b1 b2 b3 b4 b5" "b6 b6 b6 b6 b6";grid-template-columns:30.6% 13.9% 13.9% 13.9% 27.8%;background-color:#fff;height:443px;border-top:1px solid #8F90A0}.footer h3{font-size:12px;font-family:"Conv_Montserrat-Bold";line-height:38px}.footer a:hover{color:#000000;font-family:"Conv_Montserrat-Bold"}.footer a{text-decoration:none;color:#8F90A0;line-height:38px}.footer__block1{grid-area:b1;margin-top:100px;height:270px}.footer__block1 .footer__block1__text{margin-left:31.7%;color:#1F2041}.footer__block1 .footer__block1__logo{margin-left:31.7%}.footer__block2{grid-area:b2;margin-top:88px;height:282px}.footer__block2 .footer__block2__nav{width:41%}.footer__block3{grid-area:b3;margin-top:88px;height:282px}.footer__block4{grid-area:b4;margin-top:88px;height:282px}.footer__block5{grid-area:b5;margin-top:88px;height:282px}.footer__block6{grid-area:b6;height:70px;border-top:1px solid #8F90A0}.footer__block6 .footer__block6__text{color:#8F90A0;position:absolute;margin-top:28px;margin-left:9.7%;color:#1F2041}.footer__block6 .footer__block6__icons{font-size:12px;position:absolute;margin-top:23px;margin-left:82.6%;word-spacing:22px}.footer__block6 .footer__block6__icons i{background:linear-gradient(180deg, #C09EFF, #89A4FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.footer__block1__text{color:#565773;line-height:24px;letter-spacing:1px}.footer__block5__text{margin-top:6px;line-height:24px;color:#8F90A0}@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.footeralt{height:367px;width:100%;background-color:#fff;text-align:center;display:grid}.footeralt__logo{margin-top:100px;height:40px}.footeralt__text{margin-top:-59px;color:#8F90A0;line-height:24px;color:#8F90A0}.footeralt_icons{margin-top:-58px;font-size:12px;word-spacing:22px}.footeralt_icons i{background:linear-gradient(180deg, #C09EFF, #89A4FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent}@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}*{padding:0px;margin:0px;font-family:"Conv_Montserrat-Regular",sans-serif;font-size:14px}body{background-color:#fff}.main{height:1356px;display:grid;grid-template-columns:30% 70%}.main .main__settings{height:1356px;border:1px solid black}.main .main__numbers{height:1356px;border:1px solid black}
 
-@charset "UTF-8";
-@font-face {
-  font-family: 'Conv_Montserrat-Bold';
-  src: url("/src/fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.calendar{height:372px;width:320px;background-color:#fff;padding-left:30px;padding-right:30px;border:1px solid #E1E1E1;border-radius:5px}.calendar__txt{margin-top:45px}.calendar__txt p{font-family:"Conv_Quicksand-Bold",sans-serif;font-size:24px;font-weight:700;letter-spacing:1px;line-height:28px}.calendar__dates{display:flex;margin-top:20px}.calendar__dates label{font-family:"Conv_Montserrat-Bold";font-size:12px}.calendar__dates input{border-top:2px solid #E4E4E8;border-bottom:2px solid #E4E4E8;border-left:1px solid #C8C8D1;border-right:1px solid #C8C8D1;border-radius:5px;width:148px;height:41px;margin-top:5px}.calendar__dates__in{width:150px;height:65px}.calendar__dates__out{width:150px;height:65px;margin-left:20px}.calendar__guests{margin-top:20px}.calendar__guests label{font-family:"Conv_Montserrat-Bold";font-size:12px}.calendar__guests input{border-top:2px solid #E4E4E8;border-bottom:2px solid #E4E4E8;border-left:1px solid #C8C8D1;border-right:1px solid #C8C8D1;border-radius:5px;width:318px;height:42px;margin-top:5px}.calendar__but{margin-top:31px}.calendar__but button{width:320px;height:44px;border-radius:30px;background:linear-gradient(to top, #8AABFE, #C79EFF);color:#fff}
 
-@font-face {
-  font-family: 'Conv_IndieFlower-Regular';
-  src: url("/src/fontsflowers/IndieFlower-Regular.eot");
-  src: local("☺"), url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"), url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"), url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+/*!
+ * jQuery UI Datepicker 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/datepicker/#theming
+ */
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+	background-color: white;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
 
-@font-face {
-  font-family: 'Conv_Montserrat-Regular';
-  src: url("/src/fonts/Montserrat-Regular.eot.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
 
-header {
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  height: 70px; }
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
 
-.headernew__logo {
-  margin-left: 9.7%;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+/* Icons */
+.ui-datepicker .ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	left: .5em;
+	top: .3em;
+}
 
-.headernew__nav {
-  width: 36.6%;
-  margin-left: 20.6%;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  text-align: justify;
-  text-align-last: justify; }
-  .headernew__nav .headernew__nav__menu a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #8F90A0; }
-  .headernew__nav .headernew__nav__menu a:hover {
-    color: #000000;
-    font-family: "Conv_Montserrat-Bold"; }
+@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.email_input{width:320px;height:67px}.email_input label{font-family:"Conv_Montserrat-Bold";font-size:17px}.email_input input{width:318px;height:42px;border:1px solid #C7C7CF;border-radius:5px;margin-top:4px}
 
-.headernew__buttons {
-  margin-left: 2%;
-  width: 200px; }
-  .headernew__buttons .headernew__button__login {
-    margin-top: 18px;
-    margin-bottom: 18px;
-    height: 30px;
-    width: 79px;
-    background-color: #ffffff;
-    border: 2px solid #A7A1FF;
-    border-radius: 30px;
-    color: #C89DFF;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold; }
-  .headernew__buttons .headernew__button__register {
-    margin-left: 20px;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    height: 30px;
-    width: 101px;
-    border-radius: 30px;
-    background: linear-gradient(to top, #8AABFE, #C79EFF);
-    color: #ffffff; }
+@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.text_input{width:320px;height:67px}.text_input label{font-family:"Conv_Montserrat-Bold";font-size:17px}.text_input input{width:318px;height:42px;border:1px solid #8F90A0;border-radius:5px;margin-top:4px}
 
-@font-face {
-  font-family: 'Conv_Montserrat-Bold';
-  src: url("/src/fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_IndieFlower-Regular';
-  src: url("/src/fontsflowers/IndieFlower-Regular.eot");
-  src: local("☺"), url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"), url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"), url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Regular';
-  src: url("/src/fonts/Montserrat-Regular.eot.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.header__logo {
-  margin-left: 9.7%;
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.headerdef__nav {
-  margin-left: 24.3%;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  width: 36.8%;
-  height: 14px; }
-
-.headerdef__nav__menu {
-  text-align: justify;
-  text-align-last: justify; }
-  .headerdef__nav__menu a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #8F90A0; }
-
-.headerdef__nav__menu a:hover {
-  color: #000000;
-  font-family: "Conv_Montserrat-Bold"; }
-
-.headerdef__user {
-  color: #8F90A0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  margin-left: 2.2%;
-  border-left: 1px solid #8F90A0;
-  height: 30px;
-  width: 9.9%;
-  text-align: right; }
-  .headerdef__user p {
-    margin-top: 8px; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Bold';
-  src: url("/src/fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_IndieFlower-Regular';
-  src: url("/src/fontsflowers/IndieFlower-Regular.eot");
-  src: local("☺"), url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"), url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"), url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Regular';
-  src: url("/src/fonts/Montserrat-Regular.eot.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.footer {
-  display: grid;
-  grid-template-areas: "b1 b2 b3 b4 b5" "b6 b6 b6 b6 b6";
-  grid-template-columns: 30.6% 13.9% 13.9% 13.9% 27.8%;
-  background-color: #ffffff;
-  height: 443px; }
-  .footer h3 {
-    font-size: 12px;
-    font-family: "Conv_Montserrat-Bold";
-    line-height: 38px; }
-  .footer a:hover {
-    color: #000000;
-    font-family: "Conv_Montserrat-Bold"; }
-  .footer a {
-    text-decoration: none;
-    color: #8F90A0;
-    line-height: 38px; }
-
-.footer__block1 {
-  grid-area: b1;
-  margin-top: 100px;
-  height: 270px; }
-  .footer__block1 .footer__block1__text {
-    margin-left: 31.7%;
-    color: #1F2041; }
-  .footer__block1 .footer__block1__logo {
-    margin-left: 31.7%; }
-
-.footer__block2 {
-  grid-area: b2;
-  margin-top: 88px;
-  height: 282px; }
-  .footer__block2 .footer__block2__nav {
-    width: 41%; }
-
-.footer__block3 {
-  grid-area: b3;
-  margin-top: 88px;
-  height: 282px; }
-
-.footer__block4 {
-  grid-area: b4;
-  margin-top: 88px;
-  height: 282px; }
-
-.footer__block5 {
-  grid-area: b5;
-  margin-top: 88px;
-  height: 282px; }
-
-.footer__block6 {
-  grid-area: b6;
-  height: 70px;
-  border-top: 1px solid #8F90A0; }
-  .footer__block6 .footer__block6__text {
-    color: #8F90A0;
-    position: absolute;
-    margin-top: 28px;
-    margin-left: 9.7%;
-    color: #1F2041; }
-  .footer__block6 .footer__block6__icons {
-    font-size: 12px;
-    position: absolute;
-    margin-top: 23px;
-    margin-left: 82.6%;
-    word-spacing: 22px; }
-    .footer__block6 .footer__block6__icons i {
-      background: linear-gradient(180deg, #C09EFF, #89A4FD);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-
-.footer__block1__text {
-  color: #565773;
-  line-height: 24px;
-  letter-spacing: 1px; }
-
-.footer__block5__text {
-  margin-top: 6px;
-  line-height: 24px;
-  color: #8F90A0; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Bold';
-  src: url("/src/fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_IndieFlower-Regular';
-  src: url("/src/fontsflowers/IndieFlower-Regular.eot");
-  src: local("☺"), url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"), url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"), url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Regular';
-  src: url("/src/fonts/Montserrat-Regular.eot.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.footeralt {
-  height: 367px;
-  width: 100%;
-  background-color: #ffffff;
-  text-align: center;
-  display: grid; }
-
-.footeralt__logo {
-  margin-top: 100px;
-  height: 40px; }
-
-.footeralt__text {
-  margin-top: -59px;
-  color: #8F90A0;
-  line-height: 24px;
-  color: #8F90A0; }
-
-.footeralt_icons {
-  margin-top: -58px;
-  font-size: 12px;
-  word-spacing: 22px; }
-  .footeralt_icons i {
-    background: linear-gradient(180deg, #C09EFF, #89A4FD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Bold';
-  src: url("/src/fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_IndieFlower-Regular';
-  src: url("/src/fontsflowers/IndieFlower-Regular.eot");
-  src: local("☺"), url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"), url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"), url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Conv_Montserrat-Regular';
-  src: url("/src/fonts/Montserrat-Regular.eot.eot");
-  src: local("☺"), url("/src/fonts/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Conv_Montserrat-Regular", sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px; }
-
-body {
-  background-color: saddlebrown; }
+@font-face{font-family:'Conv_Montserrat-Bold';src:url("/src/fonts/Montserrat-Bold.eot");src:local("☺"),url("/src/fonts/Montserrat-Bold.woff") format("woff"),url("/src/fonts/Montserrat-Bold.ttf") format("truetype"),url("/src/fonts/Montserrat-Bold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_IndieFlower-Regular';src:url("/src/fontsflowers/IndieFlower-Regular.eot");src:local("☺"),url("/src/fontsflowers/IndieFlower-Regular.woff") format("woff"),url("/src/fontsflowers/IndieFlower-Regular.ttf") format("truetype"),url("/src/fontsflowers/IndieFlower-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Montserrat-Regular';src:url("/src/fonts/Montserrat-Regular.eot.eot");src:local("☺"),url("/src/fonts/Montserrat-Regular.woff") format("woff"),url("/src/fonts/Montserrat-Regular.ttf") format("truetype"),url("/src/fonts/Montserrat-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Conv_Quicksand-Bold';src:url("/src/fonts/Quicksand/Quicksand-Bold.eot");src:local("☺"),url("/src/fonts/Quicksand/Quicksand-Bold.woff") format("woff"),url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype"),url("/src/fonts/Quicksand/Quicksand-Bold.svg") format("svg");font-weight:normal;font-style:normal}.date_dropdown{width:150px;height:65px}.date_dropdown label{font-family:"Conv_Montserrat-Bold";font-size:17px}
 

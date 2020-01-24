@@ -1,0 +1,28 @@
+@import "D:/Projects/Web/task_2/src/scss/includes/var";
+
+.email_input{
+    width:258px;
+    height: 67px;
+    height: 42px;
+    border: 1px solid $border_faded;
+    border-radius:5px;
+    margin-top: 4px;
+    label{
+        font-family: $bold;
+        font-size: 17px;
+    }
+    
+    input{
+        border: 1px solid $border_faded; /* Убираем рамку */
+        outline: none; /* Убираем свечение в Chrome и Safari */
+        padding-left: 14px;
+        -webkit-appearance: none;
+        vertical-align: middle;
+        height: 40px;
+        border-radius:5px;
+        width: 212px;
+    }
+    input[type="submit"]{
+        width:16px;
+    }
+}

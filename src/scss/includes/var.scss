@@ -1,8 +1,9 @@
-@import "./font/fonts.scss";
+@import "./../font/fonts.scss";
 //fonts
 $regular: 'Conv_Montserrat-Regular', sans-serif;
 $bold: 'Conv_Montserrat-Bold';
 $nice: 'Conv_IndieFlower-Regular';
+$quicksand_bold: 'Conv_Quicksand-Bold', sans-serif;
 
 
 //colors
@@ -11,3 +12,8 @@ $back: #ffffff;
 $text:#8F90A0;
 $black_text:#1F2041;
 $semy_bold_text:#565773;
+
+
+//forms colors
+$border_faded:#C7C7CF;
+$border_bright:#8F90A0;
