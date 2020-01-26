@@ -72,12 +72,11 @@
     p{
         margin-top:6px;
         line-height: 24px;
-        color: $text;
+        color: $black_text;
         margin-bottom: 19px;
     }
     h3{
         font-size: 12px;
-        letter-spacing: 1px;
     }
     .footer__col5__email-input{
         margin-left: -1px;
@@ -98,11 +97,11 @@
     }
     
     .footer__bottom__icons{
-        font-size: 10px;
+        font-size: 12px;
         position: absolute;
         margin-top: 23px;
-        margin-left: 82.6%;
-        word-spacing: 5px;
+        margin-left: 82.5%;
+        word-spacing: 20px;
         i{
             background: linear-gradient(180deg, #C09EFF, #89A4FD);
             -webkit-background-clip: text;

@@ -10,7 +10,7 @@
         outline: none; /* Убираем свечение в Chrome и Safari */
         padding-left: 14px;
         -webkit-appearance: none;
-        vertical-align: middle;
+        
         height: 40px;
         border-radius:5px;
         width: 212px;
@@ -29,5 +29,6 @@
         -webkit-background-clip: text;  
         color: transparent;
         padding-right: 5px;
+        
     }
 }
