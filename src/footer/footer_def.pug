@@ -1,20 +1,20 @@
-footer(class="footer")
-    div(class="footer__block1")
-        div(class="footer__block1__logo")
-            img(src="/img/logo.svg")
+footer
+    div(class="footer")
+        div(class="footer__col1")
+            div(class="footer__col1__logo")
+                img(src="/img/logo.svg")
 
-        p(class="footer__block1__text")
-            | Lorem ipsum dolor sit amet   
-            br
-            | consectetur adipiscing elit aliquam
-            br
-            | eget nullam pellentesque aliquam
-            br
-            | curabitur cociis.
+            p(class="footer__col1__text")
+                | Lorem ipsum dolor sit amet   
+                br
+                | consectetur adipiscing elit aliquam
+                br
+                | eget nullam pellentesque aliquam
+                br
+                | curabitur cociis.
 
 
-    div(class="footer__block2")
-        nav(class="footer__block2__nav")
+        div(class="footer__col2")
             h3 NAVIGATION
             a(href="") About Us
             br
@@ -25,8 +25,7 @@ footer(class="footer")
             a(href="") Products 
 
 
-    div(class="footer__block3")
-        nav(class="footer__block3__about")
+        div(class="footer__col3")
             h3 ABOUT US
             a(href="") Who we are
             br
@@ -35,10 +34,10 @@ footer(class="footer")
             a(href="") Careers 
             br
             a(href="") Investors 
-        
+            
 
-    div(class="footer__block4")
-        nav(class="footer__block4__support")
+        div(class="footer__col4")
+            
             h3 SUPPORT
             a(href="") Documentation
             br
@@ -47,26 +46,27 @@ footer(class="footer")
             a(href="") Get in Touch 
 
 
-    div(class="footer__block5")
-        h3(class="footer__block5__SUB") SUBSCRIBE TO OUR NEWSLETTER
-            
-        p(class="footer__block5__text")
-            |Recive our lastest news and
-            br
-            |promotions in your inbox!
-        
-        
-        
-        include ../blocks/email_input/email_input.pug
+        div(class="footer__col5")
+            h3(class="footer__col5__SUB") SUBSCRIBE TO OUR NEWSLETTER
                 
-    
+            p(class="footer__col5__text")
+                |Recive our lastest news and
+                br
+                |promotions in your inbox!
+            
+            
+            
+            div(class="footer__col5__email-input")
+                include ../blocks/email_input/email_input.pug
+                    
+        
 
-    div(class="footer__block6")
-        div(class="footer__block6__text")
-            | Copyright &#169; 2018 Toxin UI Kit. All rights reserved.  
-        div(class="footer__block6__icons")
-            <i class="fab fa-twitter fa-2x"></i>
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
+        div(class="footer__bottom")
+            div(class="footer__bottom__text")
+                p| Copyright &#169; 2018 Toxin UI Kit. All rights reserved.  
+            div(class="footer__bottom__icons")
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
 
         

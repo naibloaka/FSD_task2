@@ -3,22 +3,28 @@ header
         img(src="/img/logo.svg")
         
     nav(class="headernew__nav")
-        div
-            ul(class="headernew__nav__menu")
-                li
-                    a(href="") Home
-                li 
-                    a(href="") About Us
-                li 
+        
+        ul(class="menu")
+            li
+                a(href="") Home
+            li 
+                a(href="") About Us
+            li
+                div(class="Services") 
                     a(href="") Services
-                li 
-                    a(href="") Careers
-                li 
-                    a(href="") News
-                li 
-                    a(href="") Documentation 
+                    div(id="Services" class="Services__arrow")
+                        i(class="arrow down")
+            li 
+                a(href="") Careers
+            li 
+                a(href="") News
+            li 
+                a(href="") Documentation 
 
-    form(action="" class="headernew__buttons")                     
-        button(type='submit' class="headernew__button__login") Login
-        button(type='submit' class="headernew__button__register") Register
+
+    div(class="header__buttons")
+        div(class="login")
+            include ../blocks/buttons/loginbut.pug
+        div(class="register")
+            include ../blocks/buttons/registerbut.pug
 

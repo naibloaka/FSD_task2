@@ -1,4 +1,4 @@
-@import "D:/Projects/Web/task_2/src/scss/includes/var";
+@import "./src/scss/includes/var";
 
 header{
     background-color: $back;
@@ -22,8 +22,7 @@ header{
     margin-left: 20.625%;
     margin-top:25px;
     margin-bottom:30px; 
-    border: 1px solid black;
-    .headernew__nav__menu{
+    .menu{
         
         a{
             text-decoration: none;
@@ -32,7 +31,7 @@ header{
         }
            
     }
-    .headernew__nav__menu{
+    .menu{
         a:hover{
             color: #000000;
             font-family: $bold;
@@ -40,43 +39,39 @@ header{
     }
     ul{
         height: 21px;
-        border: 1px solid black;
         width:100%;
         display: flex;
         text-decoration:none;
         justify-content: space-between;
+        li{
+            list-style: none;
+        }
+    }
+    .Services{
+        display: flex;
+        .Services__arrow{
+            i{
+                border: solid $text;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            margin-left: 5px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+}
+
+
+.header__buttons{
+    display:flex;
+    margin-left:2%;
+    margin-top: 18px;
+    .login{
         
     }
-}
-
-
-
-.headernew__buttons{
-    margin-left:2%;
-    width:200px;
-    .headernew__button__login{
-        margin-top:18px;
-        margin-bottom: 18px;
-        height: 30px;
-        width:79px;
-        background-color: $back;
-        border: 2px solid #A7A1FF;
-        border-radius: 30px;
-        color: #C89DFF;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-    .headernew__button__register{
-        margin-left: 20px;
-        margin-top:18px;
-        margin-bottom: 18px;
-        height: 30px;
-        width: 101px;
-        border-radius: 30px;
-        background: linear-gradient(to top, #8AABFE, #C79EFF);
-        color:$back;
+    .register{
+        margin-left:20px;
     }
 }
-

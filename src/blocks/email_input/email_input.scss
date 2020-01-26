@@ -1,19 +1,12 @@
-@import "D:/Projects/Web/task_2/src/scss/includes/var";
+@import "./src/scss/includes/var";
 
 .email_input{
     width:258px;
-    height: 67px;
     height: 42px;
     border: 1px solid $border_faded;
     border-radius:5px;
-    margin-top: 4px;
-    label{
-        font-family: $bold;
-        font-size: 17px;
-    }
-    
     input{
-        border: 1px solid $border_faded; /* Убираем рамку */
+        border: none; /* Убираем рамку */
         outline: none; /* Убираем свечение в Chrome и Safari */
         padding-left: 14px;
         -webkit-appearance: none;
@@ -21,8 +14,20 @@
         height: 40px;
         border-radius:5px;
         width: 212px;
+        color: $invisible-text;
     }
-    input[type="submit"]{
-        width:16px;
+    button{
+        width:30px;
+        height: 40px;
+        border-radius:5px;
+        vertical-align: middle;
+        border: none; /* Убираем рамку */
+        outline: none; /* Убираем свечение в Chrome и Safari */
+        background: transparent;
+        font-size: 34px;
+        background: linear-gradient(#A4A0FC, #A4A0FC);  
+        -webkit-background-clip: text;  
+        color: transparent;
+        padding-right: 5px;
     }
 }

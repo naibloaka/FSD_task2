@@ -1,0 +1,23 @@
+@import "./src/scss/includes/var";
+
+.login-but{
+    height: 30px;
+    width:77px;
+    background-color: $back;
+    border: 2px solid #A7A1FF;
+    border-radius: 30px;
+
+
+    button{
+        color: #C89DFF;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width:77px;
+        border:none;
+        outline: none;
+        -webkit-background-clip: text;  
+        border-radius: 30px;
+    }
+}
