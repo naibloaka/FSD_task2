@@ -1,0 +1,36 @@
+@import "./src/scss/includes/var";
+.welcome{
+    background-image: url("/src/img/welcome1534.png");
+    background-size: cover;
+    background-position: bottom;
+    
+    width:100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    
+    .welcome__text{
+        color:$semy_bold_text;
+        width: 260px;
+        height: 48px;
+        margin-top: 311px;
+        margin-left:73.1%;
+        padding-right: 0px;
+        text-align: right;
+        line-height: 24px;
+        //word-spacing: 3px;
+        //letter-spacing: 3px;
+    }
+    .welcome__datepicker{
+        background-color: $back;
+        border-radius: 5px;
+        margin-left: 9.7%; 
+        height: 380px;
+        width:374px;
+    }
+}
+
+/*@media (max-width:1554px){
+    .welcome{
+        background-image: url("/src/img/welcome-1534.jpg");
+    }
+}*/

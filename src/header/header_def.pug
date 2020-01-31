@@ -1,15 +1,25 @@
 header
-    div(class="header__logo")
-        img(src="/img/logo.svg")
+    div(class="headerdef")
+        div(class="header__logo")
+            img(src="/src/img/logo.svg")
 
-    nav(class="headerdef__nav")
-        div(class="headerdef__nav__menu")
-            a(href="") Home 
-            a(href="") About Us 
-            a(href="") Services
-            a(href="") Careers 
-            a(href="") News 
-            a(href="") Documentation 
+        nav(class="headerdef__nav")
+            ul(class="menu")
+                    li
+                        a(href="") Home
+                    li 
+                        a(href="") About Us
+                    li
+                        div(class="Services") 
+                            a(href="") Services
+                            div(id="Services" class="Services__arrow")
+                                i(class="arrow down")
+                    li 
+                        a(href="") Careers
+                    li 
+                        a(href="") News
+                    li 
+                        a(href="") Documentation 
 
-    div(class="headerdef__user") 
-        p Cosmin Negoita
+        div(class="headerdef__user") 
+            p Cosmin Negoita

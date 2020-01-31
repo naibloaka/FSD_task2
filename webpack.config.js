@@ -77,7 +77,8 @@ module.exports = {
             filename: 'numbers1.html'
         }),
         new CopyWebpackPlugin([
-            { from: './src/fonts',  to: './fonts' }
+            { from: './src/fonts',  to: './fonts' },
+            { from: './src/img', to: './img'}
         ]),
         new HtmlWebpackPlugin({
             template: './src/pug/pages/welcome.pug',

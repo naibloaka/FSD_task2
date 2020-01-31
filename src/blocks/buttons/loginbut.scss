@@ -2,7 +2,7 @@
 
 .login-but{
     height: 30px;
-    width:77px;
+    width: 100%;
     background-color: $back;
     border: 2px solid #A7A1FF;
     border-radius: 30px;
@@ -14,7 +14,7 @@
         font-size: 12px;
         font-weight: bold;
         height: 30px;
-        width:77px;
+        width:100%;
         border:none;
         outline: none;
         -webkit-background-clip: text;  

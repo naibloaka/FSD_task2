@@ -1,77 +1,71 @@
 @import "./src/scss/includes/var";
-
-header{
+.headernew{
     background-color: $back;
     width:100%;
     display:flex;
+    align-items: center;
     height: 70px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
 .headernew__logo{
-    margin-left: 9.7222222222%;
-    margin-top:15px;    
-    margin-bottom:15px;
+    margin-left: 9.7222222222%; 
 }
 
 
-.headernew__nav{
-    width: 36.59722%;
-    height: 21px;
-    margin-left: 20.625%;
-    margin-top:25px;
-    margin-bottom:30px; 
-    .menu{
+.headernew__menu{
+    width: 30.6%;
+    margin-left: 19.9%;
+    display: flex;
+    justify-content: space-between;
+    
+    a{
+        text-decoration: none;
+        font-size:14px;
+        color: $text;
+    }
+     
+    a:hover{
+        color: #000000;
+        font-family: $bold;
+    }
         
-        a{
-            text-decoration: none;
-            font-size:14px;
-            color: $text;
-        }
-           
+    li{
+        list-style: none;
     }
-    .menu{
-        a:hover{
-            color: #000000;
-            font-family: $bold;
-        }
-    }
-    ul{
-        height: 21px;
-        width:100%;
+    .Arrow{
         display: flex;
-        text-decoration:none;
         justify-content: space-between;
-        li{
-            list-style: none;
-        }
-    }
-    .Services{
-        display: flex;
-        .Services__arrow{
+        align-items: center;
+        div{
             i{
                 border: solid $text;
                 border-width: 0 2px 2px 0;
-                display: inline-block;
+                display: block;
                 padding: 3px;
+                
             }
-            margin-left: 5px;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
+            margin-bottom: 4px;
+            margin-left: 8px;   
         }
     }
+    div:hover{
+        color: #000000;
+        font-family: $bold;
+    }
 }
+    
 
 
-.header__buttons{
-    display:flex;
+
+.login{
     margin-left:2%;
-    margin-top: 18px;
-    .login{
-        
-    }
-    .register{
-        margin-left:20px;
-    }
+    width:5.8%;
+}
+.register{
+    margin-left:1.7%;
+    width: 13.75%;
 }

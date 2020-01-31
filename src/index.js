@@ -6,7 +6,7 @@ import './blocks/text_input/text_input.js'
 import './blocks/dropdown/dropdown.js'
 import './header/header'
 import './blocks/buttons/buttons.js'
-
+import './blocks/welcome-main/welcome-main.js'
 
 
 

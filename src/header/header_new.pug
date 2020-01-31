@@ -1,28 +1,28 @@
 header
-    div(class="headernew__logo") 
-        img(src="/img/logo.svg")
-        
-    nav(class="headernew__nav")
-        
-        ul(class="menu")
-            li
-                a(href="") Home
+    div(class="headernew")
+        div(class="headernew__logo") 
+            img(src="/src/img/logo.svg")
+            
+            
+        ul(class="headernew__menu")
             li 
-                a(href="") About Us
+                a(href="") О нас
             li
-                div(class="Services") 
-                    a(href="") Services
-                    div(id="Services" class="Services__arrow")
+                div(class="Arrow") 
+                    a(href="") Услуги
+                    div(id="Services")
                         i(class="arrow down")
             li 
-                a(href="") Careers
+                a(href="") Вакансии
             li 
-                a(href="") News
+                a(href="") Новости
             li 
-                a(href="") Documentation 
+                div(class="Arrow")
+                    a(href="") Соглашения
+                    div(id="Services")
+                        i(class="arrow down") 
 
 
-    div(class="header__buttons")
         div(class="login")
             include ../blocks/buttons/loginbut.pug
         div(class="register")
