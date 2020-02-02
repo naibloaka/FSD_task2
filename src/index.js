@@ -7,6 +7,7 @@ import './blocks/dropdown/dropdown.js'
 import './header/header'
 import './blocks/buttons/buttons.js'
 import './blocks/welcome-main/welcome-main.js'
+import './blocks/number-block/number-block.js'
 
 
 

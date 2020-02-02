@@ -6,12 +6,12 @@ const webpack = require('webpack')
  
 module.exports = {
     entry: {
-        app: './src/index.js' // точка входа 
+        app: './src/index.js' 
     },
     output: {
-        filename: '[name].js', // файлы выхода [name] подставляет имя точки входа, если много точек входа
-        path: path.resolve(__dirname, './dist'), // создаём по path папку 
-        publicPath: '/dist' // чето для сервера
+        filename: '[name].js', 
+        path: path.resolve(__dirname, './dist'), 
+        publicPath: '/dist' 
     },
     devServer: {
         contentBase: this.devServer,
@@ -32,8 +32,6 @@ module.exports = {
                 MiniCssExtractPlugin.loader,
                 "css-loader"
             ]
-
-
         },{
             test: /\.scss$/,
             use:[
@@ -48,6 +46,13 @@ module.exports = {
                 }
             ]
             
+        },
+        {
+            test: /\.(png|jpg|gif|svg)$/,
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
         },
         {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -68,21 +73,29 @@ module.exports = {
           filename: "[name].css"
         }),
         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
+            '$': "jquery",
+            'jQuery': "jquery",
+            'window.jQuery': 'jquery',
         }),
         new HtmlWebpackPlugin({
-            template: './src/pug/pages/numbers1.pug',
+            template: './src/pages/numbers.pug',
             mode: 'development',
-            filename: 'numbers1.html'
+            filename: 'numbers.html'
         }),
         new CopyWebpackPlugin([
             { from: './src/fonts',  to: './fonts' },
             { from: './src/img', to: './img'}
         ]),
         new HtmlWebpackPlugin({
-            template: './src/pug/pages/welcome.pug',
+            template: './src/pages/welcome.pug',
             filename: 'welcome.html'
         }),
     ],
+
+    resolve: {                                                                              // шооооок че вытворяет аж карусель заработала
+        modules: ['node_modules'],
+        alias: {
+          'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js'
+        }
+    }
 }

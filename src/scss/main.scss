@@ -1,4 +1,4 @@
-
+@import "./../pages/numbers.scss";
 @import "./src/footer/footer_def";
 @import "./src/footer/footer_alt";
 @import "includes/var.scss";
@@ -12,24 +12,6 @@
 }
 body{
     background-color: $back;
-    
 }
-.container
-{
-    width:100%;
-}
-.main{
-    height: 1356px;
-    display: grid;
-    grid-template-columns: 30% 70%;
 
-    .main__settings{
-        height: 1356px;
-        border:1px solid black;
-    }
-    .main__numbers{
-        height: 1356px;
-        border:1px solid black;
-    }
-}
 

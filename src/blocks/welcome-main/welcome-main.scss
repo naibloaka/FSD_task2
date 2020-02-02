@@ -1,8 +1,12 @@
 @import "./src/scss/includes/var";
 .welcome{
     background-image: url("/src/img/welcome1534.png");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1540px;
+
     
-    background-position: bottom;
+    
     
     width:100%;
     padding-top: 70px;

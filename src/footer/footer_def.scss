@@ -23,7 +23,7 @@ footer{
     }
     a{
         text-decoration: none;
-        color: $text;
+        color: $light_grey;
         line-height: 38px;
     }
     
@@ -90,9 +90,9 @@ footer{
 .footer__bottom{
     grid-area: b6;
     height: 70px;
-    border-top:1px solid $text;
+    border-top:1px solid $light_grey;
     .footer__bottom__text{
-        color: $text;
+        color: $light_grey;
         position: absolute;
         margin-top: 26px;
         margin-left: 9.7%;

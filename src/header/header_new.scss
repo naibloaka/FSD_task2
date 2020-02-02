@@ -23,7 +23,7 @@
     a{
         text-decoration: none;
         font-size:14px;
-        color: $text;
+        color: $light_grey;
     }
      
     a:hover{
@@ -40,16 +40,22 @@
         align-items: center;
         div{
             i{
-                border: solid $text;
-                border-width: 0 2px 2px 0;
-                display: block;
-                padding: 3px;
+                color: $light_grey;
+                font-size: 12px;
+            }
+            i:hover{
+                color: #000000;
                 
             }
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            margin-bottom: 4px;
-            margin-left: 8px;   
+            a:hover{
+                color: #000000;
+                font-family: $bold;
+                i{
+                    color: #000000;
+                    font-size: 9px;
+                }
+            }
+            margin-left: 4px;   
         }
     }
     div:hover{

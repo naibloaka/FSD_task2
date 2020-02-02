@@ -24,7 +24,7 @@
         a{
             text-decoration: none;
             font-size:14px;
-            color: $text;
+            color: $light_grey;
         }
            
     }
@@ -48,7 +48,7 @@
         display: flex;
         .Services__arrow{
             i{
-                border: solid $text;
+                border: solid $light_grey;
                 border-width: 0 2px 2px 0;
                 display: inline-block;
                 padding: 3px;
@@ -66,12 +66,12 @@
 
 
 .headerdef__user{
-    color: $text;
+    color: $light_grey;
     margin-top:20px;
     margin-bottom:20px;
     font-size:14px;
     margin-left:2.2%;
-    border-left: 1px solid $text;
+    border-left: 1px solid $light_grey;
     height: 30px;
     width:9.9%;
     text-align:right;
