@@ -9,7 +9,8 @@ $(document).ready(function(){
         items:1,
         nav : true, // для стрелок
         pagination : true, // для пагинации
-        loop : true  //прокрутка по кругу
+        loop : true,  //прокрутка по кругу
+        dots : true
     });
 });
 

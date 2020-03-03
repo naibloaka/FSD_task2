@@ -13,7 +13,7 @@
 .price{
     display: flex;
     margin-top: 0;
-    padding-top: 25px;
+    padding-top: 22px;
     padding-bottom: 10px;
     width:230px;
     margin-left: auto;
@@ -21,13 +21,14 @@
     align-items: baseline;
     span{
         color:$black_text;
-        font-family: $bold;
-        font-size: 11px;
+        font-family: $quicksand_bold;
+        font-size: 14px;
     }
     .price-num{
         color:$black_text;
-        font-family: $bold;
-        font-size: 20px;
+        font-family: $quicksand_bold;
+        font-size: 19px;
+        margin-left: 4px;
     }
 
     .price-mod{
@@ -40,19 +41,21 @@
 
     .price-price{
         color: $light_grey;
-        margin-left: 33px;
-        font-size: 13px;
+        margin-left: 32px;
+        font-size: 14px;
         font-family: $bold;
+        line-height: 18px;
     }
     
     .price-date{
         color: $light_grey;
-        margin-left: 5px;
-        font-size: 13px;
+        margin-left: 1px;
+        font-size: 12px;
+        
     }
 }
 .rating_block {
-    width: 125px;
+    width: 120px;
     height: 25px; 
   }
   .rating_block input[type="radio"] {
@@ -61,8 +64,8 @@
   .label_rating {
     float: right;
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     background: url("/src/img/svg/star.svg") no-repeat 50% 0;
     cursor: pointer;
   }
@@ -77,7 +80,7 @@
 .raiting{
     display: flex;
     padding-top: 10px;
-    border-top: 1px solid $light_grey;
+    border-top: 1px solid $border_faded;
     align-items: flex-end;
     width: 230px;
     margin-left: auto;
@@ -87,12 +90,13 @@
     }
     p{
         color: $light_grey;
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 4px;
+        margin-bottom: 5px;
     } 
     .raiting-review{
         font-family: $bold;
-        margin-left: 4px;
+        margin-left: 20px;
         
     }
 }
