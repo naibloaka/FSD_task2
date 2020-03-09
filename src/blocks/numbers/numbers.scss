@@ -1,23 +1,18 @@
 @import "./src/scss/includes/var";
 
 
-.main{
-    
-    display: grid;
-    grid-template-columns: 28.2% 71.8%;
-    .main__numbers{
-        h1{
-            margin-top: 31px;
-            margin-left: 64px;
-            font-family: $quicksand_bold;
-            font-size:24px;
-            letter-spacing: 0.7px;
-        }
+.main__numbers{
+    h1{
+        margin-top: 31px;
+        margin-left: 64px;
+        font-family: $quicksand_bold;
+        font-size:24px;
+        letter-spacing: 0.7px;
     }
 }
 
 .numbers-container{
-    width: 80.641%;
+    width: 81.7%;
     margin-left: 6.3%;
     margin-right: auto;
     margin-top: 22px;
@@ -25,11 +20,12 @@
     grid-template-columns: 270px 270px 270px;
     justify-content: space-between;
     position: relative;
+    
     .numbers-container__block{
         width:270px;
         height: 257px;
-        border-radius: 5px;
         margin-bottom: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
         .owl-carousel::before{ //for shadow inside
             box-shadow: 45px 0 40px -40px black inset, 
             -45px 0 40px -40px black inset; 

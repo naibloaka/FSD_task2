@@ -78,9 +78,8 @@ module.exports = {
             'window.jQuery': 'jquery',
         }),
         new HtmlWebpackPlugin({
-            template: './src/pages/numbers.pug',
-            mode: 'development',
-            filename: 'numbers.html'
+            template: './src/pages/main.pug',
+            filename: 'main.html'
         }),
         new CopyWebpackPlugin([
             { from: './src/fonts',  to: './fonts' },

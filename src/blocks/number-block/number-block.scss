@@ -3,10 +3,6 @@
 .room{
     .owl-carousel{
         height: 152px;
-        img{
-            width:100%;
-            height: 152px;
-        }
     } 
 }
 
@@ -15,7 +11,7 @@
     margin-top: 0;
     padding-top: 22px;
     padding-bottom: 10px;
-    width:230px;
+    width: 243px;
     margin-left: auto;
     margin-right: auto;
     align-items: baseline;
@@ -23,6 +19,7 @@
         color:$black_text;
         font-family: $quicksand_bold;
         font-size: 14px;
+        margin-left: 5px;
     }
     .price-num{
         color:$black_text;
@@ -49,7 +46,7 @@
     
     .price-date{
         color: $light_grey;
-        margin-left: 1px;
+        margin-left: 4px;
         font-size: 12px;
         
     }
@@ -82,11 +79,11 @@
     padding-top: 10px;
     border-top: 1px solid $border_faded;
     align-items: flex-end;
-    width: 230px;
+    width: 235px;
     margin-left: auto;
     margin-right: auto;
     .rating_block{
-        margin-left: 0;
+        margin-left: 3px;
     }
     p{
         color: $light_grey;
@@ -100,3 +97,31 @@
         
     }
 }
+
+// мленьке поправки по другим блокам
+.price-2,.price-5,.price-8,.price-9,.price-10{
+    .price-price{
+        margin-left: 76px;
+    }
+}
+.price-4,.price-6,.price-7,.price-9,.price-10,.price-12{
+    .price-price{
+        margin-left: 79px;
+    }
+}
+.raiting-2,.raiting-3,.raiting-5,.raiting-6,.raiting-7,.raiting-9,.raiting-10,.raiting-11,.raiting-12{
+    .raiting-review{
+        margin-left:26px;
+    }
+}
+.price-11{
+    .price-price{
+        margin-left: 72px;
+    }
+}
+.raiting-4,.raiting-8{
+    .raiting-review{
+        margin-left:27px;
+    }
+}
+
