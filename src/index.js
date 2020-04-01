@@ -10,16 +10,3 @@ import './blocks/welcome-main/welcome-main.js'
 import './blocks/number-block/number-block.js'
 
 
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items:1,
-        nav : true, // для стрелок
-        pagination : true, // для пагинации
-        loop : true,  //прокрутка по кругу
-        dots : true,
-        URLhashListener:true, // навигация по клику на кнопки
-
-    });
-});
-

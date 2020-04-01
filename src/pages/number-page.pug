@@ -6,6 +6,9 @@ body
     div(class="main")
         div(class="main__settings")
             div(class="main__settings__arrivaldate")
+                h3 даты пребывания в отеле
+                div(class="dates")
+                    include ./../blocks/dropdown/2dates-dropdown.pug
             div(class="main__settings__guests")
             div(class="main__settings__price")
             div(class="main__settings__checkboxes")
@@ -14,17 +17,12 @@ body
             div(class="main__settings__extracomfort")
         
         div(class="main__numbers")
-            div(class="owl-carousel owl-theme")
-                div
-                    include ./../blocks/numbers/numbers.pug
-                div
-                    include ./../blocks/numbers/numbers.pug
-                div
-                    include ./../blocks/numbers/numbers.pug
-                div
-                    include ./../blocks/numbers/numbers.pug
-                div
-                    include ./../blocks/numbers/numbers.pug
+            include ./../blocks/numbers/numbers.pug
+               
+            div(id="data-container")
+            div(id="pagination-container")
+                    
+                    
              
         
     include ./../footer/footer_def.pug

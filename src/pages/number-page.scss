@@ -1,0 +1,23 @@
+@import "./src/scss/includes/var";
+//styles for number-page
+
+.main{
+    display: grid;
+    grid-template-columns: 28.2% 71.8%;
+    
+}
+
+.main__settings{
+    margin-left: 34.8%;
+    margin-top: 29px;
+}
+
+.main__settings__arrivaldate{
+    h3{
+        font-family: $bold;
+        font-size: 14px;
+    }
+    .dates{
+        margin-top: 6px;
+    }
+}

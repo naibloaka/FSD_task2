@@ -2,7 +2,7 @@ import './calendar.scss'
 
          
 
-if (!$.fn.datepicker) {
+/*if (!$.fn.datepicker) {
     require('jquery-ui/ui/widgets/datepicker');
     require('jquery-ui/themes/base/datepicker.css');
   }
@@ -38,3 +38,25 @@ if (!$.fn.datepicker) {
       return date;
     }
   } );
+*/
+
+import "air-datepicker"
+import "./../../../node_modules/air-datepicker/dist/css/datepicker.min.css"
+
+
+
+$('#calendar_from').datepicker({ 
+  onSelect: function (fd, d, picker) { 
+    $("#calendar_from").val(fd.split("-")[0]);
+    $("#calendar_to").val(fd.split("-")[1]);
+  },
+  range:true,
+  prevHtml: '<i class="fas fa-arrow-left"></i>',
+  nextHtml: '<i class="fas fa-arrow-right"></i>',
+  avTitles: {
+    days: 'MMyyyy'
+  },
+  startDate: new Date(),
+  
+});
+

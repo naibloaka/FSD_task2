@@ -877,6 +877,13 @@ acorn@^6.2.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
   integrity sha512-/czfa8BwS88b9gWQVhc8eknunSA2DoJpJyTQkhheIf5E48u1N0R4q/YxxsAeqRrmK9TQ/uYfgLDfZo91UlANIA==
 
+air-datepicker@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/air-datepicker/-/air-datepicker-2.2.3.tgz#9dbb6bc6bc8c9d9db380475091370dad82c2f787"
+  integrity sha1-nbtrxryMnZ2zgEdQkTcNrYLC94c=
+  dependencies:
+    jquery ">=2.0.0 <4.0.0"
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -3531,7 +3538,7 @@ jquery-ui@^1.12.1:
   resolved "https://registry.yarnpkg.com/jquery-ui/-/jquery-ui-1.12.1.tgz#bcb4045c8dd0539c134bc1488cdd3e768a7a9e51"
   integrity sha1-vLQEXI3QU5wTS8FIjN0+dop6nlE=
 
-jquery@>=1.8.3, jquery@^3.3.1, jquery@^3.4.1:
+jquery@>=1.8.3, "jquery@>=2.0.0 <4.0.0", jquery@^3.3.1, jquery@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -3685,6 +3692,13 @@ lcid@^2.0.0:
   integrity sha512-avPEb8P8EGnwXKClwsNUgryVjllcRqtMYa49NTsbQagYuT1DcXnl1915oxWjoyGrXR6zH/Y0Zc96xWsPcoDKeA==
   dependencies:
     invert-kv "^2.0.0"
+
+list.js@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/list.js/-/list.js-1.5.0.tgz#a4cbfc8281ddefc02fdb2d30c8748bfae25fbcda"
+  integrity sha1-pMv8goHd78Av2y0wyHSL+uJfvNo=
+  dependencies:
+    string-natural-compare "^2.0.2"
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -4517,6 +4531,16 @@ p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
+pagination@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/pagination/-/pagination-0.4.6.tgz#d25657bd58d1143545f55ac1af2d299f134b848e"
+  integrity sha512-TnZ3l17uuC5H9Wlc9FMYuEi65JlUCSn1ZAbnLnvUGkR7RgaFknUNGQTEumhjq1Jy1ePkXSiYUFFbHH70LGb9dA==
+
+paginationjs@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/paginationjs/-/paginationjs-2.1.5.tgz#a0c1d9cbba098b3c724d5658aca5b39a3dfd2ec7"
+  integrity sha512-2RJW/o8bADFk6HwuoeJzgUndWvuWaZRdumu1QAc2gdA+/ZQLRcZZ6goz7m2cx2uoy0XReF/7X4vrVTZvqLDPrw==
 
 pako@~1.0.5:
   version "1.0.10"
@@ -5887,6 +5911,11 @@ strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
   integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
+
+string-natural-compare@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-2.0.3.tgz#9dbe1dd65490a5fe14f7a5c9bc686fc67cb9c6e4"
+  integrity sha512-4Kcl12rNjc+6EKhY8QyDVuQTAlMWwRiNbsxnVwBUKFr7dYPQuXVrtNU4sEkjF9LHY0AY6uVbB3ktbkIH4LC+BQ==
 
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"

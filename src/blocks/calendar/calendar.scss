@@ -1,81 +1,168 @@
 @import "./src/scss/includes/var.scss";
 
 .calendar{
-    height: 372px;
-    width: 320px;
-    background-color: $back;
-    padding-left:30px;
-    padding-right:30px;
-    border: 1px solid #E1E1E1;
-    border-radius: 5px;
-}
-
-.calendar__txt{
-    margin-top: 45px;
-    p{
-        font-family: $quicksand_bold;
-        font-size:24px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        line-height: 28px;
-    }
-}
-
-.calendar__dates{
     display: flex;
-    margin-top: 20px;
-    
-    label{
-        font-family: $bold;
-        font-size:12px;
-    }
+    justify-content: space-between;
+    width: 320px;
+    margin-left: 2px;
+}
+.calendar__from,.calendar__to{
+    border: 1px solid $border_bright;
+    display: flex;
+    border-radius: 5px;
+    padding-left: 14px;
     input{
-        border-top: 2px solid #E4E4E8;
-        border-bottom:2px solid #E4E4E8;
-        border-left:1px solid #C8C8D1;
-        border-right:1px solid #C8C8D1;
-        border-radius: 5px;
-        width: 148px;
-        height: 41px;
-        margin-top:5px;
-    }
-}
-.calendar__dates__in{
-    width:150px;
-    height: 65px;
-}
-.calendar__dates__out{
-
-    width:150px;
-    height: 65px; 
-    margin-left: 20px;
-}
-.calendar__guests{
-    margin-top:20px;
-    label{
-        font-family: $bold;
-        font-size:12px;
-    }
-    input{
-        border-top: 2px solid #E4E4E8;
-        border-bottom:2px solid #E4E4E8;
-        border-left:1px solid #C8C8D1;
-        border-right:1px solid #C8C8D1;
-        border-radius: 5px;
-        width:318px;
+        border: none;
+        outline: none;
+        width: 93px;
         height: 42px;
-        margin-top:5px;
+        font-family: $regular;
+        font-size: 14px;
+        color: $black75;
+    }
+    .arrow-block{
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        line-height: 32px;
+        i {
+            border: solid $border_bright;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
     }
 }
 
-.calendar__but{
-    margin-top: 31px;
-    button{
-        width:320px;
-        height: 44px;
-        border-radius: 30px;
-        background: linear-gradient(to top, #8AABFE, #C79EFF);
-        color:$back;
+#datepickers-container{
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    .datepicker--content{
+        padding: 0;
+    }
+    .datepicker{
+        width: 280px;
+        
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid $border_bright;
+        position: absolute;
+        left:-50px;
+    }
+    .datepicker--nav{
+        height: 55px;
+        .datepicker--nav-title{
+            font-family: $bold;
+            font-size: 19px;
+            color: $black_text;
+            letter-spacing: 0.7px;
+            i{
+                font-family: $bold;
+                font-size: 19px;
+                color: $black_text;
+            }
+        }
+    }
+    .datepicker--day-name{  //styles for week days
+        color: $purple;
+        font-family: $bold;
+        font-size: 12px;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--cell-day{ //styles for dates
+        font-family: $regular;
+        font-size: 12px;
+        color: $light_grey;
+        outline: none;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--cell-day:hover{
+        border-radius: 50%;
+        //background: linear-gradient(to top, #67D3EA,#6FCF99);
+        background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+        color: $white;
+    }
+    .datepicker--cell.-current-{
+        border-radius: 50%;
+        background: linear-gradient(to top, #67D3EA,#6FCF99);
+        color: $white;
     }
     
+    .datepicker--cell.-selected- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+        color: $white; 
+    }
+    .datepicker--cell.-selected-::after{
+        border-radius: 50% 0 0 50%;
+    }
+    .-in-range-{
+        background-color: #EBE7FE;
+    }
 }
+/*#datepicker-style{
+    .datepicker--content{
+        padding: 0;
+    }
+    .datepicker{
+        width: 280px;
+        height: 367px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid $border_bright;
+        position: absolute;
+        left:-50px;
+    }
+    .datepicker--nav{
+        height: 55px;
+        .datepicker--nav-title{
+            font-family: $bold;
+            font-size: 19px;
+            color: $black_text;
+            letter-spacing: 0.7px;
+            i{
+                font-family: $bold;
+                font-size: 19px;
+                color: $black_text;
+            }
+        }
+    }
+    .datepicker--day-name{  //styles for week days
+        color: $purple;
+        font-family: $bold;
+        font-size: 12px;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--cell-day{ //styles for dates
+        font-family: $regular;
+        font-size: 12px;
+        color: $light_grey;
+        outline: none;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--cell-day:hover{
+        border-radius: 50%;
+        background: linear-gradient(to top, #67D3EA,#6FCF99);
+        color: $white;
+    }
+    .datepicker--cell.-selected-.-current-{
+        border-radius: 50%;
+        background: linear-gradient(to top, #67D3EA,#6FCF99);
+        color: $white;
+    }
+    
+    .datepicker--cell.-selected- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+        color: $white; 
+    }
+}*/
