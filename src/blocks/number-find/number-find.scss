@@ -4,6 +4,12 @@
         margin-top: 43px;
         width: 280px;
     }
+    h2{
+        text-transform: uppercase;
+        font-family: $bold;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
     .number-find__datepicker{
         display:flex;
         justify-content: space-between;
@@ -11,15 +17,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 24px;
-        h2{
-            text-transform: uppercase;
-            font-family: $bold;
-            font-size: 12px;
-            margin-bottom: 7px;
-        }
+        
     }
     .flex{
         justify-content: space-between;
         width: 218px;
+    }
+    .number-find__guests{
+        width: 320px;
+        margin:21px auto 0 auto;
     }
 }

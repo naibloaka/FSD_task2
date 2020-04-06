@@ -9,7 +9,7 @@
 .calendar__from,.calendar__to{
     border: 1px solid $border_bright;
     display: flex;
-    border-radius: 5px;
+    border-radius: $form-standart;
     padding-left: 14px;
     input{
         border: none;
@@ -18,7 +18,7 @@
         height: 42px;
         font-family: $regular;
         font-size: 14px;
-        color: $black75;
+        color: $black75; 
     }
     .arrow-block{
         width: 42px;
@@ -104,7 +104,10 @@
         border-radius: 50% 0 0 50%;
     }
     .-in-range-{
-        background-color: #EBE7FE;
+        background-color: $datepicker-in-range;
+    }
+    .-range-from- ::after{
+        border-radius: 50% 0 0 50%;
     }
 }
 /*#datepicker-style{

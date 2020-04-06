@@ -31,3 +31,49 @@
         }
     }
 }
+
+
+.dropdawn{
+    border: 1px solid $border_bright;
+    border-radius: $form-standart;
+    width: 318px;
+    height: 42px;
+    cursor: pointer;
+    
+    .dropdawn__guests-calc{
+        display: block;
+        width: 304px;
+        height: 42px;
+        padding-left: 14px;
+        color:$black75;
+        line-height: 38px;
+        .arrow-block{
+            margin-left: 262px;
+        }
+    }
+    .ropdawn__guests-calc:focus{
+        .dropdawn__buttons{
+            
+        }
+    }
+    .dropdawn__buttons{
+       
+    }
+    .arrow-block{
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        line-height: 32px;
+        margin-right: 3px;
+        i {
+            border: solid $border_bright;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+}
