@@ -1,4 +1,4 @@
-var dropdown_field = document.getElementById('dropdown__guests-calc'); //label dropdawn field
+var dropdown_field = document.getElementById('dropdown__guests-calc'); //label dropdown field
 var dropdown_list = document.getElementById('dropdown__buttons'); //invisible list
 var dropdown_block = document.getElementById('border_style');
 
@@ -100,8 +100,6 @@ if (dropdown_field != null) {
                 num_baby.innerHTML +
                 ' младенец';
         }
-        //var gusts = document.getElementById("drop_val").value;
-        //localStorage.setItem('inputValue', gusts);      //значение записывается в переменную, почитать
         dropdown_list.style.display = 'none';
         dropdown_block.style.borderRadius = '5px';
     };

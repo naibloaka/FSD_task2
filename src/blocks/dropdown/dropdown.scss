@@ -39,11 +39,32 @@
     border-top: none;
     border-radius: 0 0 5px 5px;
     h2 {
-        margin-top: 7px;
+        font-family: $bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 8px;
     }
 }
-.dropdown__buttons--topbtn {
-    margin-top: 7px;
+.dropdown__buttons_show {
+    display: block;
+    background-color: $white;
+    position: absolute;
+    top: 43px;
+    left: -1px;
+    z-index: 999;
+    width: 100%;
+    border: 1px solid $border_faded;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    h2 {
+        font-family: $bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+}
+.dropdown__buttons_topbtn {
+    margin-top: 5px;
 }
 .dropdown__buttons-cell {
     list-style-type: none;
@@ -51,16 +72,14 @@
     height: 37px;
     display: block;
 }
-.dropdown__buttons__block {
+.dropdown__buttons-block {
     display: flex;
     justify-content: space-between;
     font-family: $bold;
     button {
-        border: none;
         outline: none;
         background-color: $white;
         font-size: 12px;
-
         padding-top: 7px;
         margin-right: 6px;
     }
@@ -73,31 +92,31 @@
         margin-top: 7px;
     }
 }
-.dropdown__buttons__block__calc {
+.block-calc {
     width: 97px;
     display: flex;
     justify-content: space-between;
-    .minus,
-    .plus {
-        width: 30px;
-        height: 30px;
-        border: 1px solid $border_bright;
-        color: $border_bright;
-        border-radius: 50%;
-        line-height: 15px;
-        font-size: 18px;
-        line-height: 15px;
-        padding-bottom: 6px;
-    }
-    .minus {
-        border: 1px solid $border_faded;
-        color: $black50;
-    }
-    .number {
-        font-size: 12px;
-        color: $black_text;
-        margin-top: 7px;
-        margin-right: 5px;
-        font-family: $bold;
-    }
+}
+.minus,
+.plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border_bright;
+    color: $border_bright;
+    border-radius: 50%;
+    line-height: 15px;
+    font-size: 18px;
+    line-height: 15px;
+    padding-bottom: 6px;
+}
+.minus {
+    border: 1px solid $border_faded;
+    color: $black50;
+}
+.number {
+    font-size: 12px;
+    color: $black_text;
+    margin-top: 7px;
+    margin-right: 5px;
+    font-family: $bold;
 }
