@@ -1,0 +1,24 @@
+@import "./src/scss/includes/var";
+.find-number{
+    button{
+        background: linear-gradient(to top, #8BA4F9,#BC9CFF);
+        height: 44px;
+        width: 320px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        position: relative;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $white_text;
+    }
+    .arrow{
+        i{
+            font-size: 17px;
+            color: $white_text;
+        }
+        position: absolute;
+        right: 14px;
+        top: 14px;
+    }
+}

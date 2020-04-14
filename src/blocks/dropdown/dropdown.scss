@@ -36,28 +36,24 @@
 .dropdawn{
     border: 1px solid $border_bright;
     border-radius: $form-standart;
-    width: 318px;
-    height: 42px;
-    cursor: pointer;
+    
     
     .dropdawn__guests-calc{
-        display: block;
-        width: 304px;
-        height: 42px;
-        padding-left: 14px;
-        color:$black75;
-        line-height: 38px;
-        .arrow-block{
-            margin-left: 262px;
+        display: flex;
+        cursor: pointer;
+        input{
+            outline: none;
+            border: none;
+            width: 304px;
+            height: 42px;
+            padding-left: 14px;
+            color:$black75; 
+            cursor: pointer;
         }
     }
-    .ropdawn__guests-calc:focus{
-        .dropdawn__buttons{
-            
-        }
-    }
-    .dropdawn__buttons{
-       
+    
+    #dropdawn__buttons{
+       display: none;
     }
     .arrow-block{
         width: 42px;

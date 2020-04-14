@@ -89,6 +89,14 @@ module.exports = {
             template: './src/pages/welcome.pug',
             filename: 'welcome.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/review-page.pug',
+            filename: 'review-page.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/register-page.pug',
+            filename: 'register-page.html'
+        }),
     ],
 
     resolve: {                                                                              // шооооок че вытворяет аж карусель заработала

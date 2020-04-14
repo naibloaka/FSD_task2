@@ -3,9 +3,13 @@
 @import "./src/footer/footer_alt";
 @import "includes/var.scss";
 @import "includes/normalize.scss";
-@import "./src/pages/number-page.scss";
+@import "./src/scss/pages/number-page.scss";
 @import "./src/blocks/dropdown/dropdown.scss";
 @import "./../blocks/welcome-main/welcome-main.scss";
+@import "./src/scss/pages/review-page.scss";
+@import "./src/blocks/information/information.scss";
+
+@import "./src/scss/pages/register-page.scss";
 
 *{
     padding: 0px;
