@@ -8,7 +8,7 @@ import './blocks/buttons/buttons.js'
 import './blocks/welcome-main/welcome-main.js'
 import './blocks/number-block/number-block.js'
 import './blocks/dropdown/dropdown.js'
-
+import './blocks/range-slider/range-slider.js'
 
 
 

@@ -1,0 +1,24 @@
+@import "./src/scss/includes/var";
+.range-slider{
+    display: flex;
+    justify-content: space-between;
+    input{
+        border:none;
+        outline: none;
+        font-size: 12px;
+        color:$black50;
+        width: 102px;
+    }
+    
+}
+.ui-slider.ui-slider-horizontal {
+    background: #BFE2FF;
+    height:5px;
+    border:none;
+}
+.ui-slider .ui-slider-handle {
+    
+}
+.ui-slider .ui-slider-range {
+    
+}

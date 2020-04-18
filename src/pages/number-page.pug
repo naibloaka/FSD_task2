@@ -7,10 +7,13 @@ body
         div(class="main__settings")
             div(class="main__settings__arrivaldate")
                 h3 даты пребывания в отеле
-                div(class="dates")
-                    include ./../blocks/dropdown/2dates-dropdown.pug
+                include ./../blocks/calendar/calendar.pug
             div(class="main__settings__guests")
+                h3 гости
+                include ./../blocks/dropdown/dropdown.pug
+                
             div(class="main__settings__price")
+                include ./../blocks/range-slider/range-slider.pug
             div(class="main__settings__checkboxes")
             div(class="main__settings__availability")
             div(class="main__settings__comfort")

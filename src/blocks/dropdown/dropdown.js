@@ -1,4 +1,7 @@
-var dropdawn_field = document.getElementById("dropdawn__guests-calc"); //label dropdawn field 
+
+//if(window.location.toString().indexOf('welcome.html')>0) //check page
+
+    var dropdawn_field = document.getElementById("dropdawn__guests-calc"); //label dropdawn field 
 var dropdawn_list = document.getElementById("dropdawn__buttons"); //invisible list
 var dropdawn_block = document.getElementById("border_style");
 
@@ -97,11 +100,12 @@ minus_baby.onclick = function(){
 var ok_btn = document.getElementById("ok-but");
 
 ok_btn.onclick = function(){
-    document.getElementById("drop_val").value = 
-    Number(num_baby.innerHTML) + 
-    Number(num_child.innerHTML) + 
-    Number(num_adult.innerHTML);
-
+    document.getElementById("drop_val").value = Number(num_adult.innerHTML) + Number(num_child.innerHTML);
+    if(Number(num_baby.innerHTML) > 0){     //Проверка есть ли младенцы
+        document.getElementById("drop_val").value = String(document.getElementById("drop_val").value) + ", " + num_baby.innerHTML + " младенец";
+    }
+    //var gusts = document.getElementById("drop_val").value; 
+    //localStorage.setItem('inputValue', gusts);      //значение записывается в переменную, почитать
     dropdawn_list.style.display = "none";
     dropdawn_block.style.borderRadius="5px";
 }
@@ -110,9 +114,14 @@ var clear_btn = document.getElementById("clear-but");
 
 clear_btn.onclick = function(){
     document.getElementById("drop_val").value = null;
+    gusts = null;
+    localStorage.setItem('inputValue', gusts);
     num_adult.innerHTML = 0;
     num_child.innerHTML = 0;
     num_baby.innerHTML = 0;
     dropdawn_list.style.display = "none";
     dropdawn_block.style.borderRadius="5px";
 }
+
+
+
