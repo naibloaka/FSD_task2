@@ -146,37 +146,43 @@ dropdawn__comfort.onclick = function(){
     {
         dropdawn__comfort_list.style.display = "block";
         dropdawn__comfort_block.style.borderRadius="5px 5px 0 0";  
-    }
-    else{
+    }else{
         dropdawn__comfort_list.style.display = "none";
         dropdawn__comfort_block.style.borderRadius="5px";
     }
 
-
     var bedroom;
     if(Number(num_bedroom.innerHTML) == 0){bedroom = ""}
-    if(Number(num_bedroom.innerHTML) == 1){bedroom = " спаленя "}
-    if(Number(num_bedroom.innerHTML) >= 2 && count < 5){bedroom = " спалени "}
-    if(Number(num_bedroom.innerHTML) >= 5){bedroom = " спален"}
+    if(Number(num_bedroom.innerHTML) == 1){bedroom = " спаленя, "}
+    if(Number(num_bedroom.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5){bedroom = " спалени, "}
+    if(Number(num_bedroom.innerHTML) >= 5){bedroom = " спален, "}
     
     var bed;
     if(Number(num_bed.innerHTML) == 0){bed = ""}
-    if(Number(num_bed.innerHTML) == 1){bed = " кровать"}
-    if(Number(num_bed.innerHTML) >= 2 && count < 5){bed = " кровати"}
-    if(Number(num_bed.innerHTML) >= 5){bed = " кроватей"}
+    if(Number(num_bed.innerHTML) == 1){bed = " кровать, "}
+    if(Number(num_bed.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5){bed = " кровати, "}
+    if(Number(num_bed.innerHTML) >= 5){bed = " кроватей, "}
 
     var bathroom;
     if(Number(num_bathroom.innerHTML) == 0){bathroom = ""}
     if(Number(num_bathroom.innerHTML) == 1){bathroom = " ванная комната"}
-    if(Number(num_bathroom.innerHTML) >= 2 && count < 5){bathroom = " ванных комнаты"}
+    if(Number(num_bathroom.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5){bathroom = " ванных комнаты"}
     if(Number(num_bathroom.innerHTML) >= 5){bathroom = " ванных комнат"}
-    if(Number(num_bedroom.innerHTML) != null || Number(num_bed.innerHTML) != null || Number(num_bathroom.innerHTML) != null)
-    {
-        if(Number(num_bedroom.innerHTML) == null){num_bedroom.innerHTML = "";}
-        if(Number(num_bed.innerHTML) == null){num_bed.innerHTML = "";}
-        if(Number(num_bathroom.innerHTML) == null){num_bathroom.innerHTML = "";}
-        document.getElementById("drop-comfort_val").value = Number(num_bedroom.innerHTML) + bedroom + ", " + Number(num_bed.innerHTML) + bed + ", " + Number(num_bathroom.innerHTML) + bathroom;
+    
+    
+    var value_comforta = "";
+    if(Number(num_bedroom.innerHTML) > 0 ){
+        value_comforta += num_bedroom.innerHTML + bedroom;
     }
+    if(Number(num_bed.innerHTML) > 0){
+        value_comforta += num_bed.innerHTML + bed;
+    }
+    if(Number(num_bathroom.innerHTML) > 0){
+        value_comforta += num_bathroom.innerHTML + bathroom;
+    }
+    document.getElementById("drop-comfort_val").value = value_comforta;
+
+
 }
 
 //for bedrooms

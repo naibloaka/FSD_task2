@@ -100,15 +100,32 @@
         background: linear-gradient(to top, #8CA4FA,#BB9CFF);
         color: $white; 
     }
-    .datepicker--cell.-selected-::after{
-        border-radius: 50% 0 0 50%;
+    .datepicker--cell.-range-to-::after{
+        content: '';
+        width: 50%;
+        position:absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          z-index: -1;
+          background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+          opacity: 0.25;
+    }
+    .datepicker--cell.-range-from-::before{
+        content: '';
+        width: 50%;
+        position:absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+          opacity: 0.25;
     }
     .-in-range-{
         background-color: $datepicker-in-range;
     }
-    .-range-from- ::after{
-        border-radius: 50% 0 0 50%;
-    }
+    
 }
 
 
