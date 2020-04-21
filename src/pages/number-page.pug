@@ -14,9 +14,15 @@ body
                 
             div(class="main__settings__price")
                 include ./../blocks/range-slider/range-slider.pug
-            div(class="main__settings__checkboxes")
+            div(class="main__settings__checkbox")
+                h3 Checkbox Buttons
+                include ./../blocks/check-box_btn/check-box_btn.pug
             div(class="main__settings__availability")
+                h3 доступность
+                include ./../blocks/check-box_btn/check-availability.pug
             div(class="main__settings__comfort")
+                h3 удобства номера
+                include ./../blocks/dropdown/dropdawn-comfort.pug
             div(class="main__settings__extracomfort")
         
         div(class="main__numbers")

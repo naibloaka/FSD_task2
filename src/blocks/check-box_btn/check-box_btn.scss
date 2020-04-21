@@ -1,0 +1,68 @@
+@import "./src/scss/includes/var";
+.check-box_btn{
+    .checkbox{
+        margin-top: 8px;
+        padding-bottom: 1px;
+        position: relative;
+        .checkbox-check{
+            display:none;
+        }
+        .checkbox__fake{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $border_bright;
+            border-radius: 5px;
+            position: relative;
+            
+        }
+        .checkbox__fake::before{
+            content: "";
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: url("/src/img/svg/check-box.svg");
+            opacity: 0;
+            
+            
+        }
+        .checkbox-check:checked + .checkbox__fake::before{
+            opacity: 1;
+        }
+        .checkbox__text{
+            display: inline-block;
+            position: absolute;
+            top:10%;
+            color: $black50;
+            margin-left: 11px;
+            width: 191px;
+            span{
+                line-height: 17px;
+            }
+            h4{
+                font-family: $bold;
+                color: $black75;
+                font-size: 14px;
+                
+            }
+            p{
+                margin-top: 5px;
+                font-size: 12px;
+
+            }
+        }
+
+        
+    }
+    .availability-bottom{
+        margin-top: 39px;
+        .checkbox__text{
+            width: 225px;
+        }
+    }
+
+}

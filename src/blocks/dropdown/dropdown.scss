@@ -49,19 +49,19 @@
             height: 42px;
             color:$black75; 
             cursor: pointer;
-            
+
         }
     }
     
-    #dropdawn__buttons{
+    #dropdawn__buttons, #dropdawn-comfort__buttons{
        display: none;
        background-color: $white;
        padding-bottom: 2px;
        position: absolute;
-        top: 43px;
-        left: -1px;
+       top: 43px;
+       left: -1px;
         z-index: 999;
-        width: 318px;
+        width: 100%;
         border: 1px solid $border_bright;
         border-top: none;
         border-radius: 0 0 5px 5px;
@@ -124,6 +124,7 @@
                justify-content: space-between;
            }
        }
+       
     }
     .arrow-block{
         width: 42px;

@@ -15,5 +15,5 @@ $( function() {
         }
       });
       $( "#amount" ).val( + $( "#slider-range" ).slider( "values", 0 ) + "P"  +
-        " -" + $( "#slider-range" ).slider( "values", 1 ) + "Р");
+        " - " + $( "#slider-range" ).slider( "values", 1 ) + "Р");
   } );

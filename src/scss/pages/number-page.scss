@@ -8,21 +8,40 @@
 }
 
 .main__settings{
-    margin-left: 34.8%;
+    margin-left: 34.4%;
     margin-top: 29px;
     h3{
         font-family: $bold;
-        font-size: 14px;
+        font-size: 12px;
+        text-transform: uppercase;
         margin-bottom: 5px;
+        
     }
-}
-
-.main__settings__guests{
-    margin-top: 19px;
 }
 .main__settings__arrivaldate{
     
     .dates{
         margin-top: 6px;
     }
+}
+.main__settings__guests{
+    margin-top: 23px;
+}
+.main__settings__price{
+    margin-top: 33px;
+}
+.main__settings__checkbox{
+    margin-top: 22px;
+    h3{
+        margin-bottom: 15px;
+    }
+}
+.main__settings__availability{
+    margin-top: 43px;
+    h3{
+        margin-bottom: 17px;
+    }
+}
+.main__settings__comfort{
+    margin-top: 70px;
 }
