@@ -11,7 +11,9 @@
     display: flex;
     border-radius: $form-standart;
     padding-left: 14px;
+    position: relative;
     input{
+        
         border: none;
         outline: none;
         width: 93px;
@@ -20,22 +22,7 @@
         font-size: 14px;
         color: $black75; 
     }
-    .arrow-block{
-        width: 42px;
-        height: 42px;
-        text-align: center;
-        line-height: 32px;
-        i {
-            border: solid $border_bright;
-            border-width: 0 1px 1px 0;
-            display: inline-block;
-            padding: 3px;
-        }
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-    }
+
 }
 
 #datepickers-container{
@@ -47,7 +34,6 @@
     }
     .datepicker{
         width: 280px;
-        
         padding-left: 19px;
         padding-right: 19px;
         border: 1px solid $border_bright;
@@ -130,6 +116,7 @@
 
 
 .calendar__oneblock{
+    position: relative;
     display: flex;
     justify-content: space-between;
     border: 1px solid $border_bright;
@@ -144,20 +131,11 @@
         font-size: 14px;
         color: $black75; 
     }
-    .arrow-block{
-        width: 42px;
-        height: 42px;
-        text-align: center;
-        line-height: 32px;
-        i {
-            border: solid $border_bright;
-            border-width: 0 1px 1px 0;
-            display: inline-block;
-            padding: 3px;
-        }
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-    }
+}
+.calendar__oneblock-arrow{
+    color: $arrow_dawn;
+    font-size: 14px;
+    position: absolute;
+    top:15px;
+    right:15px;
 }

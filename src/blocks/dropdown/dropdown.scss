@@ -38,109 +38,100 @@
     border-radius: $form-standart;
     position: relative;
     padding-left: 14px;
-
-    .dropdawn__guests-calc{
-        display: flex;
-        cursor: pointer;
-        input{
-            outline: none;
-            border: none;
-            width: 304px;
-            height: 42px;
-            color:$black75; 
-            cursor: pointer;
-
-        }
-    }
-    
-    #dropdawn__buttons, #dropdawn-comfort__buttons{
-       display: none;
-       background-color: $white;
-       padding-bottom: 2px;
-       position: absolute;
-       top: 43px;
-       left: -1px;
-        z-index: 999;
-        width: 100%;
-        border: 1px solid $border_bright;
-        border-top: none;
-        border-radius: 0 0 5px 5px;
-       h2{margin-top: 7px;}
-       .dropdawn__buttons-topbtn{
-           margin-top: 7px;
-       }
-       li{
-           list-style-type: none;
-           padding-left: 14px;
-           height: 37px;
-           display: block;
-       }
-       .dropdawn__buttons__block{
-           display: flex;
-           justify-content: space-between;
-           font-family: $bold;
-           button{
-               border: none;
-               outline: none;
-               background-color: $white;
-               font-size: 12px;
-               
-               padding-top: 7px;
-               margin-right: 6px;
-           }
-            .clear-but{
-                color: $black50;
-                margin-top: 7px;
-            }
-            .ok-but{
-                color: $purple;
-                margin-top: 7px;
-            }
-           .minus, .plus{
-               width: 30px;
-               height: 30px;
-               border: 1px solid $border_bright;
-               color: $border_bright;
-               border-radius: 50%;
-               line-height: 15px;
-               font-size: 18px;
-               line-height: 15px;
-               padding-bottom: 6px;
-           }
-           .minus{
-                border: 1px solid $border_faded;
-                color: $black50;
-           }
-           .number{
-               font-size: 12px;
-               color:$black_text;
-               margin-top: 7px;
-               margin-right: 5px;
-               font-family: $bold;
-           }
-           .dropdawn__buttons__block__calc{
-               width: 97px;
-               display: flex;
-               justify-content: space-between;
-           }
-       }
+} 
        
-    }
-    .arrow-block{
-        width: 42px;
+           
+           
+       
+       
+    
+    
+        
+    
+
+
+.dropdawn__guests-calc{
+    display: flex;
+    cursor: pointer;
+    input{
+        outline: none;
+        border: none;
+        width: 304px;
         height: 42px;
-        text-align: center;
-        line-height: 40px;
-        i {
-            border: solid $border_bright;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-        }
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
+        color:$black75; 
+        cursor: pointer;
+        border-radius: $form-standart;
     }
 }
-
+#dropdawn__buttons, #dropdawn-comfort__buttons{
+    display: none;
+    background-color: $white;
+    padding-bottom: 2px;
+    position: absolute;
+    top: 43px;
+    left: -1px;
+     z-index: 999;
+     width: 100%;
+     border: 1px solid $border_bright;
+     border-top: none;
+     border-radius: 0 0 5px 5px;
+     h2{margin-top: 7px;}
+}
+.dropdawn__buttons--topbtn{
+    margin-top: 7px;
+}
+.dropdawn__buttons-cell{
+    list-style-type: none;
+    padding-left: 14px;
+    height: 37px;
+    display: block;
+}
+.dropdawn__buttons__block{
+    display: flex;
+    justify-content: space-between;
+    font-family: $bold;
+    button{
+        border: none;
+        outline: none;
+        background-color: $white;
+        font-size: 12px;
+        
+        padding-top: 7px;
+        margin-right: 6px;
+    }
+     .clear-but{
+         color: $black50;
+         margin-top: 7px;
+     }
+     .ok-but{
+         color: $purple;
+         margin-top: 7px;
+     }
+}
+.dropdawn__buttons__block__calc{
+    width: 97px;
+    display: flex;
+    justify-content: space-between;
+    .minus, .plus{
+        width: 30px;
+        height: 30px;
+        border: 1px solid $border_bright;
+        color: $border_bright;
+        border-radius: 50%;
+        line-height: 15px;
+        font-size: 18px;
+        line-height: 15px;
+        padding-bottom: 6px;
+    }
+    .minus{
+        border: 1px solid $border_faded;
+        color: $black50;
+    }
+    .number{
+        font-size: 12px;
+        color:$black_text;
+        margin-top: 7px;
+        margin-right: 5px;
+        font-family: $bold;
+    }
+}

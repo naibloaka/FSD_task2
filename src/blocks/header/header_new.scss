@@ -1,5 +1,5 @@
 @import "./src/scss/includes/var";
-.headernew{
+.header_new{
     background-color: $back;
     width:100%;
     display:flex;
@@ -8,64 +8,47 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-
-.headernew__logo{
+.header_new-logo{
     margin-left: 9.7222222222%; 
 }
 
-
-.headernew__menu{
-    width: 30.6%;
-    margin-left: 19.9%;
+.header_new-menu{
+    width: 30.9%;
+    margin-left: 20%;
     display: flex;
     justify-content: space-between;
-    
     a{
         text-decoration: none;
-        font-size:14px;
-        color: $light_grey;
+        color:$black50;
+        &:hover{
+            color:$black_text;
+            font-family: $bold;
+        }
     }
-     
-    a:hover{
-        color: #000000;
-        font-family: $bold;
-    }
-        
+
     li{
         list-style: none;
     }
-    .Arrow{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div{
-            i{
-                color: $light_grey;
-                font-size: 12px;
-            }
-            i:hover{
-                color: #000000;
-                
-            }
-            a:hover{
-                color: #000000;
-                font-family: $bold;
-                i{
-                    color: #000000;
-                    font-size: 9px;
-                }
-            }
-            margin-left: 4px;   
+}
+
+.headernew-menu__Arrow{
+display: flex;
+justify-content: space-between;
+    .fa-chevron-down{
+        color: $light_grey;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    &:hover{
+        font-family: $bold;
+        color:$black_text;
+        .fa-chevron-down{
+            color:$black_text;
+            font-weight: bold;
         }
     }
-    div:hover{
-        color: #000000;
-        font-family: $bold;
-    }
 }
-    
-
-
 
 .login{
     margin-left:2%;

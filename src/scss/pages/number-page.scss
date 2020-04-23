@@ -1,47 +1,53 @@
 @import "./src/scss/includes/var";
+@import "./src/scss/includes/mixins";
 //styles for number-page
 
 .main{
     display: grid;
     grid-template-columns: 28.5% 71.8%;
-    
+}
+
+.settings__title{
+    @include for-h3;
 }
 
 .main__settings{
     margin-left: 34.4%;
     margin-top: 29px;
-    h3{
-        font-family: $bold;
-        font-size: 12px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        
-    }
 }
-.main__settings__arrivaldate{
-    
-    .dates{
-        margin-top: 6px;
-    }
+
+.main__settings__arrivaldate{    
+    margin-top: 2px;
 }
+
 .main__settings__guests{
     margin-top: 23px;
 }
+
 .main__settings__price{
     margin-top: 33px;
 }
+
 .main__settings__checkbox{
-    margin-top: 22px;
-    h3{
-        margin-bottom: 16px;
-    }
+    margin-top: 31px;
 }
+
+.main__settings__checkbox-block{
+    margin-top: 16px;
+}
+
 .main__settings__availability{
     margin-top: 50px;
-    h3{
-        margin-bottom: 17px;
-    }
 }
+
+.main__settings__availability-block{
+    margin-top: 17px;
+}
+
 .main__settings__comfort{
-    margin-top: 70px;
+    margin-top: 63px;
+}
+
+.main__settings__extracomfort{
+    margin-top: 32px;
 }

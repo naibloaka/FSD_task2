@@ -1,29 +1,37 @@
 include head.pug
 
 body
-    include ./../blocks/header/header_def.pug
+    include ./../blocks/header/header_new.pug
     
     div(class="main")
         div(class="main__settings")
             div(class="main__settings__arrivaldate")
-                h3 даты пребывания в отеле
-                include ./../blocks/calendar/calendar.pug
+                h3(class = "settings__title") даты пребывания в отеле
+                div(class="main__settings__arrivaldate-block")
+                    include ./../blocks/calendar/calendar.pug
             div(class="main__settings__guests")
-                h3 гости
-                include ./../blocks/dropdown/dropdown.pug
+                h3(class = "settings__title") гости
+                div(class="main__settings__guests-block")
+                    include ./../blocks/dropdown/dropdown.pug
                 
             div(class="main__settings__price")
-                include ./../blocks/range-slider/range-slider.pug
+                div(class="main__settings__price-block")
+                    include ./../blocks/range-slider/range-slider.pug
             div(class="main__settings__checkbox")
-                h3 Checkbox Buttons
-                include ./../blocks/check-box_btn/check-box_btn.pug
+                h3(class = "settings__title") Checkbox Buttons
+                div(class="main__settings__checkbox-block")
+                    include ./../blocks/check-box_btn/check-box_btn.pug
             div(class="main__settings__availability")
-                h3 доступность
-                include ./../blocks/check-box_btn/check-availability.pug
+                h3(class = "settings__title") доступность
+                div(class="main__settings__availability-block")
+                    include ./../blocks/check-box_btn/check-availability.pug
             div(class="main__settings__comfort")
-                h3 удобства номера
-                include ./../blocks/dropdown/dropdawn-comfort.pug
+                h3(class = "settings__title") удобства номера
+                div(class="main__settings__comfort-block")
+                    include ./../blocks/dropdown/dropdawn-comfort.pug
             div(class="main__settings__extracomfort")
+                div(class="main__settings__extracomfort-block")
+                    include ./../blocks/check-box_btn/extra-checkboxes.pug
         
         div(class="main__numbers")
             include ./../blocks/numbers/numbers.pug
@@ -34,4 +42,4 @@ body
                     
              
         
-    include ./../footer/footer_def.pug
+    include ./../blocks/footer/footer_def.pug

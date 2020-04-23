@@ -27,8 +27,7 @@
         margin-bottom: 20px;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         .owl-carousel::before{ //for shadow inside
-            box-shadow: 45px 0 40px -40px black inset, 
-            -45px 0 40px -40px black inset; 
+            
             content:'';
             position: absolute;
             top: 0;

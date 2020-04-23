@@ -1,21 +1,25 @@
 @import "./src/scss/includes/var";
-.range-slider{
-    
-    .flex{justify-content: space-between;}
-    input{
-        border:none;
-        outline: none;
-        font-size: 12px;
-        color:$black50;
-        width:140px;
-        text-align: right;
-    }
-    p{
-        margin-top: 15px;
-        font-size: 12px;
-        color:$black50;
-    }
+
+.range-slider-text{
+    margin-top: 15px;
+    font-size: 12px;
+    color:$black50;
 }
+.range-slider-input{
+    border:none;
+    outline: none;
+    font-size: 12px;
+    color:$black50;
+    width:140px;
+    text-align: right;
+}
+
+.range-slider__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 #slider-range{
     margin-top: 17px;
     span{
