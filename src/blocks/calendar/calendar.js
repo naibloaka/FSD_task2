@@ -4,19 +4,7 @@ import "./../../../node_modules/air-datepicker/dist/css/datepicker.min.css"
 
 
 
-function Createbut(){
-  var element = document.getElementById("button-place");
-  var btn = document.createElement('button');
-  btn.id = "buttonSave";
 
-  $(document).ready(function() {
-    $("#buttonSave").click(function(){
-        alert("Hello World!");
-    })
-  })
-  btn.innerHTML = "Button";
-  element.appendChild(btn);
-};
 
 $('#calendar_from').datepicker({ 
   onSelect: function (fd, d, picker) { 

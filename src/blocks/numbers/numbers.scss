@@ -24,10 +24,9 @@
     .numbers-container__block{
         width:270px;
         height: 257px;
-        margin-bottom: 20px;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        .owl-carousel::before{ //for shadow inside
-            
+        margin-bottom: 22px;
+        .owl-carousel::before{ //for shadow inside           
             content:'';
             position: absolute;
             top: 0;
@@ -96,8 +95,6 @@
                     background-color: white;
                 }
             }
-                
-            
         }
         .owl-theme [class*=owl-]:hover{
             background: transparent;

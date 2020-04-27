@@ -1,0 +1,7 @@
+mixin rating(j)
+  .block
+    .rating_block
+      - for(var i=6; i>1 ; i--) {
+        input(name="rating"+j value=i id="rating"+i+j type="radio")
+        label(for="rating"+i+j).label_rating
+      - }

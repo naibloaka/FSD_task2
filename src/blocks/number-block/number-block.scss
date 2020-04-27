@@ -48,31 +48,32 @@
         color: $light_grey;
         margin-left: 4px;
         font-size: 12px;
-        
     }
 }
 .rating_block {
     width: 120px;
     height: 25px; 
-  }
-  .rating_block input[type="radio"] {
+}
+.rating_block input[type="radio"] {
     display: none;
-  }
-  .label_rating {
+}
+
+.label_rating {
     float: right;
     display: block;
     width: 24px;
     height: 24px;
     background: url("/src/img/svg/star.svg") no-repeat 50% 0;
     cursor: pointer;
-  }
-  /*Пишем правила смены положения background-а*/
-  .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
-  .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
-  .rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
-  {
+}
+
+/*Пишем правила смены положения background-а*/
+.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+{
     background: url("/src/img/svg/fill-star.svg") no-repeat 50% 0;
-  }
+}
 
 .raiting{
     display: flex;
@@ -82,22 +83,23 @@
     width: 235px;
     margin-left: auto;
     margin-right: auto;
-    .rating_block{
-        margin-left: 3px;
-    }
-    p{
-        color: $light_grey;
-        font-size: 14px;
-        margin-left: 4px;
-        margin-bottom: 5px;
-    } 
-    .raiting-review{
-        font-family: $bold;
-        margin-left: 20px;
-        
-    }
 }
 
+.rating_block{
+    margin-left: 3px;
+}
+
+.raiting-review{
+    color: $light_grey;
+    font-family: $bold;
+    margin-left: 20px;
+}
+
+.raiting-review-txt{
+    color: $light_grey;
+    font-size: 14px;
+    margin-left: 4px;
+}
 // мленьке поправки по другим блокам
 .price-2,.price-5,.price-8,.price-9,.price-10{
     .price-price{

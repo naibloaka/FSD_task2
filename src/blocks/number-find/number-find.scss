@@ -1,4 +1,4 @@
-.number-find, .number-find-calc{
+.number-find, .number-find-calc{ //styles for welcome-page 
     padding-top: 20px;
     border-radius: 5px;
     background-color: $white;
@@ -6,102 +6,49 @@
     width: 380px;
     height: 354px;
     text-align: center;
-    .number-find__title{
-        margin-left: 30px;
-        margin-top: 22px;
-        width: 280px;
-        text-align: left;
-    }
-    h2{
-        text-transform: uppercase;
-        font-family: $bold;
-        font-size: 12px;
-        margin-bottom: 7px;
-        
-    }
-    .number-find__datepicker{
-        display:flex;
-        justify-content: space-between;
-        width: 322px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 24px;
-    }
+}
+.number-find__wrap{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    &--calc{margin-top: 0px;}
+}
+.number-find__title{
+    text-align: left;
+    letter-spacing: 1.1px;
+    line-height: 29px;
+}
+.number-find__subtitle{
+    text-transform: uppercase;
+    font-family: $bold;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.number-find__datepicker{
+    margin-top: 24px;
     .flex{
         justify-content: space-between;
         width: 218px;
     }
-    .number-find__guests{
-        width: 320px;
-        margin:21px auto 0 auto;
-        text-align: left;
-    }
-    .number-find__button{
-        margin-top: 30px;
-        
-    }
+}
+.datepicker-from-to{
+    display: flex;
+    justify-content: space-between;
+}
+.number-find__guests{
+    margin-top: 21px;
+    text-align: left;
+}
+.number-find__button{
+    margin-top: 30px;
 }
 
 
 
-
-.number-find-calc{
+.number-find-calc{          //styles for review-page
     height: 489px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    .number-find__calc{
-        width: 320px;
-        margin: 20px auto 0 auto;
-        .flex{
-            width: 320px;
-            justify-content: space-between;
-            color: $black75;
-            margin-top: 18px;
-            text-align: left;
-            p{
-                width: 214px;
-            }
-        }
-        .iblock{
-            display: block;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            box-sizing: border-box;
-            border-radius: 50%;
-            margin-left: -55px;
-            margin-top: -3px;
-            text-align: center;
-            span{
-                color: $black25;                
-                font-size: 12px;
-            }
-        }
-        .second{
-            margin-left: -38px;
-        }
-        .number-find__calc__result{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 33px;
-            width: 320px;
-            .result-dots{
-                display: block;
-                border-bottom: 1px dotted $black25;
-                height: 1px;
-                flex-basis: 182px;
-                margin-top: 16px;
-            }
-            p{
-                font-family: $bold;
-                font-size: 19px;
-                flex-basis: 57px;
-            }
-            .result-num{
-                letter-spacing: -1.3px;
-                flex-basis: 72px;
-            }
-        }
-    }
     .price{
         display: flex;
         padding-bottom: 11px;
@@ -145,11 +92,63 @@
             
         }
     }
-    .number-find__datepicker{
-        width: 323px;
-        margin-top: 12px;
+}
+.number-find__datepicker{
+    margin-top: 10px;
+}
+.number-find__button{
+    margin-top: 23px;
+}
+.number-find__calc{
+    margin: 20px auto 0 auto;
+    .flex{
+        width: 320px;
+        justify-content: space-between;
+        color: $black75;
+        margin-top: 18px;
+        text-align: left;
+        p{
+            width: 214px;
+        }
     }
-    .number-find__button{
-        margin-top: 21px;
+    .iblock{
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-left: -55px;
+        margin-top: -3px;
+        text-align: center;
+        span{
+            color: $black25;                
+            font-size: 12px;
+        }
+    }
+    .second{
+        margin-left: -38px;
+    }
+    .number-find__calc__result{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 33px;
+        width: 320px;
+        .result-dots{
+            display: block;
+            border-bottom: 1px dotted $black25;
+            height: 1px;
+            flex-basis: 182px;
+            margin-top: 16px;
+        }
+        p{
+            font-family: $bold;
+            font-size: 19px;
+            flex-basis: 57px;
+        }
+        .result-num{
+            letter-spacing: -1.3px;
+            flex-basis: 72px;
+        }
     }
 }

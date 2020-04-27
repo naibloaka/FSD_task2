@@ -1,0 +1,35 @@
+div(class="register-block")
+    div(class="wrap")
+        h1(class="register-block__title") Регистрация аккаунта
+
+        div(class="register-block__name")
+            include ./../text-inputs/name-input.pug
+        
+        div(class="register-block__secondname")
+            include ./../text-inputs/secondname-input.pug
+
+        div(class="register-block__gender")
+            include ./../gender-radiobtn/male-radiobtn.pug
+            include ./../gender-radiobtn/female-radiobtn.pug
+
+        div(class="register-block__birthday")
+            h3(class="register-block__subtitle") дата рождения
+            include ./../text-inputs/birthday-input.pug
+
+        div(class="register-block__email")
+            h3(class="register-block__subtitle") данные для входа в сервис
+            include ./../text-inputs/email-input.pug
+
+        div(class="register-block__password")
+            include ./../text-inputs/password-input.pug
+
+        div(class="register-block__swith")
+            include ./../swith-btn/swith-btn.pug
+
+        div(class="register-block__paybtn")
+            include ./../buttons/to-pay.pug
+
+        div(class="register-block__login")
+            p(class="register-block__login-text") Уже есть аккаунт на Toxin
+            div(class="register-block__login-btn")   
+                include ./../buttons/loginbut.pug

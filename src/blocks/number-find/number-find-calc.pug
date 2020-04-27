@@ -1,45 +1,47 @@
 div(class="number-find-calc")
-    div(class="price")
-        span №
-        p(class="price-num") 888
-        p(class="price-mod") ЛЮКС
-        P(class="price-price") 9&nbsp;990&#8381; 
-        p(class="price-date") в сутки
+    div(class="number-find__wrap number-find__wrap--calc")
+        div(class="price")
+            span №
+            p(class="price-num") 888
+            p(class="price-mod") ЛЮКС
+            P(class="price-price") 9&nbsp;990&#8381; 
+            p(class="price-date") в сутки
 
-    div(class="number-find__datepicker")
-        div(class="datepicker-from-to")
+        div(class="number-find__datepicker")
             div(class="flex")
-                h2 ПРИБЫТИЕ
-                h2 ВЫЕЗД
-            include ./../calendar/calendar-from.pug
-    
-    div(class="number-find__guests")
-        h2 ГОСТИ
-        include ./../dropdown/dropdown.pug
-
-    div(class="number-find__calc")
-        div(class="flex")
-            p 9 990₽ х 4 суток
-            span 39 960₽
-
-        div(class="flex")
-            p(class="after") Сбор за услуги: скидка 2 179₽
-            div(class="iblock first")
-                span i
-            span 0₽
-
-        div(class="flex")
-            p(class="after") Сбор за дополнительные услуги
-            div(class="iblock second")
-                span i
-            span 300₽
+                    h3(class="number-find__subtitle") ПРИБЫТИЕ
+                    h3(class="number-find__subtitle") ВЫЕЗД
+            div(class="datepicker-from-to")
+                include ./../calendar/calendar-from.pug
+                include ./../calendar/calendar-to.pug
         
-        div(class="number-find__calc__result")
-            p Итого
-            div(class="result-dots")
-            p(class="result-num") 38 081₽
+        div(class="number-find__guests")
+            h3(class="number-find__subtitle") ГОСТИ
+            include ./../dropdown/dropdown.pug
+
+        div(class="number-find__calc")
+            div(class="flex")
+                p 9 990₽ х 4 суток
+                span 39 960₽
+
+            div(class="flex")
+                p(class="after") Сбор за услуги: скидка 2 179₽
+                div(class="iblock first")
+                    span i
+                span 0₽
+
+            div(class="flex")
+                p(class="after") Сбор за дополнительные услуги
+                div(class="iblock second")
+                    span i
+                span 300₽
+            
+            div(class="number-find__calc__result")
+                p Итого
+                div(class="result-dots")
+                p(class="result-num") 38 081₽
 
 
 
-    div(class="number-find__button")
-        include ./../buttons/resurve-number.pug
+        div(class="number-find__button")
+            include ./../buttons/resurve-number.pug

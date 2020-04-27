@@ -1,18 +1,23 @@
 div(class="number-find")
-    h1(class="number-find__title") Найдём номера под ваши пожелания
+    div(class="number-find__wrap")
+        h1(class="number-find__title") Найдём номера под ваши пожелания
 
-    div(class="number-find__datepicker")
-        div(class="datepicker-from-to")
-            div(class="flex")
-                h2 ПРИБЫТИЕ
-                h2 ВЫЕЗД
-            include ./../calendar/calendar-from.pug
-    
-    div(class="number-find__guests")
-        h2 ГОСТИ
-        include ./../dropdown/dropdown.pug
-    
-    div(class="number-find__button")
-        a(href="number-page.html")
-            include ./../buttons/find-number.pug
+        div(class="number-find__datepicker")
             
+            div(class="flex")
+                h2(class="number-find__subtitle") ПРИБЫТИЕ
+                h2(class="number-find__subtitle") ВЫЕЗД
+            div(class="datepicker-from-to")
+                include ./../calendar/calendar-from.pug
+                include ./../calendar/calendar-to.pug
+                    
+                
+        
+        div(class="number-find__guests")
+            h2(class="number-find__subtitle") ГОСТИ
+            include ./../dropdown/dropdown.pug
+        
+        div(class="number-find__button")
+            a(href="number-page.html")
+                include ./../buttons/find-number.pug
+                

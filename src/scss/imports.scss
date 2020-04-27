@@ -7,11 +7,16 @@
 @import "includes/normalize.scss";
 @import "./src/scss/pages/number-page.scss";
 @import "./src/blocks/dropdown/dropdown.scss";
-@import "./../blocks/welcome-main/welcome-main.scss";
+@import "./pages/welcome.scss";
 @import "./src/scss/pages/review-page.scss";
 @import "./src/blocks/information/information.scss";
 
 @import "./src/scss/pages/register-page.scss";
 @import "./src/blocks/check-box_btn/check-box_btn.scss";
+
+@import "./src/blocks/register-block/register-block.scss";
+@import "./src/blocks/text-inputs/text-input.scss";  
+@import "./src/blocks/gender-radiobtn/gender-radiobtn.scss";
+@import "./src/blocks/swith-btn/swith-btn.scss";
 
 

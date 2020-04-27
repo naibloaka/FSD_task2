@@ -1,0 +1,35 @@
+.text-input{
+    border: 1px solid $border_faded;
+    border-radius: $form-standart;
+    height: 42px;
+    padding-left: 14px;
+    color: $black75;
+    input{
+        &::placeholder{
+            color:$black25;
+        }
+    }
+}
+.text-input__input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    
+}
+
+.secondname-input__input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+.birthday-input__input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}

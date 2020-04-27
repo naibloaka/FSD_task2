@@ -1,23 +1,27 @@
 @import "./src/scss/includes/var";
 
-.login-but{
-    height: 30px;
+.login-btn{
+    text-align: center;
+    position: relative;
+    border-radius: 70px;
+    position: relative;
+    padding: 2px;
+    background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+    height: 100%;
     width: 100%;
-    background-color: $back;
-    border: 2px solid #A7A1FF;
-    border-radius: 30px;
-
-
-    button{
-        color: #C89DFF;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: bold;
-        height: 30px;
-        width:100%;
-        border:none;
-        outline: none;
-        -webkit-background-clip: text;  
-        border-radius: 30px;
-    }
+    
+}
+.login-btn__login{
+    display: block;
+    background: $back;
+    color: #C89DFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    cursor: pointer;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
 }

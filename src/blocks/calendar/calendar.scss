@@ -1,29 +1,58 @@
 @import "./src/scss/includes/var.scss";
 
-.calendar{
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    margin-left: 2px;
-}
+
 .calendar__from,.calendar__to{
-    border: 1px solid $border_bright;
+    border: 1px solid $border_faded;
     display: flex;
     border-radius: $form-standart;
     padding-left: 14px;
-    position: relative;
-    input{
-        
-        border: none;
-        outline: none;
-        width: 93px;
-        height: 42px;
-        font-family: $regular;
-        font-size: 14px;
-        color: $black75; 
-    }
-
 }
+.calendar__input{
+    border-radius: inherit;    
+    border: none;
+    outline: none;
+    font-family: $regular;
+    font-size: 14px;
+    color: $black75;
+    width: 134px;
+    height: 42px; 
+}
+
+
+.calendar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $border_faded;
+    border-radius: $form-standart;
+    padding-left: 14px;
+    i{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+}
+.calendar__oneblock-input{
+    border: none;
+    outline: none;
+    width: 210px;
+    height: 42px;
+    font-family: $regular;
+    font-size: 14px;
+    color: $black75; 
+}
+.calendar__oneblock-arrow{
+    color: $arrow_dawn;
+    font-size: 14px;
+    position: absolute;
+    top:15px;
+    right:15px;
+}
+
+
+
+
+
 
 #datepickers-container{
     position: absolute;
@@ -115,27 +144,3 @@
 }
 
 
-.calendar__oneblock{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid $border_bright;
-    border-radius: $form-standart;
-    padding-left: 14px;
-    input{
-        border: none;
-        outline: none;
-        width: 210px;
-        height: 42px;
-        font-family: $regular;
-        font-size: 14px;
-        color: $black75; 
-    }
-}
-.calendar__oneblock-arrow{
-    color: $arrow_dawn;
-    font-size: 14px;
-    position: absolute;
-    top:15px;
-    right:15px;
-}
