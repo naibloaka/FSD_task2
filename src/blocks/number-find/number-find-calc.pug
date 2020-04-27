@@ -1,3 +1,4 @@
+include ./../buttons/btn-mixin.pug
 div(class="number-find-calc")
     div(class="number-find__wrap number-find__wrap--calc")
         div(class="price")
@@ -44,4 +45,4 @@ div(class="number-find-calc")
 
 
         div(class="number-find__button")
-            include ./../buttons/resurve-number.pug
+            +purple-with-arrow('забронировать')

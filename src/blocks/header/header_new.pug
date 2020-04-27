@@ -1,3 +1,4 @@
+include ./../buttons/btn-mixin.pug
 header
     div(class="header_new")
         div(class="header_new-logo") 
@@ -24,7 +25,7 @@ header
 
 
         div(class="login")
-            include ./../buttons/loginbut.pug
+            +white-gradient('войти')
         div(class="register")
             include ./../buttons/registerbut.pug
 

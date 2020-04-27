@@ -1,8 +1,7 @@
-
-.register-page{
+.login-page{
     display: block;
     width: 100%;
-    height: 702px;
+    height: 683px;
     background: url("/src/img/registerbg.png");
     background-repeat: no-repeat;
     background-position-y: -235px;
@@ -10,11 +9,3 @@
     background-size: 1532px auto;
     position: relative;
 }
-.register-page__register{
-    display: block;
-}
-.register-page__login{
-    display: none;
-}
-
-

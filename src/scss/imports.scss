@@ -15,8 +15,11 @@
 @import "./src/blocks/check-box_btn/check-box_btn.scss";
 
 @import "./src/blocks/register-block/register-block.scss";
-@import "./src/blocks/text-inputs/text-input.scss";  
+@import "./src/blocks/text-inputs/text-input-field.scss";  
 @import "./src/blocks/gender-radiobtn/gender-radiobtn.scss";
 @import "./src/blocks/swith-btn/swith-btn.scss";
+
+@import "./src/scss/pages/login-page";
+@import "./src/blocks/login-block/login-block.scss";
 
 

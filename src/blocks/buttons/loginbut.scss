@@ -3,13 +3,11 @@
 .login-btn{
     text-align: center;
     position: relative;
-    border-radius: 70px;
-    position: relative;
+    border-radius: 30px;
     padding: 2px;
     background: linear-gradient(to top, #8BA4F9, #BC9CFF);
-    height: 100%;
+
     width: 100%;
-    
 }
 .login-btn__login{
     display: block;
@@ -22,6 +20,6 @@
     padding-bottom: 10%;
     cursor: pointer;
     border-radius: inherit;
-    width: 100%;
     height: 100%;
+    
 }

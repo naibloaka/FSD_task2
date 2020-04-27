@@ -55,6 +55,7 @@
     justify-content: space-between;
     margin-top: 32px;
     align-items: center;
+    width: 316px;
 }
 .register-block__login-text{
     color: $black_text;
@@ -62,7 +63,10 @@
 }
 .register-block__login-btn{
     display: block;
-    width: 97px;
-    height: 40px;
-    
+    width: 94px;
+
+    .login-btn__login{
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
 }

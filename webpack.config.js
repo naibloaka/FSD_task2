@@ -97,6 +97,10 @@ module.exports = {
             template: './src/pages/register-page.pug',
             filename: 'register-page.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/login-page.pug',
+            filename: 'login-page.html'
+        }),
     ],
 
     resolve: {                                                                              // шооооок че вытворяет аж карусель заработала
