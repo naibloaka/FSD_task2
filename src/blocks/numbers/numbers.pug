@@ -1,47 +1,32 @@
+include ./../number-block/number-block-mixin.pug
+
 h1 Номера, которые мы для вас подобрали
 div(class="numbers-container")
     div(class="numbers-container__block")
-        include ./../number-block/number-block1.pug
+        +full-block(1,888,true,9,990,1,145)
     div(class="numbers-container__block")
-        include ./../number-block/number-block2.pug
+        +full-block(2,840,false,9,990,2,65)
     div(class="numbers-container__block")
-        include ./../number-block/number-block3.pug
+        +full-block(3,980,true,8,500,3,35)
     div(class="numbers-container__block")
-        include ./../number-block/number-block4.pug
+        +full-block(4,856,false,7,300,4,19)
     div(class="numbers-container__block")
-        include ./../number-block/number-block5.pug
+        +full-block(5,740,false,6,'000',5,44)
     div(class="numbers-container__block")
-        include ./../number-block/number-block6.pug
+        +full-block(6,982,false,5,800,6,56)
     div(class="numbers-container__block")
-        include ./../number-block/number-block7.pug
+        +full-block(7,678,false,5,500,7,45)
     div(class="numbers-container__block")
-        include ./../number-block/number-block8.pug
+        +full-block(8,450,false,5,300,8,39)
     div(class="numbers-container__block")
-        include ./../number-block/number-block9.pug
+        +full-block(9,350,false,5,000,9,77)
     div(class="numbers-container__block")
-        include ./../number-block/number-block10.pug
+        +full-block(10,666,false,5,000,10,25)
     div(class="numbers-container__block")
-        include ./../number-block/number-block11.pug
+        +full-block(11,444,false,5,000,11,15)
     div(class="numbers-container__block")
-        include ./../number-block/number-block12.pug
+        +full-block(12,352,false,5,000,12,55)
             
     
-div(class="numbers-paggination")
-    ol  
-        li 
-            a(class="prev disabled" href="#") <i class="fas fa-arrow-left"></i>
-        li
-            a(class="one" href="main.html")  1
-        li
-            a(class="two" href="main.html")  2
-        li
-            a(class="three" href="main.html")  3
-        li
-            a(class="dots" href="#")  <span>&hellip;</span>
-        li
-            a(class="fifteen" href="main.html")  15
-        li 
-            a(class="prev disabled" href="#") <i class="fas fa-arrow-right"></i>
-    
-    p 1 – 12 из 100+ вариантов аренды
+
                 

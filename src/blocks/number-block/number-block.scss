@@ -5,50 +5,57 @@
         height: 152px;
     } 
 }
-
+.room-wrap{
+    width: 237px;
+    height: 67px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 22px;
+}
 .price{
     display: flex;
-    margin-top: 0;
-    padding-top: 22px;
-    padding-bottom: 10px;
-    width: 243px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: baseline;
-    span{
-        color:$black_text;
-        font-family: $quicksand_bold;
-        font-size: 14px;
-        margin-left: 5px;
-    }
-    .price-num{
-        color:$black_text;
-        font-family: $quicksand_bold;
-        font-size: 19px;
-        margin-left: 4px;
-    }
+    padding-bottom: 10px;
+}
+.price-sym{
+    color:$black_text;
+    font-family: $quicksand_bold;
+    font-size: 14px;
+    flex-basis: 11.9%;
+}
+.price-num{
+    color:$black_text;
+    font-family: $quicksand_bold;
+    font-size: 19px;
+    flex-basis: 16.5%;
+}
 
-    .price-mod{
-        color:$light_pink;
-        font-family: $bold;
-        margin-left: 6px;
-        font-size: 12px;
-        margin-bottom: 0;
-    }
+.price-mod{
+    color:$light_pink;
+    font-family: $bold;
+    font-size: 12px;
+    flex-basis: 5%;
+}
+.price__price{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 
-    .price-price{
-        color: $light_grey;
-        margin-left: 32px;
-        font-size: 14px;
-        font-family: $bold;
-        line-height: 18px;
-    }
+}
+.price__price-price{
+    color: $light_grey;
+    font-size: 14px;
+    font-family: $bold;
+    line-height: 18px;
+    flex-basis: 55px;
+}
+
+.price__price-date{
+    color: $light_grey;
     
-    .price-date{
-        color: $light_grey;
-        margin-left: 4px;
-        font-size: 12px;
-    }
+    font-size: 12px;
+    line-height: 18px;
+    flex-basis: 48px;
 }
 .rating_block {
     width: 120px;
@@ -79,29 +86,31 @@
     display: flex;
     padding-top: 10px;
     border-top: 1px solid $border_faded;
-    align-items: flex-end;
-    width: 235px;
-    margin-left: auto;
-    margin-right: auto;
+
+
 }
 
-.rating_block{
-    margin-left: 3px;
-}
 
 .raiting-review{
-    color: $light_grey;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+.raiting-review-num{
+    color: $black50;
     font-family: $bold;
-    margin-left: 20px;
+    line-height: 25px;
+    margin-left: 27px;
 }
 
 .raiting-review-txt{
-    color: $light_grey;
+    color: $black50;
     font-size: 14px;
-    margin-left: 4px;
+    line-height: 25px;
+
 }
 // мленьке поправки по другим блокам
-.price-2,.price-5,.price-8,.price-9,.price-10{
+/*.price-2,.price-5,.price-8,.price-9,.price-10{
     .price-price{
         margin-left: 76px;
     }
@@ -125,5 +134,5 @@
     .raiting-review{
         margin-left:27px;
     }
-}
+}*/
 

@@ -1,0 +1,19 @@
+
+mixin pag-li()
+    .numbers-paggination
+        ol
+            li 
+                a(class="prev disabled" href="#") <i class="fas fa-arrow-left"></i>
+            - for(var i=1; i<=15; i++)
+                li
+                    a(class="" id="page" + i)= i
+                -if(i==14)
+                    li
+                        a(class="" id="page" + i) &hellip;
+            li 
+                a(class="prev disabled" href="#") <i class="fas fa-arrow-right"></i>
+
+                
+
++pag-li()
+
