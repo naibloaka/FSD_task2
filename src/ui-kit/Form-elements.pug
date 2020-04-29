@@ -1,7 +1,7 @@
 include ./ui-mixin.pug
 include ./../blocks/text-inputs/input-text-field.pug
 include ./../blocks/calendar/calender-mixin.pug
-
+include ./../blocks/like-checkbox/like-chexkbox.pug
 
 
 
@@ -23,11 +23,11 @@ body
             
             .ui-wrap__block-cont
                 +text('Dropdown','Default')
-                +text-input-border_bright('This is pretty awesome')
+                +text-input('This is pretty awesome')
             
             .ui-wrap__block-cont
                 +text('masked text field','Default')
-                +text-input-border_bright('ДД.ММ.ГГГГ')
+                +text-input('ДД.ММ.ГГГГ')
             
             .ui-wrap__block-datepicker
                 .ui-wrap__block-datepicker-el
@@ -58,4 +58,20 @@ body
             h3(class="ui-title") Radio Buttons
             .ui-wrap__block-cont-radio
                 include ./../blocks/gender-radiobtn/gender-radiobtn.pug
+            
+
+            .ui-wrap__block-toggle
+                h3(class="ui-title") Toggle
+                .ui-wrap__block-toggle-btn
+                    include ./../blocks/swith-btn/swith-btn-on.pug
+                .ui-wrap__block-toggle-btn
+                    include ./../blocks/swith-btn/swith-btn.pug
+            
+            .ui-wrap__block-like
+                h3(class="ui-title") like button
+                .ui-wrap__block-like-block
+                    +like-btn("like1",2)
+                    +like-btn("like2",12,true)
+
+
         div(class="ui-wrap__block")

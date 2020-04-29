@@ -36,12 +36,10 @@
     }
 }
 .swith__input:checked + .swith__slider {
-    border: 1px solid $border_faded;
+    border: 1px solid $purple;
 }
 
-.swith__input:focus + .swith__slider {
-    box-shadow: 0 0 1px $purple;
-}
+
 
 .swith__input:checked + .swith__slider:before {
     background: linear-gradient(to top, #8BA4F9, #BC9CFF);

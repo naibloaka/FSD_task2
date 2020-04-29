@@ -56,5 +56,23 @@
 }
 .ui-wrap__block-cont-radio{
     display: flex;
-    margin-top: 5px;
+    margin-top: 17px;
+}
+.ui-wrap__block-toggle{
+    margin-top: 41px;
+    .ui-title{
+        margin-bottom: 18px;
+    }
+}
+.ui-wrap__block-toggle-btn{
+    margin-top: 11px;
+}
+.ui-wrap__block-like{
+    margin-top: 43px;
+}
+.ui-wrap__block-like-block{
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    margin-top: 16px;
 }
