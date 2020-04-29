@@ -1,6 +1,16 @@
-mixin text-input(placeholder,classname)
+mixin text-input(placeholder)
     .text-input
-        if(name === "Email")
+        if(placeholder === "Email")
+            input(type="email" placeholder=placeholder class="text-input__input")
+        
+        else
+            input(type="text" placeholder=placeholder class="text-input__input")
+
+
+
+mixin text-input-border_bright(placeholder)
+    .text-input-border_bright
+        if(placeholder === "Email")
             input(type="email" placeholder=placeholder class="text-input__input")
         
         else

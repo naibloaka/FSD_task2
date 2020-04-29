@@ -1,0 +1,46 @@
+div(class="ui-logo")
+    img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
+
+mixin colors(i,title,text)
+    .colors-block
+        div(class="colors-block__color colors-block__color--"+i)
+        .colors-block__text
+            .colors-block__text-title=title
+            
+            .colors-block__text-text=text
+
+div(class="ui-colors")
+    +colors(1,'Dark Shade 100%','#1F2041')
+    +colors(2,'Dark Shade 75%','#1F2041')
+    +colors(3,'Dark Shade 50%','#1F2041')
+    +colors(4,'Dark Shade 25%','#1F2041')
+    +colors(5,'Dark Shade 5%','#1F2041')
+    +colors(6,'Purple','#BC9CFF')
+    +colors(7,'Green','#6FCF97')
+
+div(class="ui-Text")
+    .ui-Text__block
+        p(class="ui-Text__block-h1") H1
+        p(class="ui-Text__block-txt1") This one is the sub-section or widget title
+    
+    .ui-Text__block
+        p(class="ui-Text__block-h2") H2
+        p(class="ui-Text__block-txt2") Next one is the item title inside widgets
+
+    .ui-Text__block
+        p(class="ui-Text__block-h3") H3
+        p(class="ui-Text__block-txt3") This is a label or CTA text
+
+    .ui-Text__block
+        p(class="ui-Text__block-body") Body
+        p(class="ui-Text__block-txt4") This is the body text which is used for most of the design, like paragraphs, lists, etc.
+
+
+
+
+
+
+
+
+
+

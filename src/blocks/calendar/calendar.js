@@ -6,7 +6,7 @@ import "./../../../node_modules/air-datepicker/dist/css/datepicker.min.css"
 
 
 
-$('#calendar_from').datepicker({ 
+/*$('#calendar_from').datepicker({ 
   onSelect: function (fd, d, picker) { 
     $("#calendar_from").val(fd.split("-")[0]);
     $("#calendar_to").val(fd.split("-")[1]);
@@ -27,9 +27,27 @@ $('#calendar_from').datepicker({
   },
   
   clearButton: true,
+});*/
+
+
+$("#calendar_from").datepicker({
+  prevHtml: '<i class="fas fa-arrow-left"></i>',
+  nextHtml: '<i class="fas fa-arrow-right"></i>',
+  dateFormat: 'd M',
+  minDate: new Date(),
+  navTitles: {
+    days: 'MM yyyy'
+  },
 });
-
-
+$("#calendar_to").datepicker({
+  prevHtml: '<i class="fas fa-arrow-left"></i>',
+  nextHtml: '<i class="fas fa-arrow-right"></i>',
+  dateFormat: 'd M',
+  minDate: new Date(),
+  navTitles: {
+    days: 'MM yyyy'
+  },
+});
 
 $("#number-page__datepicker").datepicker({
   range:true,

@@ -1,0 +1,60 @@
+
+.ui-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 80.3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+    
+}
+.ui-wrap__block{
+    flex-basis: 320px; 
+}
+.ui-wrap__block--2{
+    margin-left: 71px;
+}
+.text-field{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+.ui-title{
+    @include for-h3;
+}
+.ui-comment{
+    font-size: 12px;
+    color: $black50;
+    text-transform: uppercase;
+}
+.ui-wrap__block-cont{
+    margin-top: 22px;
+}
+.ui-wrap__block-datepicker{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+.ui-wrap__block-datepicker-el{
+    width: 150px;
+}
+.ui-wrap__block-datepicker2{
+    margin-top: 42px;
+    width: 267px;
+}
+.ui-wrap__block-email{
+    margin-top: 44px;
+}
+.ui-wrap__block-email-block{
+    width: 267px;
+}
+.ui-wrap__block-cont-checkbox{
+    margin-top: 18px;
+}
+.ui-wrap__block-radio{
+    margin-top: 60px;
+}
+.ui-wrap__block-cont-radio{
+    display: flex;
+    margin-top: 5px;
+}

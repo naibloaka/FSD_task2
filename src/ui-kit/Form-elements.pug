@@ -1,0 +1,61 @@
+include ./ui-mixin.pug
+include ./../blocks/text-inputs/input-text-field.pug
+include ./../blocks/calendar/calender-mixin.pug
+
+
+
+
+include ./../pages/head.pug
+
+body
+    .ui-logo
+        img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
+
+    .ui-wrap
+        .ui-wrap__block
+            .ui-wrap__block-cont
+                +text('Text Field','Default')
+                +text-input('Email')
+
+            .ui-wrap__block-cont
+                +text('Text Field','Hover / Focus')
+                +text-input-border_bright('This is pretty awesome')
+            
+            .ui-wrap__block-cont
+                +text('Dropdown','Default')
+                +text-input-border_bright('This is pretty awesome')
+            
+            .ui-wrap__block-cont
+                +text('masked text field','Default')
+                +text-input-border_bright('ДД.ММ.ГГГГ')
+            
+            .ui-wrap__block-datepicker
+                .ui-wrap__block-datepicker-el
+                    h3(class="ui-title") date Dropdown
+                    +clendar-from()
+                .ui-wrap__block-datepicker-el
+                    h3(class="ui-title") date Dropdown
+                    +clendar-to()
+
+            .ui-wrap__block-datepicker2
+                h3(class="ui-title") filter date dropdown
+                include ./../blocks/calendar/calendar.pug
+            
+
+            .ui-wrap__block-email
+                h3(class="ui-title") subscription text field
+                .ui-wrap__block-email-block
+                    include ./../blocks/text-inputs/email-imput.pug
+
+
+        div(class="ui-wrap__block ui-wrap__block--2")
+            .ui-wrap__block-cont
+                h3(class="ui-title") Checkbox Buttons
+                .ui-wrap__block-cont-checkbox
+                include ./../blocks/check-box_btn/check-box_btn.pug
+
+            .ui-wrap__block-radio
+            h3(class="ui-title") Radio Buttons
+            .ui-wrap__block-cont-radio
+                include ./../blocks/gender-radiobtn/gender-radiobtn.pug
+        div(class="ui-wrap__block")

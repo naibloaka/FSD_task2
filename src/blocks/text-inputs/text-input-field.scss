@@ -4,9 +4,38 @@
     height: 42px;
     padding-left: 14px;
     color: $black75;
+    position: relative;
+    &:hover{
+        border: 1px solid $border_bright;
+        input{
+            &::placeholder{
+                color: $black75;
+            }
+        }
+    }
+    &:focus{
+        border: 1px solid $border_bright;
+        input{
+            &::placeholder{
+                color: $black75;
+            }
+        }
+    }
     input{
         &::placeholder{
             color:$black25;
+        }
+    }
+}
+.text-input-border_bright{                       //styles for ui-kit
+    border: 1px solid $border_bright;
+    border-radius: $form-standart;
+    height: 42px;
+    padding-left: 14px;
+    color: $black_text;
+    input{
+        &::placeholder{
+            color: $black75;
         }
     }
 }
@@ -32,4 +61,9 @@
     border: none;
     outline: none;
     border-radius: inherit;
+}
+.email-arrow{
+    position: absolute;
+    top: 13px;
+    right: 13px;
 }

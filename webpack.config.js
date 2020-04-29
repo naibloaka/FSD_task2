@@ -101,6 +101,22 @@ module.exports = {
             template: './src/pages/login-page.pug',
             filename: 'login-page.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/ui-kit/colors.pug',
+            filename: 'colors.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/ui-kit/cards.pug',
+            filename: 'cards.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/ui-kit/headers-and-footers.pug',
+            filename: 'headers-and-footers.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/ui-kit/Form-elements.pug',
+            filename: 'Form-elements.html'
+        }),
     ],
 
     resolve: {                                                                              // шооооок че вытворяет аж карусель заработала

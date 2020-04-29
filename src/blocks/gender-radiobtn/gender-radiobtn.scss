@@ -34,9 +34,17 @@
 .radio-btn__text{
     margin-left: 9px;
     color: $black50;
-    position: absolute;
-    top: 2%;
+    
 }
-.female-radio{
-    margin-left: 99px;
+.gender{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
 }
+.gender-female{
+    label{
+        display: flex;
+        align-items: flex-start;
+    }
+}
+.gender-male{position: relative;}
