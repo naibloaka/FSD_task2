@@ -1,34 +1,55 @@
-.numbers-paggination{
-    margin-top: 50px;
+.paggination{
     width: 100%;
-
     text-align: center;
-    width: 240px;
-    
-    ol{
-        display: flex;
-        li{
-            list-style-type: none;
-            a{
-                cursor: pointer;
-                flex-basis: 40px;
-                width: 40px;
-                display: block;
-                border: 0px solid black;
-                border-radius: 50%;
-                color: $light_grey;
-                line-height: 40px;
-                &:hover{
-                    color: $white_text;
-                    background: linear-gradient(to top, #8AABFE, #C79EFF);
-                }
-            }
-            a:active{
-                color: $white_text;
-                background: linear-gradient(to top, #8AABFE, #C79EFF);
-            }
-        }
-        
-        
+
+    display: flex;
+}
+.paggination__list{
+    display: flex;
+    list-style-type: none;
+}
+.paggination__list-item{
+    list-style-type: none;
+}
+.paggination__list-item{
+    cursor: pointer;
+    flex-basis: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 50%;
+    color: $light_grey;
+    line-height: 40px;
+    &:hover{
+        color: $white_text;
+        background: linear-gradient(to top, #8AABFE, #C79EFF);
     }
 }
+.paggination__list-dots{
+    cursor: pointer;
+    flex-basis: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 50%;
+    color: $light_grey;
+    line-height: 40px;
+}
+.paggination__arrow{
+    cursor: pointer;
+    
+    width: 40px;
+    display: block;
+    border-radius: 50%;
+    color: $light_grey;
+    line-height: 40px;
+    &:hover{
+        color: $white_text;
+        background: linear-gradient(to top, #66D2EA, #6FCF97);
+    }
+}
+.pagination-selected{
+    color: $white_text;
+    background: linear-gradient(to top, #8AABFE, #C79EFF);
+}
+        
+        
+    

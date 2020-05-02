@@ -1,0 +1,38 @@
+.raiting-block{
+    overflow: auto;
+    width:120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.star {
+    cursor: pointer;
+}
+.star::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('/src/blocks/star-raiting/star.svg') no-repeat;
+}
+.star_active::before, .star_active ~.star::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("/src/blocks/star-raiting/fill-star.svg") no-repeat;
+}
+.star:hover ~ .star:before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("/src/blocks/star-raiting/fill-star.svg") no-repeat;
+}
+.star:hover{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("/src/blocks/star-raiting/fill-star.svg") no-repeat;
+}

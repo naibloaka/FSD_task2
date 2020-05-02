@@ -1,0 +1,78 @@
+@import "./src/scss/includes/var";
+.filled-block__btn{
+    display: block;
+    background: linear-gradient(to top, #8BA4F9,#BC9CFF);
+    height: 44px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $white_text;
+    line-height: 43px;
+    text-align: center;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+.filled-block__arrow{
+    position: absolute;
+    right: 14px;
+    top: 3px;
+    &:hover{
+        opacity: 0.5;
+    } 
+}
+
+.login-btn__login{
+    font-family: $bold;
+    display: block;
+    cursor: pointer;
+    background: $back;
+    border-radius: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $purple;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    
+}
+.login-btn__border{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+    &:hover{
+        background: linear-gradient(to top, #C6D1FC, #DDCEFF);
+    } 
+}
+.register-but{
+    height: 34px;
+    width:100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, #8AABFE, #C79EFF);
+    text-align: center;
+    &:hover{
+        opacity: 0.5;
+    } 
+}
+.register-but__btn{
+    color: $white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    line-height: 34px;
+    border-radius: 30px;
+}
+
+    

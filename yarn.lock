@@ -676,6 +676,20 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/jquery.simplepagination@^1.4.30":
+  version "1.4.30"
+  resolved "https://registry.yarnpkg.com/@types/jquery.simplepagination/-/jquery.simplepagination-1.4.30.tgz#b387dcf6651422a76be80f39d6b596a00208074b"
+  integrity sha512-X/csQ+bWB2+rrIYd06laxTCfLlMFhKWvoKlG1TZ/2c458krvTaEhl1vhb2sEAEdnnf49ZN1RVNthwiNCBHzi8A==
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/jquery@*":
+  version "3.3.36"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.36.tgz#a868c1c244a9f7b988d8fc56a3234f22e73c57b8"
+  integrity sha512-jHL8J5y5fJ0+C9zCTkeOvX4zqRnPug3r6JhAqAYl2YyBCYHiXTbZSH0MRCpayZADed5TigPjH92dEKczUFT2TQ==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -685,6 +699,11 @@
   version "12.12.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.7.tgz#01e4ea724d9e3bd50d90c11fd5980ba317d8fa11"
   integrity sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
+
+"@types/sizzle@*":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
+  integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -5668,6 +5687,11 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+
+simple-pagination@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/simple-pagination/-/simple-pagination-1.0.0.tgz#fb34bcbd8de62c230212c8fcf44badf2cd1a7fda"
+  integrity sha1-+zS8vY3mLCMCEsj89Eut8s0af9o=
 
 slash@^1.0.0:
   version "1.0.0"

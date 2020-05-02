@@ -2,7 +2,10 @@ include ./ui-mixin.pug
 include ./../blocks/text-inputs/input-text-field.pug
 include ./../blocks/calendar/calender-mixin.pug
 include ./../blocks/like-checkbox/like-chexkbox.pug
-
+include ./../blocks/buttons/btn-mixin.pug
+include ./../blocks/star-raiting/star-raiting.pug
+include ./../blocks/range-slider/range-slider.pug
+include ./../blocks/pagination/pagination.pug
 
 
 include ./../pages/head.pug
@@ -12,7 +15,7 @@ body
         img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
 
     .ui-wrap
-        .ui-wrap__block
+        .ui-wrap__block.ui-wrap__block--1
             .ui-wrap__block-cont
                 +text('Text Field','Default')
                 +text-input('Email')
@@ -73,5 +76,42 @@ body
                     +like-btn("like1",2)
                     +like-btn("like2",12,true)
 
+            .ui-wrap__block-rate
+                h3(class="ui-title") rate button
+                .ui-wrap__block-rate-block
+                    .ui-wrap__block-rate-block-1
+                        +raiting(4)
+                    .ui-wrap__block-rate-block-1
+                        +raiting(5)
+                        
 
-        div(class="ui-wrap__block")
+
+        div(class="ui-wrap__block ui-wrap__block--3")
+            .ui-wrap__block-cont
+                .ui-wrap__block-cont-slider
+                    +range-slider('Range Slider')
+
+            .ui-wrap__block-btns
+                h3(class="ui-title") buttons
+                .ui-wrap__block-btns-blocks
+                    .ui-wrap__block-btns-blocks-btn
+                        +purple-btn('CLICK ME','#')
+                    .ui-wrap__block-btns-blocks-btn_opacity
+                        +purple-btn('CLICK ME','#')
+                .ui-wrap__block-btns-white_blocks
+                    .ui-wrap__block-btns-blocks-btn-white
+                        +white-gradient('CLICK ME','#')
+                    .ui-wrap__block-btns-blocks-btn-white.ui-wrap__block-btns-blocks-btn_opacity-white
+                        +white-gradient('CLICK ME','#')
+
+            
+            .ui-wrap__click_me
+                p(class="ui-wrap__click_me-txt ui-wrap__click_me-txt--colored") CLICK ME
+                p(class="ui-wrap__click_me-txt ui-wrap__click_me-txt--grey") CLICK ME
+
+            .ui-wrap__block-topay
+                +purple-with-arrow('перейти к оплате')
+
+            .ui-wrap__block__pagination
+                +pag-li()
+                

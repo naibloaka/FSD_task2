@@ -1,19 +1,23 @@
 
 .ui-wrap{
     display: flex;
-    justify-content: space-between;
-    width: 80.3%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90.15%;
+    margin-left: 9.85%;
     margin-top: 42px;
     
 }
 .ui-wrap__block{
-    flex-basis: 320px; 
+    
+    text-align: left;
+}
+.ui-wrap__block--1{
+    flex-basis: 321px;
 }
 .ui-wrap__block--2{
-    margin-left: 71px;
+    flex-basis: 392px;
+    margin-left: 126px;
 }
+
 .text-field{
     display: flex;
     justify-content: space-between;
@@ -75,4 +79,71 @@
     justify-content: space-between;
     width: 88px;
     margin-top: 16px;
+}
+.ui-wrap__block-rate{
+    margin-top: 43px;
+}
+.ui-wrap__block-rate-block{
+    margin-left: 3px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+.ui-wrap__block-cont-slider{
+    width: 266px;
+}
+.ui-wrap__block-btns{
+    margin-top: 44px;
+}
+.ui-wrap__block-btns-blocks{
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 17px;
+}
+.ui-wrap__block-btns-blocks-btn{
+    width: 100px;
+}
+.ui-wrap__block-btns-blocks-btn_opacity{
+    opacity: 0.5;
+    width: 100px;
+}
+.ui-wrap__block-btns-white_blocks{
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 30px;
+    .login-btn__login{
+        line-height: 39px;
+    }
+}
+.ui-wrap__block-btns-blocks-btn-white{
+    width: 100px;
+    height: 44px;
+}
+.ui-wrap__click_me{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+.ui-wrap__block-btns-blocks-btn_opacity-white{
+    .login-btn__border{ 
+        background: linear-gradient(to top, #C6D1FC, #DDCEFF);
+    }
+}
+.ui-wrap__click_me-txt{
+    font-family: $bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.ui-wrap__click_me-txt--colored{color: $purple;}
+.ui-wrap__click_me-txt--grey{color: $black50;}
+.ui-wrap__block-topay{
+    margin-top: 31px;
+    width: 318px;
+}
+.ui-wrap__block__pagination{
+    margin-top: 50px;
 }

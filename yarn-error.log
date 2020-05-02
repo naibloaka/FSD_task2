@@ -1,30 +1,30 @@
 Arguments: 
-  D:\programs\node.exe D:\programs\bin\yarn.js add provide-plugin -D
+  C:\Program Files\nodejs\node.exe D:\programs\bin\yarn.js add jquery.simplePagination.js -D
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\programs\Git\cmd;D:\programs\;D:\programs\bin\;C:\Users\Вова\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Вова\AppData\Local\Programs\Python\Python37-32\;D:\Python for windows\Scripts\;D:\Python for windows\;C:\Users\Вова\AppData\Local\Microsoft\WindowsApps;;D:\Python\PyCharm Community Edition 2019.2\bin;;D:\programs\Microsoft VS Code\bin;C:\Users\Вова\AppData\Roaming\npm;C:\Users\Вова\AppData\Local\Yarn\bin
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\programs\bin\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\Вова\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Вова\AppData\Local\Programs\Python\Python37-32\;D:\Python for windows\Scripts\;D:\Python for windows\;C:\Users\Вова\AppData\Local\Microsoft\WindowsApps;D:\Python\PyCharm Community Edition 2019.2\bin;D:\programs\Microsoft VS Code\bin;C:\Users\Вова\AppData\Local\Yarn\bin;C:\Users\Вова\AppData\Roaming\npm;C:\Users\Вова\AppData\Local\GitHubDesktop\bin;C:\Program Files\nodejs;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
 
 Yarn version: 
   1.19.1
 
 Node version: 
-  12.13.0
+  12.14.1
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/provide-plugin: Not found
+  Error: https://registry.yarnpkg.com/jquery.simplePagination.js: Not found
       at Request.params.callback [as _callback] (D:\programs\lib\cli.js:66035:18)
       at Request.self.callback (D:\programs\lib\cli.js:140564:22)
-      at Request.emit (events.js:210:5)
+      at Request.emit (events.js:223:5)
       at Request.<anonymous> (D:\programs\lib\cli.js:141536:10)
-      at Request.emit (events.js:210:5)
+      at Request.emit (events.js:223:5)
       at IncomingMessage.<anonymous> (D:\programs\lib\cli.js:141458:12)
-      at Object.onceWrapper (events.js:299:28)
-      at IncomingMessage.emit (events.js:215:7)
-      at endReadableNT (_stream_readable.js:1183:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+      at Object.onceWrapper (events.js:312:28)
+      at IncomingMessage.emit (events.js:228:7)
+      at endReadableNT (_stream_readable.js:1185:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:21)
 
 npm manifest: 
   {
@@ -34,24 +34,32 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "dev": "webpack-dev-server --open --mode development",
-      "build": "webpack --mode development"
+      "build": "webpack --mode production"
     },
     "devDependencies": {
       "@babel/core": "^7.7.2",
       "@babel/preset-env": "^7.7.1",
+      "@types/jquery.simplepagination": "^1.4.30",
+      "air-datepicker": "^2.2.3",
       "babel-loader": "^8.0.6",
       "copy-webpack-plugin": "^5.0.5",
-      "css-loader": "^3.2.0",
+      "css-loader": "^3.4.2",
       "file-loader": "^4.3.0",
       "html-webpack-plugin": "^3.2.0",
       "jquery": "^3.4.1",
       "jquery-ui": "^1.12.1",
+      "list.js": "^1.5.0",
       "mini-css-extract-plugin": "^0.8.0",
       "node-sass": "^4.13.0",
+      "owl.carousel": "^2.3.4",
+      "owl.carousel2": "^2.2.1",
+      "pagination": "^0.4.6",
+      "paginationjs": "^2.1.5",
       "path": "^0.12.7",
       "pug": "^2.0.4",
       "pug-loader": "^2.4.0",
       "sass-loader": "^8.0.0",
+      "simple-pagination": "^1.0.0",
       "style-loader": "^1.0.0",
       "webpack": "^4.41.2",
       "webpack-cli": "^3.3.10",
@@ -745,6 +753,20 @@ Lockfile:
       "@types/minimatch" "*"
       "@types/node" "*"
   
+  "@types/jquery.simplepagination@^1.4.30":
+    version "1.4.30"
+    resolved "https://registry.yarnpkg.com/@types/jquery.simplepagination/-/jquery.simplepagination-1.4.30.tgz#b387dcf6651422a76be80f39d6b596a00208074b"
+    integrity sha512-X/csQ+bWB2+rrIYd06laxTCfLlMFhKWvoKlG1TZ/2c458krvTaEhl1vhb2sEAEdnnf49ZN1RVNthwiNCBHzi8A==
+    dependencies:
+      "@types/jquery" "*"
+  
+  "@types/jquery@*":
+    version "3.3.36"
+    resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.36.tgz#a868c1c244a9f7b988d8fc56a3234f22e73c57b8"
+    integrity sha512-jHL8J5y5fJ0+C9zCTkeOvX4zqRnPug3r6JhAqAYl2YyBCYHiXTbZSH0MRCpayZADed5TigPjH92dEKczUFT2TQ==
+    dependencies:
+      "@types/sizzle" "*"
+  
   "@types/minimatch@*":
     version "3.0.3"
     resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -754,6 +776,11 @@ Lockfile:
     version "12.12.7"
     resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.7.tgz#01e4ea724d9e3bd50d90c11fd5980ba317d8fa11"
     integrity sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
+  
+  "@types/sizzle@*":
+    version "2.3.2"
+    resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
+    integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
   
   "@webassemblyjs/ast@1.8.5":
     version "1.8.5"
@@ -945,6 +972,13 @@ Lockfile:
     version "6.3.0"
     resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
     integrity sha512-/czfa8BwS88b9gWQVhc8eknunSA2DoJpJyTQkhheIf5E48u1N0R4q/YxxsAeqRrmK9TQ/uYfgLDfZo91UlANIA==
+  
+  air-datepicker@^2.2.3:
+    version "2.2.3"
+    resolved "https://registry.yarnpkg.com/air-datepicker/-/air-datepicker-2.2.3.tgz#9dbb6bc6bc8c9d9db380475091370dad82c2f787"
+    integrity sha1-nbtrxryMnZ2zgEdQkTcNrYLC94c=
+    dependencies:
+      jquery ">=2.0.0 <4.0.0"
   
   ajv-errors@^1.0.0:
     version "1.0.1"
@@ -1958,23 +1992,23 @@ Lockfile:
       postcss-value-parser "^3.3.0"
       source-list-map "^2.0.0"
   
-  css-loader@^3.2.0:
-    version "3.2.0"
-    resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-3.2.0.tgz#bb570d89c194f763627fcf1f80059c6832d009b2"
-    integrity sha512-QTF3Ud5H7DaZotgdcJjGMvyDj5F3Pn1j/sC6VBEOVp94cbwqyIBdcs/quzj4MC1BKQSrTpQznegH/5giYbhnCQ==
+  css-loader@^3.4.2:
+    version "3.4.2"
+    resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-3.4.2.tgz#d3fdb3358b43f233b78501c5ed7b1c6da6133202"
+    integrity sha512-jYq4zdZT0oS0Iykt+fqnzVLRIeiPWhka+7BqPn+oSIpWJAHak5tmB/WZrJ2a21JhCeFyNnnlroSl8c+MtVndzA==
     dependencies:
       camelcase "^5.3.1"
       cssesc "^3.0.0"
       icss-utils "^4.1.1"
       loader-utils "^1.2.3"
       normalize-path "^3.0.0"
-      postcss "^7.0.17"
+      postcss "^7.0.23"
       postcss-modules-extract-imports "^2.0.0"
       postcss-modules-local-by-default "^3.0.2"
-      postcss-modules-scope "^2.1.0"
+      postcss-modules-scope "^2.1.1"
       postcss-modules-values "^3.0.0"
-      postcss-value-parser "^4.0.0"
-      schema-utils "^2.0.0"
+      postcss-value-parser "^4.0.2"
+      schema-utils "^2.6.0"
   
   css-select@^1.1.0:
     version "1.2.0"
@@ -3600,7 +3634,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/jquery-ui/-/jquery-ui-1.12.1.tgz#bcb4045c8dd0539c134bc1488cdd3e768a7a9e51"
     integrity sha1-vLQEXI3QU5wTS8FIjN0+dop6nlE=
   
-  jquery@^3.3.1, jquery@^3.4.1:
+  jquery@>=1.8.3, "jquery@>=2.0.0 <4.0.0", jquery@^3.3.1, jquery@^3.4.1:
     version "3.4.1"
     resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
     integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -3754,6 +3788,13 @@ Lockfile:
     integrity sha512-avPEb8P8EGnwXKClwsNUgryVjllcRqtMYa49NTsbQagYuT1DcXnl1915oxWjoyGrXR6zH/Y0Zc96xWsPcoDKeA==
     dependencies:
       invert-kv "^2.0.0"
+  
+  list.js@^1.5.0:
+    version "1.5.0"
+    resolved "https://registry.yarnpkg.com/list.js/-/list.js-1.5.0.tgz#a4cbfc8281ddefc02fdb2d30c8748bfae25fbcda"
+    integrity sha1-pMv8goHd78Av2y0wyHSL+uJfvNo=
+    dependencies:
+      string-natural-compare "^2.0.2"
   
   load-json-file@^1.0.0:
     version "1.1.0"
@@ -4527,6 +4568,20 @@ Lockfile:
       os-homedir "^1.0.0"
       os-tmpdir "^1.0.0"
   
+  owl.carousel2@^2.2.1:
+    version "2.2.1"
+    resolved "https://registry.yarnpkg.com/owl.carousel2/-/owl.carousel2-2.2.1.tgz#09dc5b4ae7b9b7a3d913fe4fea4c6d6cc7957f22"
+    integrity sha1-CdxbSue5t6PZE/5P6kxtbMeVfyI=
+    dependencies:
+      jquery ">=1.8.3"
+  
+  owl.carousel@^2.3.4:
+    version "2.3.4"
+    resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+    integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
+    dependencies:
+      jquery ">=1.8.3"
+  
   p-defer@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
@@ -4572,6 +4627,16 @@ Lockfile:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
     integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+  
+  pagination@^0.4.6:
+    version "0.4.6"
+    resolved "https://registry.yarnpkg.com/pagination/-/pagination-0.4.6.tgz#d25657bd58d1143545f55ac1af2d299f134b848e"
+    integrity sha512-TnZ3l17uuC5H9Wlc9FMYuEi65JlUCSn1ZAbnLnvUGkR7RgaFknUNGQTEumhjq1Jy1ePkXSiYUFFbHH70LGb9dA==
+  
+  paginationjs@^2.1.5:
+    version "2.1.5"
+    resolved "https://registry.yarnpkg.com/paginationjs/-/paginationjs-2.1.5.tgz#a0c1d9cbba098b3c724d5658aca5b39a3dfd2ec7"
+    integrity sha512-2RJW/o8bADFk6HwuoeJzgUndWvuWaZRdumu1QAc2gdA+/ZQLRcZZ6goz7m2cx2uoy0XReF/7X4vrVTZvqLDPrw==
   
   pako@~1.0.5:
     version "1.0.10"
@@ -4803,10 +4868,10 @@ Lockfile:
       css-selector-tokenizer "^0.7.0"
       postcss "^6.0.1"
   
-  postcss-modules-scope@^2.1.0:
-    version "2.1.0"
-    resolved "https://registry.yarnpkg.com/postcss-modules-scope/-/postcss-modules-scope-2.1.0.tgz#ad3f5bf7856114f6fcab901b0502e2a2bc39d4eb"
-    integrity sha512-91Rjps0JnmtUB0cujlc8KIKCsJXWjzuxGeT/+Q2i2HXKZ7nBUeF9YQTZZTNvHVoNYj1AthsjnGLtqDUE0Op79A==
+  postcss-modules-scope@^2.1.1:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/postcss-modules-scope/-/postcss-modules-scope-2.1.1.tgz#33d4fc946602eb5e9355c4165d68a10727689dba"
+    integrity sha512-OXRUPecnHCg8b9xWvldG/jUpRIGPNRka0r4D4j0ESUU2/5IOnpsjfPPmDprM3Ih8CgZ8FXjWqaniK5v4rWt3oQ==
     dependencies:
       postcss "^7.0.6"
       postcss-selector-parser "^6.0.0"
@@ -4841,7 +4906,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
     integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
   
-  postcss-value-parser@^4.0.0:
+  postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2:
     version "4.0.2"
     resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.0.2.tgz#482282c09a42706d1fc9a069b73f44ec08391dc9"
     integrity sha512-LmeoohTpp/K4UiyQCwuGWlONxXamGzCMtFxLq4W1nZVGIQLYvMCJx3yAF9qyyuFpflABI9yVdtJAqbihOsCsJQ==
@@ -4855,10 +4920,19 @@ Lockfile:
       source-map "^0.6.1"
       supports-color "^5.4.0"
   
-  postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.5, postcss@^7.0.6:
+  postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.5, postcss@^7.0.6:
     version "7.0.21"
     resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.21.tgz#06bb07824c19c2021c5d056d5b10c35b989f7e17"
     integrity sha512-uIFtJElxJo29QC753JzhidoAhvp/e/Exezkdhfmt8AymWT6/5B7W1WmponYWkHk2eg6sONyTch0A3nkMPun3SQ==
+    dependencies:
+      chalk "^2.4.2"
+      source-map "^0.6.1"
+      supports-color "^6.1.0"
+  
+  postcss@^7.0.23:
+    version "7.0.26"
+    resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
+    integrity sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
     dependencies:
       chalk "^2.4.2"
       source-map "^0.6.1"
@@ -5526,10 +5600,18 @@ Lockfile:
       ajv-errors "^1.0.0"
       ajv-keywords "^3.1.0"
   
-  schema-utils@^2.0.0, schema-utils@^2.0.1, schema-utils@^2.1.0, schema-utils@^2.5.0:
+  schema-utils@^2.0.1, schema-utils@^2.1.0, schema-utils@^2.5.0:
     version "2.5.0"
     resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.5.0.tgz#8f254f618d402cc80257486213c8970edfd7c22f"
     integrity sha512-32ISrwW2scPXHUSusP8qMg5dLUawKkyV+/qIEV9JdXKx+rsM6mi8vZY8khg2M69Qom16rtroWXD3Ybtiws38gQ==
+    dependencies:
+      ajv "^6.10.2"
+      ajv-keywords "^3.4.1"
+  
+  schema-utils@^2.6.0:
+    version "2.6.4"
+    resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.6.4.tgz#a27efbf6e4e78689d91872ee3ccfa57d7bdd0f53"
+    integrity sha512-VNjcaUxVnEeun6B2fiiUDjXXBtD4ZSH7pdbfIu1pOFwgptDPLMo/z9jr4sUfsjFVPqDCEin/F7IYlq7/E6yDbQ==
     dependencies:
       ajv "^6.10.2"
       ajv-keywords "^3.4.1"
@@ -5682,6 +5764,11 @@ Lockfile:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
     integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+  
+  simple-pagination@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/simple-pagination/-/simple-pagination-1.0.0.tgz#fb34bcbd8de62c230212c8fcf44badf2cd1a7fda"
+    integrity sha1-+zS8vY3mLCMCEsj89Eut8s0af9o=
   
   slash@^1.0.0:
     version "1.0.0"
@@ -5925,6 +6012,11 @@ Lockfile:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
     integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
+  
+  string-natural-compare@^2.0.2:
+    version "2.0.3"
+    resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-2.0.3.tgz#9dbe1dd65490a5fe14f7a5c9bc686fc67cb9c6e4"
+    integrity sha512-4Kcl12rNjc+6EKhY8QyDVuQTAlMWwRiNbsxnVwBUKFr7dYPQuXVrtNU4sEkjF9LHY0AY6uVbB3ktbkIH4LC+BQ==
   
   string-width@^1.0.1, string-width@^1.0.2:
     version "1.0.2"

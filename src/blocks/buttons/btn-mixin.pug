@@ -1,9 +1,15 @@
 mixin purple-with-arrow(name,href)
-        .find-number
-            a(href=href)= name
-                .arrow
+        .filled-block
+            a(class="filled-block__btn" href=href)= name
+                .filled-block__arrow
                     img(src="/src/img/svg/next-arrow.svg")
 
-mixin  white-gradient(name)
-    .login-btn
-        a(class="login-btn__login" hred="#")=name
+mixin  white-gradient(name,href)
+    .login-btn__border
+        a(class="login-btn__login" hred=href)=name
+
+
+mixin purple-btn(name,href)
+    .filled-btn
+        a(class="filled-block__btn" href=href)= name
+

@@ -19,9 +19,10 @@ mixin price(number_num,mod,thousands,hundreds)
 mixin raiting(i,rew)
     div(class="raiting raiting-"+ i)
         .rating_block
-            -for(var j=5; j>=1; j--)
-                input(name="rating" value=j id="rating_"+j+i type="radio")
-                label(for="rating_"+j+i class="label_rating")
+            -for(var j=5; j>=1; j--){
+            input(name="raiting"+i value=j id="rating_"+j+i type="radio")
+            label(for="rating_"+j+i class="label_rating")
+            -}
         
         .raiting-review
             p(class="raiting-review-num")=rew 
@@ -35,3 +36,5 @@ mixin full-block(number,number_num,mod,thousands,hundreds,i,rew)
             +price(number_num,mod,thousands,hundreds)
             +raiting(i,rew)
 
+
+    

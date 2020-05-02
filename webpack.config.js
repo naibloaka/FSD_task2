@@ -1,4 +1,4 @@
-const path = require('path') // подключаемм плагин path
+const path = require('path') 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -15,14 +15,14 @@ module.exports = {
     },
     devServer: {
         contentBase: this.devServer,
-        overlay: true // показывает ошибки прямо вместе
+        overlay: true 
     },
     
-    module: {       // подключаем модули
-        rules: [{   //правила для модулей
-            test: /\.js$/,      //для всех js файлов
-            loader: 'babel-loader',     //загрузчикам становится этот чел
-            exclude: '/node_modules/'   //исключем эту шнягу чтоб не тормозить
+    module: {       
+        rules: [{   
+            test: /\.js$/,      
+            loader: 'babel-loader',     
+            exclude: '/node_modules/'   
         },{   
             test: /\.pug$/,      
             loader: 'pug-loader'         
