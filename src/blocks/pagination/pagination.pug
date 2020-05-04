@@ -1,25 +1,23 @@
 
 mixin pag-li()
-    .paggination
-        a(class="paggination__arrow" id="pagination-prev" href="#") <i class="fas fa-arrow-left"></i>
-        ol(class="paggination__list")
+    .pagination
+        a(class="pagination__arrow" id="pagination-prev" href="#") <i class="fas fa-arrow-left"></i>
+        ol(class="pagination__list")
             - for(var i=1; i<=15; i++)
                 if i == 15
                     li 
-                        a(class="paggination__list-dots" id="page" + i) ...
+                        a(class="pagination__list-dots") ...
 
                 li
-                    a(class="paggination__list-item" id="page" + i)= i
+                    a(class="pagination__list-item")= i
                 
                 if i == 1
-                    li(class="paggination__list-dots paggination__list-item--1") 
-                        a(class="paggination__list-dots" id="page" + i) ...
+                    li
+                        a(class="pagination__list-dots") ...
 
-                //-if(i==14)
-                    li(class="paggination__list-item") 
-                        a(class="" id="page" + i) &hellip;
+                
              
-        a(class="paggination__arrow" id="pagination-next" href="#") <i class="fas fa-arrow-right"></i>
+        a(class="pagination__arrow" id="pagination-next" href="#") <i class="fas fa-arrow-right"></i>
 
                 
 

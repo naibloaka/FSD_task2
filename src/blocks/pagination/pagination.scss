@@ -1,17 +1,20 @@
-.paggination{
+.pagination {
     width: 100%;
     text-align: center;
 
     display: flex;
 }
-.paggination__list{
+.pagination__list {
     display: flex;
     list-style-type: none;
 }
-.paggination__list-item{
+.pagination__list-item {
     list-style-type: none;
 }
-.paggination__list-item{
+.check {
+    color: red;
+}
+.pagination__list-item {
     cursor: pointer;
     flex-basis: 40px;
     width: 40px;
@@ -19,12 +22,12 @@
     border-radius: 50%;
     color: $light_grey;
     line-height: 40px;
-    &:hover{
+    &:hover {
         color: $white_text;
-        background: linear-gradient(to top, #8AABFE, #C79EFF);
+        background: linear-gradient(to top, #8aabfe, #c79eff);
     }
 }
-.paggination__list-dots{
+.pagination__list-dots {
     cursor: pointer;
     flex-basis: 40px;
     width: 40px;
@@ -33,23 +36,20 @@
     color: $light_grey;
     line-height: 40px;
 }
-.paggination__arrow{
+.pagination__arrow {
     cursor: pointer;
-    
+
     width: 40px;
     display: block;
     border-radius: 50%;
     color: $light_grey;
     line-height: 40px;
-    &:hover{
+    &:hover {
         color: $white_text;
-        background: linear-gradient(to top, #66D2EA, #6FCF97);
+        background: linear-gradient(to top, #66d2ea, #6fcf97);
     }
 }
-.pagination-selected{
+.pagination-selected {
     color: $white_text;
-    background: linear-gradient(to top, #8AABFE, #C79EFF);
+    background: linear-gradient(to top, #8aabfe, #c79eff);
 }
-        
-        
-    
