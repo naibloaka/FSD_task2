@@ -1,20 +1,17 @@
 .pagination {
     width: 100%;
     text-align: center;
-
     display: flex;
 }
 .pagination__list {
     display: flex;
     list-style-type: none;
 }
+
 .pagination__list-item {
-    list-style-type: none;
-}
-.check {
-    color: red;
-}
-.pagination__list-item {
+    background: none;
+    outline: none;
+    border: none;
     cursor: pointer;
     flex-basis: 40px;
     width: 40px;
@@ -28,6 +25,9 @@
     }
 }
 .pagination__list-dots {
+    background: none;
+    outline: none;
+    border: none;
     cursor: pointer;
     flex-basis: 40px;
     width: 40px;
