@@ -1,149 +1,161 @@
-
-.ui-wrap{
+.ui-wrap {
     display: flex;
     width: 90.15%;
     margin-left: 9.85%;
     margin-top: 42px;
-    
+    padding-bottom: 800px;
 }
-.ui-wrap__block{
-    
+.col {
     text-align: left;
 }
-.ui-wrap__block--1{
+.col_1 {
     flex-basis: 321px;
 }
-.ui-wrap__block--2{
+.col_2 {
     flex-basis: 392px;
     margin-left: 126px;
 }
-
-.text-field{
+//first col
+.text-field {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1px;
 }
-.ui-title{
+.ui-title {
     @include for-h3;
 }
-.ui-comment{
+.ui-comment {
     font-size: 12px;
     color: $black50;
     text-transform: uppercase;
 }
-.ui-wrap__block-cont{
+.col__block {
     margin-top: 22px;
 }
-.ui-wrap__block-datepicker{
+.col__datepicker {
     display: flex;
     justify-content: space-between;
     margin-top: 42px;
 }
-.ui-wrap__block-datepicker-el{
+.datepicker__block {
     width: 150px;
 }
-.ui-wrap__block-datepicker2{
+.col__datepicker-one-field {
     margin-top: 42px;
     width: 267px;
 }
-.ui-wrap__block-email{
+.col__email {
     margin-top: 44px;
 }
-.ui-wrap__block-email-block{
+.col__email-block {
     width: 267px;
 }
-.ui-wrap__block-cont-checkbox{
+.col__dropdown-comfort {
+    margin-top: 101px;
+    width: 265px;
+}
+
+//second col
+.block__checkbox {
     margin-top: 18px;
 }
-.ui-wrap__block-radio{
+.block__radio {
     margin-top: 60px;
 }
-.ui-wrap__block-cont-radio{
+.block__radio-container {
     display: flex;
     margin-top: 17px;
 }
-.ui-wrap__block-toggle{
+.block__toggle {
     margin-top: 41px;
-    .ui-title{
+    .ui-title {
         margin-bottom: 18px;
     }
 }
-.ui-wrap__block-toggle-btn{
+.block__toggle-container {
     margin-top: 11px;
 }
-.ui-wrap__block-like{
+.block__like {
     margin-top: 43px;
 }
-.ui-wrap__block-like-block{
+.block__like-container {
     display: flex;
     justify-content: space-between;
     width: 88px;
     margin-top: 16px;
 }
-.ui-wrap__block-rate{
+.block__rate {
     margin-top: 43px;
 }
-.ui-wrap__block-rate-block{
+.block__rate-container {
     margin-left: 3px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 260px;
 }
-.ui-wrap__block-cont-slider{
+.ui-wrap__block-cont-slider {
     width: 266px;
 }
-.ui-wrap__block-btns{
+.block__btns {
     margin-top: 44px;
 }
-.ui-wrap__block-btns-blocks{
+.btns {
     display: flex;
     justify-content: space-between;
     width: 218px;
     margin-top: 17px;
 }
-.ui-wrap__block-btns-blocks-btn{
+.btns__btn-container {
     width: 100px;
 }
-.ui-wrap__block-btns-blocks-btn_opacity{
+.btns__btn-container_opacity {
     opacity: 0.5;
     width: 100px;
 }
-.ui-wrap__block-btns-white_blocks{
+.btns-white {
     display: flex;
     justify-content: space-between;
     width: 218px;
     margin-top: 30px;
-    .login-btn__login{
+    .login-btn__login {
         line-height: 39px;
     }
 }
-.ui-wrap__block-btns-blocks-btn-white{
+.btns__btn-white-container {
     width: 100px;
     height: 44px;
 }
-.ui-wrap__click_me{
+.btns__btn-white-container_opacity {
+    .login-btn__border {
+        background: linear-gradient(to top, #c6d1fc, #ddceff);
+    }
+}
+.block__click_me {
     margin-top: 32px;
     display: flex;
     justify-content: space-between;
     width: 140px;
 }
-.ui-wrap__block-btns-blocks-btn_opacity-white{
-    .login-btn__border{ 
-        background: linear-gradient(to top, #C6D1FC, #DDCEFF);
-    }
-}
-.ui-wrap__click_me-txt{
+
+.click_me-txt {
     font-family: $bold;
     font-size: 12px;
     text-transform: uppercase;
 }
-.ui-wrap__click_me-txt--colored{color: $purple;}
-.ui-wrap__click_me-txt--grey{color: $black50;}
-.ui-wrap__block-topay{
+.click_me-txt_colored {
+    color: $purple;
+}
+.click_me-txt_grey {
+    color: $black50;
+}
+.block__topay {
     margin-top: 31px;
     width: 318px;
 }
-.ui-wrap__block__pagination{
-    margin-top: 50px;
+.block__pagination {
+    margin-top: 42px;
+}
+.block__pagination-container {
+    margin-top: 15px;
 }

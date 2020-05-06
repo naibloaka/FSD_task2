@@ -1,0 +1,28 @@
+div(class="dropdown" id="comfort-border_style")
+    label(class="dropdown__guests-calc" id="dropdown__comfort-calc")
+        input(type="" placeholder="Выберете удобства" id="drop-comfort_val" autocomplete="off")
+        i(class="fas fa-chevron-down dropdown__arrow")
+        
+    ul(class="dropdown__buttons" id ="dropdown-comfort__buttons")
+        li(class="dropdown__buttons-cell dropdown__buttons--topbtn")
+            div(class="dropdown__buttons__block")
+                h2 спальни
+                div(class="dropdown__buttons__block__calc dropdown__buttons__block__calc-adult")
+                    button(class="minus" id ="minus-bedroom") -
+                    span(class="number" id ="number-bedroom") 0
+                    button(class="plus" id="plus-bedroom") +
+        li(class="dropdown__buttons-cell")
+            div(class="dropdown__buttons__block")
+                h2 кровати
+                div(class="dropdown__buttons__block__calc dropdown__buttons__block__calc-child")
+                    button(class="minus" id ="minus-bed") -
+                    span(class="number" id ="number-bed") 0
+                    button(class="plus" id="plus-bed") +
+        li(class="dropdown__buttons-cell")
+            div(class="dropdown__buttons__block")
+                h2 ванные комнаты
+                div(class="dropdown__buttons__block__calc dropdown__buttons__block__calc-smallchild")
+                    button(class="minus" id ="minus-bathroom") -
+                    span(class="number" id ="number-bathroom") 0
+                    button(class="plus" id="plus-bathroom") +
+        

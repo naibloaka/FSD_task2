@@ -4,9 +4,9 @@ let pagination_dots = document.getElementsByClassName('pagination__list-dots'); 
 
 pagination_arrows[0].style.display = 'none';
 pagination_dots[0].style.display = 'none';
-for (var i = 4; i <= 13; i++) {
+for (var i = 3; i <= 13; i++) {
     pagination_list[i].style.display = 'none';
-}
+} //start vision
 
 const parentPagination = document.getElementsByClassName('pagination'); //container
 parentPagination[0].addEventListener('click', check_if);
@@ -56,7 +56,7 @@ function around_block() {
             [...pagination_list].forEach((element) => {
                 element.style.display = 'none';
             });
-            for (var i = count; i <= count + 3; i++) {
+            for (var i = count; i <= count + 2; i++) {
                 pagination_list[i - 1].style.display = 'block';
             }
         } //styles if selected 1

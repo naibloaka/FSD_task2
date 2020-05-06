@@ -15,103 +15,113 @@ body
         img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
 
     .ui-wrap
-        .ui-wrap__block.ui-wrap__block--1
-            .ui-wrap__block-cont
+        .col.col_1
+            .col__block
                 +text('Text Field','Default')
                 +text-input('Email')
 
-            .ui-wrap__block-cont
+            .col__block
                 +text('Text Field','Hover / Focus')
                 +text-input-border_bright('This is pretty awesome')
             
-            .ui-wrap__block-cont
+            .col__block
                 +text('Dropdown','Default')
                 +text-input('This is pretty awesome')
             
-            .ui-wrap__block-cont
+            .col__block
                 +text('masked text field','Default')
                 +text-input('ДД.ММ.ГГГГ')
             
-            .ui-wrap__block-datepicker
-                .ui-wrap__block-datepicker-el
+            .col__datepicker
+                .datepicker__block
                     h3(class="ui-title") date Dropdown
                     +clendar-from()
-                .ui-wrap__block-datepicker-el
+                .datepicker__block
                     h3(class="ui-title") date Dropdown
                     +clendar-to()
 
-            .ui-wrap__block-datepicker2
+            .col__datepicker-one-field
                 h3(class="ui-title") filter date dropdown
                 include ./../blocks/calendar/calendar.pug
             
 
-            .ui-wrap__block-email
+            .col__email
                 h3(class="ui-title") subscription text field
-                .ui-wrap__block-email-block
-                    include ./../blocks/text-inputs/email-imput.pug
+                .col__email-block
+                    include ./../blocks/text-inputs/email-input.pug
+
+            .col__dropdown-comfort
+                +text('Dropdown','Default')
+                .col__dropdown-comfort-container
+                    include ./../blocks/dropdown/dropdown-comfort.pug
 
 
-        div(class="ui-wrap__block ui-wrap__block--2")
-            .ui-wrap__block-cont
+
+
+
+        .col.col_2
+            .col__block
                 h3(class="ui-title") Checkbox Buttons
-                .ui-wrap__block-cont-checkbox
-                include ./../blocks/check-box_btn/check-box_btn.pug
+                .block__checkbox
+                    include ./../blocks/check-box_btn/check-box_btn.pug
 
-            .ui-wrap__block-radio
-            h3(class="ui-title") Radio Buttons
-            .ui-wrap__block-cont-radio
-                include ./../blocks/gender-radiobtn/gender-radiobtn.pug
+            .block__radio
+                h3(class="ui-title") Radio Buttons
+                .block__radio-container
+                    include ./../blocks/gender-radiobtn/gender-radiobtn.pug
             
 
-            .ui-wrap__block-toggle
+            .block__toggle
                 h3(class="ui-title") Toggle
-                .ui-wrap__block-toggle-btn
-                    include ./../blocks/swith-btn/swith-btn-on.pug
-                .ui-wrap__block-toggle-btn
-                    include ./../blocks/swith-btn/swith-btn.pug
+                .block__toggle-container
+                    include ./../blocks/switch-btn/switch-btn-on.pug
+                .block__toggle-container
+                    include ./../blocks/switch-btn/switch-btn.pug
             
-            .ui-wrap__block-like
+            .block__like
                 h3(class="ui-title") like button
-                .ui-wrap__block-like-block
+                .block__like-container
                     +like-btn("like1",2)
                     +like-btn("like2",12,true)
 
-            .ui-wrap__block-rate
+            .block__rate
                 h3(class="ui-title") rate button
-                .ui-wrap__block-rate-block
-                    .ui-wrap__block-rate-block-1
+                .block__rate-container
+                    .container
                         +rating(4)
-                    .ui-wrap__block-rate-block-1
+                    .container
                         +rating(5)
                         
 
 
-        div(class="ui-wrap__block ui-wrap__block--3")
-            .ui-wrap__block-cont
-                .ui-wrap__block-cont-slider
+        .col.col_3
+            .col__block
+                .block-slider__container
                     +range-slider('Range Slider')
 
-            .ui-wrap__block-btns
+            .block__btns
                 h3(class="ui-title") buttons
-                .ui-wrap__block-btns-blocks
-                    .ui-wrap__block-btns-blocks-btn
+                .btns
+                    .btns__btn-container
                         +purple-btn('CLICK ME','#')
-                    .ui-wrap__block-btns-blocks-btn_opacity
+                    .btns__btn-container_opacity
                         +purple-btn('CLICK ME','#')
-                .ui-wrap__block-btns-white_blocks
-                    .ui-wrap__block-btns-blocks-btn-white
+                .btns-white
+                    .btns__btn-white-container
                         +white-gradient('CLICK ME','#')
-                    .ui-wrap__block-btns-blocks-btn-white.ui-wrap__block-btns-blocks-btn_opacity-white
+                    .btns__btn-white-container.btns__btn-white-container_opacity
                         +white-gradient('CLICK ME','#')
 
             
-            .ui-wrap__click_me
-                p(class="ui-wrap__click_me-txt ui-wrap__click_me-txt--colored") CLICK ME
-                p(class="ui-wrap__click_me-txt ui-wrap__click_me-txt--grey") CLICK ME
+            .block__click_me
+                p(class="click_me-txt click_me-txt_colored") CLICK ME
+                p(class="click_me-txt click_me-txt_grey") CLICK ME
 
-            .ui-wrap__block-topay
+            .block__topay
                 +purple-with-arrow('перейти к оплате')
 
-            .ui-wrap__block__pagination
-                +pag-li()
+            .block__pagination
+                h3(class="ui-title") pagination
+                .block__pagination-container
+                    +pag-li()
                 

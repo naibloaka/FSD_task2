@@ -7,7 +7,6 @@
     display: flex;
     list-style-type: none;
 }
-
 .pagination__list-item {
     background: none;
     outline: none;
@@ -38,18 +37,22 @@
 }
 .pagination__arrow {
     cursor: pointer;
-
     width: 40px;
     display: block;
     border-radius: 50%;
-    color: $light_grey;
+    color: $white_text;
+    background: linear-gradient(to top, #66d2ea, #6fcf97);
     line-height: 40px;
     &:hover {
-        color: $white_text;
-        background: linear-gradient(to top, #66d2ea, #6fcf97);
+        opacity: 0.5;
     }
 }
 .pagination-selected {
     color: $white_text;
     background: linear-gradient(to top, #8aabfe, #c79eff);
+}
+.pagination-text {
+    margin-left: 5px;
+    margin-top: 12px;
+    color: $black75;
 }
