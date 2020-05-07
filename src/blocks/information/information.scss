@@ -1,33 +1,32 @@
-.information{
-    h2{
+.information {
+    /*h2{
         font-family: $bold;
         font-size: 19px;
         color: $black_text;
         letter-spacing: -0.65px;
         margin-left: -3px;
+    }*/
+}
+.information__text-block {
+    margin-left: 8px;
+    margin-top: 4px;
+    .information__subtitle {
+        font-family: $bold;
+        color: $black75;
     }
-    .information__text{
-        margin-left: 8px;
-        margin-top: 4px;
-        h3{
-            font-family: $bold;
-            color: $black75;
-            
-        }
-        p{
-            color: $light_grey; 
-            margin-top: 6px;  
-        }
+    .information__text {
+        color: $light_grey;
+        margin-top: 6px;
     }
-    img{
-        width: 48px;
-        height: 48px;
-    }
-    .information__block{
-        display: flex;
-        border-bottom: 1px solid $border_faded;
-        width: 280px;
-        padding-top: 22px;
-        padding-bottom: 18px;
-    }
+}
+.information__img {
+    width: 48px;
+    height: 48px;
+}
+.information__block {
+    display: flex;
+    border-bottom: 1px solid $border_invisible;
+    width: 280px;
+    padding-top: 22px;
+    padding-bottom: 18px;
 }

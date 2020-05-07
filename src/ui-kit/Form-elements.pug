@@ -6,6 +6,8 @@ include ./../blocks/buttons/btn-mixin.pug
 include ./../blocks/star-rating/star-rating.pug
 include ./../blocks/range-slider/range-slider.pug
 include ./../blocks/pagination/pagination.pug
+include ./../blocks/check-box_btn/extra-checkboxes.pug
+include ./../blocks/information/information.pug
 
 
 include ./../pages/head.pug
@@ -60,7 +62,20 @@ body
                 .col__dropdown-comfort-block-container
                     include ./../blocks/dropdown/dropdown-comfort-block.pug
 
+            .block__extra-check
+                +extra-checkbox(false,'expandable checkbox list', 'Завтрак',
+                 'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
+                 'Шампунь', 'Телевизор', 'Шампунь')
 
+            .block__extra-check_show
+                +extra-checkbox(true,'expandable checkbox list', 'Завтрак',
+                 'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
+                 'Шампунь', 'Телевизор', 'Шампунь')
+
+            .block__information
+                .block__information-container
+                    +information(1)
+                    +information(2)
 
 
 
@@ -129,4 +144,6 @@ body
                 h3(class="ui-title") pagination
                 .block__pagination-container
                     +pag-li()
+            
+            
                 

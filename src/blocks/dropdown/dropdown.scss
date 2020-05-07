@@ -18,11 +18,24 @@
     input {
         outline: none;
         border: none;
-        width: 304px;
+        width: calc(100% - 42px);
         height: 42px;
         color: $black75;
         cursor: pointer;
         border-radius: $form-standart;
+    }
+}
+.dropdown__guests-calc_show {
+    display: flex;
+    cursor: pointer;
+    input {
+        outline: none;
+        border: none;
+        width: calc(100% - 42px);
+        height: 42px;
+        color: $black75;
+        cursor: pointer;
+        border-radius: 0 0 5px 5px;
     }
 }
 #dropdown__buttons,
@@ -43,6 +56,7 @@
         font-size: 12px;
         text-transform: uppercase;
         margin-top: 8px;
+        margin-left: 14px;
     }
 }
 .dropdown__buttons_show {
@@ -61,6 +75,7 @@
         font-size: 12px;
         text-transform: uppercase;
         margin-top: 8px;
+        margin-left: 14px;
     }
 }
 .dropdown__buttons_topbtn {
@@ -68,7 +83,6 @@
 }
 .dropdown__buttons-cell {
     list-style-type: none;
-    padding-left: 14px;
     height: 37px;
     display: block;
 }

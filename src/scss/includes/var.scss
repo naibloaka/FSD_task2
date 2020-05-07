@@ -1,44 +1,41 @@
-@import "./../font/fonts.scss";
+@import './../font/fonts.scss';
 //fonts
 $regular: 'Conv_Montserrat-Regular', sans-serif;
 $bold: 'Conv_Montserrat-Bold', sans-serif;
 $quicksand_bold: 'Conv_Quicksand-Bold', sans-serif;
 $quicksand_regular: 'Conv_Quicksand-Regular', sans-serif;
 
-
 //colors
-$Dark-Shade100:#1F2041;
-$Dark-Shade75:#575871;
-$Dark-Shade50:#8F90A0;
-$Dark-Shade25:#C7C7CF;
-$Dark-Shade5:#F3F4F5;
-$purple:#BC9CFF;
-$green:#6FCF97;
+$Dark-Shade100: #1f2041;
+$Dark-Shade75: #575871;
+$Dark-Shade50: #8f90a0;
+$Dark-Shade25: #c7c7cf;
+$Dark-Shade5: #f3f4f5;
+$purple: #bc9cff;
+$green: #6fcf97;
 
 $back: #ffffff;
-$invisible-text:#D6D6DC;
+$invisible-text: #d6d6dc;
 
-
-$datepicker-in-range:#ECE7FF; //??
+$datepicker-in-range: #ece7ff; //??
 
 //text colors
-$purple:#BC9CFF;
-$white:#ffffff;
-$black_text:#1F2041;
-$black75:#575871;
-$black50:#8F90A0;
-$black25:#C7C7CF;
-$semy_bold_text:#565773;
-$light_pink:#C89DFF;
-$light_grey:#8F90A0;
-$white_text:#ffffff;
-
+$purple: #bc9cff;
+$white: #ffffff;
+$black_text: #1f2041;
+$black75: #575871;
+$black50: #8f90a0;
+$black25: #c7c7cf;
+$semy_bold_text: #565773;
+$light_pink: #c89dff;
+$light_grey: #8f90a0;
+$white_text: #ffffff;
 
 //forms colors
-$border_faded:#C7C7CF; //25% opacity
-$border_bright:#8F90A0;//50% opacity
-$arrow_dawn:#1F2041;
-
+$border_invisible: #e9e9ec; //10% opacity
+$border_faded: #c7c7cf; //25% opacity
+$border_bright: #8f90a0; //50% opacity
+$arrow_dawn: #1f2041;
 
 //radius
 $form-standart: 5px;

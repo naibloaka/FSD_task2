@@ -1,13 +1,13 @@
-@import "./src/scss/includes/var";
-.check-box_btn{
-    .checkbox{
+@import './src/scss/includes/var';
+.check-box_btn {
+    .checkbox {
         margin-top: 8px;
         padding-bottom: 1px;
         position: relative;
-        .checkbox-check{
-            display:none;
+        .checkbox-check {
+            display: none;
         }
-        .checkbox__fake{
+        .checkbox__fake {
             width: 18px;
             height: 18px;
             border: 1px solid $border_bright;
@@ -16,75 +16,77 @@
             background: #fff;
         }
 
-
-        .checkbox__fake::before{
-            content: "";
+        .checkbox__fake::before {
+            content: '';
             position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: block;
             width: 10px;
             height: 10px;
-            background: url("/src/img/svg/check-box.svg");
-            opacity: 0;            
+            background: url('/src/img/svg/check-box.svg');
+            opacity: 0;
         }
-        
-        .checkbox-check:checked + .checkbox__fake::before{
+
+        .checkbox-check:checked + .checkbox__fake::before {
             opacity: 1;
         }
-        .checkbox-check:checked + .checkbox__fake{
+        .checkbox-check:checked + .checkbox__fake {
             border: 1px solid $purple;
         }
-        .checkbox__text{
+        .checkbox__text {
             display: inline-block;
             position: absolute;
-            top:10%;
+            top: 10%;
             color: $black50;
             margin-left: 30px;
             width: 191px;
-            span{
+            span {
                 line-height: 17px;
             }
-            h4{
+            h4 {
                 font-family: $bold;
                 color: $black75;
                 font-size: 14px;
-                
             }
-            p{
+            p {
                 margin-top: 5px;
                 font-size: 12px;
-
             }
         }
-        
-        
     }
-    .availability-bottom{
+    .availability-bottom {
         margin-top: 43px;
-        .checkbox__text{
+        .checkbox__text {
             width: 225px;
         }
     }
-
 }
 
-.extra-check{
-    display: flex; 
+.extra-check {
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
+    width: 100%;
 }
 
-.extra-check-arrow{
-    margin-left: 29px;
+.extra-check-arrow {
 }
 
-.extra-checkboxes{
+.extra-checkboxes {
     display: none;
     list-style-type: none;
     margin-top: 12px;
-    
-    li{
+    li {
+        margin-top: 9px;
+    }
+}
+.extra-checkboxes_show {
+    display: block;
+    list-style-type: none;
+    margin-top: 12px;
+    li {
         margin-top: 9px;
     }
 }

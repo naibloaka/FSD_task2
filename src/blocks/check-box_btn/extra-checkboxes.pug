@@ -1,8 +1,38 @@
-div(class="extra-check" id="extra-check")
+mixin extra-checkbox(bool,title, ...items)
+    div(class="extra-check" id="extra-check")
+        h2(class = "settings__title")=title
+        i(class="fas fa-chevron-down extra-check-arrow")
+    if bool == true
+        ul(class="extra-checkboxes_show")
+            each item in items
+                li
+                    .check-box_btn
+                        .checkbox
+                            label()
+                                input(type="checkbox" class="checkbox-check")
+                                .checkbox__fake
+                                .checkbox__text
+                                    span=item
+    else
+        ul(class="extra-checkboxes" id="extra-checkbox-list")
+            each item in items
+                li
+                    .check-box_btn
+                        .checkbox
+                            label()
+                                input(type="checkbox" class="checkbox-check")
+                                .checkbox__fake
+                                .checkbox__text
+                                    span=item
+
+
+
+
+//-div(class="extra-check" id="extra-check")
     h2(class = "settings__title") дополнительные удобства
     i(class="fas fa-chevron-down extra-check-arrow")
 
-ul(class="extra-checkboxes" id="extra-checkbox-list")
+//-ul(class="extra-checkboxes" id="extra-checkbox-list")
     li
         div(class="check-box_btn")
             div(class="checkbox")

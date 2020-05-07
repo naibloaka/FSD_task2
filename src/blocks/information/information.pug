@@ -1,4 +1,25 @@
-div(class="information")
+mixin information(num)
+    if num == 1
+        .information__block
+            img(src="/src/img/svg/smile.svg" class="information__img")
+            .information__text-block
+                h3(class="information__subtitle") Комфорт
+                p(class="information__text") Шумопоглащающие стены
+    if num == 2
+        .information__block
+            img(src="/src/img/svg/city.svg" class="information__img")
+            .information__text-block
+                h3(class="information__subtitle") Удобство
+                p(class="information__text") Окно в каждой из спален
+    if num == 3
+        .information__block
+            img(src="/src/img/svg/fire.svg" class="information__img")
+            .information__text-block
+                h3(class="information__subtitle") Уют
+                p(class="information__text") Номер оснащён камином
+
+
+//-div(class="information")
     h2 Сведения о номере
     div(class="information__block")
         img(src="/src/img/svg/smile.svg")
