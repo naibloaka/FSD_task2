@@ -1,53 +1,53 @@
-@import "./src/scss/includes/var";
-@import "./src/scss/includes/mixins";
+@import './src/scss/includes/var';
+@import './src/scss/includes/mixins';
 //styles for number-page
 
-.main{
+.main {
     display: grid;
     grid-template-columns: 28.5% 71.5%;
 }
 
-.settings__title{
+.settings__title {
     @include for-h3;
 }
 
-.main__settings{
+.main__settings {
     margin-left: 34.4%;
     margin-top: 29px;
 }
 
-.main__settings__arrivaldate{    
+.settings__arrivaldate {
     margin-top: 2px;
 }
 
-.main__settings__guests{
+.settings__guests {
     margin-top: 23px;
 }
 
-.main__settings__price{
+.settings__price {
     margin-top: 33px;
 }
 
-.main__settings__checkbox{
+.settings__checkbox {
     margin-top: 31px;
 }
 
-.main__settings__checkbox-block{
+.settings__checkbox-block {
     margin-top: 16px;
 }
 
-.main__settings__availability{
+.settings__availability {
     margin-top: 50px;
 }
 
-.main__settings__availability-block{
+.settings__availability-block {
     margin-top: 17px;
 }
 
-.main__settings__comfort{
+.settings__comfort {
     margin-top: 63px;
 }
 
-.main__settings__extracomfort{
+.settings__extracomfort {
     margin-top: 32px;
 }

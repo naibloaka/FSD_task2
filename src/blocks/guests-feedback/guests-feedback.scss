@@ -1,76 +1,34 @@
-
-.feedback{
-    .feedback__title{
-        display: flex;
-        justify-content: space-between;
-        width: 91%;
-        h2{
-            font-family: $bold;
-            font-size: 19px;
-        }
-        span{
-            color:$black50;
-        }
-    }
-    .feedback__profile{
-        display: flex;
-        margin-top: 22px;
-        margin-bottom: 11px;
-        img{
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: 1px solid $white;
-        }
-        .feedback__name{
-            margin-top: 2px;
-            margin-left: 9px;
-            .feedback__name-name{
-                color: $black75;
-                font-family: $bold;
-            }
-            .feedback__name-days{
-                margin-top: 7px;
-                color: $black75;
-            }
-        }
-    }
-    .feedback__text{
-        display: flex;
-        margin-top: 10px;
-        margin-left: 4px;
-        .like{
-            display: flex;
-            width: 38px;
-            height: 18px;
-            border-radius: 14px;
-            border: 1px solid $black25;
-            i{
-                color: $black25;
-                font-size: 10px;
-                margin-top: 4px;
-                margin-left: 4px;
-            }
-            span{
-                font-size: 10px;
-                color: $black25;
-                margin-top: 3px;
-                margin-left: 5px;
-            }
-        }
-        .like:hover{
-            border-radius: 14px;
-            border-image: linear-gradient(#0B0E7F , #0B95DD);
-            -moz-border-image: -moz-linear-gradient(#0B0E7F , #0B95DD);
-            -webkit-border-image: -webkit-linear-gradient(#0B0E7F , #0B95DD);
-            border-image-slice: 1;
-        }
-
-        p{
-            color: $black75;
-            line-height: 23px;
-            margin-left: 14px;
-            width: 84%;
-        }
-    }
+.feedback__profile {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 11px;
+}
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid $white;
+}
+.feedback__name {
+    margin-top: 2px;
+    margin-left: 9px;
+}
+.feedback__name-name {
+    color: $black75;
+    font-family: $bold;
+}
+.feedback__name-days {
+    margin-top: 7px;
+    color: $black75;
+}
+.feedback__text {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.feedback__text-feedback {
+    color: $black75;
+    line-height: 23px;
+    margin-left: 14px;
+    width: 84%;
 }

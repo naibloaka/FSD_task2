@@ -5,32 +5,32 @@ body
     
     div(class="main")
         div(class="main__settings")
-            div(class="main__settings__arrivaldate")
+            div(class="settings__arrivaldate")
                 h3(class = "settings__title") даты пребывания в отеле
-                div(class="main__settings__arrivaldate-block")
+                div(class="settings__arrivaldate-block")
                     include ./../blocks/calendar/calendar.pug
-            div(class="main__settings__guests")
+            div(class="settings__guests")
                 h3(class = "settings__title") гости
-                div(class="main__settings__guests-block")
+                div(class="settings__guests-block")
                     include ./../blocks/dropdown/dropdown.pug
                 
-            div(class="main__settings__price")
-                div(class="main__settings__price-block")
+            div(class="settings__price")
+                div(class="settings__price-block")
                     include ./../blocks/range-slider/range-slider.pug
-            div(class="main__settings__checkbox")
+            div(class="settings__checkbox")
                 h3(class = "settings__title") Checkbox Buttons
-                div(class="main__settings__checkbox-block")
+                div(class="settings__checkbox-block")
                     include ./../blocks/check-box_btn/check-box_btn.pug
-            div(class="main__settings__availability")
+            div(class="settings__availability")
                 h3(class = "settings__title") доступность
-                div(class="main__settings__availability-block")
-                    include ./../blocks/check-box_btn/check-availability.pug
-            div(class="main__settings__comfort")
+                div(class="settings__availability-block")
+                    
+            div(class="settings__comfort")
                 h3(class = "settings__title") удобства номера
-                div(class="main__settings__comfort-block")
+                div(class="settings__comfort-block")
                     include ./../blocks/dropdown/dropdown-comfort.pug
-            div(class="main__settings__extracomfort")
-                div(class="main__settings__extracomfort-block")
+            div(class="settings__extracomfort")
+                div(class="settings__extracomfort-block")
                     include ./../blocks/check-box_btn/extra-checkboxes.pug
         
         div(class="main__numbers")

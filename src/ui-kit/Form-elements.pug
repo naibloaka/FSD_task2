@@ -1,13 +1,15 @@
 include ./ui-mixin.pug
 include ./../blocks/text-inputs/input-text-field.pug
 include ./../blocks/calendar/calender-mixin.pug
-include ./../blocks/like-checkbox/like-chexkbox.pug
+include ./../blocks/like-checkbox/like-checkbox.pug
 include ./../blocks/buttons/btn-mixin.pug
 include ./../blocks/star-rating/star-rating.pug
 include ./../blocks/range-slider/range-slider.pug
 include ./../blocks/pagination/pagination.pug
 include ./../blocks/check-box_btn/extra-checkboxes.pug
 include ./../blocks/information/information.pug
+include ./../blocks/text-rules/text-rules.pug
+include ./../blocks/guests-feedback/guests-feedback.pug
 
 
 include ./../pages/head.pug
@@ -72,10 +74,7 @@ body
                  'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
                  'Шампунь', 'Телевизор', 'Шампунь')
 
-            .block__information
-                .block__information-container
-                    +information(1)
-                    +information(2)
+            
 
 
 
@@ -116,6 +115,12 @@ body
                 +text('dropdown')
                 .block__dropdown-container_show 
                     include ./../blocks/dropdown/dropdown_show.pug
+
+            .block__rich-checkbox
+                h3(class="ui-title") rich Checkbox Buttons
+                .rich-checkbox-container
+                    include ./../blocks/check-box_btn/check-rich.pug
+
                         
 
 
@@ -154,6 +159,21 @@ body
                 +text('dropdown')
                 .block__dropdown-container_show 
                     include ./../blocks/dropdown/dropdown_show1.pug
+
+            .block__rules
+                h3(class="ui-title") bullet list
+                .block__rules-container
+                    +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
+
+    .ui-wrap
+        .block__information
+            .block__information-container
+                +information(1)
+                +information(2)
+
+        .block__review
+            +feedback(1,'Мурад Сарафанов','5 дней назад',"like2",12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+
             
             
                 

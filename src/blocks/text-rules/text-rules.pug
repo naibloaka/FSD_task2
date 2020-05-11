@@ -1,0 +1,9 @@
+mixin rules(...items)
+    .rules
+        ul(class="rules__container")
+            each item in items
+                li(class="rules__item")
+                    span(class="rules__text")=item
+
+
+

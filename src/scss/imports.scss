@@ -8,13 +8,16 @@
 @import './src/scss/pages/number-page.scss';
 @import './src/blocks/dropdown/dropdown.scss';
 @import './pages/welcome.scss';
+@import './src/blocks/buttons/btn-mixin.scss';
+
 @import './src/scss/pages/review-page.scss';
 @import './src/blocks/information/information.scss';
 @import './src/blocks/like-checkbox/like-checkbox.scss';
-@import './src/scss/pages/register-page.scss';
+@import './../blocks/text-rules/text-rules.scss';
 @import './src/blocks/check-box_btn/check-box_btn.scss';
-@import './src/blocks/buttons/btn-mixin.scss';
+@import './src/blocks/guests-feedback/guests-feedback.scss';
 
+@import './src/scss/pages/register-page.scss';
 @import './src/blocks/register-block/register-block.scss';
 @import './src/blocks/text-inputs/text-input-field.scss';
 @import './src/blocks/gender-radiobtn/gender-radiobtn.scss';
@@ -24,7 +27,7 @@
 @import './src/blocks/login-block/login-block.scss';
 @import './src/blocks/star-rating/star-rating.scss';
 
-@import './src/blocks/pagination/pagination.scss'; //DELETE
+@import './src/blocks/pagination/pagination.scss';
 
 //ui-kit styles
 @import './../ui-kit/scss/colors.scss';

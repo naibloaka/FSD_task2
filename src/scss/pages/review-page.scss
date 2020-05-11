@@ -1,168 +1,165 @@
-@import "./src/blocks/guests-feedback/guests-feedback.scss"; //стили для блока с отзывами 
+@import './src/blocks/guests-feedback/guests-feedback.scss'; //стили для блока с отзывами
 
-
-.review-wrap{
+.review-wrap {
     width: 80.5%;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-.review-img{
-    grid-area:a1;
+.review-img {
+    grid-area: a1;
     display: grid;
-    grid-template-areas: "i1 i2"
-                         "i1 i3";
-    grid-template-columns: 69% 31%;       
-    .review-img__1{
+    grid-template-areas:
+        'i1 i2'
+        'i1 i3';
+    grid-template-columns: 69% 31%;
+    .review-img__1 {
         grid-area: i1;
         display: block;
         height: 485px;
-        background-image: url("/src/img/room-inside/1.png");
+        background-image: url('/src/img/room-inside/1.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .review-img__2{
+    .review-img__2 {
         grid-area: i2;
         display: block;
         height: 243px;
-        background-image: url("/src/img/room-inside/2.png");
+        background-image: url('/src/img/room-inside/2.png');
         background-repeat: no-repeat;
         background-size: cover;
-        
     }
-    .review-img__3{
+    .review-img__3 {
         grid-area: i3;
         display: block;
         height: 242px;
-        background: url("/src/img/room-inside/3.png");
+        background: url('/src/img/room-inside/3.png');
         background-repeat: no-repeat;
         background-size: cover;
-        @media screen and (min-width: 1440px){
-            background: url("/src/img/room-inside/3-media.png");
+        @media screen and (min-width: 1440px) {
+            background: url('/src/img/room-inside/3-media.png');
             background-repeat: no-repeat;
         }
     }
 }
-.review__content{
+.review__content {
     padding-top: 72px;
     padding-bottom: 79px;
     display: grid;
     grid-template-columns: 31.5% 36.7% 33.1%;
     grid-template-rows: 304px 335px 148px;
     justify-content: space-between;
-    grid-template-areas: "info elipse number"
-                         "feedback feedback number"
-                         "rulls cancel cancel";
+    grid-template-areas:
+        'info elipse number'
+        'feedback feedback number'
+        'rulls cancel cancel';
 
-    h2{
+    h2 {
         font-family: $bold;
         font-size: 19px;
         color: $black_text;
         letter-spacing: -0.4px;
     }
 }
-.review-information{
+.review-information {
     grid-area: info;
     margin-left: 0.9%;
 }
 
-.review__ellipse{
+.review__ellipse {
     grid-area: elipse;
     position: relative;
-    
-    img{
+
+    img {
         margin-top: 22px;
     }
-    .review__ellipse__votes{
+    .review__ellipse__votes {
         position: absolute;
         top: 80px;
         left: 31px;
         text-align: center;
-        .num{
+        .num {
             font-size: 24px;
         }
-        span{
+        span {
             font-family: $bold;
             font-size: 14px;
             color: $purple;
         }
     }
-    .review__ellipse__colorstxt{
+    .review__ellipse__colorstxt {
         margin-top: 45px;
         margin-left: 31px;
-        p{
+        p {
             margin-left: 5px;
             color: $black75;
         }
-        .flex{
+        .flex {
             margin-top: 8px;
         }
-        .yellow{
+        .yellow {
             display: block;
             border-radius: 50%;
             width: 10px;
             height: 10px;
-            background: linear-gradient(to top, #FFBA9C, #FFE39C);
+            background: linear-gradient(to top, #ffba9c, #ffe39c);
             margin-top: 3px;
         }
-        .green{
+        .green {
             display: block;
             border-radius: 50%;
             width: 10px;
             height: 10px;
-            background: linear-gradient(to top, #66D2EA, #6FCF97);
+            background: linear-gradient(to top, #66d2ea, #6fcf97);
             margin-top: 3px;
         }
-        .purple{
+        .purple {
             display: block;
             border-radius: 50%;
             width: 10px;
             height: 10px;
-            background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+            background: linear-gradient(to top, #8ba4f9, #bc9cff);
             margin-top: 3px;
         }
-        .black{
+        .black {
             display: block;
             border-radius: 50%;
             width: 10px;
             height: 10px;
-            background: linear-gradient(to top, #3D4975, #909090);
+            background: linear-gradient(to top, #3d4975, #909090);
             margin-top: 3px;
         }
     }
 }
-.review__number-find{
+.review__number-find {
     grid-area: number;
 }
 
-.review__guests-reviews{
+.review__guests-reviews {
     grid-area: feedback;
-    
 }
-.review__rulls{
+.review__rulls {
     grid-area: rulls;
     margin-left: 5.5%;
-    h2{
+    h2 {
         margin-bottom: 5px;
     }
-    ul{width: 290px;}
-    li{
-        
-        span{
+    ul {
+        width: 290px;
+    }
+    li {
+        span {
             line-height: 24px;
             color: $black75;
-            
         }
     }
-    
 }
-.review__cancel{
+.review__cancel {
     grid-area: cancel;
-    h2{
+    h2 {
         margin-bottom: 17px;
     }
-    p{
+    p {
         color: $black75;
         line-height: 24px;
         width: 44%;
