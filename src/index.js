@@ -1,4 +1,3 @@
-//import './../node_modules/font-awesome/css/font-awesome.min.css';
 import './scss/main.scss';
 
 import './blocks/calendar/calendar.js';

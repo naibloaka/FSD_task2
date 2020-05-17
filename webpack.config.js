@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
-config.node = { fs: "empty" };
-
 module.exports = {
 	entry: {
 		app: "./src/index.js",
@@ -122,8 +120,6 @@ module.exports = {
 			filename: "Form-elements.html",
 		}),
 	],
-
-	//externals: ["fs"],
 
 	resolve: {
 		modules: ["node_modules"],

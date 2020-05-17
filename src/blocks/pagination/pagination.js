@@ -1,5 +1,3 @@
-import { NULL } from 'node-sass';
-
 let pagination_list = document.getElementsByClassName('pagination__list-item'); //all numbers
 let pagination_arrows = document.getElementsByClassName('pagination__arrow'); // arrows
 let pagination_dots = document.getElementsByClassName('pagination__list-dots'); //dots
