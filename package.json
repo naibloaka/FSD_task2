@@ -40,6 +40,7 @@
     "webpack-jquery-ui": "^2.0.1"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "node": "^13.1.0"
   }
 }
