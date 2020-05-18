@@ -1,8 +1,8 @@
-let pagination_list = document.getElementsByClassName('pagination__list-item'); //all numbers
-let pagination_arrows = document.getElementsByClassName('pagination__arrow'); // arrows
-let pagination_dots = document.getElementsByClassName('pagination__list-dots'); //dots
+const pagination_list = document.getElementsByClassName('pagination__list-item'); //all numbers
+const pagination_arrows = document.getElementsByClassName('pagination__arrow'); // arrows
+const pagination_dots = document.getElementsByClassName('pagination__list-dots'); //dots
 
-if (pagination_list != null) {
+if (pagination_list[0] != null) {
     pagination_arrows[0].style.display = 'none';
     pagination_dots[0].style.display = 'none';
     for (var i = 3; i <= 13; i++) {

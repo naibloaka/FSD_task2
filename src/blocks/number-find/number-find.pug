@@ -2,25 +2,24 @@ include ./../buttons/btn-mixin.pug
 include ./../calendar/calender-mixin.pug
 
 
-div(class="number-find")
-    div(class="number-find__wrap")
+.number-find
+    .number-find__wrap
         h1(class="number-find__title") Найдём номера под ваши пожелания
 
-        div(class="number-find__datepicker")
-            
-            div(class="flex")
+        .number-find__datepicker
+            .flex
                 h2(class="number-find__subtitle") ПРИБЫТИЕ
                 h2(class="number-find__subtitle") ВЫЕЗД
-            div(class="datepicker-from-to")
+            .datepicker-from-to
                 +clendar-from()
                 +clendar-to()
                     
                 
         
-        div(class="number-find__guests")
+        .number-find__guests
             h2(class="number-find__subtitle") ГОСТИ
             include ./../dropdown/dropdown.pug
         
-        div(class="number-find__button")
+        .number-find__button
             +purple-with-arrow('Подобрать номер',"number-page.html")
                 

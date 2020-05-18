@@ -1,3 +1,23 @@
 .cards {
     background: #f4f4f6;
+    position: relative;
+    height: 1350px;
+    width: 100%;
+}
+.cards__number-find {
+    width: 380px;
+    height: 374px;
+    position: absolute;
+    top: 122px;
+    left: 139px;
+}
+.cards__register-block {
+    position: absolute;
+    top: 505px;
+    left: 139px;
+}
+.cards__number-find-calc {
+    position: absolute;
+    top: 122px;
+    left: 560px;
 }

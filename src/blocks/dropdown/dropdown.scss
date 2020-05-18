@@ -44,6 +44,7 @@
     border: 1px solid $border_faded;
     border-top: none;
     border-radius: 0 0 5px 5px;
+    background: $back;
     h2 {
         font-family: $bold;
         font-size: 12px;
@@ -105,9 +106,17 @@
 .dropdown__clear-btn {
     color: $black50;
     margin-left: 14px;
+    font-size: 12px;
+    font-family: $bold;
+    border: none;
+    outline: none;
 }
 .dropdown__accept-btn {
     color: $purple;
+    font-size: 12px;
+    font-family: $bold;
+    border: none;
+    outline: none;
 }
 .block-calc {
     width: 97px;
@@ -136,4 +145,6 @@
     margin-top: 7px;
     margin-right: 5px;
     font-family: $bold;
+}
+.clear-but {
 }

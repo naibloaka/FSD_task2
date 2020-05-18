@@ -1,19 +1,19 @@
 mixin text-input(placeholder)
     .text-input
         if(placeholder === "Email")
-            input(type="email" placeholder=placeholder class="text-input__input")
+            input(type="email" placeholder=placeholder class="text-input__input" autocomplete="off")
         
         else
-            input(type="text" placeholder=placeholder class="text-input__input")
+            input(type="text" placeholder=placeholder class="text-input__input" autocomplete="off")
 
 
 
 mixin text-input-border_bright(placeholder)
     .text-input-border_bright
         if(placeholder === "Email")
-            input(type="email" placeholder=placeholder class="text-input__input")
+            input(type="email" placeholder=placeholder class="text-input__input" autocomplete="off")
         
         else
-            input(type="text" placeholder=placeholder class="text-input__input")
+            input(type="text" placeholder=placeholder class="text-input__input" autocomplete="off")
         
         

@@ -1,4 +1,4 @@
-.register-block{
+.register-block {
     display: block;
     width: 378px;
     height: 644px;
@@ -8,64 +8,65 @@
     position: absolute;
     top: 29px;
     left: 37.2%;
-    .wrap{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    .wrap {
         width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-.register-block__title{
+.register-block__title {
     color: $black_text;
     font-size: 24px;
     font-family: $bold;
     margin-top: 42px;
     letter-spacing: -0.45px;
 }
-.register-block__name{
+.register-block__name {
     margin-top: 21px;
 }
-.register-block__secondname{
+.register-block__secondname {
     margin-top: 10px;
 }
-.register-block__gender{
+.register-block__gender {
     display: flex;
     margin-top: 11px;
     position: relative;
 }
-.register-block__birthday{
+.register-block__birthday {
     margin-top: 23px;
 }
-.register-block__subtitle{
+.register-block__subtitle {
     @include for-h3;
 }
-.register-block__email{
+.register-block__email {
     margin-top: 23px;
 }
-.register-block__password{
+.register-block__password {
     margin-top: 10px;
 }
-.register-block__swith{
+.register-block__swith {
     margin-top: 10px;
 }
-.register-block__paybtn{
+.register-block__paybtn {
     margin-top: 20px;
 }
-.register-block__login{
+.register-block__login {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
     align-items: center;
     width: 321px;
 }
-.register-block__login-text{
+.register-block__login-text {
     color: $black_text;
     //line-height: 40px;
 }
-.register-block__login-btn{
+.register-block__login-btn {
     display: block;
     width: 98px;
     height: 44px;
-    .login-btn__login{
+    .login-btn__login {
         line-height: 41px;
     }
 }

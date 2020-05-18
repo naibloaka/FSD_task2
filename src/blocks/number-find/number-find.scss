@@ -1,4 +1,11 @@
-.number-find, .number-find-calc{ //styles for welcome-page 
+.number-find {
+    display: block;
+    width: 380px;
+    height: 374px;
+}
+.number-find,
+.number-find-calc {
+    //styles for welcome-page
     padding-top: 20px;
     border-radius: 5px;
     background-color: $white;
@@ -6,112 +13,111 @@
     width: 380px;
     height: 354px;
     text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.number-find__wrap{
+.number-find__wrap {
     width: 320px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 22px;
-    &--calc{margin-top: 0px;}
+    margin-top: 20px;
+    &--calc {
+        margin-top: 0px;
+    }
 }
-.number-find__title{
+.number-find__title {
     text-align: left;
     letter-spacing: 1.1px;
     line-height: 29px;
 }
-.number-find__subtitle{
+.number-find__subtitle {
     text-transform: uppercase;
     font-family: $bold;
     font-size: 12px;
     margin-bottom: 6px;
 }
-.number-find__datepicker{
-    margin-top: 24px;
-    .flex{
+.number-find__datepicker {
+    margin-top: 22px;
+    .flex {
         justify-content: space-between;
         width: 218px;
     }
 }
-.datepicker-from-to{
+.datepicker-from-to {
     display: flex;
     justify-content: space-between;
 }
-.number-find__guests{
+.number-find__guests {
     margin-top: 21px;
     text-align: left;
 }
-.number-find__button{
-    margin-top: 30px;
+.number-find__datepicker {
+    margin-top: 22px;
+}
+.number-find__button {
+    margin-top: 32px;
 }
 
-
-
-.number-find-calc{          //styles for review-page
+.number-find-calc {
+    //styles for review-page
     height: 489px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    .price{
+
+    .price {
         display: flex;
         padding-bottom: 11px;
         width: 320px;
         margin-left: auto;
         margin-right: auto;
         align-items: baseline;
-        span{
-            color:$black_text;
+        span {
+            color: $black_text;
             font-family: $quicksand_bold;
             font-size: 15px;
             margin-left: -1px;
         }
-        .price-num{
-            color:$black_text;
+        .price-num {
+            color: $black_text;
             font-family: $quicksand_bold;
             font-size: 23px;
             margin-left: 2px;
         }
-    
-        .price-mod{
-            color:$light_pink;
+
+        .price-mod {
+            color: $light_pink;
             font-family: $bold;
             margin-left: 6px;
             font-size: 12px;
             margin-bottom: 0;
         }
-    
-        .price-price{
+
+        .price-price {
             color: $light_grey;
             margin-left: 112px;
             font-size: 14px;
             font-family: $bold;
             line-height: 18px;
         }
-        
-        .price-date{
+
+        .price-date {
             color: $light_grey;
             margin-left: 4px;
             font-size: 12px;
-            
         }
     }
 }
-.number-find__datepicker{
-    margin-top: 10px;
-}
-.number-find__button{
-    margin-top: 23px;
-}
-.number-find__calc{
+
+.number-find__calc {
     margin: 20px auto 0 auto;
-    .flex{
+    .flex {
         width: 320px;
         justify-content: space-between;
         color: $black75;
         margin-top: 18px;
         text-align: left;
-        p{
+        p {
             width: 214px;
         }
     }
-    .iblock{
+    .iblock {
         display: block;
         width: 20px;
         height: 20px;
@@ -121,32 +127,32 @@
         margin-left: -55px;
         margin-top: -3px;
         text-align: center;
-        span{
-            color: $black25;                
+        span {
+            color: $black25;
             font-size: 12px;
         }
     }
-    .second{
+    .second {
         margin-left: -38px;
     }
-    .number-find__calc__result{
+    .number-find__calc__result {
         display: flex;
         justify-content: space-between;
         margin-top: 33px;
         width: 320px;
-        .result-dots{
+        .result-dots {
             display: block;
             border-bottom: 1px dotted $black25;
             height: 1px;
             flex-basis: 182px;
             margin-top: 16px;
         }
-        p{
+        p {
             font-family: $bold;
             font-size: 19px;
             flex-basis: 57px;
         }
-        .result-num{
+        .result-num {
             letter-spacing: -1.3px;
             flex-basis: 72px;
         }

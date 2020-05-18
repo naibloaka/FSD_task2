@@ -4,7 +4,7 @@ var dropdown_block = document.getElementById('border_style');
 
 if (dropdown_field != null) {
     dropdown_field.addEventListener('click', dropdown_show);
-    dropdown_field.onclick = function dropdown_show() {
+    function dropdown_show(event) {
         if (dropdown_list.style.display == 'none') {
             dropdown_list.style.display = 'block';
             dropdown_block.style.borderRadius = '5px 5px 0 0';
@@ -12,7 +12,7 @@ if (dropdown_field != null) {
             dropdown_list.style.display = 'none';
             dropdown_block.style.borderRadius = '5px';
         }
-    };
+    }
 
     //for adults
     var plus_adult = document.getElementById('plus-adult');
