@@ -1,49 +1,133 @@
-@import "./src/scss/includes/var";
+@import './src/scss/includes/var';
 
-.room{
-    .owl-carousel{
+.room {
+    background: $back;
+    .owl-carousel {
         height: 152px;
-        
-    } 
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .owl-nav {
+            .owl-prev {
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                bottom: 69px;
+                left: 8px;
+                border: none;
+                outline: none;
+                color: white;
+                z-index: 3;
+                span {
+                    font-size: 27px;
+                }
+                &:hover {
+                    background: none;
+                }
+            }
+            .owl-next {
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                bottom: 69px;
+                right: 5px;
+                border: none;
+                outline: none;
+                color: white;
+                z-index: 3;
+                span {
+                    font-size: 27px;
+                }
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            right: 13px;
+            top: 122px;
+            z-index: 3;
+            .owl-dot {
+                span {
+                    height: 6px;
+                    width: 6px;
+                    margin: 7px 2px;
+                    background: none;
+                    border: 1px solid white;
+                }
+                span:hover {
+                    background-color: white;
+                }
+                span:active {
+                    background-color: white;
+                }
+                span:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+            .owl-dot.active {
+                span {
+                    background-color: white;
+                }
+            }
+        }
+        .owl-theme [class*='owl-']:hover {
+            background: transparent;
+        }
+    }
+    .owl-carousel::before {
+        //for shadow inside
+    }
 }
-.room-wrap{
+.img-shadow {
+    box-shadow: 20px 0 0px -20px #000 inset, -20px 0 20px -20px #000 inset;
+}
+.room-wrap {
     width: 237px;
     height: 67px;
     margin-left: 20px;
     margin-right: auto;
     margin-top: 22px;
 }
-.price{
+.price {
     display: flex;
     align-items: baseline;
     padding-bottom: 10px;
 }
-.price-sym{
-    color:$black_text;
+.price-sym {
+    color: $black_text;
     font-family: $quicksand_bold;
     font-size: 14px;
     flex-basis: 11.9%;
 }
-.price-num{
-    color:$black_text;
+.price-num {
+    color: $black_text;
     font-family: $quicksand_bold;
     font-size: 19px;
     flex-basis: 16.5%;
 }
 
-.price-mod{
-    color:$light_pink;
+.price-mod {
+    color: $light_pink;
     font-family: $bold;
     font-size: 12px;
     flex-basis: 5%;
 }
-.price__price{
+.price__price {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-
 }
-.price__price-price{
+.price__price-price {
     color: $light_grey;
     font-size: 14px;
     font-family: $bold;
@@ -51,16 +135,16 @@
     flex-basis: 55px;
 }
 
-.price__price-date{
+.price__price-date {
     color: $light_grey;
-    
+
     font-size: 12px;
     line-height: 18px;
     flex-basis: 48px;
 }
 .rating_block {
     width: 120px;
-    height: 25px; 
+    height: 25px;
 }
 .rating_block input {
     display: none;
@@ -71,44 +155,37 @@
     display: block;
     width: 24px;
     height: 24px;
-    background: url("/src/img/svg/star.svg") no-repeat 50% 0;
+    background: url('/src/img/svg/star.svg') no-repeat 50% 0;
     cursor: pointer;
 }
 
 /*Пишем правила смены положения background-а*/
 .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
 .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
-.rating_block input:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
-{
-    background: url("/src/img/svg/fill-star.svg") no-repeat 50% 0;
+.rating_block input:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/ {
+    background: url('/src/img/svg/fill-star.svg') no-repeat 50% 0;
 }
 
-.raiting{
+.raiting {
     display: flex;
     padding-top: 10px;
     border-top: 1px solid $border_faded;
-
-
 }
 
-
-.raiting-review{
+.raiting-review {
     display: flex;
     justify-content: space-between;
     width: 110px;
 }
-.raiting-review-num{
+.raiting-review-num {
     color: $black50;
     font-family: $bold;
     line-height: 25px;
     margin-left: 27px;
 }
 
-.raiting-review-txt{
+.raiting-review-txt {
     color: $black50;
     font-size: 14px;
     line-height: 25px;
-
 }
-
-

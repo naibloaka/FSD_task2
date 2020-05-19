@@ -1,26 +1,29 @@
 include ./../buttons/btn-mixin.pug
-div(class="number-find-calc")
-    div(class="number-find__wrap number-find__wrap--calc")
-        div(class="price")
-            span №
-            p(class="price-num") 888
-            p(class="price-mod") ЛЮКС
-            P(class="price-price") 9&nbsp;990&#8381; 
-            p(class="price-date") в сутки
+include ./../number-block/number-block-mixin.pug
+include ./../calendar/calender-mixin.pug
 
-        div(class="number-find__datepicker")
-            div(class="flex")
-                    h3(class="number-find__subtitle") ПРИБЫТИЕ
-                    h3(class="number-find__subtitle") ВЫЕЗД
-            div(class="datepicker-from-to")
-                include ./../calendar/calendar-from.pug
-                include ./../calendar/calendar-to.pug
+
+div(class="number-find-calc")
+    div(class="number-find__wrap")
+        .number-find-calc__price
+            +price(888,true,9,990)
+            
+
+        .number-find-calc__datepicker
+            .flex
+                h3(class="number-find__subtitle") ПРИБЫТИЕ
+                h3(class="number-find__subtitle") ВЫЕЗД
+            .number-find__datepicker-block
+                .datepicker-block__from
+                    +clendar-from()
+                .datepicker-block__to
+                    +clendar-to()
         
-        div(class="number-find__guests")
+        .number-find-calc__guests
             h3(class="number-find__subtitle") ГОСТИ
             include ./../dropdown/dropdown.pug
 
-        div(class="number-find__calc")
+        .number-find-calc__text
             div(class="flex")
                 p 9 990₽ х 4 суток
                 span 39 960₽

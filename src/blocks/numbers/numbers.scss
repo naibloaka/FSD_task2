@@ -1,17 +1,16 @@
-@import "./src/scss/includes/var";
+@import './src/scss/includes/var';
 
-
-.main__numbers{
-    h1{
+.main__numbers {
+    h1 {
         margin-top: 31px;
         margin-left: 61px;
         font-family: $quicksand_bold;
-        font-size:24px;
+        font-size: 24px;
         letter-spacing: 0.7px;
     }
 }
 
-.numbers-container{
+.numbers-container {
     width: 81.7%;
     margin-left: 6%;
     margin-right: auto;
@@ -20,86 +19,7 @@
     grid-template-columns: 270px 270px 270px;
     justify-content: space-between;
     position: relative;
-    
-    .numbers-container__block{
-        width:270px;
-        height: 257px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    .numbers-container__block {
         margin-bottom: 22px;
-        .owl-carousel::before{ //for shadow inside           
-            content:'';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index:2;
-        }
-        
-        .owl-nav{
-            .owl-prev{
-                height: 20px;
-                width: 20px;
-                position: absolute;
-                bottom: 69px;
-                left: 8px;
-                border:none;
-                outline: none;
-                color: white;
-                z-index:3;
-                span{
-                    font-size: 27px;
-                }
-            }
-            .owl-next{
-                height: 20px;
-                width: 20px;
-                position: absolute;
-                bottom: 69px;
-                right: 5px;
-                border:none;
-                outline: none;
-                color: white;
-                z-index:3;
-                span{
-                    font-size: 27px;
-                }
-            }
-        }
-        .owl-dots{
-            position: absolute;
-            right: 13px;
-            top: 122px;
-            z-index:3;
-            .owl-dot{
-                span{
-                    height: 6px;
-                    width: 6px;
-                    margin: 7px 2px;
-                    background:none;
-                    border: 1px solid white;
-                }
-                span:hover{
-                    background-color: white;
-                }
-                span:active{
-                    background-color: white;
-                }
-                span:focus{
-                    outline: none;
-                    border: none;
-                }
-            }
-            .owl-dot.active{
-                span{
-                    background-color: white;
-                }
-            }
-        }
-        .owl-theme [class*=owl-]:hover{
-            background: transparent;
-        }
     }
 }
-
-
