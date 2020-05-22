@@ -2,9 +2,12 @@
 
 .room {
     background: $back;
+    width: 270px;
+    height: 258px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 46px 8px rgba(0, 0, 0, 0.16);
     .owl-carousel {
         height: 152px;
-
         &::before {
             content: '';
             position: absolute;
@@ -89,13 +92,41 @@
     }
 }
 .img-shadow {
-    box-shadow: 20px 0 0px -20px #000 inset, -20px 0 20px -20px #000 inset;
+    position: relative;
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 42px;
+        height: 152px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+        opacity: 0.5;
+        z-index: 999;
+        border-radius: 5px 0 0 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 42px;
+        height: 152px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+        opacity: 0.5;
+        z-index: 999;
+        border-radius: 0 5px 0 0;
+    }
 }
 .room-wrap {
-    width: 237px;
+    width: 231px;
     height: 67px;
     margin-left: 20px;
-    margin-right: auto;
     margin-top: 22px;
 }
 .price {
@@ -132,44 +163,14 @@
     font-size: 14px;
     font-family: $bold;
     line-height: 18px;
-    flex-basis: 55px;
+    flex-basis: 53px;
 }
 
 .price__price-date {
     color: $light_grey;
-
     font-size: 12px;
     line-height: 18px;
-    flex-basis: 48px;
-}
-.rating_block {
-    width: 120px;
-    height: 25px;
-}
-.rating_block input {
-    display: none;
-}
-
-.label_rating {
-    float: right;
-    display: block;
-    width: 24px;
-    height: 24px;
-    background: url('/src/img/svg/star.svg') no-repeat 50% 0;
-    cursor: pointer;
-}
-
-/*Пишем правила смены положения background-а*/
-.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
-.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
-.rating_block input:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/ {
-    background: url('/src/img/svg/fill-star.svg') no-repeat 50% 0;
-}
-
-.raiting {
-    display: flex;
-    padding-top: 10px;
-    border-top: 1px solid $border_faded;
+    flex-basis: 45px;
 }
 
 .raiting-review {
@@ -188,4 +189,10 @@
     color: $black50;
     font-size: 14px;
     line-height: 25px;
+}
+.room__rating {
+    border-top: 1px solid $border_invisible;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
 }

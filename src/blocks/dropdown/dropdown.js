@@ -34,7 +34,7 @@ if (dropdown_field != null) {
         if (num_adult.innerHTML > 0) {
             var count = num_adult.innerHTML;
             count--;
-            num.innerHTML = count;
+            num_adult.innerHTML = count;
         }
     };
 

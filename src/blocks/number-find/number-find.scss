@@ -3,9 +3,9 @@
     width: 380px;
     height: 374px;
 }
+//styles for welcome-page
 .number-find,
 .number-find-calc {
-    //styles for welcome-page
     padding-top: 20px;
     border-radius: 5px;
     background-color: $white;
@@ -13,7 +13,7 @@
     width: 380px;
     height: 354px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: $block_shadow;
 }
 .number-find__wrap {
     width: 320px;
@@ -54,11 +54,11 @@
     margin-top: 22px;
 }
 .number-find__button {
-    margin-top: 32px;
+    margin-top: 33px;
 }
 
+//styles for review-page
 .number-find-calc {
-    //styles for review-page
     height: 489px;
 }
 .number-find__datepicker-block {
@@ -66,7 +66,17 @@
     justify-content: space-between;
 }
 .number-find-calc__price {
-    margin-top: 26px;
+    margin-top: 22px;
+    .price__price-price {
+        flex-basis: 58px;
+    }
+    .price-sym {
+        flex-basis: 9.9%;
+    }
+    .price-num {
+        flex-basis: 20.5%;
+        font-size: 23px;
+    }
 }
 .number-find-calc__datepicker {
     margin-top: 13px;
@@ -80,7 +90,22 @@
     text-align: left;
 }
 .number-find-calc__text {
-    .iblock {
+    margin-top: 21px;
+    text-align: left;
+}
+.calc-text__block {
+    display: flex;
+    justify-content: space-between;
+    width: 319px;
+    margin-top: 17px;
+}
+.text2 {
+    position: relative;
+    &::after {
+        content: 'i';
+        line-height: 22px;
+        color: $black25;
+        font-size: 12px;
         display: block;
         width: 20px;
         height: 20px;
@@ -90,34 +115,58 @@
         margin-left: -55px;
         margin-top: -3px;
         text-align: center;
-        span {
-            color: $black25;
-            font-size: 12px;
-        }
+        position: absolute;
+        left: 275px;
+        top: 0;
     }
-    .second {
-        margin-left: -38px;
+}
+.text3 {
+    width: 200px;
+    line-height: 19px;
+    position: relative;
+    &::after {
+        content: 'i';
+        line-height: 22px;
+        color: $black25;
+        font-size: 12px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-left: -55px;
+        margin-top: -3px;
+        text-align: center;
+        position: absolute;
+        left: 275px;
+        top: 4px;
     }
-    .number-find__calc__result {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 33px;
-        width: 320px;
-        .result-dots {
-            display: block;
-            border-bottom: 1px dotted $black25;
-            height: 1px;
-            flex-basis: 182px;
-            margin-top: 16px;
-        }
-        p {
-            font-family: $bold;
-            font-size: 19px;
-            flex-basis: 57px;
-        }
-        .result-num {
-            letter-spacing: -1.3px;
-            flex-basis: 72px;
-        }
-    }
+}
+.number-find-calc__result {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+    width: 320px;
+}
+.result-dots {
+    display: block;
+    border-bottom: 1px dotted $black25;
+    height: 1px;
+    flex-basis: 182px;
+    margin-top: 16px;
+}
+.result-txt {
+    font-family: $bold;
+    font-size: 19px;
+    flex-basis: 57px;
+}
+.result-num {
+    letter-spacing: -1.3px;
+    flex-basis: 72px;
+    font-family: $bold;
+    font-size: 19px;
+}
+.number-find-calc__button {
+    margin-top: 21px;
 }

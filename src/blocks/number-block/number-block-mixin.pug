@@ -1,32 +1,21 @@
+include ./../star-rating/star-rating.pug
 mixin image(number)
     div(class="owl-carousel owl-theme")
         -for(var i=0; i<4; i++)
             .img-shadow 
                 img(src="/src/img/rums/rum" + number + ".png")
+                
 
 
 mixin price(number_num,mod,thousands,hundreds)
     .price
-        span(class="price-sym") №
+        span(class="price-sym") №&nbsp;
         p(class="price-num")= number_num
         if(mod==true)
-            p(class="price-mod") ЛЮКС
+            p(class="price-mod") 	&nbsp;ЛЮКС
         .price__price
             P(class="price__price-price")= thousands+" "+hundreds+"₽"
             p(class="price__price-date") в сутки
-
-
-mixin raiting(i,rew)
-    div(class="raiting raiting-"+ i)
-        .rating_block
-            -for(var j=5; j>=1; j--){
-            input(name="raiting"+i value=j id="rating_"+j+i type="radio")
-            label(for="rating_"+j+i class="label_rating")
-            -}
-        
-        .raiting-review
-            p(class="raiting-review-num")=rew 
-            p(class="raiting-review-txt") Отзывов 
 
 
 mixin full-block(number,number_num,mod,thousands,hundreds,i,rew)
@@ -34,7 +23,11 @@ mixin full-block(number,number_num,mod,thousands,hundreds,i,rew)
         +image(number)
         .room-wrap
             +price(number_num,mod,thousands,hundreds)
-            +raiting(i,rew)
+            .room__rating
+                +rating(i)
+                .raiting-review
+                    p(class="raiting-review-num")=rew 
+                    p(class="raiting-review-txt") 	&nbsp;Отзывов    
 
 
     

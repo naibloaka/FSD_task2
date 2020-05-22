@@ -1,90 +1,86 @@
-@import "./src/scss/includes/var.scss";
+@import './src/scss/includes/var.scss';
 
-
-.calendar__from,.calendar__to{
+//form styles
+.calendar__from,
+.calendar__to {
+    transition: transform 1s;
     border: 1px solid $border_faded;
     display: flex;
     border-radius: $form-standart;
     padding-left: 14px;
 }
-.calendar__input{
-    border-radius: inherit;    
+.calendar__input {
+    border-radius: inherit;
     border: none;
     outline: none;
     font-family: $regular;
     font-size: 14px;
     color: $black75;
     width: 134px;
-    height: 42px; 
+    height: 42px;
 }
-
-
-.calendar{
+.calendar {
     position: relative;
     display: flex;
     justify-content: space-between;
     border: 1px solid $border_faded;
     border-radius: $form-standart;
     padding-left: 14px;
-    i{
+    i {
         position: absolute;
         right: 15px;
         top: 15px;
     }
 }
-.calendar__oneblock-input{
+.calendar__oneblock-input {
     border: none;
     outline: none;
     width: 210px;
     height: 42px;
     font-family: $regular;
     font-size: 14px;
-    color: $black75; 
+    color: $black75;
 }
 
-
-
-
-
-
-
-#datepickers-container{
+#datepickers-container {
     position: absolute;
     left: -15px;
     top: 0px;
-    .datepicker--content{
+    .datepicker--content {
         padding: 0;
     }
-    .datepicker{
+    .datepicker {
         width: 280px;
         padding-left: 19px;
         padding-right: 19px;
         border: 1px solid $border_bright;
         position: absolute;
-        left:-50px;
+        left: -50px;
     }
-    .datepicker--nav{
+    .datepicker--nav {
         height: 55px;
-        .datepicker--nav-title{
+        .datepicker--nav-title {
             font-family: $bold;
             font-size: 19px;
             color: $black_text;
             letter-spacing: 0.7px;
-            i{
+            i {
                 font-family: $bold;
                 font-size: 19px;
                 color: $black_text;
             }
         }
     }
-    .datepicker--day-name{  //styles for week days
+    .datepicker--day-name {
+        //styles for week days
         color: $purple;
         font-family: $bold;
         font-size: 12px;
         height: 40px;
         width: 40px;
     }
-    .datepicker--cell-day{ //styles for dates
+    .datepicker--cell-day {
+        //styles for dates
         font-family: $regular;
         font-size: 12px;
         color: $light_grey;
@@ -92,49 +88,209 @@
         height: 40px;
         width: 40px;
     }
-    .datepicker--cell-day:hover{
+    .datepicker--cell-day:hover {
         border-radius: 50%;
         //background: linear-gradient(to top, #67D3EA,#6FCF99);
-        background: linear-gradient(to top, #8CA4FA,#BB9CFF);
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
         color: $white;
     }
-    .datepicker--cell.-current-{
+    .datepicker--cell.-current- {
         border-radius: 50%;
-        background: linear-gradient(to top, #67D3EA,#6FCF99);
+        background: linear-gradient(to top, #67d3ea, #6fcf99);
         color: $white;
     }
-    
+
     .datepicker--cell.-selected- {
         border-radius: 50%;
-        background: linear-gradient(to top, #8CA4FA,#BB9CFF);
-        color: $white; 
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
     }
-    .datepicker--cell.-range-to-::after{
+    .datepicker--cell.-range-to-::after {
         content: '';
         width: 50%;
-        position:absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          z-index: -1;
-          background: linear-gradient(to top, #8CA4FA,#BB9CFF);
-          opacity: 0.25;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        opacity: 0.25;
     }
-    .datepicker--cell.-range-from-::before{
+    .datepicker--cell.-range-from-::before {
         content: '';
         width: 50%;
-        position:absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          z-index: -1;
-          background: linear-gradient(to top, #8CA4FA,#BB9CFF);
-          opacity: 0.25;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        opacity: 0.25;
     }
-    .-in-range-{
+    .-in-range- {
         background-color: $datepicker-in-range;
     }
-    
 }
+//datepicker styles
 
+.cards__date-picker {
+    .datepicker--content {
+        padding: 0;
+    }
+    .datepicker {
+        width: 280px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid $border_bright;
+        position: absolute;
+        left: -50px;
+    }
+    .datepicker--nav {
+        height: 55px;
+        padding: 4px 12px;
+        justify-content: space-between;
+        .datepicker--nav-title {
+            font-family: $bold;
+            font-size: 19px;
+            color: $black_text;
+            letter-spacing: 0.7px;
+            i {
+                font-family: $bold;
+                font-size: 19px;
+                color: $black_text;
+            }
+        }
+    }
+    .datepicker--nav-action {
+        width: 0;
+        .fas {
+            font-size: 18px;
+            color: $purple;
+        }
+    }
+    .datepicker--day-name {
+        //styles for week days
+        color: $purple;
+        font-family: $bold;
+        font-size: 12px;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--days-names {
+        margin: 8px 0 0px;
+    }
+    .datepicker--cell-day {
+        //styles for dates
+        font-family: $regular;
+        font-size: 12px;
+        color: $light_grey;
+        outline: none;
+        height: 40px;
+        width: 40px;
+    }
+    .datepicker--cell-day:hover {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+        border: none;
+    }
+    .datepicker--cell.-current- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #67d3ea, #6fcf99);
+        color: $white;
+    }
 
+    .datepicker--cell.-selected- {
+        border: none;
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+    }
+    .datepicker--cell.-range-to- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+        border: none;
+    }
+    .datepicker--cell.-range-to- {
+        &::before {
+            content: '';
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: -0.5px;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(to top, #8ca4fa, #bb9cff);
+            opacity: 0.25;
+        }
+    }
+
+    .datepicker--cell.-range-from- + .-in-range- {
+        &::after {
+            content: '';
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: -50%;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(to top, #8ca4fa, #bb9cff);
+            opacity: 0.25;
+        }
+    }
+
+    .datepicker--cell.-range-from- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+        border: none;
+    }
+    .datepicker--cell.-range-from-.-selected- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+        border: none;
+    }
+    .datepicker--cell.-range-to-.-selected- {
+        border-radius: 50%;
+        background: linear-gradient(to top, #8ca4fa, #bb9cff);
+        color: $white;
+        border: none;
+    }
+
+    .datepicker--cell.-in-range- {
+        background-color: $datepicker-in-range;
+        color: $black50;
+    }
+    .-in-range-.datepicker--cell-day.-other-month-,
+    .-in-range-.datepicker--cell-year.-other-decade- {
+        background-color: $datepicker-in-range;
+    }
+    .datepicker--buttons {
+        border-top: none;
+        padding: 12px 0 11px 0;
+        justify-content: space-between;
+
+        .clear {
+            font-family: $bold;
+            font-size: 12px;
+            color: $black50;
+            text-transform: uppercase;
+            flex: none;
+            &:hover {
+                background: none;
+            }
+        }
+        .apply {
+            font-family: $bold;
+            font-size: 12px;
+            color: $purple;
+            text-transform: uppercase;
+            flex: none;
+            &:hover {
+                background: none;
+            }
+        }
+    }
+}

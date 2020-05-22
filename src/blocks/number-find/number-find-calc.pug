@@ -24,28 +24,24 @@ div(class="number-find-calc")
             include ./../dropdown/dropdown.pug
 
         .number-find-calc__text
-            div(class="flex")
-                p 9 990₽ х 4 суток
+            .calc-text__block
+                p(class="text1") 9 990₽ х 4 суток
                 span 39 960₽
 
-            div(class="flex")
-                p(class="after") Сбор за услуги: скидка 2 179₽
-                div(class="iblock first")
-                    span i
+            .calc-text__block
+                p(class="text2") Сбор за услуги: скидка 2 179₽
                 span 0₽
 
-            div(class="flex")
-                p(class="after") Сбор за дополнительные услуги
-                div(class="iblock second")
-                    span i
+            .calc-text__block
+                p(class="text3") Сбор за дополнительные услуги
                 span 300₽
             
-            div(class="number-find__calc__result")
-                p Итого
+            .number-find-calc__result
+                p(class="result-txt") Итого
                 div(class="result-dots")
                 p(class="result-num") 38 081₽
 
 
 
-        div(class="number-find__button")
+        div(class="number-find-calc__button")
             +purple-with-arrow('забронировать')

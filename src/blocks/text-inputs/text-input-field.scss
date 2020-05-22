@@ -1,68 +1,69 @@
-.text-input{
+.text-input {
     border: 1px solid $border_faded;
     border-radius: $form-standart;
     height: 42px;
-    padding-left: 14px;
+
     color: $black75;
     position: relative;
-    &:hover{
+    &:hover {
         border: 1px solid $border_bright;
-        input{
-            &::placeholder{
+        input {
+            &::placeholder {
                 color: $black75;
             }
         }
     }
-    &:focus{
+    &:focus {
         border: 1px solid $border_bright;
-        input{
-            &::placeholder{
+        input {
+            &::placeholder {
                 color: $black75;
             }
         }
     }
-    input{
-        &::placeholder{
-            color:$black25;
+    input {
+        &::placeholder {
+            color: $black25;
+            padding-left: 14px;
         }
     }
 }
-.text-input-border_bright{                       //styles for ui-kit
+.text-input-border_bright {
+    //styles for ui-kit
     border: 1px solid $border_bright;
     border-radius: $form-standart;
     height: 42px;
     padding-left: 14px;
     color: $black_text;
-    input{
-        &::placeholder{
+    input {
+        &::placeholder {
             color: $black75;
         }
     }
 }
-.text-input__input{
+.text-input__input {
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: inherit;
-    
 }
 
-.secondname-input__input{
+.secondname-input__input {
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: inherit;
 }
-.birthday-input__input{
+.birthday-input__input {
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: inherit;
 }
-.email-arrow{
+.email-arrow {
     position: absolute;
     top: 13px;
     right: 13px;
