@@ -2,17 +2,19 @@ const dropdown_field = document.getElementById('dropdown__guests-calc'); // labe
 const dropdown_list = document.getElementById('dropdown__buttons'); // invisible list
 const dropdown_block = document.getElementById('border_style');
 
+function dropdown_show() {
+  if (dropdown_list.style.display === 'none') {
+    dropdown_list.style.display = 'block';
+    dropdown_block.style.borderRadius = '5px 5px 0 0';
+  } else {
+    dropdown_list.style.display = 'none';
+    dropdown_block.style.borderRadius = '5px';
+  }
+}
+
 if (dropdown_field != null) {
   dropdown_field.addEventListener('click', dropdown_show);
-  function dropdown_show(event) {
-    if (dropdown_list.style.display == 'none') {
-      dropdown_list.style.display = 'block';
-      dropdown_block.style.borderRadius = '5px 5px 0 0';
-    } else {
-      dropdown_list.style.display = 'none';
-      dropdown_block.style.borderRadius = '5px';
-    }
-  }
+
 
   // for adults
   const plus_adult = document.getElementById('plus-adult');
@@ -27,7 +29,7 @@ if (dropdown_field != null) {
     num_adult.innerHTML = count;
   };
   minus_adult.onclick = function () {
-    if (num_adult.innerHTML == 1) {
+    if (num_adult.innerHTML === 1) {
       minus_adult.style.color = '#C7C7C';
       minus_adult.style.border = '1px solid #C7C7CF';
     }
@@ -51,7 +53,7 @@ if (dropdown_field != null) {
     num_child.innerHTML = count;
   };
   minus_child.onclick = function () {
-    if (num_child.innerHTML == 1) {
+    if (num_child.innerHTML === 1) {
       minus_child.style.color = '#C7C7C';
       minus_child.style.border = '1px solid #C7C7CF';
     }
@@ -75,7 +77,7 @@ if (dropdown_field != null) {
     num_baby.innerHTML = count;
   };
   minus_baby.onclick = function () {
-    if (num_baby.innerHTML == 1) {
+    if (num_baby.innerHTML === 1) {
       minus_baby.style.color = '#C7C7C';
       minus_baby.style.border = '1px solid #C7C7CF';
     }
@@ -106,7 +108,6 @@ if (dropdown_field != null) {
 
   clear_btn.onclick = function () {
     document.getElementById('drop_val').value = null;
-    gusts = null;
     num_adult.innerHTML = 0;
     num_child.innerHTML = 0;
     num_baby.innerHTML = 0;
@@ -134,7 +135,7 @@ const num_bathroom = document.getElementById('number-bathroom');
 
 if (dropdown__comfort != null) {
   dropdown__comfort.onclick = function () {
-    if (dropdown__comfort_list.style.display == 'none') {
+    if (dropdown__comfort_list.style.display === 'none') {
       dropdown__comfort_list.style.display = 'block';
       dropdown__comfort_block.style.borderRadius = '5px 5px 0 0';
     } else {
@@ -143,10 +144,10 @@ if (dropdown__comfort != null) {
     }
 
     let bedroom;
-    if (Number(num_bedroom.innerHTML) == 0) {
+    if (Number(num_bedroom.innerHTML) === 0) {
       bedroom = '';
     }
-    if (Number(num_bedroom.innerHTML) == 1) {
+    if (Number(num_bedroom.innerHTML) === 1) {
       bedroom = ' спаленя, ';
     }
     if (Number(num_bedroom.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5) {
@@ -157,10 +158,10 @@ if (dropdown__comfort != null) {
     }
 
     let bed;
-    if (Number(num_bed.innerHTML) == 0) {
+    if (Number(num_bed.innerHTML) === 0) {
       bed = '';
     }
-    if (Number(num_bed.innerHTML) == 1) {
+    if (Number(num_bed.innerHTML) === 1) {
       bed = ' кровать, ';
     }
     if (Number(num_bed.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5) {
@@ -171,10 +172,10 @@ if (dropdown__comfort != null) {
     }
 
     let bathroom;
-    if (Number(num_bathroom.innerHTML) == 0) {
+    if (Number(num_bathroom.innerHTML) === 0) {
       bathroom = '';
     }
-    if (Number(num_bathroom.innerHTML) == 1) {
+    if (Number(num_bathroom.innerHTML) === 1) {
       bathroom = ' ванная комната';
     }
     if (Number(num_bathroom.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5) {
@@ -207,7 +208,7 @@ if (dropdown__comfort != null) {
     num_bedroom.innerHTML = count;
   };
   minus_bedroom.onclick = function () {
-    if (num_bedroom.innerHTML == 1) {
+    if (num_bedroom.innerHTML === 1) {
       minus_bedroom.style.color = '#C7C7C';
       minus_bedroom.style.border = '1px solid #C7C7CF';
     }
@@ -228,7 +229,7 @@ if (dropdown__comfort != null) {
   };
 
   minus_bed.onclick = function () {
-    if (num_bed.innerHTML == 1) {
+    if (num_bed.innerHTML === 1) {
       minus_bed.style.color = '#C7C7C';
       minus_bed.style.border = '1px solid #C7C7CF';
     }
@@ -248,7 +249,7 @@ if (dropdown__comfort != null) {
     num_bathroom.innerHTML = count;
   };
   minus_bathroom.onclick = function () {
-    if (num_bathroom.innerHTML == 1) {
+    if (num_bathroom.innerHTML === 1) {
       minus_bathroom.style.color = '#C7C7C';
       minus_bathroom.style.border = '1px solid #C7C7CF';
     }
