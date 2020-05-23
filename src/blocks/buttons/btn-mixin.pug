@@ -1,15 +1,18 @@
 mixin purple-with-arrow(name,href)
-        .filled-block
-            a(class="filled-block__btn" href=href)= name
-                .filled-block__arrow
-                    img(src="/src/img/svg/next-arrow.svg")
+    .filled-block
+        a(class="filled-block__btn" href=href)= name
+            .filled-block__arrow
+                img(src="/src/img/svg/next-arrow.svg")
 
 mixin  white-gradient(name,href)
     .login-btn__border
-        a(class="login-btn__login" hred=href)=name
-
+        a(class="login-btn__login" href=href)=name
 
 mixin purple-btn(name,href)
     .filled-btn
         a(class="filled-block__btn" href=href)= name
+
+mixin register-btn(name,href)
+    .register-but
+        a(href=href class="register-but__btn")=name
 

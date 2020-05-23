@@ -1,7 +1,7 @@
-@import "./src/scss/includes/var";
-.filled-block__btn{
+@import './src/scss/includes/var';
+.filled-block__btn {
     display: block;
-    background: linear-gradient(to top, #8BA4F9,#BC9CFF);
+    background: linear-gradient(to top, #8ba4f9, #bc9cff);
     height: 44px;
     width: 100%;
     border-radius: 30px;
@@ -13,20 +13,20 @@
     color: $white_text;
     line-height: 43px;
     text-align: center;
-    &:hover{
+    &:hover {
         opacity: 0.5;
     }
 }
-.filled-block__arrow{
+.filled-block__arrow {
     position: absolute;
     right: 14px;
     top: 3px;
-    &:hover{
+    &:hover {
         opacity: 0.5;
-    } 
+    }
 }
 
-.login-btn__login{
+.login-btn__login {
     font-family: $bold;
     display: block;
     cursor: pointer;
@@ -42,29 +42,31 @@
     top: 2px;
     right: 2px;
     bottom: 2px;
-    
 }
-.login-btn__border{
+.login-btn__border {
     position: relative;
     height: 100%;
     width: 100%;
     border-radius: 30px;
-    background: linear-gradient(to top, #8BA4F9, #BC9CFF);
-    &:hover{
-        background: linear-gradient(to top, #C6D1FC, #DDCEFF);
-    } 
+    background: linear-gradient(to top, #8ba4f9, #bc9cff);
+    font-family: $bold;
+    &:hover {
+        background: linear-gradient(to top, #c6d1fc, #ddceff);
+    }
 }
-.register-but{
+.register-but {
     height: 34px;
-    width:100%;
+    width: 100%;
     border-radius: 30px;
-    background: linear-gradient(to top, #8AABFE, #C79EFF);
+    background: linear-gradient(to top, #8aabfe, #c79eff);
+    text-transform: uppercase;
     text-align: center;
-    &:hover{
+    font-family: $bold;
+    &:hover {
         opacity: 0.5;
-    } 
+    }
 }
-.register-but__btn{
+.register-but__btn {
     color: $white;
     text-transform: uppercase;
     font-size: 12px;
@@ -74,5 +76,3 @@
     line-height: 34px;
     border-radius: 30px;
 }
-
-    

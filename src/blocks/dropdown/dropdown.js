@@ -148,7 +148,7 @@ if (dropdown__comfort != null) {
       bedroom = '';
     }
     if (Number(num_bedroom.innerHTML) === 1) {
-      bedroom = ' спаленя, ';
+      bedroom = ' спальня, ';
     }
     if (Number(num_bedroom.innerHTML) >= 2 && Number(num_bed.innerHTML) < 5) {
       bedroom = ' спалени, ';

@@ -1,10 +1,12 @@
-@import './src/blocks/numbers/numbers.scss';
-@import './src/blocks/footer/footer_alt.scss';
-@import './src/blocks/footer/footer_def.scss';
-@import './src/blocks/header/header_def.scss';
-@import './src/blocks/header/header_new.scss';
 @import 'includes/var.scss';
 @import 'includes/normalize.scss';
+
+@import './src/blocks/numbers/numbers.scss';
+@import './src/blocks/header/header.scss';
+@import './src/blocks/footer/footer.scss';
+/*@import './src/blocks/footer/footer_alt.scss';
+@import './src/blocks/footer/footer_def.scss';
+*/
 
 @import './src/pages/number-page/number-page.scss'; //page styles
 @import './src/blocks/dropdown/dropdown.scss';

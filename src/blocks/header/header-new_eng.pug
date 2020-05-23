@@ -1,0 +1,26 @@
+include ./../buttons/btn-mixin.pug
+header
+    .header
+        .header__logo
+            img(src="img/logo.svg")
+        .header__navigation
+            ul(class="navigation-block")
+                li
+                    a(class="navigation-block__elem") Home
+                li
+                    a(class="navigation-block__elem") About Us
+                li
+                    label(class="navigation-block__arrow")
+                            a(class="navigation-block__elem") Services
+                            i(class="fas fa-chevron-down")
+                li
+                    a(class="navigation-block__elem") Careers
+                li
+                    a(class="navigation-block__elem") News
+                li
+                    a(class="navigation-block__elem") Documentation
+                
+        .header__login
+            +white-gradient("LOGIN","login-page.html")
+        .header__register
+            +register-btn("REGISTER","register-page.html")

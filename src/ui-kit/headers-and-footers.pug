@@ -1,8 +1,20 @@
 include ./../pages/head.pug
 
 body
-    .heders-and-footers
+    .headers-and-footers
         .ui-logo
             img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
+
+        .headers-and-footers__block1
+            include ./../blocks/header/header-new_eng.pug
+
+        .headers-and-footers__block2
+            include ./../blocks/header/header-user_eng.pug
+
+        .headers-and-footers__block3
+            include ./../blocks/footer/footer-def_eng.pug
+        .headers-and-footers__block4
+            include ./../blocks/footer/footer-alt_eng.pug
+
 
         
