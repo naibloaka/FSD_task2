@@ -1,7 +1,7 @@
-include head.pug
+include ./../head.pug
 
 body
-    include ./../blocks/header/header_new.pug
+    include ./../../blocks/header/header_new.pug
     
 
     div(class="review-img")
@@ -13,7 +13,7 @@ body
     div(class="review-wrap")
         div(class="review__content")
             div(class="review-information")
-                include ./../blocks/information/information.pug
+                include ./../../blocks/information/information.pug
 
             div(class="review__ellipse")
                 h2(class="review__ellipse__title") Впечатления от номера
@@ -40,10 +40,10 @@ body
             
 
             div(class="review__number-find")
-                include ./../blocks/number-find/number-find-calc.pug
+                include ./../../blocks/number-find/number-find-calc.pug
 
             div(class="review__guests-reviews")
-                include ./../blocks/guests-feedback/guests-feedback.pug
+                include ./../../blocks/guests-feedback/guests-feedback.pug
 
             
             div(class="review__cancel")
@@ -51,4 +51,4 @@ body
                 p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 
-    include ./../blocks/footer/footer_def.pug
+    include ./../../blocks/footer/footer_def.pug

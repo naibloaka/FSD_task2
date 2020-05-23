@@ -5,26 +5,28 @@
 @import './src/blocks/header/header_new.scss';
 @import 'includes/var.scss';
 @import 'includes/normalize.scss';
-@import './src/scss/pages/number-page.scss';
+
+@import './src/pages/number-page/number-page.scss'; //page styles
 @import './src/blocks/dropdown/dropdown.scss';
-@import './pages/welcome.scss';
+
+@import './src/pages/welcome-page/welcome-page.scss'; //page styles
 @import './src/blocks/buttons/btn-mixin.scss';
 @import './src/blocks/number-find/number-find.scss';
 
-@import './src/scss/pages/review-page.scss';
+@import './src/pages/review-page/review-page.scss'; //page styles
 @import './src/blocks/information/information.scss';
 @import './src/blocks/like-checkbox/like-checkbox.scss';
 @import './../blocks/text-rules/text-rules.scss';
 @import './src/blocks/check-box_btn/check-box_btn.scss';
 @import './src/blocks/guests-feedback/guests-feedback.scss';
 
-@import './src/scss/pages/register-page.scss';
+@import './src/pages/register-page/register-page.scss'; //page styles
 @import './src/blocks/register-block/register-block.scss';
 @import './src/blocks/text-inputs/text-input-field.scss';
 @import './src/blocks/gender-radiobtn/gender-radiobtn.scss';
 @import './src/blocks/switch-btn/switch-btn.scss';
 
-@import './src/scss/pages/login-page';
+@import './src/pages/login-page/login-page'; //page styles
 @import './src/blocks/login-block/login-block.scss';
 @import './src/blocks/star-rating/star-rating.scss';
 
@@ -34,3 +36,4 @@
 @import './../ui-kit/scss/colors.scss';
 @import './src/ui-kit/scss/Form-elements.scss';
 @import './src/ui-kit/scss/cards.scss';
+@import './src/ui-kit/scss/headers-and-footers.scss';

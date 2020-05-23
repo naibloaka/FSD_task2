@@ -1,0 +1,13 @@
+include ./../head.pug
+
+body
+    include ./../../blocks/header/header_new.pug
+    
+    div(class="register-page")
+        dic(class="register-page__register")
+            include ./../../blocks/register-block/register-block.pug
+        
+        div(class="register-page__login")
+            include ./../../blocks/login-block/login-block.pug
+
+    include ./../../blocks/footer/footer_def.pug

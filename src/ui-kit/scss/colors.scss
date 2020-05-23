@@ -1,115 +1,109 @@
-.ui-logo{
+.ui-logo {
     margin-left: 2.1%;
-    margin-top: 29px;
+    padding-top: 29px;
 }
-.ui-colors{
+.ui-colors {
     position: absolute;
     top: 125px;
     left: 11.3%;
 }
-.colors-block{
+.colors-block {
     display: flex;
     margin-top: 20px;
 }
-.colors-block__color{
+.colors-block__color {
     display: block;
     width: 70px;
     height: 70px;
     border-radius: 5px;
-    
 }
-.colors-block__color--1{
+.colors-block__color--1 {
     background-color: $Dark-Shade100;
 }
-.colors-block__color--2{
+.colors-block__color--2 {
     background-color: $Dark-Shade75;
 }
-.colors-block__color--3{
+.colors-block__color--3 {
     background-color: $Dark-Shade50;
 }
-.colors-block__color--4{
+.colors-block__color--4 {
     background-color: $Dark-Shade25;
 }
-.colors-block__color--5{
+.colors-block__color--5 {
     background-color: $Dark-Shade5;
 }
-.colors-block__color--6{
+.colors-block__color--6 {
     background-color: $purple;
 }
-.colors-block__color--7{
+.colors-block__color--7 {
     background-color: $green;
 }
 
-.colors-block__text{
+.colors-block__text {
     margin-left: 40px;
     line-height: 30px;
     margin-top: 4px;
 }
-.colors-block__text-title{
+.colors-block__text-title {
     font-family: $quicksand_bold;
     font-size: 19px;
-    
 }
-.colors-block__text-text{
+.colors-block__text-text {
     font-family: $quicksand_regular;
     font-size: 19px;
 }
 
-.ui-Text{
+.ui-Text {
     position: absolute;
     top: 146px;
     left: 63.6%;
 }
-.ui-Text__block{
+.ui-Text__block {
     display: flex;
     margin-bottom: 51px;
 }
-.ui-Text__block-h1{
+.ui-Text__block-h1 {
     font-size: 24px;
-    color:$Dark-Shade25;
-
+    color: $Dark-Shade25;
 }
-.ui-Text__block-txt1{
+.ui-Text__block-txt1 {
     font-family: $quicksand_bold;
     font-size: 24px;
-    color:$Dark-Shade100;
+    color: $Dark-Shade100;
     width: 340px;
     margin-left: 30px;
     line-height: 30px;
 }
-.ui-Text__block-h2{
+.ui-Text__block-h2 {
     font-size: 19px;
-    color:$Dark-Shade25;
+    color: $Dark-Shade25;
     margin-left: 2px;
 }
-.ui-Text__block-txt2{
+.ui-Text__block-txt2 {
     font-family: $quicksand_bold;
     font-size: 19px;
     margin-left: 30px;
     line-height: 23px;
     width: 300px;
 }
-.ui-Text__block-h3{
+.ui-Text__block-h3 {
     font-size: 12px;
-    color:$Dark-Shade25;
+    color: $Dark-Shade25;
     margin-left: 11px;
 }
-.ui-Text__block-txt3{
+.ui-Text__block-txt3 {
     font-family: $bold;
     font-size: 12px;
     margin-left: 30px;
     text-transform: uppercase;
-
 }
-.ui-Text__block-body{
-    color:$Dark-Shade25;
+.ui-Text__block-body {
+    color: $Dark-Shade25;
     margin-left: -10px;
-
 }
-.ui-Text__block-txt4{
+.ui-Text__block-txt4 {
     margin-left: 31px;
     color: $Dark-Shade75;
     width: 303px;
     line-height: 21px;
-
 }
