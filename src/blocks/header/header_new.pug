@@ -1,30 +1,26 @@
 include ./../buttons/btn-mixin.pug
 header
-    div(class="header_new")
-        div(class="header_new-logo") 
-            img(src="/src/img/logo.svg")
-            
-            
-        ul(class="header_new-menu")
-            li 
-                a(href="") О нас
-
-            li(class="headernew-menu__Arrow")
-                a(href="") Услуги
-                i(class="fas fa-chevron-down")
-
-            li 
-                a(href="") Вакансии
-
-            li 
-                a(href="") Новости
-
-            li(class="headernew-menu__Arrow")
-                a(href="") Соглашения
-                i(class="fas fa-chevron-down")
-
-
-        div(class="login")
-            +white-gradient('войти')
-
-
+    .header
+        .header__logo
+            img(src="img/logo.svg")
+        .header__navigation
+            ul(class="navigation-block")
+                li
+                    a(class="navigation-block__elem") О нас
+                li
+                    label(class="navigation-block__arrow")
+                            a(class="navigation-block__elem") Услуги
+                            i(class="fas fa-chevron-down")
+                li
+                    a(class="navigation-block__elem") Вакансии
+                li
+                    a(class="navigation-block__elem") Новости
+                li
+                    label(class="navigation-block__arrow")
+                            a(class="navigation-block__elem") Соглашения
+                            i(class="fas fa-chevron-down")
+                
+        .header__login
+            +white-gradient("войти","login-page.html")
+        .header__register
+            +register-btn("зарегистрироваться","register-page.html")

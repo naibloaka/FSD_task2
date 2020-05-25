@@ -2,11 +2,13 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   entry: {
-    app: './src/index.js',
+    app: './index.js',
   },
   output: {
     filename: '[name].js',
@@ -79,44 +81,45 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/pages/number-page/number-page.pug',
+      template: './pages/number-page/number-page.pug',
       filename: 'number-page.html',
     }),
     new CopyWebpackPlugin([
-      { from: './src/fonts', to: './fonts' },
-      { from: './src/img', to: './img' },
+      { from: './fonts', to: './fonts' },
+      { from: './img', to: './img' },
     ]),
     new HtmlWebpackPlugin({
-      template: './src/pages/welcome-page/welcome-page.pug',
+      template: './pages/welcome-page/welcome-page.pug',
       filename: 'welcome.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/review-page/review-page.pug',
+      template: './pages/review-page/review-page.pug',
       filename: 'review-page.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/register-page/register-page.pug',
+      template: './pages/register-page/register-page.pug',
       filename: 'register-page.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/login-page/login-page.pug',
+      template: './pages/login-page/login-page.pug',
       filename: 'login-page.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/ui-kit/colors.pug',
+      template: './ui-kit/colors.pug',
       filename: 'colors.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/ui-kit/cards.pug',
+      template: './ui-kit/cards.pug',
       filename: 'cards.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/ui-kit/headers-and-footers.pug',
+      template: './ui-kit/headers-and-footers.pug',
       filename: 'headers-and-footers.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/ui-kit/Form-elements.pug',
+      template: './ui-kit/Form-elements.pug',
       filename: 'Form-elements.html',
     }),
   ],
@@ -125,6 +128,7 @@ module.exports = {
     modules: ['node_modules'],
     alias: {
       'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js',
+      // images: path.resolve(__dirname, 'dist/img/'),
     },
   },
 };
