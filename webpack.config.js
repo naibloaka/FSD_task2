@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -19,6 +19,12 @@ module.exports = {
     contentBase: this.devServer,
     overlay: true,
   },
+
+  /*optimization: { // libraries
+    splitChunks: {
+      chunks: 'all',
+    },
+  },*/
 
   module: {
     rules: [
@@ -73,6 +79,7 @@ module.exports = {
   },
 
   plugins: [
+
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
@@ -81,7 +88,7 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    new CleanWebpackPlugin(),
+
     new HtmlWebpackPlugin({
       template: './pages/number-page/number-page.pug',
       filename: 'number-page.html',
@@ -122,6 +129,7 @@ module.exports = {
       template: './ui-kit/Form-elements.pug',
       filename: 'Form-elements.html',
     }),
+    // new CleanWebpackPlugin(),
   ],
 
   resolve: {
