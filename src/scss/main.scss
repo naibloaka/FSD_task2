@@ -1,31 +1,31 @@
-@import "imports.scss";
+@import '~normalize.css';
+@import 'imports.scss';
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: $regular;
     font-size: 14px;
 }
 
-body{
+body {
     background-color: $back;
 }
 
-
-
-a{
+a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-family: $quicksand_bold;
     font-size: 24px;
     letter-spacing: 1.4px;
 }
 
-.flex{
+.flex {
     display: flex;
 }
-.fa-chevron-down{  //arrow in form collor change
+.fa-chevron-down {
+    //arrow in form collor change
     color: $black50;
 }
