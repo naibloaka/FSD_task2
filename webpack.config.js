@@ -8,7 +8,7 @@ const webpack = require('webpack');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    app: './index.js',
+    app: ['@babel/polyfill', './index.js'],
   },
   output: {
     filename: '[name].js',
@@ -16,21 +16,33 @@ module.exports = {
     publicPath: '/dist',
   },
   devServer: {
+    port: 5500,
     contentBase: this.devServer,
     overlay: true,
   },
-
-  /*optimization: { // libraries
+  resolve: {
+    extensions: ['.js'],
+    alias: {
+      '@blocks': path.resolve(__dirname, 'src/blocks'), // easy path
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+  /* optimization: { // libraries
     splitChunks: {
       chunks: 'all',
     },
-  },*/
+  }, */
 
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
         exclude: '/node_modules/',
       },
       {
@@ -57,6 +69,25 @@ module.exports = {
         ],
       },
       {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          }, {
+            loader: 'less-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
@@ -75,7 +106,24 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.xml$/,
+        use: [{
+          loader: 'xml-loader',
+        }],
+      },
+      {
+        test: /\.csv$/,
+        use: [{
+          loader: 'csv-loader',
+        }],
+      },
     ],
+  },
+  optimization: { // libraries
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 
   plugins: [
@@ -132,11 +180,11 @@ module.exports = {
     // new CleanWebpackPlugin(),
   ],
 
-  resolve: {
+  /* resolve: {
     modules: ['node_modules'],
     alias: {
       'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js',
       // images: path.resolve(__dirname, 'dist/img/'),
     },
-  },
+  }, */
 };
