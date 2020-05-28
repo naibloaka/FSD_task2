@@ -15,27 +15,38 @@ module.exports = {
   externals: {
     paths: PATHS,
   },
-  // context: path.resolve(__dirname, 'src'),
+
   entry: {
     app: ['@babel/polyfill', PATHS.src],
   },
+
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     publicPath: '/',
   },
+
   resolve: {
     extensions: ['.js'],
     alias: {
       '@blocks': path.resolve(__dirname, 'src/blocks'), // easy path
       '@': path.resolve(__dirname, 'src'),
+      '~': path.resolve(__dirname, 'node_modules'),
     },
   },
-  /* optimization: { // libraries
+
+  optimization: { // libraries
     splitChunks: {
-      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          name: 'vendors',
+          test: /node_modules/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
     },
-  }, */
+  },
 
   module: {
     rules: [
@@ -148,11 +159,6 @@ module.exports = {
       },
     ],
   },
-  optimization: { // libraries
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
 
   plugins: [
 
@@ -171,10 +177,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/number-page/number-page.pug`,
       filename: 'number-page.html',
+      inject: false,
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/welcome-page/welcome-page.pug`,
       filename: 'welcome.html',
+      inject: false,
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/review-page/review-page.pug`,
