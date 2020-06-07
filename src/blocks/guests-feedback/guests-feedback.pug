@@ -3,7 +3,7 @@ include ./../like-checkbox/like-checkbox.pug
 mixin feedback(num,name,ago,id,val,bool,txt)
     .feedback
         .feedback__profile
-            img(class="profile-img" src="/src/img/" + num + "profile.png")
+            img(class="profile-img" src="/src/assets/img/" + num + "profile.png")
 
             .feedback__name
                 p(class="feedback__name-name")=name 
@@ -14,32 +14,3 @@ mixin feedback(num,name,ago,id,val,bool,txt)
             p(class="feedback__text-feedback")=txt 
 
 
-//-div(class="feedback")
-    //-.feedback__title
-        h2 Отзывы посетителей номера
-        span 2 отзыва
-    
-    div(class="feedback__profile")
-        img(src="/src/img/1profile.png")
-
-        div(class="feedback__name")
-            p(class="feedback__name-name") Мурад Сарафанов
-            p(class="feedback__name-days") 5 дней назад
-
-    div(class="feedback__text")
-        
-        p Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
-
-
-    div(class="feedback__profile")
-        img(src="/src/img/2profile.png")
-
-        div(class="feedback__name")
-            p(class="feedback__name-name") Патрисия Стёклышкова
-            p(class="feedback__name-days") Неделю назад
-
-    div(class="feedback__text")
-        div(class="like")
-            i(class="far fa-heart" id="like__like")
-            span(id="like__num") 2
-        p Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент

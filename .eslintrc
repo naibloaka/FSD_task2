@@ -12,7 +12,6 @@
 		"no-console": "off",
 		"no-plusplus": "off",
 		"eot-last": "off",
-		"camelcase": "off",
 		"linebreak-style": "off"
 	}
 }

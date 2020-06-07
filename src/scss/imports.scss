@@ -6,16 +6,18 @@
 @import './src/blocks/header/_eng/_eng.scss';
 @import './src/blocks/header/_rus/_rus.scss';
 @import './src/blocks/footer/footer.scss';
-/*@import './src/blocks/footer/footer_alt.scss';
-@import './src/blocks/footer/footer_def.scss';
-*/
 
 @import './src/pages/number-page/number-page.scss'; //page styles
 @import './src/blocks/dropdown/dropdown.scss';
+@import './src/blocks/number-block/number-block';
+@import './src/blocks/range-slider/range-slider.scss';
+@import './src/blocks/pagination/pagination.scss';
 
-@import './src/pages/welcome-page/welcome-page.scss'; //page styles
+@import './src/pages/index-page/index-page.scss'; //page styles
 @import './src/blocks/buttons/btn-mixin.scss';
 @import './src/blocks/number-find/number-find.scss';
+@import './src/blocks/calendar/calendar.scss';
+@import './src/blocks/email_input/email_input.scss';
 
 @import './src/pages/review-page/review-page.scss'; //page styles
 @import './src/blocks/information/information.scss';
@@ -33,8 +35,6 @@
 @import './src/pages/login-page/login-page'; //page styles
 @import './src/blocks/login-block/login-block.scss';
 @import './src/blocks/star-rating/star-rating.scss';
-
-@import './src/blocks/pagination/pagination.scss';
 
 //ui-kit styles
 @import './../ui-kit/scss/colors.scss';

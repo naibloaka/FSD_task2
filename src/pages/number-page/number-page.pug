@@ -1,12 +1,13 @@
-include ./../head.pug
+extends ./../head.pug
+block content
 
-body
-    include ./../../blocks/header/header_new.pug
-    
+
+    include ./../../blocks/header/header-new.pug
+
     div(class="main")
         div(class="main__settings")
             div(class="settings__arrivaldate")
-                h3(class = "settings__title") даты пребывания в отеле
+                h3(class = "settings__title") даты пребывания в отеле 
                 div(class="settings__arrivaldate-block")
                     include ./../../blocks/calendar/calendar.pug
             div(class="settings__guests")
@@ -35,11 +36,12 @@ body
         
         div(class="main__numbers")
             include ./../../blocks/numbers/numbers.pug
-               
-            div(id="data-container")
-            div(id="pagination-container")
+                
+            include ./../../blocks/pagination/pagination.pug
+            .block__pagination-container
+                +pag-li()
 
-            include ./../../blocks/pagination/pagination.pug        
+                
                     
              
         

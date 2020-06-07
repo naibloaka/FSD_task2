@@ -17,7 +17,7 @@ module.exports = {
   },
 
   entry: {
-    app: ['@babel/polyfill', PATHS.src],
+    app: ['@babel/polyfill', `${PATHS.src}/index.js`],
   },
 
   output: {
@@ -27,7 +27,6 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.js'],
     alias: {
       '@blocks': path.resolve(__dirname, 'src/blocks'), // easy path
       '@': path.resolve(__dirname, 'src'),
@@ -76,7 +75,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              config: { path: `${PATHS.src}/postcss.config.js` },
+              config: { path: './postcss.config.js' },
             },
           },
         ],
@@ -95,7 +94,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              config: { path: `${PATHS.src}/postcss.config.js` },
+              config: { path: './postcss.config.js' },
             },
           },
           {
@@ -117,7 +116,15 @@ module.exports = {
             options: {
               sourceMap: true,
             },
-          }, {
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              config: { path: './postcss.config.js' },
+            },
+          },
+          {
             loader: 'less-loader',
             options: {
               sourceMap: true,
@@ -171,18 +178,18 @@ module.exports = {
       'window.jQuery': 'jquery',
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/fonts`, to: `${PATHS.dist}/fonts` },
-      { from: `${PATHS.src}/img`, to: `${PATHS.dist}/img` },
+      { from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts` },
+      { from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img` },
     ]),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/number-page/number-page.pug`,
       filename: 'number-page.html',
-      inject: false,
+
     }),
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/pages/welcome-page/welcome-page.pug`,
-      filename: 'welcome.html',
-      inject: false,
+      template: `${PATHS.src}/pages/index-page/index-page.pug`,
+      filename: 'index.html',
+
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/review-page/review-page.pug`,
