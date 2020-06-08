@@ -3,7 +3,7 @@ header
     .header
         .header__logo
             img(src='/src/assets/img/logo.svg')
-        .header__navigation
+        .header__navigation.header__navigation_rus
             ul(class="navigation-block")
                 li
                     a(class="navigation-block__elem") О нас
@@ -20,8 +20,8 @@ header
                             a(class="navigation-block__elem") Соглашения
                             i(class="fas fa-chevron-down")
                 
-        .header__login
+        .header__login.header__login_rus
             +white-gradient("войти","login-page.html")
-        .header__register
+        .header__register.header__register_rus
             +register-btn("зарегистрироваться","register-page.html")
 

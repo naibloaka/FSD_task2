@@ -3,8 +3,8 @@
 
 @import './src/blocks/numbers/numbers.scss';
 @import './src/blocks/header/header.scss';
-@import './src/blocks/header/_eng/_eng.scss';
-@import './src/blocks/header/_rus/_rus.scss';
+@import './src/blocks/header/header_eng.scss';
+@import './src/blocks/header/header_rus.scss';
 @import './src/blocks/footer/footer.scss';
 
 @import './src/pages/number-page/number-page.scss'; //page styles
