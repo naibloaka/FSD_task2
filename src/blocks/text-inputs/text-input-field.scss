@@ -66,4 +66,10 @@
     position: absolute;
     top: 13px;
     right: 13px;
+    i {
+        font-size: 18px;
+        background: linear-gradient(to top, #8ba4f9, #bc9cff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

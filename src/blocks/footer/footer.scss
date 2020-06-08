@@ -6,7 +6,7 @@ footer {
     width: 81.7%;
     margin-left: 9.8%;
     margin-right: auto;
-    padding-top: 83px;
+
     padding-bottom: 100px;
 }
 .footer {
@@ -15,6 +15,8 @@ footer {
 .footer__blok-text {
     margin-top: 18px;
     width: 260px;
+}
+.footer__blok-text {
     p {
         line-height: 24px;
         color: $black75;
@@ -40,13 +42,13 @@ footer {
     font-family: $bold;
 }
 .footer__blok-about {
-    margin-left: 10.3%;
+    margin-left: 4.9%;
 }
 .footer__blok-support {
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .footer__blok-newsletter {
-    margin-left: 7.6%;
+    margin-left: 4.6%;
     margin-top: 23px;
 }
 .newsletter__title {
@@ -71,7 +73,9 @@ footer {
     list-style-type: none;
 }
 .newsletter__txt {
-    width: 215px;
+    width: 245px;
+    line-height: 24px;
+    color: $black75;
 }
 .bottom-line {
     border-top: 1px solid $border_invisible;
@@ -87,7 +91,6 @@ footer {
 .footer-bottom__icons {
     font-size: 12px;
     margin-top: 23px;
-    margin-left: 50.3%;
     word-spacing: 20px;
     i {
         background: linear-gradient(180deg, #c09eff, #89a4fd);

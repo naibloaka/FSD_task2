@@ -18,6 +18,11 @@ module.exports = {
 
   entry: {
     app: ['@babel/polyfill', `${PATHS.src}/index.js`],
+    datepicker: [`${PATHS.src}/blocks/calendar/calendar.js`],
+    dropdown: [`${PATHS.src}/blocks/dropdown/dropdown.js`],
+    checkBox: [`${PATHS.src}/blocks/check-box_btn/check-box_btn.js`],
+    likeBtn: [`${PATHS.src}/blocks/like-checkbox/like-checkbox.js`],
+    pagination: [`${PATHS.src}/blocks/pagination/pagination.js`],
   },
 
   output: {
