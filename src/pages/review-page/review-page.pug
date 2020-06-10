@@ -15,11 +15,14 @@ block content
         div(class="review__content")
             div(class="review-information")
                 include ./../../blocks/information/information.pug
+                +information('smile')
+                +information('house')
+                +information('fire')
 
             div(class="review__ellipse")
-                h2(class="review__ellipse__title") Впечатления от номера
+                h2(class="review__subtitle") Впечатления от номера
                 div(class="flex")
-                    img(src="/src/img/ellipse.svg")
+                    img(src="/src/assets/img/ellipse.svg")
                     div(class="review__ellipse__colorstxt")
                         div(class="flex")
                             div(class="yellow")
@@ -44,11 +47,21 @@ block content
                 include ./../../blocks/number-find/number-find-calc.pug
 
             div(class="review__guests-reviews")
+                h2(class="review__subtitle") Отзывы посетителей номера
                 include ./../../blocks/guests-feedback/guests-feedback.pug
+                .feedback-container
+                    +feedback(1,'Мурад Сарафанов','5 дней назад',"like2",12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
 
+                .feedback-container
+                    +feedback(2,'Патрисия Стёклышкова','Неделю назад',"like2",2,false,'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+
+            .review__rules
+                h2(class="review__subtitle") Правила
+                include ./../../blocks/text-rules/text-rules.pug
+                +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
             
             div(class="review__cancel")
-                h2 Отмена
+                h2(class="review__subtitle") Отмена
                 p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 

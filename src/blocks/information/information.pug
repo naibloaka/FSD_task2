@@ -1,17 +1,17 @@
 mixin information(num)
-    if num == 1
+    if num == 'smile'
         .information__block
             img(src="/src/assets/img/svg/smile.svg" class="information__img")
             .information__text-block
                 h3(class="information__subtitle") Комфорт
                 p(class="information__text") Шумопоглащающие стены
-    if num == 2
+    if num == 'house'
         .information__block
             img(src="/src/assets/img/svg/city.svg" class="information__img")
             .information__text-block
                 h3(class="information__subtitle") Удобство
                 p(class="information__text") Окно в каждой из спален
-    if num == 3
+    if num == 'fire'
         .information__block
             img(src="/src/assets/img/svg/fire.svg" class="information__img")
             .information__text-block
@@ -19,20 +19,3 @@ mixin information(num)
                 p(class="information__text") Номер оснащён камином
 
 
-//-div(class="information")
-    h2 Сведения о номере
-    div(class="information__block")
-        img(src="/src/img/svg/smile.svg")
-        div(class="information__text")
-            h3 Комфорт
-            p Шумопоглащающие стены
-    div(class="information__block")
-        img(src="/src/img/svg/city.svg")
-        div(class="information__text")
-            h3 Удобство
-            p Окно в каждой из спален
-    div(class="information__block")
-        img(src="/src/img/svg/fire.svg")
-        div(class="information__text")
-            h3 Уют
-            p Номер оснащён камином

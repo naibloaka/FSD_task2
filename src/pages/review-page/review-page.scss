@@ -53,13 +53,12 @@
         'info elipse number'
         'feedback feedback number'
         'rulls cancel cancel';
-
-    h2 {
-        font-family: $bold;
-        font-size: 19px;
-        color: $black_text;
-        letter-spacing: -0.4px;
-    }
+}
+.review__subtitle {
+    font-family: $bold;
+    font-size: 19px;
+    color: $black_text;
+    letter-spacing: -0.4px;
 }
 .review-information {
     grid-area: info;
