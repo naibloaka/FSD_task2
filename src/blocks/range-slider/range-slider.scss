@@ -1,49 +1,48 @@
-@import "./src/scss/includes/var";
+@import './src/scss/includes/var';
 
-.range-slider-text{
+.range-slider-text {
     margin-top: 15px;
     font-size: 12px;
-    color:$black50;
+    color: $black50;
 }
-.range-slider-input{
-    border:none;
+.range-slider-input {
+    border: none;
     outline: none;
     font-size: 12px;
-    color:$black50;
-    width:140px;
+    color: $black50;
+    width: 140px;
     text-align: right;
 }
 
-.range-slider__flex{
+.range-slider__flex {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-#slider-range{
+#slider-range {
     margin-top: 19px;
-    span{
-        background: linear-gradient(to top, #66D2EA, #6FCF97);
+    span {
+        background: linear-gradient(to top, #66d2ea, #6fcf97);
         border: 2px solid $white;
         border-radius: 50%;
         width: 12px;
         height: 12px;
         outline: none;
-        margin-top: -2px;
+        margin-top: 0px;
     }
-    
 }
 .ui-slider.ui-slider-horizontal {
     background: $white;
-    height:5px;
-    border:1px solid $border_faded;
+    height: 5px;
+    border: 1px solid $border_faded;
     border-radius: 5px;
 }
 
 .ui-slider .ui-slider-range {
-    background: linear-gradient(to top, #66D2EA, #6FCF97);
+    background: linear-gradient(to top, #66d2ea, #6fcf97);
 }
 
 .ui-slider .ui-slider-handle {
-    top:-6px;
+    top: -6px;
 }

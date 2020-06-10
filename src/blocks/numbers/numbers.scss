@@ -1,17 +1,14 @@
 @import './src/scss/includes/var';
 
-.main__numbers {
-    h1 {
-        margin-top: 31px;
-        margin-left: 61px;
-        font-family: $quicksand_bold;
-        font-size: 24px;
-        letter-spacing: 0.7px;
-    }
+.numbers__title {
+    margin-top: 31px;
+    margin-left: 61px;
+    font-family: $quicksand_bold;
+    font-size: 24px;
+    letter-spacing: 0.7px;
 }
-
 .numbers-container {
-    width: 81.7%;
+    width: 81.8%;
     margin-left: 6%;
     margin-right: auto;
     margin-top: 22px;
@@ -19,7 +16,7 @@
     grid-template-columns: 270px 270px 270px;
     justify-content: space-between;
     position: relative;
-    .numbers-container__block {
-        margin-bottom: 22px;
-    }
+}
+.numbers-container__block {
+    margin-bottom: 20px;
 }

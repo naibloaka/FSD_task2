@@ -1,13 +1,13 @@
-var extra_checkbox = document.getElementById("extra-check");
-var checkbox_list = document.getElementById("extra-checkbox-list");
+const extraCheckbox = document.getElementById('extra-check');
+const checkboxList = document.getElementById('extra-checkbox-list');
 
-if(extra_checkbox != null){
-    extra_checkbox.onclick = function(){
-        if(checkbox_list.style.display == "none"){
-            checkbox_list.style.display = "block";
-        }else{
-            checkbox_list.style.display = "none";
-        }
-        
-    }
+function hideBoxes() {
+  if (checkboxList.style.display === 'none') {
+    checkboxList.style.display = 'block';
+  } else {
+    checkboxList.style.display = 'none';
+  }
 }
+
+
+extraCheckbox.addEventListener('click', hideBoxes);

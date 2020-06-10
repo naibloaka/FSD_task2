@@ -18,11 +18,12 @@ module.exports = {
 
   entry: {
     app: ['@babel/polyfill', `${PATHS.src}/index.js`],
-    datepicker: [`${PATHS.src}/blocks/calendar/calendar.js`],
-    dropdown: [`${PATHS.src}/blocks/dropdown/dropdown.js`],
-    checkBox: [`${PATHS.src}/blocks/check-box_btn/check-box.js`],
-    likeBtn: [`${PATHS.src}/blocks/like-checkbox/like-checkbox.js`],
-    pagination: [`${PATHS.src}/blocks/pagination/pagination.js`],
+    datepicker: ['@babel/polyfill', `${PATHS.src}/blocks/calendar/calendar.js`],
+    dropdown: ['@babel/polyfill', `${PATHS.src}/blocks/dropdown/dropdown.js`],
+    dropdownComfort: ['@babel/polyfill', `${PATHS.src}/blocks/dropdown/dropdown-comfort.js`],
+    checkBox: ['@babel/polyfill', `${PATHS.src}/blocks/check-box_btn/check-box.js`],
+    likeBtn: ['@babel/polyfill', `${PATHS.src}/blocks/like-checkbox/like-checkbox.js`],
+    pagination: ['@babel/polyfill', `${PATHS.src}/blocks/pagination/pagination.js`],
   },
 
   output: {
@@ -194,37 +195,37 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/index-page/index-page.pug`,
       filename: 'index.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/review-page/review-page.pug`,
       filename: 'review-page.html',
-      excludeChunks: ['pagination', 'checkBox'],
+      excludeChunks: ['pagination', 'checkBox', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/register-page/register-page.pug`,
       filename: 'register-page.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/login-page/login-page.pug`,
       filename: 'login-page.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/colors.pug`,
       filename: 'colors.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/cards.pug`,
       filename: 'cards.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/headers-and-footers.pug`,
       filename: 'headers-and-footers.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker'],
+      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/Form-elements.pug`,

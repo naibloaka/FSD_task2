@@ -1,9 +1,9 @@
 include ./../number-block/number-block-mixin.pug
 
-h1 Номера, которые мы для вас подобрали
+h1(class="numbers__title") Номера, которые мы для вас подобрали
 div(class="numbers-container")
     div(class="numbers-container__block")
-        +full-block(1,888,true,9,990,1,145)
+        +full-block(1,888,true,9,990,5,145)
     div(class="numbers-container__block")
         +full-block(2,840,false,9,990,2,65)
     div(class="numbers-container__block")

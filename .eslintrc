@@ -1,17 +1,17 @@
 {
-	"plugins": ["fsd"],
-	"env": {
-		"browser": true,
-		"es6": true,
-		"node": true
-	},
+    "plugins": ["fsd"],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
 
-	"extends": ["plugin:fsd/all", "airbnb/base"],
-	"rules": {
-		"semi": "off",
-		"no-console": "off",
-		"no-plusplus": "off",
-		"eot-last": "off",
-		"linebreak-style": "off"
-	}
+    "extends": ["plugin:fsd/all", "airbnb/base"],
+    "rules": {
+        "semi": "off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        "eot-last": "off",
+        "linebreak-style": "off"
+    }
 }

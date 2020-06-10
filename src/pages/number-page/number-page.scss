@@ -5,6 +5,8 @@
 .main {
     display: grid;
     grid-template-columns: 28.5% 71.5%;
+    padding-bottom: 77px;
+    border-bottom: 1px solid $border_faded;
 }
 
 .settings__title {
@@ -37,7 +39,7 @@
 }
 
 .settings__availability {
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 .settings__availability-block {
@@ -50,4 +52,14 @@
 
 .settings__extracomfort {
     margin-top: 32px;
+}
+
+.settings__price-txt {
+    color: $black50;
+    font-size: 12px;
+    margin-top: 11px;
+}
+.main__pagination-container {
+    width: 317px;
+    margin: 19px auto 0 auto;
 }

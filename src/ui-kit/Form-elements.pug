@@ -1,20 +1,22 @@
-include ./ui-mixin.pug
-include ./../blocks/text-inputs/input-text-field.pug
-include ./../blocks/calendar/calender-mixin.pug
-include ./../blocks/like-checkbox/like-checkbox.pug
-include ./../blocks/buttons/btn-mixin.pug
-include ./../blocks/star-rating/star-rating.pug
-include ./../blocks/range-slider/range-slider.pug
-include ./../blocks/pagination/pagination.pug
-include ./../blocks/check-box_btn/extra-checkboxes.pug
-include ./../blocks/information/information.pug
-include ./../blocks/text-rules/text-rules.pug
-include ./../blocks/guests-feedback/guests-feedback.pug
+extends ./../pages/head.pug
+block content
 
 
-include ./../pages/head.pug
+    include ./ui-mixin.pug
+    include ./../blocks/text-inputs/input-text-field.pug
+    include ./../blocks/calendar/calender-mixin.pug
+    include ./../blocks/like-checkbox/like-checkbox.pug
+    include ./../blocks/buttons/btn-mixin.pug
+    include ./../blocks/star-rating/star-rating.pug
+    include ./../blocks/range-slider/range-slider.pug
+    include ./../blocks/pagination/pagination.pug
+    include ./../blocks/check-box_btn/extra-checkboxes.pug
+    include ./../blocks/information/information.pug
+    include ./../blocks/text-rules/text-rules.pug
+    include ./../blocks/guests-feedback/guests-feedback.pug
 
-body
+
+
     .ui-logo
         img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
 

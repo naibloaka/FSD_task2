@@ -1,6 +1,6 @@
 //styles for detepicker and forms
 .welcome {
-    background-image: url('/src/assets/img/backgrouds/welcome1534.png');
+    background-image: url('/src/assets/img/backgrouds/landing1534.png');
     background-repeat: no-repeat;
     background-position-x: -47px;
     background-position-y: -130px;
@@ -8,6 +8,20 @@
     display: block;
     height: 830px;
     width: 100%;
+    @media screen and (min-width: 1500px) {
+        background-image: url('/src/assets/img/backgrouds/landing1600.png');
+        background-repeat: no-repeat;
+        background-size: 1600px 900px;
+        background-position-x: right;
+        background-position-y: top;
+    }
+    @media screen and (min-width: 1600px) {
+        background-image: url('/src/assets/img/backgrouds/landing1600+.png');
+        background-repeat: no-repeat;
+        background-size: 1983px 1122px;
+        background-position-x: right;
+        background-position-y: top;
+    }
 }
 .welcome__text {
     color: $semy_bold_text;

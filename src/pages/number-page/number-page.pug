@@ -1,44 +1,52 @@
 extends ./../head.pug
 block content
-
+    include ./../../blocks/range-slider/range-slider.pug
+    include ./../../blocks/check-box_btn/extra-checkboxes.pug
 
     include ./../../blocks/header/header-new_rus.pug
 
-    div(class="main")
-        div(class="main__settings")
-            div(class="settings__arrivaldate")
+    .main
+        .main__settings
+            .settings__arrivaldate
                 h3(class = "settings__title") даты пребывания в отеле 
-                div(class="settings__arrivaldate-block")
+                .settings__arrivaldate-block
                     include ./../../blocks/calendar/calendar.pug
-            div(class="settings__guests")
+            .settings__guests
                 h3(class = "settings__title") гости
-                div(class="settings__guests-block")
+                .settings__guests-block
                     include ./../../blocks/dropdown/dropdown.pug
                 
-            div(class="settings__price")
-                div(class="settings__price-block")
-                    include ./../../blocks/range-slider/range-slider.pug
-            div(class="settings__checkbox")
+            .settings__price
+                .settings__price-block
+                    .price-block__container
+                        +range-slider('диапазон цены')
+                    p(class="settings__price-txt") Стоимость за сутки пребывания в номере
+            .settings__checkbox
                 h3(class = "settings__title") Checkbox Buttons
-                div(class="settings__checkbox-block")
+                .settings__checkbox-block
                     include ./../../blocks/check-box_btn/check-box_btn.pug
-            div(class="settings__availability")
+            .settings__availability
                 h3(class = "settings__title") доступность
-                div(class="settings__availability-block")
+                .settings__availability-block
+                    include ./../../blocks/check-box_btn/check-rich.pug
+
                     
-            div(class="settings__comfort")
+            .settings__comfort
                 h3(class = "settings__title") удобства номера
-                div(class="settings__comfort-block")
+                .settings__comfort-block
                     include ./../../blocks/dropdown/dropdown-comfort.pug
-            div(class="settings__extracomfort")
-                div(class="settings__extracomfort-block")
-                    include ./../../blocks/check-box_btn/extra-checkboxes.pug
+            .settings__extracomfort
+                .settings__extracomfort-block
+                    +extra-checkbox(false,'expandable checkbox list', 'Завтрак',
+                 'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
+                 'Шампунь', 'Телевизор', 'Шампунь')
         
-        div(class="main__numbers")
-            include ./../../blocks/numbers/numbers.pug
+        .main__numbers
+            .main__numbers-container
+                include ./../../blocks/numbers/numbers.pug
                 
             include ./../../blocks/pagination/pagination.pug
-            .block__pagination-container
+            .main__pagination-container
                 +pag-li()
 
                 
