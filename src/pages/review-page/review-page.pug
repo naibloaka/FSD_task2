@@ -14,6 +14,7 @@ block content
     div(class="review-wrap")
         div(class="review__content")
             div(class="review-information")
+                h2(class="review__subtitle") Сведения о номера
                 include ./../../blocks/information/information.pug
                 +information('smile')
                 +information('house')
@@ -58,11 +59,12 @@ block content
             .review__rules
                 h2(class="review__subtitle") Правила
                 include ./../../blocks/text-rules/text-rules.pug
-                +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
+                .review__rules-container
+                    +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
             
             div(class="review__cancel")
                 h2(class="review__subtitle") Отмена
-                p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                p(class="review__cancel-txt") Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 
     include ./../../blocks/footer/footer-def_rus.pug

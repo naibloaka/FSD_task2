@@ -155,12 +155,19 @@
 }
 .review__cancel {
     grid-area: cancel;
-    h2 {
-        margin-bottom: 17px;
+    width: 325px;
+}
+.review__cancel-txt {
+    margin-top: 16px;
+    color: $black75;
+    line-height: 24px;
+}
+.review__rules {
+    margin-top: -1px;
+    .review__subtitle {
+        margin-left: 20px;
     }
-    p {
-        color: $black75;
-        line-height: 24px;
-        width: 44%;
-    }
+}
+.review__rules-container {
+    margin-top: 18px;
 }
