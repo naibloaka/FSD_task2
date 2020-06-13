@@ -24,7 +24,8 @@ footer {
     }
 }
 .footer__blok-navigation {
-    margin-left: 3.4%;
+    width: 140px;
+    margin-left: 3.5%;
 }
 .navigation__list {
     list-style-type: none;
@@ -34,6 +35,11 @@ footer {
 }
 .list-item__text {
     color: $black50;
+    cursor: pointer;
+    &:hover {
+        color: $black_text;
+        font-family: $bold;
+    }
 }
 .list-item__text_first {
     color: $black_text;
@@ -42,13 +48,15 @@ footer {
     font-family: $bold;
 }
 .footer__blok-about {
-    margin-left: 4.9%;
+    width: 140px;
+    margin-left: 5%;
 }
 .footer__blok-support {
-    margin-left: 8%;
+    width: 140px;
+    margin-left: 5.2%;
 }
 .footer__blok-newsletter {
-    margin-left: 4.6%;
+    margin-left: 5.15%;
     margin-top: 23px;
 }
 .newsletter__title {

@@ -3,25 +3,27 @@ header
     .header
         .header__logo
             img(src='/src/assets/img/logo.svg')
+        .header__nav-btn
+            +register-btn("МЕНЮ", "#", "nav-btn")
         .header__navigation.header__navigation_rus
             ul(class="navigation-block")
-                li
+                li(class="navigation-element")
                     a(class="navigation-block__elem") О нас
-                li
+                li(class="navigation-element")
                     label(class="navigation-block__arrow")
                             a(class="navigation-block__elem") Услуги
                             i(class="fas fa-chevron-down")
-                li
+                li(class="navigation-element")
                     a(class="navigation-block__elem") Вакансии
-                li
+                li(class="navigation-element")
                     a(class="navigation-block__elem") Новости
-                li
+                li(class="navigation-element")
                     label(class="navigation-block__arrow")
                             a(class="navigation-block__elem") Соглашения
                             i(class="fas fa-chevron-down")
-                
-        .header__login.header__login_rus
-            +white-gradient("войти","login-page.html")
-        .header__register.header__register_rus
-            +register-btn("зарегистрироваться","register-page.html")
+        .header__buttons_rus        
+            .header__login.header__login_rus
+                +white-gradient("войти","login-page.html")
+            .header__register.header__register_rus
+                +register-btn("зарегистрироваться","register-page.html")
 

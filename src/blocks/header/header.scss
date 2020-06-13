@@ -6,16 +6,34 @@ header {
     display: flex;
     padding-top: 15px;
     padding-bottom: 13px;
+    @media screen and (max-width: $Notebook) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: $small) {
+        display: block;
+        text-align: center;
+    }
 }
 .header__logo {
     margin-left: 9.85%;
+    @media screen and (max-width: $medium) {
+        margin-left: 2%;
+    }
 }
-
+.header__nav-btn {
+    width: 200px;
+    display: none;
+}
 .navigation-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
+.navigation-element {
+    flex-basis: auto;
+    text-align: center;
+}
+
 .navigation-block__elem {
     font-size: 14px;
     color: $black50;
@@ -24,24 +42,18 @@ header {
         font-family: $bold;
         color: $black75;
     }
-}
-.navigation-block__arrow {
-    display: flex;
-
     .fa-chevron-down {
         margin-left: 5px;
         margin-top: 2px;
         color: $black50;
     }
-    &:hover {
-        .navigation-block__elem {
-            font-size: 14px;
-            color: $black75;
-        }
-        .fa-chevron-down {
-            font-size: 14px;
-            color: $black75;
-        }
+}
+.navigation-block__arrow {
+    display: flex;
+    .fa-chevron-down {
+        margin-left: 5px;
+        margin-top: 2px;
+        color: $black50;
     }
 }
 .header__login {
@@ -60,10 +72,7 @@ header {
     width: 37.2%;
     margin-left: 24.5%;
     margin-top: 12px;
-}
-.header-user__name {
-    border-left: 1px solid $border_invisible;
-    margin-left: 31px;
+    max-width: 39%;
 }
 .header-user__name-text {
     margin-top: 13px;

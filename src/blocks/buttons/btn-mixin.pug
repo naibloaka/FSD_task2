@@ -1,18 +1,18 @@
-mixin purple-with-arrow(name,href)
+mixin purple-with-arrow(name,href,id)
     .filled-block
-        a(class="filled-block__btn" href=href)= name
+        a(class="filled-block__btn" id=id href=href)= name
             .filled-block__arrow
                 <i class="fas fa-arrow-right"></i>
 
-mixin  white-gradient(name,href)
+mixin  white-gradient(name,href,id)
     .login-btn__border
-        a(class="login-btn__login" href=href)=name
+        a(class="login-btn__login" id=id href=href)=name
 
-mixin purple-btn(name,href)
+mixin purple-btn(name,href,id)
     .filled-btn
-        a(class="filled-block__btn" href=href)= name
+        a(class="filled-block__btn" id=id href=href)= name
 
-mixin register-btn(name,href)
+mixin register-btn(name,href,id)
     .register-but
-        a(href=href class="register-but__btn")=name
+        a(href=href id=id class="register-but__btn")=name
 
