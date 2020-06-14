@@ -36,13 +36,13 @@ header {
     list-style-type: none;
     @media screen and (max-width: $mobile) {
         display: none;
+        text-align: center;
         .navigation-element {
-            display: block;
             margin: 5px 0 5px 0;
-            text-align: center;
         }
-        .navigation-block__arrow {
-        }
+    }
+    @media screen and (min-width: $mobile+1px) {
+        display: flex;
     }
 }
 .navigation-element {
