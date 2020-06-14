@@ -3,12 +3,11 @@ const pagination_arrows = document.getElementsByClassName('pagination__arrow'); 
 const pagination_dots = document.getElementsByClassName('pagination__list-dots'); // dots
 
 
-console.log('pagination here')
 pagination_arrows[0].style.display = 'none';
 pagination_dots[0].style.display = 'none';
 for (let i = 3; i <= 13; i++) {
   pagination_list[i].style.display = 'none';
-} // start vision
+} // start visionz
 
 const parentPagination = document.getElementsByClassName('pagination'); // container
 parentPagination[0].addEventListener('click', check_if);

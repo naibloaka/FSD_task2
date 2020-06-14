@@ -11,6 +11,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @media screen and (max-width: $mobile) {
+    }
 }
 .header__buttons_rus {
     display: flex;
@@ -19,6 +21,12 @@
     width: 21.35%;
     @media screen and (max-width: $Notebook) {
         width: 280px;
+    }
+    @media screen and (max-width: $small) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 10px auto 0 auto;
     }
 }
 .header__login_rus {

@@ -23,11 +23,27 @@ header {
 .header__nav-btn {
     width: 200px;
     display: none;
+    @media screen and (max-width: $mobile) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 10px auto 0 auto;
+    }
 }
 .navigation-block {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    @media screen and (max-width: $mobile) {
+        display: none;
+        .navigation-element {
+            display: block;
+            margin: 5px 0 5px 0;
+            text-align: center;
+        }
+        .navigation-block__arrow {
+        }
+    }
 }
 .navigation-element {
     flex-basis: auto;
