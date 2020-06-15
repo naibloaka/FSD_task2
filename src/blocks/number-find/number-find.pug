@@ -7,11 +7,11 @@ include ./../calendar/calender-mixin.pug
         h1(class="number-find__title") Найдём номера под ваши пожелания
 
         .number-find__datepicker
-            .flex
+            .number-find__datepicker-container
                 h2(class="number-find__subtitle") ПРИБЫТИЕ
-                h2(class="number-find__subtitle") ВЫЕЗД
-            .datepicker-from-to
                 +clendar-from()
+            .number-find__datepicker-container
+                h2(class="number-find__subtitle") ВЫЕЗД
                 +clendar-to()
                     
                 

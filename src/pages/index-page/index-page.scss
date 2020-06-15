@@ -21,6 +21,12 @@
         background-position-x: right;
         background-position-y: top;
     }
+    @media screen and (max-width: $mobileSmall) {
+        background: $back;
+    }
+    @media screen and (max-width: $mobile) {
+        height: 540px;
+    }
 }
 .welcome__text {
     color: $semy_bold_text;
@@ -44,9 +50,10 @@
         left: 50%;
         margin-left: -190px;
     }
-}
-/*@media (max-width:1554px){
-    .welcome{
-        background-image: url("/src/img/welcome-1534.jpg");
+    @media screen and (max-width: $mobileSmall) {
+        top: 20px;
+        left: auto;
+        right: auto;
+        margin-left: 0px;
     }
-}*/
+}

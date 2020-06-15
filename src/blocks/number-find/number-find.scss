@@ -14,20 +14,33 @@
     height: 354px;
     text-align: center;
     box-shadow: $block_shadow;
+    @media screen and (max-width: $mobileSmall) {
+        box-shadow: none;
+        padding-top: 0;
+        border-top: 1px solid $border_invisible;
+        border-radius: 0;
+        width: 100%;
+    }
 }
 .number-find__wrap {
     width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     &--calc {
         margin-top: 0px;
+    }
+    @media screen and (max-width: $mobileSmall) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 }
 .number-find__title {
     text-align: left;
     letter-spacing: 1.1px;
     line-height: 29px;
+    @media screen and (max-width: $mobileSmall) {
+        text-align: center;
+    }
 }
 .number-find__subtitle {
     text-transform: uppercase;
@@ -37,21 +50,21 @@
 }
 .number-find__datepicker {
     margin-top: 22px;
-    .flex {
-        justify-content: space-between;
-        width: 218px;
-    }
-}
-.datepicker-from-to {
     display: flex;
     justify-content: space-between;
+    text-align: left;
+    @media screen and (max-width: $mobileSmall) {
+        display: block;
+    }
+}
+.number-find__datepicker-container {
+    @media screen and (max-width: $mobileSmall) {
+        margin-top: 15px;
+    }
 }
 .number-find__guests {
     margin-top: 21px;
     text-align: left;
-}
-.number-find__datepicker {
-    margin-top: 22px;
 }
 .number-find__button {
     margin-top: 33px;
