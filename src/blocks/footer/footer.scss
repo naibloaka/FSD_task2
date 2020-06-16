@@ -6,7 +6,6 @@ footer {
     width: 81.7%;
     margin-left: 9.8%;
     margin-right: auto;
-
     padding-bottom: 100px;
 }
 .footer {
@@ -23,41 +22,27 @@ footer {
         margin-top: 15px;
     }
 }
-.footer__blok-navigation {
-    width: 140px;
-    margin-left: 3.5%;
-}
+
 .navigation__list {
     list-style-type: none;
 }
 .list-item {
     margin-top: 22px;
 }
-.list-item__text {
-    color: $black50;
-    cursor: pointer;
-    &:hover {
-        color: $black_text;
-        font-family: $bold;
-    }
-}
-.list-item__text_first {
+.list-item__title {
     color: $black_text;
     text-transform: uppercase;
     font-size: 12px;
     font-family: $bold;
 }
-.footer__blok-about {
+.list-item__text {
+    color: $black50;
+    cursor: pointer;
     width: 140px;
-    margin-left: 5%;
-}
-.footer__blok-support {
-    width: 140px;
-    margin-left: 5.2%;
-}
-.footer__blok-newsletter {
-    margin-left: 5.15%;
-    margin-top: 23px;
+    &:hover {
+        color: $black_text;
+        font-family: $bold;
+    }
 }
 .newsletter__title {
     font-family: $bold;
@@ -74,12 +59,7 @@ footer {
     margin-top: 23px;
     width: 260px;
 }
-.about__list {
-    list-style-type: none;
-}
-.support__list {
-    list-style-type: none;
-}
+
 .newsletter__txt {
     width: 245px;
     line-height: 24px;
