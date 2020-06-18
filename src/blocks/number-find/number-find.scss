@@ -58,8 +58,10 @@
     }
 }
 .number-find__datepicker-container {
+    width: 150px;
     @media screen and (max-width: $mobileSmall) {
         margin-top: 15px;
+        width: 100%;
     }
 }
 .number-find__guests {

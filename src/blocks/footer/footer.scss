@@ -7,13 +7,34 @@ footer {
     margin-left: 9.8%;
     margin-right: auto;
     padding-bottom: 100px;
+    @media screen and (max-width: $Notebook) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .footer {
     display: flex;
+    @media screen and (max-width: $Notebook) {
+        justify-content: space-between;
+    }
+    @media screen and (max-width: $medium) {
+        display: block;
+        width: 100%;
+    }
+    @media screen and (min-width: $big) {
+        justify-content: space-between;
+    }
 }
 .footer__blok-text {
     margin-top: 18px;
     width: 260px;
+    @media screen and (max-width: $Notebook) {
+        width: 200px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 100%;
+    }
 }
 .footer__blok-text {
     p {
@@ -21,20 +42,87 @@ footer {
         color: $black75;
         margin-top: 15px;
     }
+    @media screen and (max-width: $medium) {
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+}
+.footer__blok-navigation {
+    @media screen and (max-width: $medium) {
+        margin: 10px auto 10px auto;
+        text-align: center;
+    }
+}
+.footer__blok-about {
+    @media screen and (max-width: $medium) {
+        margin: 10px auto 10px auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+.footer__blok-support {
+    @media screen and (max-width: $medium) {
+        margin: 10px auto 10px auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
 
+.footer__title-block {
+    display: none;
+    margin-left: 15px;
+    @media screen and (max-width: $medium) {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px auto;
+        width: 100%;
+        .footer__title {
+            display: block;
+        }
+    }
+}
 .navigation__list {
     list-style-type: none;
+    @media screen and (max-width: $medium) {
+        display: none;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+}
+.about__list {
+    list-style-type: none;
+    @media screen and (max-width: $medium) {
+        display: none;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+}
+.support__list {
+    list-style-type: none;
+    @media screen and (max-width: $medium) {
+        display: none;
+        text-align: left;
+        margin-bottom: 22px;
+    }
 }
 .list-item {
     margin-top: 22px;
 }
-.list-item__title {
+.footer__title {
     color: $black_text;
     text-transform: uppercase;
     font-size: 12px;
     font-family: $bold;
+    margin-top: 22px;
+    @media screen and (max-width: $medium) {
+        display: none;
+        margin-top: 0;
+        cursor: pointer;
+    }
 }
+
 .list-item__text {
     color: $black50;
     cursor: pointer;
@@ -42,6 +130,11 @@ footer {
     &:hover {
         color: $black_text;
         font-family: $bold;
+    }
+}
+.footer__blok-newsletter {
+    @media screen and (max-width: $medium) {
+        text-align: center;
     }
 }
 .newsletter__title {
@@ -54,10 +147,20 @@ footer {
     line-height: 24px;
     margin-top: 19px;
     letter-spacing: -0.1px;
+    @media screen and (max-width: $medium) {
+        width: 100%;
+    }
 }
 .newsletter__email-input {
     margin-top: 23px;
     width: 260px;
+    @media screen and (max-width: $Notebook) {
+        width: 240px;
+    }
+    @media screen and (max-width: $medium) {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .newsletter__txt {
@@ -69,14 +172,21 @@ footer {
     border-top: 1px solid $border_invisible;
     display: flex;
     padding-bottom: 23px;
+    @media screen and (max-width: $medium) {
+        display: block;
+        text-align: center;
+    }
 }
 .bottom-line__text {
     margin-left: 9.8%;
-    margin-top: 27px;
+    margin-top: 29px;
     color: $black75;
-    letter-spacing: -0.1px;
+    @media screen and (max-width: $medium) {
+        margin-left: 0;
+    }
 }
 .footer-bottom__icons {
+    margin-right: 1%;
     font-size: 12px;
     margin-top: 23px;
     word-spacing: 20px;

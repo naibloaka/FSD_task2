@@ -14,8 +14,9 @@
     font-family: $regular;
     font-size: 14px;
     color: $black75;
-    width: 134px;
+    width: 100%;
     height: 42px;
+    cursor: pointer;
 }
 .calendar {
     position: relative;
@@ -42,6 +43,9 @@
 
 //datepicker styles change
 .calendar {
+}
+.datepicker.-bottom-left-.-from-bottom-.active {
+    left: 184px;
 }
 #datepickers-container {
     position: absolute;
