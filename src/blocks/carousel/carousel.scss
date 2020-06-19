@@ -1,0 +1,123 @@
+.owl-carousel {
+    height: 152px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .owl-nav {
+        .owl-prev {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            bottom: 69px;
+            left: 8px;
+            border: none;
+            outline: none;
+            background: none;
+            z-index: 3;
+
+            span {
+                font-size: 27px;
+                color: white;
+            }
+            &:hover {
+                background: none;
+            }
+        }
+        .owl-next {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            bottom: 69px;
+            right: 5px;
+            border: none;
+            outline: none;
+            color: white;
+            z-index: 3;
+            span {
+                font-size: 27px;
+                color: white;
+            }
+            &:hover {
+                background: none;
+            }
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        right: 13px;
+        top: 122px;
+        z-index: 3;
+        .owl-dot {
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                span {
+                    background-color: white;
+                }
+            }
+            span {
+                height: 6px;
+                width: 6px;
+                margin: 7px 2px;
+                background: none;
+                border: 1px solid white;
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+        .owl-dot.active {
+            span {
+                background-color: white;
+            }
+        }
+    }
+    .owl-theme [class*='owl-']:hover {
+        background: transparent;
+    }
+}
+.owl-carousel::before {
+    //for shadow inside
+}
+.img-shadow {
+    position: relative;
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 42px;
+        height: 152px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+        opacity: 0.5;
+        z-index: 999;
+        border-radius: 5px 0 0 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 42px;
+        height: 152px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+        opacity: 0.5;
+        z-index: 999;
+        border-radius: 0 5px 0 0;
+    }
+}
