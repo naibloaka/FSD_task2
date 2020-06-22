@@ -4,67 +4,67 @@ block content
 
     include ./../../blocks/header/header-new_rus.pug
     
+    .review-page
+        .review-img
+            div(class="review-img__1")
+            div(class="review-img__2")
+            div(class="review-img__3")
 
-    div(class="review-img")
-        div(class="review-img__1")
-        div(class="review-img__2")
-        div(class="review-img__3")
 
+        .review-wrap
+            .review__content
+                .review-information
+                    h2(class="review__subtitle") Сведения о номера
+                    include ./../../blocks/information/information.pug
+                    +information('smile')
+                    +information('house')
+                    +information('fire')
 
-    div(class="review-wrap")
-        div(class="review__content")
-            div(class="review-information")
-                h2(class="review__subtitle") Сведения о номера
-                include ./../../blocks/information/information.pug
-                +information('smile')
-                +information('house')
-                +information('fire')
+                .review__ellipse
+                    h2(class="review__subtitle") Впечатления от номера
+                    .flex
+                        img(src="/src/assets/img/ellipse.svg")
+                        .review__ellipse__colorstxt
+                            .flex
+                                .yellow
+                                p Великолепно
+                            .flex
+                                .green
+                                p Хорошо
+                            .flex
+                            .purple
+                            p Удовлетворительно
+                            .flex
+                                .black
+                                p Разочарован
 
-            div(class="review__ellipse")
-                h2(class="review__subtitle") Впечатления от номера
-                div(class="flex")
-                    img(src="/src/assets/img/ellipse.svg")
-                    div(class="review__ellipse__colorstxt")
-                        div(class="flex")
-                            div(class="yellow")
-                            p Великолепно
-                        div(class="flex")
-                            div(class="green")
-                            p Хорошо
-                        div(class="flex")
-                           div(class="purple")
-                           p Удовлетворительно
-                        div(class="flex")
-                            div(class="black")
-                            p Разочарован
+                    .review__ellipse__votes
+                        span(class="num") 260
+                        br
+                        span голосов
+                
 
-                div(class="review__ellipse__votes")
-                    span(class="num") 260
-                    br
-                    span голосов
-            
+                .review__number-find
+                    include ./../../blocks/number-find/number-find-calc.pug
 
-            div(class="review__number-find")
-                include ./../../blocks/number-find/number-find-calc.pug
+                .review__guests-reviews
+                    h2(class="review__subtitle") Отзывы посетителей номера
+                    include ./../../blocks/guests-feedback/guests-feedback.pug
+                    .reviews__container
+                        +feedback(1,'Мурад Сарафанов','5 дней назад',"like1",12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
 
-            div(class="review__guests-reviews")
-                h2(class="review__subtitle") Отзывы посетителей номера
-                include ./../../blocks/guests-feedback/guests-feedback.pug
-                .feedback-container
-                    +feedback(1,'Мурад Сарафанов','5 дней назад',"like2",12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+                    .reviews__container_second
+                        +feedback(2,'Патрисия Стёклышкова','Неделю назад',"like2",2,false,'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
 
-                .feedback-container
-                    +feedback(2,'Патрисия Стёклышкова','Неделю назад',"like2",2,false,'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
-
-            .review__rules
-                h2(class="review__subtitle") Правила
-                include ./../../blocks/text-rules/text-rules.pug
-                .review__rules-container
-                    +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
-            
-            div(class="review__cancel")
-                h2(class="review__subtitle") Отмена
-                p(class="review__cancel-txt") Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                .review__rules
+                    h2(class="review__subtitle") Правила
+                    include ./../../blocks/text-rules/text-rules.pug
+                    .review__rules-container
+                        +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
+                
+                .review__cancel
+                    h2(class="review__subtitle") Отмена
+                    p(class="review__cancel-txt") Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 
     include ./../../blocks/footer/footer-def_rus.pug

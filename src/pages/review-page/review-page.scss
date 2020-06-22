@@ -5,7 +5,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+.review-page {
+    border-bottom: 1px solid $border_faded;
+}
 .review-img {
     grid-area: a1;
     display: grid;
@@ -44,10 +46,9 @@
 }
 .review__content {
     padding-top: 72px;
-    padding-bottom: 79px;
+    padding-bottom: 72px;
     display: grid;
     grid-template-columns: 31.5% 36.7% 33.1%;
-    grid-template-rows: 304px 335px 148px;
     justify-content: space-between;
     grid-template-areas:
         'info elipse number'
@@ -136,6 +137,10 @@
 
 .review__guests-reviews {
     grid-area: feedback;
+    margin-top: 14px;
+}
+.reviews__container_second {
+    margin-top: 27px;
 }
 .review__rulls {
     grid-area: rulls;
@@ -156,6 +161,7 @@
 .review__cancel {
     grid-area: cancel;
     width: 325px;
+    margin-top: 36px;
 }
 .review__cancel-txt {
     margin-top: 16px;
@@ -163,7 +169,7 @@
     line-height: 24px;
 }
 .review__rules {
-    margin-top: -1px;
+    margin-top: 35px;
     .review__subtitle {
         margin-left: 20px;
     }

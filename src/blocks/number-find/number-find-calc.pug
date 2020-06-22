@@ -9,15 +9,13 @@ div(class="number-find-calc")
             +price(888,true,9,990)
             
 
-        .number-find-calc__datepicker
-            .flex
-                h3(class="number-find__subtitle") ПРИБЫТИЕ
-                h3(class="number-find__subtitle") ВЫЕЗД
-            .number-find__datepicker-block
-                .datepicker-block__from
-                    +clendar-from()
-                .datepicker-block__to
-                    +clendar-to()
+        .number-find__datepicker.number-find-calc__datepicker
+            .number-find__datepicker-container
+                h2(class="number-find__subtitle") ПРИБЫТИЕ
+                +clendar-from()
+            .number-find__datepicker-container
+                h2(class="number-find__subtitle") ВЫЕЗД
+                +clendar-to()
         
         .number-find-calc__guests
             h3(class="number-find__subtitle") ГОСТИ
