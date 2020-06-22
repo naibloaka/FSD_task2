@@ -2,11 +2,11 @@
     width: 32.3%;
     margin-left: 19.4%;
     margin-top: 12px;
-    @media screen and (max-width: $Notebook) {
+    @media (max-width: $Notebook) {
         margin-left: 9%;
         width: 500px;
     }
-    @media screen and (max-width: $small) {
+    @media (max-width: $small) {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -17,7 +17,7 @@
     justify-content: space-between;
     margin-left: 1%;
     width: 21.35%;
-    @media screen and (max-width: $Notebook) {
+    @media (max-width: $Notebook) {
         width: 280px;
     }
     @media screen and (max-width: $small) {
@@ -32,7 +32,7 @@
     height: 34px;
     margin-top: 3px;
     margin-left: 1%;
-    @media screen and (max-width: $Notebook) {
+    @media (max-width: $Notebook) {
         width: 84px;
     }
 }

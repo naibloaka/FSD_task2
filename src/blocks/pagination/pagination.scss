@@ -1,5 +1,4 @@
 .pagination {
-    width: 100%;
     text-align: center;
     display: flex;
 }
@@ -12,7 +11,6 @@
     outline: none;
     border: none;
     cursor: pointer;
-    flex-basis: 40px;
     width: 40px;
     display: block;
     border-radius: 50%;
@@ -22,18 +20,27 @@
         color: $white_text;
         background: linear-gradient(to top, #8aabfe, #c79eff);
     }
+    @media (max-width: $mobile) {
+        width: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
 }
 .pagination__list-dots {
     background: none;
     outline: none;
     border: none;
     cursor: pointer;
-    flex-basis: 40px;
     width: 40px;
     display: block;
     border-radius: 50%;
     color: $light_grey;
     line-height: 40px;
+    @media (max-width: $mobile) {
+        width: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
 }
 .pagination__arrow {
     cursor: pointer;
@@ -45,6 +52,14 @@
     line-height: 40px;
     &:hover {
         opacity: 0.5;
+    }
+    @media (max-width: $mobile) {
+        width: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        i {
+            font-size: 12px;
+        }
     }
 }
 .pagination-selected {

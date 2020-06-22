@@ -1,23 +1,44 @@
 @import './src/scss/includes/var';
 @import './src/scss/includes/mixins';
 //styles for number-page
-
-.main {
+.num__btn {
+    display: none;
+}
+.num {
     display: grid;
     grid-template-columns: 28.5% 71.5%;
     padding-bottom: 77px;
     border-bottom: 1px solid $border_faded;
+    @media screen and (max-width: $numberPage) {
+        grid-template-columns: 22% 78%;
+    }
+    @media screen and (max-width: $medium) {
+        grid-template-columns: 240px calc(100%-240px);
+    }
+    @media screen and (max-width: $small) {
+        display: block;
+    }
 }
 
 .settings__title {
     @include for-h3;
 }
 
-.main__settings {
+.num__settings {
     margin-left: 34.4%;
     margin-top: 29px;
+    @media screen and (max-width: $numberPage) {
+        margin-left: 10%;
+    }
+    @media screen and (max-width: $small) {
+        display: none;
+    }
 }
-
+.num__numbers {
+    @media (max-width: $small) {
+        text-align: center;
+    }
+}
 .settings__arrivaldate {
     margin-top: 2px;
 }
@@ -31,7 +52,7 @@
 }
 
 .settings__checkbox {
-    margin-top: 31px;
+    margin-top: 33px;
 }
 
 .settings__checkbox-block {
@@ -39,7 +60,7 @@
 }
 
 .settings__availability {
-    margin-top: 52px;
+    margin-top: 48px;
 }
 
 .settings__availability-block {
@@ -51,7 +72,7 @@
 }
 
 .settings__extracomfort {
-    margin-top: 32px;
+    margin-top: 30px;
 }
 
 .settings__price-txt {
@@ -59,7 +80,17 @@
     font-size: 12px;
     margin-top: 11px;
 }
-.main__pagination-container {
-    width: 430px;
-    margin: 19px 23.5% 0px auto;
+.num__pagination-container {
+    margin: 39px 23.5% 0px auto;
+    width: 362px;
+    @media (min-width: 1600px) {
+        margin: 39px 41% 0px auto;
+    }
+    @media (max-width: $numberPage) {
+        margin: 39px auto 0px auto;
+        text-align: center;
+    }
+    @media (max-width: $mobile) {
+        width: 270px;
+    }
 }

@@ -6,24 +6,24 @@ header {
     display: flex;
     padding-top: 15px;
     padding-bottom: 13px;
-    @media screen and (max-width: $Notebook) {
+    @media (max-width: $Notebook) {
         justify-content: space-around;
     }
-    @media screen and (max-width: $small) {
+    @media (max-width: $small) {
         display: block;
         text-align: center;
     }
 }
 .header__logo {
     margin-left: 9.85%;
-    @media screen and (max-width: $medium) {
+    @media (max-width: $medium) {
         margin-left: 2%;
     }
 }
 .header__nav-btn {
     width: 200px;
     display: none;
-    @media screen and (max-width: $mobile) {
+    @media (max-width: $mobile) {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -34,14 +34,14 @@ header {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    @media screen and (max-width: $mobile) {
+    @media (max-width: $mobile) {
         display: none;
         text-align: center;
         .navigation-element {
             margin: 5px 0 5px 0;
         }
     }
-    @media screen and (min-width: $mobile+1px) {
+    @media (min-width: $mobile+1px) {
         display: flex;
     }
 }

@@ -5,8 +5,10 @@ block content
 
     include ./../../blocks/header/header-new_rus.pug
 
-    .main
-        .main__settings
+    .num
+        .num__btn
+
+        .num__settings
             .settings__arrivaldate
                 h3(class = "settings__title") даты пребывания в отеле 
                 .settings__arrivaldate-block
@@ -37,16 +39,15 @@ block content
                     include ./../../blocks/dropdown/dropdown-comfort.pug
             .settings__extracomfort
                 .settings__extracomfort-block
-                    +extra-checkbox(false,'expandable checkbox list', 'Завтрак',
+                    +extra-checkbox(false,'дополнительные удобства', 'Завтрак',
                  'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
                  'Шампунь', 'Телевизор', 'Шампунь')
         
-        .main__numbers
-            .main__numbers-container
-                include ./../../blocks/numbers/numbers.pug
+        .num__numbers
+            include ./../../blocks/numbers/numbers.pug
                 
             include ./../../blocks/pagination/pagination.pug
-            .main__pagination-container
+            .num__pagination-container
                 +pag-li()
 
                 

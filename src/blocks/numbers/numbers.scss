@@ -6,17 +6,28 @@
     font-family: $quicksand_bold;
     font-size: 24px;
     letter-spacing: 0.7px;
+    @media screen and (max-width: $small) {
+        margin-left: 0;
+    }
 }
 .numbers-container {
     width: 81.8%;
     margin-left: 6%;
-    margin-right: auto;
+    //margin-right: auto;
     margin-top: 22px;
     display: grid;
-    grid-template-columns: 270px 270px 270px;
+    grid-template-columns: repeat(auto-fit, 270px);
     justify-content: space-between;
+    column-gap: 10px;
+    grid-row-gap: 20px;
     position: relative;
+    @media (max-width: $numberPage) {
+        width: 90%;
+    }
+    @media (max-width: $medium) {
+        grid-template-columns: auto-fit, 270px, 270px;
+        justify-content: space-around;
+    }
 }
 .numbers-container__block {
-    margin-bottom: 20px;
 }
