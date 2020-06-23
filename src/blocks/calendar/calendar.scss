@@ -61,6 +61,12 @@
         padding-right: 19px;
         border: 1px solid $border_bright;
     }
+    .datepicker--pointer {
+        //dell arrow
+        width: 0px;
+        height: 0px;
+        border: none;
+    }
     .datepicker--nav {
         height: 55px;
         padding: 4px 12px;

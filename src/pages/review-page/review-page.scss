@@ -15,40 +15,41 @@
         'i1 i2'
         'i1 i3';
     grid-template-columns: 69% 31%;
-    .review-img__1 {
-        grid-area: i1;
-        display: block;
-        height: 485px;
-        background-image: url('/src/assets/img/room-inside/1.png');
+}
+.review-img__1 {
+    grid-area: i1;
+    display: block;
+    height: 485px;
+    background-image: url('/src/assets/img/room-inside/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review-img__2 {
+    grid-area: i2;
+    display: block;
+    height: 243px;
+    background-image: url('/src/assets/img/room-inside/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review-img__3 {
+    grid-area: i3;
+    display: block;
+    height: 242px;
+    background: url('/src/assets/img/room-inside/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 1440px) {
+        background: url('/src/assets/img/room-inside/3-media.png');
         background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .review-img__2 {
-        grid-area: i2;
-        display: block;
-        height: 243px;
-        background-image: url('/src/assets/img/room-inside/2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .review-img__3 {
-        grid-area: i3;
-        display: block;
-        height: 242px;
-        background: url('/src/assets/img/room-inside/3.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media screen and (min-width: 1440px) {
-            background: url('/src/assets/img/room-inside/3-media.png');
-            background-repeat: no-repeat;
-        }
     }
 }
 .review__content {
     padding-top: 72px;
     padding-bottom: 72px;
     display: grid;
-    grid-template-columns: 31.5% 36.7% 33.1%;
+    grid-template-columns: 31.5% 35.7% 33.1%;
+    grid-column-gap: 5px;
     justify-content: space-between;
     grid-template-areas:
         'info elipse number'

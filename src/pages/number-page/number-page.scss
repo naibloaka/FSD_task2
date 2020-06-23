@@ -9,13 +9,13 @@
     grid-template-columns: 28.5% 71.5%;
     padding-bottom: 77px;
     border-bottom: 1px solid $border_faded;
-    @media screen and (max-width: $numberPage) {
+    @media (max-width: $numberPage) {
         grid-template-columns: 22% 78%;
     }
-    @media screen and (max-width: $medium) {
+    @media (max-width: $medium) {
         grid-template-columns: 240px calc(100%-240px);
     }
-    @media screen and (max-width: $small) {
+    @media (max-width: $small) {
         display: block;
     }
 }
@@ -27,7 +27,7 @@
 .num__settings {
     margin-left: 34.4%;
     margin-top: 29px;
-    @media screen and (max-width: $numberPage) {
+    @media (max-width: $numberPage) {
         margin-left: 10%;
     }
     @media screen and (max-width: $small) {
