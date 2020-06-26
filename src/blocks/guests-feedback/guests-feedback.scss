@@ -11,7 +11,7 @@
 }
 .feedback__name {
     margin-top: 2px;
-    margin-left: 9px;
+    margin-left: 12px;
 }
 .feedback__name-name {
     color: $black75;
@@ -23,12 +23,18 @@
 }
 .feedback__text {
     display: flex;
-    margin-top: 10px;
-    margin-left: 4px;
+    margin-top: 12px;
+    margin-left: 7px;
+    @media (max-width: $mobile) {
+        margin-left: 0;
+        text-align: left;
+    }
 }
 .feedback__text-feedback {
     color: $black75;
     line-height: 23px;
     margin-left: 14px;
-    width: 84%;
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
 }

@@ -45,12 +45,12 @@
     position: absolute;
     top: 70px;
     left: 9.8%;
-    @media screen and (max-width: $mobile) {
+    @media (max-width: $mobile) {
         top: 20px;
         left: 50%;
         margin-left: -190px;
     }
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         top: 20px;
         left: auto;
         right: auto;

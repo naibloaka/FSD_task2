@@ -2316,19 +2316,20 @@ import datepicker from '../../../node_modules/air-datepicker/dist/js/datepicker.
 
 
 /* $('#calendar_from').datepicker({
-  onSelect: function (fd, d, picker) {
-    $("#calendar_from").val(fd.split("-")[0]);
-    $("#calendar_to").val(fd.split("-")[1]);
+  onSelect(fd, d, picker) {
+    $('#calendar_from').val(fd.split('-')[0]);
+    $('#calendar_to').val(fd.split('-')[1]);
   },
-  range:true,
+  range: true,
   prevHtml: '<i class="fas fa-arrow-left"></i>',
   nextHtml: '<i class="fas fa-arrow-right"></i>',
   minDate: new Date(),
   navTitles: {
-    days: 'MM yyyy'
+    days: 'MM yyyy',
   },
 }); */
 
+/*
 $('#calendar_from').datepicker({
   prevHtml: '<i class="fas fa-arrow-left"></i>',
   nextHtml: '<i class="fas fa-arrow-right"></i>',
@@ -2339,10 +2340,10 @@ $('#calendar_from').datepicker({
   },
   clearButton: true,
   applyButton: true,
+  multipleDates: 2,
 });
 $('#calendar_to').datepicker({
-  prevHtml: '<i class="fas fa-arrow-left"></i>',
-  nextHtml: '<i class="fas fa-arrow-right"></i>',
+
   dateFormat: 'd M',
   minDate: new Date(),
   navTitles: {
@@ -2351,6 +2352,36 @@ $('#calendar_to').datepicker({
   clearButton: true,
   applyButton: true,
 });
+*/
+const dateDropdownLeft = $('#calendar_from')
+const dateDropdownRight = $('#calendar_to')
+
+const DropdownDatepicker = dateDropdownLeft.datepicker({
+  prevHtml: '<i class="fas fa-arrow-left"></i>',
+  nextHtml: '<i class="fas fa-arrow-right"></i>',
+  // range: true,
+  dateFormat: 'd M',
+  minDate: new Date(),
+  navTitles: {
+    days: 'MM yyyy',
+  },
+  clearButton: true,
+  applyButton: true,
+  multipleDates: 2,
+
+  onSelect(date) {
+    dateDropdownLeft.val(DropdownDatepicker.selectedDates[0].toLocaleDateString());
+    dateDropdownRight.val(DropdownDatepicker.selectedDates[1].toLocaleDateString());
+  },
+}).data('datepicker');
+
+dateDropdownLeft.click(() => {
+  DropdownDatepicker.show()
+})
+
+dateDropdownRight.click(() => {
+  dateDropdownLeft.trigger('click')
+})
 
 $('#number-page__datepicker').datepicker({
   range: true,

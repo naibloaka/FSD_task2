@@ -10,5 +10,6 @@ $(document).ready(() => {
     pagination: true, // для пагинации
     loop: true, // прокрутка по кругу
     dots: true,
+    mouseDrag: true,
   });
 });

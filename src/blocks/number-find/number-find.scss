@@ -14,7 +14,7 @@
     height: 354px;
     text-align: center;
     box-shadow: $block_shadow;
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         box-shadow: none;
         padding-top: 0;
         border-top: 1px solid $border_invisible;
@@ -28,7 +28,7 @@
     &--calc {
         margin-top: 0px;
     }
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
@@ -38,7 +38,7 @@
     text-align: left;
     letter-spacing: 1.1px;
     line-height: 29px;
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         text-align: center;
     }
 }
@@ -53,13 +53,13 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         display: block;
     }
 }
 .number-find__datepicker-container {
     width: 150px;
-    @media screen and (max-width: $mobileSmall) {
+    @media (max-width: $mobileSmall) {
         margin-top: 15px;
         width: 100%;
     }
@@ -95,10 +95,6 @@
 }
 .number-find-calc__datepicker {
     margin-top: 10px;
-    .flex {
-        justify-content: space-between;
-        width: 218px;
-    }
 }
 .number-find-calc__guests {
     margin-top: 21px;
@@ -111,7 +107,7 @@
 .calc-text__block {
     display: flex;
     justify-content: space-between;
-    width: 319px;
+
     margin-top: 17px;
 }
 .text2 {
