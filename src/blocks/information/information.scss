@@ -1,18 +1,25 @@
 .information__text-block {
     margin-left: 8px;
     margin-top: 4px;
-    .information__subtitle {
-        font-family: $bold;
-        color: $black75;
+
+    @media (max-width: $mobile) {
+        margin-right: 10%;
     }
-    .information__text {
-        color: $light_grey;
-        margin-top: 6px;
-    }
+}
+.information__subtitle {
+    font-family: $bold;
+    color: $black75;
+}
+.information__text {
+    color: $light_grey;
+    margin-top: 6px;
 }
 .information__img {
     width: 48px;
     height: 48px;
+    @media (max-width: $mobile) {
+        margin-left: 10%;
+    }
 }
 .information__block {
     display: flex;
@@ -22,7 +29,7 @@
     padding-bottom: 18px;
     @media (max-width: $mobile) {
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     @media (max-width: $mobileSmallest) {
     }

@@ -141,6 +141,7 @@
     margin-left: 0.9%;
     @media (max-width: $medium) {
         grid-area: unset;
+        margin-left: 0;
     }
 
     @media (max-width: $small) {
@@ -160,6 +161,7 @@
 
     @media (max-width: $medium) {
         grid-area: unset;
+        margin-left: 0;
     }
 
     @media (max-width: $small) {
@@ -169,6 +171,8 @@
     @media (max-width: $mobile) {
         display: block;
         margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     img {
@@ -238,6 +242,8 @@
 
     @media (max-width: $medium) {
         grid-area: unset;
+        margin-left: 0;
+        margin-top: 15px;
     }
     @media (max-width: $small) {
         width: 380px;
@@ -245,6 +251,9 @@
     }
     @media (max-width: $mobile) {
         margin-top: 55px;
+    }
+    @media (max-width: $mobileSmallest) {
+        width: 100%;
     }
 }
 
@@ -255,7 +264,8 @@
         grid-area: unset;
     }
     @media (max-width: $mobile) {
-        margin-top: 65px;
+        width: 90%;
+        margin: 65px auto 0 auto;
     }
 }
 .review-title {
@@ -269,32 +279,22 @@
 .reviews__container_second {
     margin-top: 27px;
 }
-.review__rulls {
-    grid-area: rulls;
-    margin-left: 5.5%;
-    h2 {
-        margin-bottom: 5px;
-    }
-    ul {
-        width: 290px;
-    }
-    li {
-        span {
-            line-height: 24px;
-            color: $black75;
-        }
-    }
-}
+
 .review__cancel {
     grid-area: cancel;
     width: 325px;
     margin-top: 34px;
     margin-left: 16px;
+
     @media (max-width: $medium) {
         grid-area: unset;
+        margin-left: 0;
     }
-    @media (max-width: $mobile) {
-        width: 100%;
+
+    @media (max-width: $small) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 }
 .review__cancel-txt {
@@ -306,6 +306,11 @@
     margin-top: 33px;
     .review__subtitle {
         margin-left: 20px;
+    }
+    @media (max-width: $small) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 }
 .review__rules-container {
