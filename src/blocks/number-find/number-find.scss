@@ -135,11 +135,11 @@
 }
 .text3 {
     width: 200px;
-    line-height: 19px;
+    line-height: 17px;
     position: relative;
     &::after {
         content: 'i';
-        line-height: 22px;
+        line-height: 19px;
         color: $black25;
         font-size: 12px;
         display: block;
@@ -150,14 +150,19 @@
         border-radius: 50%;
         margin-top: -3px;
         text-align: center;
-        margin-left: 6px;
-        margin-top: 0px;
+        margin-left: 220px;
+        margin-top: -36px;
+        @media (max-width: $mobileSmallest) {
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 0;
+        }
     }
 }
 .number-find-calc__result {
     display: flex;
     justify-content: space-between;
-    margin-top: 31px;
+    margin-top: 48px;
     width: 100%;
 }
 .result-dots {
