@@ -52,28 +52,8 @@ block content
                     +information('fire')
 
                 .review__ellipse
-                    h2(class="review__subtitle") Впечатления от номера
-                    .flex
-                        img(src="/src/assets/img/ellipse.svg")
-                        .review__ellipse__colorstxt
-                            .flex
-                                .yellow
-                                p Великолепно
-                            .flex
-                                .green
-                                p Хорошо
-                            .flex
-                            .purple
-                            p Удовлетворительно
-                            .flex
-                                .black
-                                p Разочарован
+                    include ./../../blocks/chart/chart.pug
 
-                    .review__ellipse__votes
-                        span(class="num") 260
-                        br
-                        span голосов
-                
 
                 .review__number-find
                     include ./../../blocks/number-find/number-find-calc.pug

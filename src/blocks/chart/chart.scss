@@ -1,0 +1,72 @@
+.chart__container {
+    display: flex;
+    position: relative;
+    margin-top: 22px;
+}
+.chart__votes {
+    position: absolute;
+    left: 29px;
+    top: 39px;
+    text-align: center;
+}
+.chart__votes-num {
+    font-family: $quicksand_bold;
+    font-size: 24px;
+    color: $purple;
+}
+.chart__votes-txt {
+    font-family: $bold;
+    font-size: 12px;
+    color: $purple;
+}
+.chart__subtitle {
+    font-family: $bold;
+    font-size: 19px;
+    color: $black_text;
+    letter-spacing: -0.3px;
+}
+.chart__list-text {
+    margin-left: 5px;
+    color: $black75;
+}
+.chart__list {
+    list-style-type: none;
+    margin-top: 22px;
+    margin-left: 31px;
+    .yellow {
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to top, #ffba9c, #ffe39c);
+        margin-top: 3px;
+    }
+    .green {
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to top, #66d2ea, #6fcf97);
+        margin-top: 3px;
+    }
+    .purple {
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to top, #8ba4f9, #bc9cff);
+        margin-top: 3px;
+    }
+    .black {
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(to top, #3d4975, #909090);
+        margin-top: 3px;
+    }
+}
+.chart__list-item {
+    margin-top: 8px;
+    display: flex;
+}
