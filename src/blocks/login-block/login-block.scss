@@ -1,27 +1,20 @@
-.login-block{
-    display: block;
-    width: 380px;
-    height: 358px;
-    border-radius: $form-standart;
-    border: 1px solid $border_faded;
-    border-radius: $form-standart;
-    background: $back;
-    position: absolute;
-    top: 162px;
-    left: 37.2%;
-    .wrap{
-        width: 320px;
-        margin-left: auto;
-        margin-right: auto;
+.login-block {
+    padding-bottom: 32px;
+}
+.login-block__wrap {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $mobile) {
+        width: 80%;
     }
 }
-.login-block__email{
+.login-block__email {
     margin-top: 21px;
 }
-.login-block__password{
+.login-block__password {
     margin-top: 10px;
 }
-.login-block__paybtn{
+.login-block__paybtn {
     margin-top: 19px;
 }
-
