@@ -1,20 +1,38 @@
-
-.register-page{
-    display: block;
+.register-page {
     width: 100%;
-    height: 702px;
-    background: url("/src/img/registerbg.png");
+    height: 672px;
+    background: url('/src/assets/img/backgrouds/registerbg.png');
     background-repeat: no-repeat;
     background-position-y: -235px;
     background-position-x: -43px;
     background-size: 1532px auto;
-    position: relative;
+    padding-top: 29px;
+    @media (min-width: $big) {
+        background-size: cover;
+        background-position-y: 0;
+        background-position-x: 0;
+    }
+    @media (max-width: $mobile) {
+        background: $back;
+    }
 }
-.register-page__register{
-    display: block;
+.register-page__register {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 378px;
+    height: 644px;
+    background: $back;
+    margin-left: 37.2%;
+    margin-right: auto;
+    border-radius: $form-standart;
+    border: 1px solid $border_faded;
+    @media (max-width: $medium) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: $mobile) {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
 }
-.register-page__login{
-    display: none;
-}
-
-
