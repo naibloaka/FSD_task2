@@ -29,7 +29,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: '/',
+    publicPath: './',
   },
 
   resolve: {
@@ -143,7 +143,9 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: `${PATHS.assets}img/[name].[ext]`,
+          outputPath: `${PATHS.assets}`,
+          publicPath: `${PATHS.assets}`,
         },
       },
       {
@@ -152,8 +154,9 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/',
+              name: `${PATHS.assets}fonts/[name].[ext]`,
+              outputPath: `${PATHS.assets}fonts/`,
+              // outputPath: 'fonts/',
             },
           },
         ],
@@ -232,14 +235,6 @@ module.exports = {
       filename: 'Form-elements.html',
 
     }),
-    // new CleanWebpackPlugin(),
-  ],
 
-  /* resolve: {
-    modules: ['node_modules'],
-    alias: {
-      'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js',
-      // images: path.resolve(__dirname, 'dist/img/'),
-    },
-  }, */
+  ],
 };
