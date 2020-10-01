@@ -4,8 +4,8 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "dev": "webpack-dev-server --open --config webpack.dev.conf.js --output-public-path='./'",
-        "build": "webpack --config webpack.build.conf.js --output-public-path='./'",
+        "dev": "webpack-dev-server --open --config webpack.dev.conf.js",
+        "build": "webpack --config webpack.build.conf.js",
         "lint": "eslint ./src",
         "lint:fix": "eslint ./src --fix"
     },
@@ -48,6 +48,7 @@
         "pug-loader": "^2.4.0",
         "sass-loader": "^8.0.0",
         "style-loader": "^1.0.0",
+        "url-loader": "^4.1.0",
         "webpack": "^4.41.2",
         "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.9.0",

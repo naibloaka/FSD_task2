@@ -29,7 +29,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: './',
+    // publicPath: '/',
   },
 
   resolve: {
@@ -70,7 +70,14 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../../',
+            },
+          },
+          // MiniCssExtractPlugin.loader,
+
           {
             loader: 'css-loader',
             options: {
@@ -85,11 +92,17 @@ module.exports = {
             },
           },
         ],
-      }, {
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../../',
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -116,7 +129,12 @@ module.exports = {
         test: /\.less$/,
         use: [
           'style-loader',
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../../',
+            },
+          },
           {
             loader: 'css-loader',
             options: {
@@ -143,9 +161,8 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: `${PATHS.assets}img/[name].[ext]`,
-          outputPath: `${PATHS.assets}`,
-          publicPath: `${PATHS.assets}`,
+          name: '[name].[ext]',
+          outputPath: `${PATHS.assets}img/`,
         },
       },
       {
@@ -154,9 +171,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: `${PATHS.assets}fonts/[name].[ext]`,
+              name: '[name].[ext]',
               outputPath: `${PATHS.assets}fonts/`,
-              // outputPath: 'fonts/',
             },
           },
         ],
