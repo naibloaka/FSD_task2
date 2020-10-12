@@ -193,7 +193,6 @@ module.exports = {
   },
 
   plugins: [
-
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`,
     }),
@@ -207,13 +206,12 @@ module.exports = {
       { from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img` },
     ]),
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/pages/number-page/number-page.pug`,
       filename: 'number-page.html',
       excludeChunks: ['likeBtn'],
     }),
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/pages/index-page/index-page.pug`,
-      filename: 'index.html',
+      template: `${PATHS.src}/pages/landing-page/landing-page.pug`,
+      filename: 'landing-page.html',
       excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({

@@ -1,6 +1,4 @@
 dist/
 node_modules/
-.eslintignore
-.eslintrc
-prettier.config.js
 .vscode
+.history
