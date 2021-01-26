@@ -3,15 +3,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');//to check size
 const webpack = require('webpack');
 
 const PATHS = {
-  src: path.join(__dirname, './src'),
-  dist: path.join(__dirname, './dist'),
+  src: path.join(__dirname, './../src'),
+  dist: path.join(__dirname, './../dist'),
   assets: 'assets/',
 }
 
 module.exports = {
+  experiments: {
+    asset: true,
+  },
+  target: 'web',
   externals: {
     paths: PATHS,
   },
@@ -57,46 +62,18 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: {
-          loader: 'babel-loader',
-        },
-        exclude: '/node_modules/',
+        loader: 'babel-loader',
+
+        exclude: [/node_modules/],
       },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         use: [
-          'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../../',
-            },
-          },
-          // MiniCssExtractPlugin.loader,
-
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: './postcss.config.js' },
-            },
-          },
-        ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
+          // 'style-loader',
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
@@ -113,7 +90,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              config: { path: './postcss.config.js' },
+              postcssOptions: { path: './postcss.config.js' },
             },
           },
           {
@@ -126,39 +103,12 @@ module.exports = {
 
       },
       {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../../',
-            },
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: './postcss.config.js' },
-            },
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
-
+        test: /\.svg$/,
+        type: 'asset',
+        use: 'svgo-loader',
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
@@ -166,13 +116,14 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
               outputPath: `${PATHS.assets}fonts/`,
+              // outputPath: 'fonts/',
             },
           },
         ],
@@ -201,17 +152,20 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-    new CopyWebpackPlugin([
-      { from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img` },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: `${PATHS.src}/assets/fonts`, to: `${PATHS.assets}fonts` },
+        { from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img` },
+      ],
+    }),
     new HtmlWebpackPlugin({
+      template: `${PATHS.src}/pages/number-page/number-page.pug`,
       filename: 'number-page.html',
       excludeChunks: ['likeBtn'],
     }),
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/pages/landing-page/landing-page.pug`,
-      filename: 'landing-page.html',
+      template: `${PATHS.src}/pages/index-page/index-page.pug`,
+      filename: 'index-page.html',
       excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
     }),
     new HtmlWebpackPlugin({
