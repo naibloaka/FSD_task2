@@ -1,12 +1,16 @@
-mixin clendar-from()
-    label(for="calendar__from")
-        .calendar
-            input(type="text" id="calendar_from"  class="calendar__input" placeholder="ДД.ММ.ГГГГ")
-            i(class="fas fa-chevron-down")
+mixin clendar-from(id)
+    .calendar
+        input(type="text" id=id class="calendar__input" placeholder="ДД.ММ.ГГГГ")
+        div(class="calendar__arrow-down" id=id + "__arrow-down")
 
 
-mixin clendar-to()
-    label(for="calendar__from")
-        .calendar
-            input(type="text" id="calendar_to"  class="calendar__input" placeholder="ДД.ММ.ГГГГ")
-            i(class="fas fa-chevron-down")
+mixin clendar-to(id)
+    .calendar
+        input(type="text" id=id  class="calendar__input" placeholder="ДД.ММ.ГГГГ")
+        div(class="calendar__arrow-down" id=id + "__arrow-down")
+
+
+mixin one-block-calendar(id)
+    .calendar       
+        input(class="calendar__oneblock-input" type="text" id=id data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ" autocomplete="off")
+        div(class="calendar__arrow-down" id=id + "__arrow-down")   

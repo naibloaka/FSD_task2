@@ -8,40 +8,43 @@
     width: 380px;
     height: 374px;
     position: absolute;
-    top: 122px;
+    top: 151px;
     left: 139px;
 }
 .cards__register-block {
     position: absolute;
-    top: 505px;
+    top: 566px;
     left: 139px;
 }
 .cards__number-find-calc {
     position: absolute;
-    top: 122px;
+    top: 150px;
     left: 560px;
 }
 .cards__login-block {
     position: absolute;
-    top: 509px;
+    top: 702px;
     left: 559px;
 }
 .cards__number-block {
     width: 270px;
     height: 258px;
     position: absolute;
-    top: 530px;
+    top: 558px;
     left: 980px;
 }
 .cards__number-block2 {
     width: 270px;
     height: 258px;
     position: absolute;
-    top: 827px;
+    top: 855px;
     left: 980px;
 }
 .cards__date-picker {
     position: absolute;
-    top: 121px;
+    top: 151px;
     left: 980px;
+}
+.cards__datepicker {
+    display: none;
 }

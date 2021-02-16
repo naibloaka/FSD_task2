@@ -14,11 +14,12 @@ block content
     include ./../blocks/information/information.pug
     include ./../blocks/text-rules/text-rules.pug
     include ./../blocks/guests-feedback/guests-feedback.pug
+    include ./../blocks/dropdown/dropdown-mixin.pug
 
 
 
     .ui-logo
-        img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
+        img(src="./../assets/img/ui-logo.svg" class="ui-logo__logo")
 
     .ui-wrap
         .col.col_1
@@ -41,14 +42,14 @@ block content
             .col__datepicker
                 .datepicker__block
                     h3(class="ui-title") date Dropdown
-                    +clendar-from()
+                    +clendar-from('number-find__datepicker-from')
                 .datepicker__block
                     h3(class="ui-title") date Dropdown
-                    +clendar-to()
+                    +clendar-to('number-find__datepicker-to')
 
             .col__datepicker-one-field
                 h3(class="ui-title") filter date dropdown
-                include ./../blocks/calendar/calendar.pug
+                +one-block-calendar('search-room__datepicker')
             
 
             .col__email
@@ -59,12 +60,12 @@ block content
             .col__dropdown-comfort
                 +text('Dropdown','Default')
                 .col__dropdown-comfort-container
-                    include ./../blocks/dropdown/dropdown-comfort.pug
+                    +no-btns-dropdown('спальни', 'кровати', 'ванные комнаты', 'number-page-comfort-dropdown')
 
             .col__dropdown-comfort-block
                 +text('Dropdown','expanded')
                 .col__dropdown-comfort-block-container
-                    include ./../blocks/dropdown/dropdown-comfort-block.pug
+                    +no-btns-dropdown('спальни', 'кровати', 'ванные комнаты', 'number-page-comfort-dropdown_static')
 
             .block__extra-check
                 +extra-checkbox(false,'expandable checkbox list', 'Завтрак',
@@ -116,7 +117,7 @@ block content
             .block__dropdown_show
                 +text('dropdown')
                 .block__dropdown-container_show 
-                    include ./../blocks/dropdown/dropdown_show.pug
+                    +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown_show')
 
             .block__rich-checkbox
                 h3(class="ui-title") rich Checkbox Buttons
@@ -160,7 +161,7 @@ block content
             .block__dropdown_show1
                 +text('dropdown')
                 .block__dropdown-container_show 
-                    include ./../blocks/dropdown/dropdown_show1.pug
+                    +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown_show2')
 
             .block__rules
                 h3(class="ui-title") bullet list

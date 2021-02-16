@@ -1,153 +1,85 @@
 @import './src/scss/includes/var';
 
 .dropdown {
-    border: 1px solid $border_faded;
-    border-radius: $form-standart;
     position: relative;
-    padding-left: 14px;
 }
-.dropdown__show {
-    border: 1px solid $border_faded;
-    border-radius: 5px 5px 0 0;
-    position: relative;
-    padding-left: 14px;
+.dropdown__field {
+    @include def-input;
 }
-.dropdown__arrow {
+.dropdown__arrow-down {
+    @include arrow-down;
     position: absolute;
-    right: 15px;
-    top: 15px;
-    color: $black75;
+    top: 16px;
+    right: 16px;
 }
-.dropdown__guests-calc {
-    display: flex;
-    cursor: pointer;
-    input {
-        outline: none;
-        border: none;
-        width: calc(100% - 42px);
-        height: 42px;
-        color: $black75;
-        cursor: pointer;
-        border-radius: $form-standart;
-    }
-}
-
-.dropdown__buttons,
-.dropdown-comfort__buttons {
+.dropdown__buttons-list {
     display: none;
     position: absolute;
-    top: 43px;
-    left: -1px;
-    z-index: 999;
-    width: 100%;
-    height: 157px;
-    border: 1px solid $border_faded;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    background: $back;
-    h2 {
-        font-family: $bold;
-        font-size: 12px;
-        text-transform: uppercase;
-        margin-top: 8px;
-        margin-left: 14px;
-    }
-}
-.dropdown-comfort__buttons {
-    height: 120px;
-}
-.dropdown__buttons_show {
-    //styles for ui-kit
-    display: block;
-    background-color: $white;
-    position: absolute;
-    top: 43px;
-    left: -1px;
-    z-index: 999;
-    width: 100%;
-    height: 157px;
-    border: 1px solid $border_faded;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    h2 {
-        font-family: $bold;
-        font-size: 12px;
-        text-transform: uppercase;
-        margin-top: 8px;
-        margin-left: 14px;
-    }
-}
-.dropdown__buttons_topbtn {
-    margin-top: 5px;
-}
-.dropdown__buttons-cell {
     list-style-type: none;
-    height: 37px;
-    display: block;
+    padding-top: 2px;
+    background: $back;
+    border: 1px solid $border_faded;
+    border-radius: 0px 0px $form-standart $form-standart;
+    z-index: 99;
+    width: 100%;
+    h3 {
+        margin-top: 7px;
+        margin-left: 14px;
+        @include for-h3;
+    }
 }
 .dropdown__buttons-block {
     display: flex;
     justify-content: space-between;
-    button {
-        outline: none;
-        background-color: $white;
-        font-size: 12px;
-        padding-top: 7px;
-        margin-right: 6px;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+.dropdown__buttons-block_top {
+    padding-top: 3px;
+}
+.block-calc {
+    display: flex;
+    justify-content: space-between;
+    width: 92px;
+    margin-right: 7px;
+    .minus,
+    .plus {
+        font-size: 18px;
+        color: $black50;
+        border: 1px solid $border_faded;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 5px;
+        width: 28px;
+        height: 23px;
+        user-select: none;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .plus {
+        border: 1px solid $border_bright;
+    }
+    .number {
+        @include for-h3;
+        margin-top: 8px;
     }
 }
 .dropdown__bottom-btn {
-    font-family: $bold;
-    font-size: 12px;
-    text-transform: uppercase;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    background: none;
     outline: none;
-    background-color: $white;
-    font-size: 12px;
     border: none;
-    margin-top: 7px;
+    @include for-h3;
+    width: 99px;
+    &:hover {
+        opacity: 0.5;
+    }
 }
 .dropdown__clear-btn {
     color: $black50;
-    margin-left: 14px;
-    font-size: 12px;
-    font-family: $bold;
-    border: none;
-    outline: none;
 }
 .dropdown__accept-btn {
     color: $purple;
-    font-size: 12px;
-    font-family: $bold;
-    border: none;
-    outline: none;
-}
-.block-calc {
-    width: 97px;
-    display: flex;
-    justify-content: space-between;
-}
-.minus,
-.plus {
-    width: 30px;
-    height: 30px;
-    border: 1px solid $border_bright;
-    color: $border_bright;
-    border-radius: 50%;
-    line-height: 15px;
-    font-size: 18px;
-    line-height: 15px;
-    padding-bottom: 6px;
-}
-.minus {
-    border: 1px solid $border_faded;
-    color: $black50;
-}
-.number {
-    font-size: 12px;
-    color: $black_text;
-    margin-top: 7px;
-    margin-right: 5px;
-    font-family: $bold;
-}
-.clear-but {
 }

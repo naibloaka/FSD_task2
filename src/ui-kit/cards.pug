@@ -1,27 +1,28 @@
 include ./../pages/head.pug
 
-body
-    .cards
-        .ui-logo
-            img(src="/src/ui-kit/logo.svg" class="ui-logo__logo")
+    body
+        .cards
+            .ui-logo
+                img(src="./../assets/img/ui-logo.svg" class="ui-logo__logo")
 
-        .cards__number-find
-            include ./../blocks/number-find/number-find.pug
-        
-        .cards__register-block
-            include ./../blocks/register-block/register-block.pug
-
-        .cards__number-find-calc
-            include ./../blocks/number-find/number-find-calc.pug
-
-        .cards__login-block
-            include ./../blocks/login-block/login-block.pug
-
-        .cards__date-picker
+            .cards__number-find
+                include ./../blocks/number-find/number-find.pug
             
+            .cards__register-block
+                include ./../blocks/register-block/register-block.pug
 
-        .cards__number-block
-            +full-block(1,888,true,9,990,5,145)
-        
-        .cards__number-block2
-            +full-block(2,840,false,9,990,4,65)
+            .cards__number-find-calc
+                include ./../blocks/number-find/number-find-calc.pug
+
+            .cards__login-block
+                include ./../blocks/login-block/login-block.pug
+
+            .cards__date-picker
+                input(class="cards__datepicker" id="cards__datepicker")
+                
+
+            .cards__number-block
+                +full-block(1,888,true,9,990,5,145)
+            
+            .cards__number-block2
+                +full-block(2,840,false,9,990,4,65)

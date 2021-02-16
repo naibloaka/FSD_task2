@@ -23,12 +23,14 @@ module.exports = {
 
   entry: {
     app: ['@babel/polyfill', `${PATHS.src}/index.js`],
-    datepicker: ['@babel/polyfill', `${PATHS.src}/blocks/calendar/calendar.js`],
-    dropdown: ['@babel/polyfill', `${PATHS.src}/blocks/dropdown/dropdown.js`],
-    dropdownComfort: ['@babel/polyfill', `${PATHS.src}/blocks/dropdown/dropdown-comfort.js`],
-    checkBox: ['@babel/polyfill', `${PATHS.src}/blocks/check-box_btn/check-box.js`],
-    likeBtn: ['@babel/polyfill', `${PATHS.src}/blocks/like-checkbox/like-checkbox.js`],
-    pagination: ['@babel/polyfill', `${PATHS.src}/blocks/pagination/pagination.js`],
+    header: [`${PATHS.src}/blocks/header/header.js`],
+    footer: [`${PATHS.src}/blocks/footer/footer.js`],
+    datepicker: [`${PATHS.src}/blocks/calendar/datepicker.js`],
+    dropdown: [`${PATHS.src}/blocks/dropdown/dropdown.js`],
+    checkBox: [`${PATHS.src}/blocks/check-box_btn/check-box.js`],
+    likeBtn: [`${PATHS.src}/blocks/like-checkbox/like-checkbox.js`],
+    pagination: [`${PATHS.src}/blocks/pagination/pagination.js`],
+    chart: [`${PATHS.src}/blocks/chart/chart.js`],
   },
 
   output: {
@@ -39,7 +41,6 @@ module.exports = {
 
   resolve: {
     alias: {
-      '@blocks': path.resolve(__dirname, 'src/blocks'), // easy path
       '@': path.resolve(__dirname, 'src'),
       '~': path.resolve(__dirname, 'node_modules'),
     },
@@ -158,50 +159,52 @@ module.exports = {
         { from: `${PATHS.src}/assets/img`, to: `${PATHS.assets}img` },
       ],
     }),
-    new HtmlWebpackPlugin({
-      template: `${PATHS.src}/pages/number-page/number-page.pug`,
-      filename: 'number-page.html',
-      excludeChunks: ['likeBtn'],
-    }),
+
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/index-page/index-page.pug`,
       filename: 'index-page.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
+      chunks: ['app', 'header', 'footer', 'datepicker', 'dropdown'],
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/pages/number-page/number-page.pug`,
+      filename: 'number-page.html',
+      chunks: ['app', 'header', 'footer', 'datepicker', 'dropdown', 'checkBox', 'pagination'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/review-page/review-page.pug`,
       filename: 'review-page.html',
-      excludeChunks: ['pagination', 'checkBox', 'dropdownComfort'],
+      // excludeChunks: ['pagination', 'checkBox', 'dropdownComfort'],
+      chunks: ['app', 'header', 'footer', 'datepicker', 'dropdown', 'chart'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/register-page/register-page.pug`,
       filename: 'register-page.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
+      chunks: ['app', 'header', 'footer'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/pages/login-page/login-page.pug`,
       filename: 'login-page.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
+      chunks: ['app', 'header', 'footer'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/colors.pug`,
       filename: 'colors.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
+      chunks: ['app'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/cards.pug`,
       filename: 'cards.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdownComfort'],
+      chunks: ['app', 'datepicker', 'dropdown'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/headers-and-footers.pug`,
       filename: 'headers-and-footers.html',
-      excludeChunks: ['pagination', 'likeBtn', 'checkBox', 'dropdown', 'datepicker', 'dropdownComfort'],
+      chunks: ['app', 'header', 'footer'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/Form-elements.pug`,
       filename: 'Form-elements.html',
-
+      chunks: ['app', 'datepicker', 'dropdown', 'checkBox', 'likeBtn', 'pagination'],
     }),
 
   ],

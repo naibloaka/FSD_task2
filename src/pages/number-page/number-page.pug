@@ -1,5 +1,7 @@
 extends ./../head.pug
 block content
+    include ./../../blocks/dropdown/dropdown-mixin.pug
+    include ./../../blocks/calendar/calender-mixin.pug
     include ./../../blocks/range-slider/range-slider.pug
     include ./../../blocks/check-box_btn/extra-checkboxes.pug
 
@@ -12,11 +14,11 @@ block content
             .settings__arrivaldate
                 h3(class = "settings__title") даты пребывания в отеле 
                 .settings__arrivaldate-block
-                    include ./../../blocks/calendar/calendar.pug
+                    +one-block-calendar('search-room__datepicker')
             .settings__guests
                 h3(class = "settings__title") гости
                 .settings__guests-block
-                    include ./../../blocks/dropdown/dropdown.pug
+                    +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown')
                 
             .settings__price
                 .settings__price-block
@@ -36,7 +38,7 @@ block content
             .settings__comfort
                 h3(class = "settings__title") удобства номера
                 .settings__comfort-block
-                    include ./../../blocks/dropdown/dropdown-comfort.pug
+                    +no-btns-dropdown('спальни', 'кровати', 'ванные комнаты', 'number-page-comfort-dropdown')
             .settings__extracomfort
                 .settings__extracomfort-block
                     +extra-checkbox(false,'дополнительные удобства', 'Завтрак',

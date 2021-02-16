@@ -20,7 +20,7 @@
 .text-field {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
 }
 .ui-title {
     @include for-h3;
@@ -36,17 +36,26 @@
 .col__datepicker {
     display: flex;
     justify-content: space-between;
-    margin-top: 42px;
+    margin-top: 41px;
 }
 .datepicker__block {
     width: 150px;
+    h3 {
+        margin-bottom: 7px;
+    }
 }
 .col__datepicker-one-field {
     margin-top: 42px;
     width: 267px;
+    h3 {
+        margin-bottom: 7px;
+    }
 }
 .col__email {
-    margin-top: 44px;
+    margin-top: 39px;
+    h3 {
+        margin-bottom: 7px;
+    }
 }
 .col__email-block {
     width: 267px;
@@ -58,6 +67,12 @@
 .col__dropdown-comfort-block {
     margin-top: 21px;
     width: 265px;
+    .dropdown__field {
+        border-radius: 5px 5px 0 0;
+    }
+    .dropdown__buttons-list {
+        display: block;
+    }
 }
 .block__extra-check {
     margin-top: 173px;
@@ -68,7 +83,7 @@
     margin-top: 18px;
 }
 .block__radio {
-    margin-top: 60px;
+    margin-top: 57px;
 }
 .block__radio-container {
     display: flex;
@@ -112,11 +127,19 @@
 .block__dropdown_show {
     margin-top: 194px;
     width: 320px;
+    .dropdown__field {
+        border-radius: 5px 5px 0 0;
+    }
+    .dropdown__buttons-list {
+        display: block;
+    }
 }
 
 //styles for 3 col
-.ui-wrap__block-cont-slider {
-    width: 266px;
+.block-slider__container {
+    #slider-range {
+        margin-top: 25px;
+    }
 }
 .block__btns {
     margin-top: 44px;
@@ -184,6 +207,12 @@
 .block__dropdown_show1 {
     margin-top: 239px;
     width: 320px;
+    .dropdown__field {
+        border-radius: 5px 5px 0 0;
+    }
+    .dropdown__buttons-list {
+        display: block;
+    }
 }
 .block__rich-checkbox {
     margin-top: 257px;

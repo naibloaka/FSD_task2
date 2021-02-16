@@ -16,15 +16,11 @@
         background: $back;
     }
 }
-.register-page__register {
+.register-page__register-block {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     width: 378px;
-    height: 644px;
-    background: $back;
     margin-left: 37.2%;
     margin-right: auto;
-    border-radius: $form-standart;
-    border: 1px solid $border_faded;
     @media (max-width: $medium) {
         margin-left: auto;
         margin-right: auto;

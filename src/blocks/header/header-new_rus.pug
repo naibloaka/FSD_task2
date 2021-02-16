@@ -6,21 +6,19 @@ header
         .header__nav-btn
             +register-btn("МЕНЮ", "#", "nav-btn")
         .header__navigation.header__navigation_rus
-            ul(class="navigation-block")
-                li(class="navigation-element")
+            ul(class="navigation-element")
+                li(class="navigation-block")
                     a(class="navigation-block__elem") О нас
-                li(class="navigation-element")
-                    label(class="navigation-block__arrow")
-                            a(class="navigation-block__elem") Услуги
-                            i(class="fas fa-chevron-down")
+                li(class="navigation-element navigation-arrow")
+                    a(class="navigation-block__elem") Услуги
+                    .arrow-down
                 li(class="navigation-element")
                     a(class="navigation-block__elem") Вакансии
                 li(class="navigation-element")
                     a(class="navigation-block__elem") Новости
-                li(class="navigation-element")
-                    label(class="navigation-block__arrow")
-                            a(class="navigation-block__elem") Соглашения 
-                            i(class="fas fa-chevron-down")
+                li(class="navigation-element navigation-arrow navigation-element_wide")
+                    a(class="navigation-block__elem") Соглашения 
+                    .arrow-down
         .header__buttons_rus        
             .header__login.header__login_rus
                 +white-gradient("войти","login-page.html")

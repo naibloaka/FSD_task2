@@ -1,6 +1,6 @@
 include ./../buttons/btn-mixin.pug
 include ./../calendar/calender-mixin.pug
-
+include ./../dropdown/dropdown-mixin.pug
 
 .number-find
     .number-find__wrap
@@ -9,16 +9,16 @@ include ./../calendar/calender-mixin.pug
         .number-find__datepicker
             .number-find__datepicker-container
                 h2(class="number-find__subtitle") ПРИБЫТИЕ
-                +clendar-from()
+                +clendar-from('number-find__datepicker-from')
             .number-find__datepicker-container
                 h2(class="number-find__subtitle") ВЫЕЗД
-                +clendar-to()
+                +clendar-to('number-find__datepicker-to')
                     
                 
         
         .number-find__guests
             h2(class="number-find__subtitle") ГОСТИ
-            include ./../dropdown/dropdown.pug
+            +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown')
         
         .number-find__button
             +purple-with-arrow('Подобрать номер',"number-page.html")

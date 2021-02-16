@@ -1,0 +1,59 @@
+mixin people-drop-buttons(name1, name2, name3, id)
+    .dropdown 
+        input(placeholder="Сколько гостей" class="dropdown__field" id=id)
+        .dropdown__arrow-down 
+    
+        ul(class="dropdown__buttons-list")
+            li(class="dropdown__buttons-block dropdown__buttons-block_top")
+                    h3=name1
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +
+
+            li(class="dropdown__buttons-block")
+                    h3=name2
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +
+
+            li(class="dropdown__buttons-block")
+                    h3=name3
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +
+
+            li(class="dropdown__buttons-block")
+                    button(class="dropdown__clear-btn dropdown__bottom-btn") ОЧИСТИТЬ
+                    button(class="dropdown__accept-btn dropdown__bottom-btn") ПРИМЕНИТЬ
+
+
+
+mixin no-btns-dropdown(name1, name2, name3, id)
+    .dropdown 
+        input(placeholder="Сколько гостей" class="dropdown__field" id=id)
+        .dropdown__arrow-down 
+    
+        ul(class="dropdown__buttons-list")
+            li(class="dropdown__buttons-block dropdown__buttons-block_top")
+                    h3=name1
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +
+
+            li(class="dropdown__buttons-block")
+                    h3=name2
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +
+
+            li(class="dropdown__buttons-block")
+                    h3=name3
+                    .block-calc
+                        .minus -
+                        .number 0
+                        .plus +

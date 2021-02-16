@@ -1,5 +1,8 @@
 .login-block {
-    padding-bottom: 32px;
+    background: $back;
+    box-shadow: $block_shadow;
+    padding: 25px 30px 33px 30px;
+    border-radius: $form-standart;
 }
 .login-block__wrap {
     width: 320px;

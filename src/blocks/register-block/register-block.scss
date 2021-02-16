@@ -1,5 +1,9 @@
 .register-block {
     display: block;
+    background: $back;
+    padding: 24px 30px 28px 30px;
+    box-shadow: $block_shadow;
+    border-radius: $form-standart;
 }
 .register__wrap {
     width: 320px;
@@ -13,7 +17,6 @@
     color: $black_text;
     font-size: 24px;
     font-family: $bold;
-    margin-top: 41px;
     letter-spacing: -0.45px;
 }
 .register-block__name {
@@ -28,7 +31,7 @@
     position: relative;
 }
 .register-block__birthday {
-    margin-top: 23px;
+    margin-top: 25px;
 }
 .register-block__subtitle {
     @include for-h3;
@@ -48,7 +51,7 @@
 .register-block__login {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 29px;
     align-items: center;
     width: 321px;
     @media (max-width: $mobile) {

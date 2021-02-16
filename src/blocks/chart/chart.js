@@ -35,7 +35,16 @@ const data = {
   ],
 };
 
-const myDoughnutChart = new Chart(ctx, {
+// get vouts number
+const voutsNum = document.querySelector('.chart__votes-num');
+let counter = 0;
+
+data.datasets[0].data.forEach((element) => {
+  counter += element;
+});
+voutsNum.innerHTML = counter;
+
+const voutsChart = new Chart(ctx, {
   type: 'doughnut',
   data,
   options: {
@@ -54,12 +63,3 @@ const myDoughnutChart = new Chart(ctx, {
     responsiveAnimationDuration: 0, // animation duration after a resize
   },
 });
-
-// get vouts number
-const voutsNum = document.querySelector('.chart__votes-num');
-let counter = 0;
-
-data.datasets[0].data.forEach((element) => {
-  counter += element;
-});
-voutsNum.innerHTML = counter;

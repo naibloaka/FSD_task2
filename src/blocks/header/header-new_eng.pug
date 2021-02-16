@@ -2,24 +2,23 @@ include ./../buttons/btn-mixin.pug
 header
     .header
         .header__logo
-            img(src='/src/assets/img/logo.svg')
+            img(src='./../../assets/img/logo.svg')
         .header__nav-btn
             +register-btn("МЕНЮ", "#", "nav-btn")
         .header__navigation.header__navigation_eng
-            ul(class="navigation-block")
-                li(class="navigation-element")
+            ul(class="navigation-element")
+                li(class="navigation-block")
                     a(class="navigation-block__elem") Home
-                li(class="navigation-element")
+                li(class="navigation-block")
                     a(class="navigation-block__elem") About Us
-                li(class="navigation-element")
-                    label(class="navigation-block__arrow")
-                            a(class="navigation-block__elem") Services
-                            i(class="fas fa-chevron-down")
-                li(class="navigation-element")
+                li(class="navigation-block navigation-arrow")
+                        a(class="navigation-block__elem") Services
+                        .arrow-down
+                li(class="navigation-block")
                     a(class="navigation-block__elem") Careers
-                li(class="navigation-element")
+                li(class="navigation-block")
                     a(class="navigation-block__elem") News
-                li(class="navigation-element")
+                li(class="navigation-block")
                     a(class="navigation-block__elem") Documentation
                 
         .header__login.header__login_eng

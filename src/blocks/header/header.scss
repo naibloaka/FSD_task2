@@ -1,6 +1,32 @@
 header {
     box-shadow: $block_shadow;
 }
+.arrow-down {
+    @include arrow-down;
+    margin-top: 3px;
+}
+.navigation-arrow {
+    display: flex;
+    width: 71px;
+    justify-content: space-between;
+    &:hover {
+        width: 72px;
+        .navigation-block__elem {
+            font-family: $bold;
+            color: $black75;
+        }
+        .arrow-down {
+            border-top: 3px solid $black75;
+            border-right: 3px solid $black75;
+        }
+    }
+}
+.navigation-element_wide {
+    width: 108px;
+    &:hover {
+        width: 109px;
+    }
+}
 .header {
     background: $back;
     display: flex;
@@ -30,7 +56,7 @@ header {
         margin: 10px auto 0 auto;
     }
 }
-.navigation-block {
+.navigation-element {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -45,7 +71,7 @@ header {
         display: flex;
     }
 }
-.navigation-element {
+.navigation-block {
     flex-basis: auto;
     text-align: center;
 }
@@ -57,19 +83,6 @@ header {
     &:hover {
         font-family: $bold;
         color: $black75;
-    }
-    .fa-chevron-down {
-        margin-left: 5px;
-        margin-top: 2px;
-        color: $black50;
-    }
-}
-.navigation-block__arrow {
-    display: flex;
-    .fa-chevron-down {
-        margin-left: 5px;
-        margin-top: 2px;
-        color: $black50;
     }
 }
 .header__login {
