@@ -199,7 +199,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/headers-and-footers.pug`,
       filename: 'headers-and-footers.html',
-      chunks: ['app', 'header', 'footer'],
+      chunks: ['app'],
     }),
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/ui-kit/Form-elements.pug`,
