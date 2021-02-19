@@ -1,9 +1,9 @@
 Вёрстка учебного макета отеля Toxin.
 
-корневой репозиторий со ссылками на страницы - https://naibloaka.github.io/Toxin-pages/
+[корневой репозиторий со ссылками на страницы](https://naibloaka.github.io/Toxin-pages/)
 
 Проект выполнен в соответствии со вторым задание учебной программы от компании MetaLamp
-Исходный макет - https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=0%3A1
+[Исходный макет](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=0%3A1)
 
 Особенности вёрстки:
 1) Использование препроцессоров Pug и Sass
