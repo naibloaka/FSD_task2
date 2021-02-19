@@ -1,0 +1,5 @@
+@mixin def-card {
+    background: $back;
+    border-radius: $form-standard;
+    box-shadow: $block_shadow;
+}

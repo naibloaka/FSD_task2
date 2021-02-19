@@ -1,0 +1,21 @@
+// arrow down
+@mixin arrow-down {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid $black50;
+    border-right: 2px solid $black50;
+    transform: rotate(130deg);
+    cursor: pointer;
+}
+//default input
+@mixin def-input {
+    outline: none;
+    border: none;
+    width: calc(100%-14px);
+    height: 42px;
+    color: #575871;
+    cursor: pointer;
+    border-radius: $form-standard;
+    border: 1px solid $border_faded;
+    padding-left: 14px;
+}

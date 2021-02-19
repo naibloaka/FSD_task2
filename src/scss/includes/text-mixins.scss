@@ -1,0 +1,30 @@
+@mixin for-h3 {
+    font-family: $bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $black_text;
+}
+@mixin formLabel {
+    font-family: $bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $black_text;
+}
+
+@mixin text-style {
+    font-family: $regular;
+    color: $black50;
+    font-size: 14px;
+}
+
+@mixin title-style {
+    font-family: $quicksand_bold;
+    color: $black_text;
+    font-size: 24px;
+}
+
+@mixin subtitle-style {
+    font-family: $quicksand_bold;
+    color: $black_text;
+    font-size: 12px;
+}

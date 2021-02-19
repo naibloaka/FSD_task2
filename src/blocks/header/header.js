@@ -1,4 +1,4 @@
-const menu = document.getElementById('nav-btn');
+const menu = document.querySelector('.header__nav-btn');
 
 function menuClick() {
   const list = document.getElementsByClassName('navigation-block');
