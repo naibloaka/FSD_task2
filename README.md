@@ -1,17 +1,17 @@
 Вёрстка учебного макета отеля Toxin.
 
-[Landing page](https://naibloaka.github.io/Toxin-Landing-page/)
+[Landing page](https://naibloaka.github.io/ToxinPages/)
 
-[Search room](https://naibloaka.github.io/Toxin-Landing-page/search-room-page.html)
+[Search room](https://naibloaka.github.io/ToxinPages/search-room-page.html)
 
-[Room details](https://naibloaka.github.io/Toxin-Landing-page/room-details-page.html)
+[Room details](https://naibloaka.github.io/ToxinPages/room-details-page.html)
 
 [Registration](https://naibloaka.github.io/Toxin-Landing-page/registration-page.html)
 
-[Sign in](https://naibloaka.github.io/Toxin-Landing-page/singin-page.html)
+[Sign in](https://naibloaka.github.io/ToxinPages/singin-page.html)
 
 UI-KIT
-[Colors](https://naibloaka.github.io/Toxin-Landing-page/colors.html)
+[Colors](https://naibloaka.github.io/ToxinPages/colors.html)
 
 [Cards](https://naibloaka.github.io/ToxinPages/cards.html)
 
