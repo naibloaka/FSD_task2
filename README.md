@@ -1,6 +1,19 @@
 Вёрстка учебного макета отеля Toxin.
 
-[корневой репозиторий со ссылками на страницы](https://naibloaka.github.io/Toxin-pages/)
+[Landing page](https://naibloaka.github.io/Toxin-Landing-page/)
+
+[Search room](https://naibloaka.github.io/Toxin-Landing-page/search-room-page.html)
+
+[Room details](https://naibloaka.github.io/Toxin-Landing-page/room-details-page.html)
+
+[Registration](https://naibloaka.github.io/Toxin-Landing-page/registration-page.html)
+
+[Sign in](https://naibloaka.github.io/Toxin-Landing-page/singin-page.html)
+
+UI-KIT
+[Colors](https://naibloaka.github.io/Toxin-Landing-page/colors.html)
+
+[Cards]()
 
 Проект выполнен в соответствии со вторым задание учебной программы от компании MetaLamp
 [Исходный макет](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=0%3A1)
