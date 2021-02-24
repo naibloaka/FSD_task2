@@ -13,7 +13,13 @@
 UI-KIT
 [Colors](https://naibloaka.github.io/Toxin-Landing-page/colors.html)
 
-[Cards]()
+[Cards](https://naibloaka.github.io/ToxinPages/cards.html)
+
+[Headers and footers](https://naibloaka.github.io/ToxinPages/headers-and-footers.html)
+
+[Form elements](https://naibloaka.github.io/ToxinPages/Form-elements.html)
+
+
 
 Проект выполнен в соответствии со вторым задание учебной программы от компании MetaLamp
 [Исходный макет](https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/FSD-frontend-education-program.-The-2nd-task?node-id=0%3A1)
