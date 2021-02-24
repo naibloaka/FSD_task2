@@ -1,22 +1,14 @@
 //form styles
+.datepicker__label {
+    @include formLabel;
+}
 .calendar__input {
-    border-radius: inherit;
-    border: none;
-    outline: none;
-    font-family: $regular;
-    font-size: 14px;
-    color: $black75;
-    width: 100%;
-    height: 42px;
-    cursor: pointer;
+    @include def-input;
+    position: relative;
 }
 .calendar {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid $border_faded;
-    border-radius: $form-standart;
-    padding-left: 14px;
+    margin-top: 5px;
 }
 .calendar__arrow-down {
     cursor: pointer;
@@ -26,25 +18,16 @@
     @include arrow-down;
 }
 .calendar__oneblock-input {
-    border: none;
-    outline: none;
-    width: 100%;
-    height: 42px;
-    font-family: $regular;
-    font-size: 14px;
-    color: $black75;
-    cursor: pointer;
+    @include def-input;
 }
 
 //datepicker styles change
-.calendar {
-}
 .datepicker.-bottom-left-.-from-bottom-.active {
     left: 184px;
 }
 #datepickers-container {
     position: absolute;
-    left: -15px;
+    left: 0px;
     top: 0px;
 }
 .datepicker--content {
@@ -192,7 +175,6 @@
     padding: 12px 0 11px 0;
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
 
     .datepicker--button[data-action='hide'] {
         cursor: pointer;

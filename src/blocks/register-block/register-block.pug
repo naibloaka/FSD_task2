@@ -1,37 +1,40 @@
 include ./../buttons/btn-mixin.pug
 include ./../text-inputs/input-text-field.pug
-div(class="register-block")
-    div(class="register__wrap")
+
+.register-block
+    fieldset(class="register__wrap")
         h1(class="register-block__title") Регистрация аккаунта
 
-        div(class="register-block__name")
-            +text-input("Имя")
-        
-        div(class="register-block__secondname")
-            +text-input("Фамилия")
-
-        div(class="register-block__gender")
+        form(class="register-block__person")
+            .register-block__name
+                +text-input("Имя")
+            
+            .register-block__secondname
+                +text-input("Фамилия")
+        form(class="register-block__gender")
             include ./../gender-radiobtn/gender-radiobtn.pug
 
-        div(class="register-block__birthday")
-            h3(class="register-block__subtitle") дата рождения
+        form(class="register-block__birthday")  
+            label(class="register-block__subtitle") дата рождения
             +text-input("ДД.ММ.ГГГГ")
+        
+        form(class="register-block__entrens")
+            label(class="register-block__subtitle") данные для входа в сервис
+            .register-block__email
+                +text-input("Email")
 
-        div(class="register-block__email")
-            h3(class="register-block__subtitle") данные для входа в сервис
-            +text-input("Email")
+            .register-block__password
+                +text-input("Пароль")
 
-        div(class="register-block__password")
-            +text-input("Пароль")
-
-        div(class="register-block__swith")
+        form(class="register-block__btns")
+            
             include ./../switch-btn/switch-btn.pug
 
-        div(class="register-block__paybtn")
-            +purple-with-arrow('перейти к оплате')
+            .register-block__paybtn
+                +purple-with-arrow('перейти к оплате')
 
-        div(class="register-block__login")
-            p(class="register-block__login-text") Уже есть аккаунт на Toxin
-            div(class="register-block__login-btn")
-                +white-gradient('войти')
+            .register-block__login
+                p(class="register-block__login-text") Уже есть аккаунт на Toxin
+                .register-block__login-btn
+                    +white-gradient('войти')
                 

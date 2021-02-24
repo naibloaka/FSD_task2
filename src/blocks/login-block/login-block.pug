@@ -2,19 +2,19 @@ include ./../buttons/btn-mixin.pug
 include ./../text-inputs/input-text-field.pug
 
 div(class="login-block")
-    div(class="login-block__wrap")
+    fieldset(class="login-block__wrap")
         h1(class="register-block__title") Войти
 
-        div(class="login-block__email")
+        form(class="login-block__email")
             +text-input("Email")
 
-        div(class="login-block__password")
+        form(class="login-block__password")
             +text-input("Пароль")
 
-        div(class="login-block__paybtn")
+        form(class="login-block__paybtn")
             +purple-with-arrow('войти')
 
-        div(class="register-block__login")
+        form(class="register-block__login")
             p(class="register-block__login-text") Нет аккаунта на Toxin?
             div(class="register-block__login-btn")
                 +white-gradient('СОЗДАТЬ')

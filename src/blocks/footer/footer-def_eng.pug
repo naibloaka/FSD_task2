@@ -1,55 +1,56 @@
+include ./../text-inputs/email-input.pug
+
 footer
     .footer-wrap.footer-wrap_eng
-        .footer
-            .footer__blok-text
-                .block-text__logo
-                    img(src="assets/img/logo.svg")
-                .block-text__text
-                    p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-            .footer__blok-navigation.footer__blok-navigation_eng
-                ul(class="navigation__list navigation__list_eng")
-                    li(class="list-item ")
-                        p(class="list-item__title") Navigation
-                    li(class="list-item")
-                        a(class="list-item__text") About Us
-                    li(class="list-item")
-                        a(class="list-item__text") News
-                    li(class="list-item")
-                        a(class="list-item__text") Support
-                    li(class="list-item")
-                        a(class="list-item__text") Products
+        .footer__blok-text
+            figure 
+                img(src="assets/img/logo.svg")
+            .footer__blok-txt
+                p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        nav(class="footer__navigation footer__navigation_eng")
+            p(class="navigation__title") Navigation
 
-            .footer__blok-about.footer__blok-about_eng
-                ul(class="about__list about__list_eng")
-                    li(class="list-item")
-                        p(class="list-item__title") ABOUT US
-                    li(class="list-item")
-                        a(class="list-item__text") Who we are
-                    li(class="list-item")
-                        a(class="list-item__text") Our team
-                    li(class="list-item")
-                        a(class="list-item__text") Careers
-                    li(class="list-item")
-                        a(class="list-item__text") Investors
+            ul(class="navigation__list navigation__list_eng")
+                li(class="list-item")
+                    a(class="list-item__text") About Us
+                li(class="list-item")
+                    a(class="list-item__text") News
+                li(class="list-item")
+                    a(class="list-item__text") Support
+                li(class="list-item")
+                    a(class="list-item__text") Products
 
-            .footer__blok-support.footer__blok-support_eng
-                ul(class="support__list support__list_eng")
-                    li(class="list-item")
-                        p(class="list-item__title") Support
-                    li(class="list-item")
-                        a(class="list-item__text") Documentation
-                    li(class="list-item")
-                        a(class="list-item__text") Community
-                    li(class="list-item")
-                        a(class="list-item__text") Get in Touch
-                
-            .footer__blok-newsletter.footer__blok-newsletter_eng
-                h3(class="newsletter__title") Subscribe to our newsletter
+        nav(class="footer__navigation footer__blok-about_eng")
+            p(class="navigation__title") ABOUT US
 
-                p(class="newsletter__txt") Receive our latest news and promotions in your inbox!
+            ul(class="about__list about__list_eng")
+                li(class="list-item")
+                    a(class="list-item__text") Who we are
+                li(class="list-item")
+                    a(class="list-item__text") Our team
+                li(class="list-item")
+                    a(class="list-item__text") Careers
+                li(class="list-item")
+                    a(class="list-item__text") Investors
 
-                .newsletter__email-input
-                    include ./../text-inputs/email-input.pug
+        nav(class="footer__navigation footer__blok-support_eng")
+            p(class="navigation__title") Support
+
+            ul(class="support__list support__list_eng")
+                li(class="list-item")
+                    a(class="list-item__text") Documentation
+                li(class="list-item")
+                    a(class="list-item__text") Community
+                li(class="list-item")
+                    a(class="list-item__text") Get in Touch
+            
+        .footer__blok-newsletter.footer__blok-newsletter_eng
+            h3(class="newsletter__title") Subscribe to our newsletter
+
+            p(class="newsletter__txt") Receive our latest news and promotions in your inbox!
+
+            .newsletter__email-input
+                +email-input('Your email address')
 
 
     .bottom-line

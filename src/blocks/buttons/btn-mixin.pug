@@ -1,6 +1,6 @@
 mixin purple-with-arrow(name,href,id)
     .filled-block
-        a(class="filled-block__btn" id=id href=href)= name
+        button(class="filled-block__btn" id=id href=href)=name
             .filled-block__arrow
                 <i class="fas fa-arrow-right"></i>
 
@@ -10,9 +10,8 @@ mixin  white-gradient(name,href,id)
 
 mixin purple-btn(name,href,id)
     .filled-btn
-        a(class="filled-block__btn" id=id href=href)= name
+        button(class="filled-block__btn" id=id href=href)=name
 
 mixin register-btn(name,href,id)
-    .register-but
-        a(href=href id=id class="register-but__btn")=name
+    button(href=href id=id class="register-but__btn")=name
 

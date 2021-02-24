@@ -1,5 +1,5 @@
 //styles for detepicker and forms
-.welcome {
+.landing {
     background-image: url('../assets/img/backgrouds/landing1534.png');
     background-repeat: no-repeat;
     background-position-x: -47px;
@@ -28,12 +28,10 @@
         height: 540px;
     }
 }
-.welcome__text {
-    color: $semy_bold_text;
+.landing__text {
+    @include black-grey-text;
     width: 260px;
     height: 48px;
-    //margin-top: 311px;
-    // margin-left:73.1%;
     padding-right: 0px;
     text-align: right;
     line-height: 24px;
@@ -41,7 +39,7 @@
     bottom: 21px;
     right: 8.3%;
 }
-.welcome__number-find {
+.landing__number-find {
     position: absolute;
     top: 70px;
     left: 9.8%;

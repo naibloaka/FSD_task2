@@ -7,11 +7,10 @@
     }
 }
 .information__subtitle {
-    font-family: $bold;
-    color: $black75;
+    @include subtitle14;
 }
 .information__text {
-    color: $light_grey;
+    @include black-grey-text;
     margin-top: 6px;
 }
 .information__img {
@@ -27,6 +26,9 @@
     width: 280px;
     padding-top: 22px;
     padding-bottom: 18px;
+    @media (max-width: $small) {
+        margin: 0 auto;
+    }
     @media (max-width: $mobile) {
         width: 100%;
         justify-content: space-between;

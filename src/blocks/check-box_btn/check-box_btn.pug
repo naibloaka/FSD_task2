@@ -1,21 +1,11 @@
-.check-box_btn
-    .checkbox
-        label()
-            input(type="checkbox" class="checkbox-check")
-            .checkbox__fake
-            .checkbox__text
-                span Можно курить
-
-    .checkbox
-        label()
-            input(type="checkbox" class="checkbox-check")
-            .checkbox__fake
-            .checkbox__text
-                span Можно с питомцами
-
-    .checkbox
-        label()
-            input(type="checkbox" class="checkbox-check")
-            .checkbox__fake
-            .checkbox__text
-                span Можно пригласить гостей (до 10 человек)
+mixin check-box-btns(legend, ...items)
+    label(class="check-box__legend")=legend 
+    .check-box_btn
+        each item in items
+            fieldset(class="checkbox-button") 
+                label(class="checkbox__container")
+                    .checkbox__input-zone
+                        input(type="checkbox" class="checkbox-check")
+                        .checkbox__fake
+                    .checkbox__text-zone.checkbox__text-zone_extra
+                        p(class="checkbox__text-zone__text")=item

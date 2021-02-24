@@ -1,13 +1,8 @@
-const extraCheckbox = document.getElementById('extra-check');
-const checkboxList = document.getElementById('extra-checkbox-list');
+function showList() {
+  const list = $(this).siblings('#extra-checkbox-list')
+  list.toggle(350);
 
-function hideBoxes() {
-  if (checkboxList.style.display === 'none') {
-    checkboxList.style.display = 'block';
-  } else {
-    checkboxList.style.display = 'none';
-  }
+  $(this).children('.extra-check-arrow').toggleClass('transform');
 }
 
-
-extraCheckbox.addEventListener('click', hideBoxes);
+$('#extra-check').on('click', showList);

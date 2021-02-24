@@ -16,6 +16,7 @@
     border-radius: 50%;
     color: $light_grey;
     line-height: 40px;
+    user-select: none;
     &:hover {
         color: $white_text;
         background: linear-gradient(to top, #8aabfe, #c79eff);
@@ -69,5 +70,5 @@
 .pagination-text {
     margin-left: 5px;
     margin-top: 12px;
-    color: $black75;
+    @include black-grey-text;
 }

@@ -1,9 +1,23 @@
 header {
     box-shadow: $block_shadow;
+    background: $back;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    @media (max-width: $Notebook) {
+        justify-content: space-around;
+    }
+    @media (max-width: $small) {
+        display: block;
+        text-align: center;
+    }
 }
 .arrow-down {
     @include arrow-down;
     margin-top: 3px;
+    @media (max-width: $medium) {
+        margin-left: 5px;
+    }
 }
 .navigation-arrow {
     display: flex;
@@ -20,24 +34,14 @@ header {
             border-right: 3px solid $black75;
         }
     }
+    @media (max-width: $medium) {
+        justify-content: left;
+    }
 }
 .navigation-element_wide {
     width: 108px;
     &:hover {
         width: 109px;
-    }
-}
-.header {
-    background: $back;
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 13px;
-    @media (max-width: $Notebook) {
-        justify-content: space-around;
-    }
-    @media (max-width: $small) {
-        display: block;
-        text-align: center;
     }
 }
 .header__logo {
@@ -51,34 +55,37 @@ header {
     display: none;
     @media (max-width: $mobile) {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         margin: 10px auto 0 auto;
     }
 }
-.navigation-element {
+.header__navigation {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+.navigation-block {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     @media (max-width: $mobile) {
-        display: none;
-        text-align: center;
-        .navigation-element {
-            margin: 5px 0 5px 0;
-        }
+        display: block;
     }
     @media (min-width: $mobile+1px) {
         display: flex;
     }
 }
-.navigation-block {
+.navigation-element {
     flex-basis: auto;
     text-align: center;
+    @media (max-width: $mobile) {
+        width: 250px;
+        margin-left: 10%;
+        margin-top: 10px;
+        text-align: left;
+    }
 }
-
-.navigation-block__elem {
-    font-size: 14px;
-    color: $black50;
+.navigation-element__elem {
+    @include text-style;
     cursor: pointer;
     &:hover {
         font-family: $bold;
@@ -87,9 +94,14 @@ header {
 }
 .header__login {
     width: 5.5%;
-    height: 34px;
     margin-top: 3px;
     margin-left: 2%;
+    .login-btn__login {
+        line-height: 29px;
+    }
+    .login-btn__border {
+        height: 34px;
+    }
 }
 .header__register {
     width: 7%;
@@ -104,7 +116,83 @@ header {
     max-width: 39%;
 }
 .header-user__name-text {
+    margin-left: 28px;
     margin-top: 13px;
-    margin-left: 29px;
-    color: $black50;
+    @include text-style;
+}
+.header__navigation_eng {
+    width: 39.1%;
+    margin-left: 19.9%;
+    margin-top: 12px;
+}
+.header__navigation_user-eng {
+    width: 39.1%;
+    margin-left: 23.6%;
+    margin-top: 12px;
+}
+.header__login_eng {
+    width: 5.5%;
+    height: 34px;
+    margin-top: 3px;
+    margin-left: 1%;
+}
+.header__register_eng {
+    width: 7%;
+    height: 34px;
+    margin-top: 3px;
+    margin-left: 1.5%;
+}
+.header-user__navigation {
+    width: 39.2%;
+    margin-left: 23.6%;
+    margin-top: 12px;
+}
+.header-user__name {
+    border-left: 1px solid $border_invisible;
+    margin-left: 18px;
+}
+.header__navigation_rus {
+    width: 32.7%;
+    margin-left: 19%;
+    margin-top: 12px;
+    @media (max-width: $Notebook) {
+        margin-left: 9%;
+        width: 500px;
+    }
+    @media (max-width: $small) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.header__buttons_rus {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    width: 21.35%;
+    @media (max-width: $Notebook) {
+        width: 280px;
+    }
+    @media screen and (max-width: $small) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 10px auto 0 auto;
+    }
+}
+.header__login_rus {
+    width: 28.5%;
+    height: 34px;
+    margin-top: 3px;
+    margin-left: 1%;
+    line-height: 5px;
+    @media (max-width: $Notebook) {
+        width: 84px;
+    }
+}
+.header__register_rus {
+    width: 64%;
+    height: 34px;
+    margin-top: 3px;
 }

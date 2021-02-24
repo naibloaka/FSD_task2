@@ -1,54 +1,53 @@
-.radio-btn{
+.radio-btn {
     display: none;
 }
-.radio-btn__fake{
+.radio-btn__fake {
     display: inline-block;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     border: 1px solid $border_faded;
     position: relative;
-    &::before{
-        content: "";
+    &::before {
+        content: '';
         position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: block;
         width: 10px;
         height: 10px;
-        background: linear-gradient(to top, #8BA4F9, #BC9CFF);
+        background: linear-gradient(to top, #8ba4f9, #bc9cff);
         opacity: 0;
         border-radius: 50%;
     }
 }
-.radio-btn:checked + .radio-btn__fake::before{
+.radio-btn:checked + .radio-btn__fake::before {
     opacity: 1;
 }
-.radio-btn:checked + .radio-btn__fake{
+.radio-btn:checked + .radio-btn__fake {
     border: 1px solid $purple;
 }
-.radio-btn:checked ~ .radio-btn__text{
+.radio-btn:checked ~ .radio-btn__text {
     color: $black75;
 }
-.radio-btn__text{
+.radio-btn__text {
     margin-left: 9px;
-    color: $black50;
-    
+    @include text-style;
 }
-.gender{
+.gender {
     display: flex;
     justify-content: space-between;
     width: 220px;
 }
-.gender-female{
-    label{
+.gender-female {
+    label {
         display: flex;
         align-items: flex-start;
     }
 }
-.gender-male{
-    label{
+.gender-male {
+    label {
         display: flex;
         align-items: flex-start;
     }

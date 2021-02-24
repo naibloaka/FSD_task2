@@ -3,27 +3,28 @@ mixin extra-checkbox(bool,title, ...items)
         h2(class = "settings__title")=title
         i(class="fas fa-chevron-down extra-check-arrow")
     if bool == true
-        ul(class="extra-checkboxes_show")
+        ul(class="extra-checkboxes extra-checkboxes_show")
             each item in items
-                li
-                    .check-box_btn
-                        .checkbox
-                            label()
+                li(class="checkbox")
+                    fieldset
+                        label(class="checkbox__container")
+                            .checkbox__input-zone
                                 input(type="checkbox" class="checkbox-check")
                                 .checkbox__fake
-                                .checkbox__text
-                                    span=item
+                            .checkbox__text-zone
+                                span(class="checkbox__text-zone__text")=item
+
     else
         ul(class="extra-checkboxes" id="extra-checkbox-list")
             each item in items
-                li
-                    .check-box_btn
-                        .checkbox
-                            label()
+                li(class="checkbox")
+                    fieldset 
+                        label(class="checkbox__container")
+                            .checkbox__input-zone
                                 input(type="checkbox" class="checkbox-check")
                                 .checkbox__fake
-                                .checkbox__text
-                                    span=item
+                            .checkbox__text-zone
+                                span(class="checkbox__text-zone__text")=item
 
 
 

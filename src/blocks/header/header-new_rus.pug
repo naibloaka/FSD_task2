@@ -1,27 +1,27 @@
 include ./../buttons/btn-mixin.pug
 header
-    .header
-        .header__logo
-            img(src='assets/img/logo.svg')
-        .header__nav-btn
-            +register-btn("МЕНЮ", "#", "nav-btn")
-        .header__navigation.header__navigation_rus
-            ul(class="navigation-element")
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") О нас
-                li(class="navigation-element navigation-arrow")
-                    a(class="navigation-block__elem") Услуги
-                    .arrow-down
-                li(class="navigation-element")
-                    a(class="navigation-block__elem") Вакансии
-                li(class="navigation-element")
-                    a(class="navigation-block__elem") Новости
-                li(class="navigation-element navigation-arrow navigation-element_wide")
-                    a(class="navigation-block__elem") Соглашения 
-                    .arrow-down
-        .header__buttons_rus        
-            .header__login.header__login_rus
-                +white-gradient("войти","login-page.html")
-            .header__register.header__register_rus
-                +register-btn("зарегистрироваться","register-page.html")
+    figure(class="header__logo")
+        img(src='assets/img/logo.svg')
+    .header__nav-btn
+        +register-btn("МЕНЮ", "#", "nav-btn")
+    nav(class="header__navigation header__navigation_rus")
+        ul(class="navigation-block")
+            li(class="navigation-element")
+                a(class="navigation-element__elem") О нас
+            li(class="navigation-element navigation-arrow")
+                a(class="navigation-element__elem") Услуги
+                .arrow-down
+            li(class="navigation-element")
+                a(class="navigation-element__elem") Вакансии
+            li(class="navigation-element")
+                a(class="navigation-element__elem") Новости
+            li(class="navigation-element navigation-arrow navigation-element_wide")
+                a(class="navigation-element__elem") Соглашения 
+                .arrow-down
+
+    form(class="header__buttons_rus")         
+        .header__login.header__login_rus
+            +white-gradient("войти","")
+        .header__register.header__register_rus
+            +register-btn("зарегистрироваться","")
 

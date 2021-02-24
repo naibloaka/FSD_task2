@@ -1,7 +1,7 @@
-mixin range-slider(name)
+mixin range-slider(legend)
     .range-slider
-        .range-slider__flex
-            h3(class = "settings__title")=name
+        .range-slider__container
+            label(for="" class="range-slider__title")=legend
             input(type="text" id="amount" class="range-slider-input")
         #slider-range
     

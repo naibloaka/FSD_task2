@@ -4,43 +4,40 @@ include ./../calendar/calender-mixin.pug
 include ./../dropdown/dropdown-mixin.pug
 
 
-.number-find-calc
-    .number-find__wrap
-        .number-find-calc__price
+.number-find.number-find_calc
+    fieldset(class="number-find__wrap") 
+        .number-find__price
             +price(888,true,9,990)
             
 
-        .number-find__datepicker.number-find-calc__datepicker
+        form(class="number-find__datepicker number-find__datepicker_calc") 
             .number-find__datepicker-container
-                h2(class="number-find__subtitle") ПРИБЫТИЕ
-                +clendar-from("review-page-datepicker-from")
+                +clendar-from('number-find__datepicker-from', 'ПРИБЫТИЕ')
             .number-find__datepicker-container
-                h2(class="number-find__subtitle") ВЫЕЗД
-                +clendar-to("review-page-datepicker-to")
+                +clendar-to('number-find__datepicker-to', 'ВЫЕЗД')
         
-        .number-find-calc__guests
-            h3(class="number-find__subtitle") ГОСТИ
-            +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-calc-dropdown')
+        div(class="number-find__guests")
+            +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown', 'ГОСТИ')
 
-        .number-find-calc__text
-            .calc-text__block
-                p(class="text") 9 990₽ х 4 суток
+        .number-find__text
+            .number-find__text-line
+                p 9 990₽ х 4 суток
                 span 39 960₽
 
-            .calc-text__block
-                p(class="text2") Сбор за услуги: скидка 2 179₽
+            .number-find__text-line
+                p(class="text-line__text text-line__text_info") Сбор за услуги: скидка 2 179₽
                 span 0₽
 
-            .calc-text__block
-                p(class="text3 text_last") Сбор за дополнительные услуги
+            .number-find__text-line
+                p(class="text-line__text text-line__text_short") Сбор за дополнительные услуги
                 span 300₽
             
-            .number-find-calc__result
-                p(class="result-txt") Итого
-                div(class="result-dots")
-                p(class="result-num") 38 081₽
+            .number-find__result
+                span(class="result-txt") Итого
+                .result-dots
+                span(class="result-num") 38 081₽
 
 
 
-        div(class="number-find-calc__button")
+        form(class="number-find-calc__button")
             +purple-with-arrow('забронировать')

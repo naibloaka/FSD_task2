@@ -1,0 +1,57 @@
+extends head.pug
+block content
+
+
+    include ./../blocks/header/header-new_rus.pug
+    
+    main(class="room-details") 
+        .details-img
+            div(class="details-img__1")
+            div(class="details-img__2")
+            div(class="details-img__3")
+
+        .details-mobile
+            .owl-carousel.owl-theme
+                div(class="details-img__1")
+                div(class="details-img__2")
+                div(class="details-img__3")
+
+        .details-wrap
+            .details__content
+                .details-information
+                    h2(class="details__subtitle") Сведения о номера
+                    include ./../blocks/information/information.pug
+                    +information('smile')
+                    +information('house')
+                    +information('fire')
+
+                .details__ellipse
+                    include ./../blocks/chart/chart.pug
+
+
+                .details__number-find
+                    include ./../blocks/number-find/number-find-calc.pug
+
+                .details__guests-reviews
+                    .details-title
+                        h2(class="details__subtitle") Отзывы посетителей номера
+                        p(class="details__num") 2 отзыва
+                    include ./../blocks/guests-feedback/guests-feedback.pug
+                    .details__container
+                        +feedback(1,'Мурад Сарафанов','5 дней назад',"like1",12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+
+                    .details__container_second
+                        +feedback(2,'Патрисия Стёклышкова','Неделю назад',"like2",2,false,'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+
+                .details__rules
+                    h2(class="details__subtitle") Правила
+                    include ./../blocks/text-rules/text-rules.pug
+                    .details__rules-container
+                        +rules('Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00')
+                
+                .details__cancel
+                    h2(class="details__subtitle") Отмена
+                    p(class="details__cancel-txt") Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+
+    include ./../blocks/footer/footer-def_rus.pug

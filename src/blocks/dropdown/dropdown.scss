@@ -1,7 +1,11 @@
 @import './src/scss/includes/var';
 
+.dropdown__label {
+    @include formLabel;
+}
 .dropdown {
     position: relative;
+    margin-top: 5px;
 }
 .dropdown__field {
     @include def-input;
@@ -25,7 +29,7 @@
     h3 {
         margin-top: 7px;
         margin-left: 14px;
-        @include for-h3;
+        @include formLabel;
     }
 }
 .dropdown__buttons-block {
@@ -61,7 +65,7 @@
         border: 1px solid $border_bright;
     }
     .number {
-        @include for-h3;
+        @include formLabel;
         margin-top: 8px;
     }
 }
@@ -71,7 +75,7 @@
     background: none;
     outline: none;
     border: none;
-    @include for-h3;
+    @include formLabel;
     width: 99px;
     &:hover {
         opacity: 0.5;

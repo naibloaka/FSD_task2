@@ -1,68 +1,72 @@
+include ./../text-inputs/email-input.pug
+
+
 footer
     .footer-wrap.footer-wrap_rus
-        .footer
-            .footer__blok-text
-                .block-text__logo
-                    img(src="assets/img/logo.svg")
-                .block-text__text
-                    p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        
+        .footer__blok-text
+            figure(class="block-text__logo")
+                img(src="assets/img/logo.svg")
+            .footer__blok-txt
+                p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-            .footer__blok-navigation.footer__blok-navigation_rus
-                p(class="footer__title ") навигация
 
-                .footer__title-block.footer__nav-block
-                    p(class="footer__title") навигация
-                    i(class="fas fa-chevron-right arrow-nav")
+        nav(class="footer__navigation footer__navigation_nav")
+            p(class="navigation__title") навигация
 
-                ul(class="navigation__list navigation__list_rus")
-                    li(class="list-item")
-                        a(class="list-item__text") О нас
-                    li(class="list-item")
-                        a(class="list-item__text") Новости
-                    li(class="list-item")
-                        a(class="list-item__text") Служба поддержки
-                    li(class="list-item")
-                        a(class="list-item__text") Услуги
+            .js-footer__title-block
+                p(class="navigation__title") навигация
+                i(class="fas fa-chevron-right arrow-nav")
 
-            .footer__blok-about.footer__blok-about_rus
-                p(class="footer__title") о нас
+            ul(class="navigation__list")
+                li(class="list-item")
+                    a(class="list-item__text") О нас
+                li(class="list-item")
+                    a(class="list-item__text") Новости
+                li(class="list-item")
+                    a(class="list-item__text") Служба поддержки
+                li(class="list-item")
+                    a(class="list-item__text") Услуги
 
-                .footer__title-block.footer__about-block
-                    p(class="footer__title") О сервисе
-                    i(class="fas fa-chevron-right arrow-about")
+        nav(class="footer__navigation footer__navigation_about")
+            p(class="navigation__title") о нас
 
-                ul(class="about__list about__list_rus")
-                    li(class="list-item")
-                        a(class="list-item__text") О сервисе
-                    li(class="list-item")
-                        a(class="list-item__text") Наша команда
-                    li(class="list-item")
-                        a(class="list-item__text") Вакансии
-                    li(class="list-item")
-                        a(class="list-item__text") Инвесторы
+            .js-footer__title-block
+                p(class="navigation__title") О сервисе
+                i(class="fas fa-chevron-right arrow-about")
 
-            .footer__blok-support.footer__blok-support_rus
-                p(class="footer__title") Служба поддержки
+            ul(class="navigation__list")
+                li(class="list-item")
+                    a(class="list-item__text") О сервисе
+                li(class="list-item")
+                    a(class="list-item__text") Наша команда
+                li(class="list-item")
+                    a(class="list-item__text") Вакансии
+                li(class="list-item")
+                    a(class="list-item__text") Инвесторы
 
-                .footer__title-block.footer__sup-block
-                    p(class="footer__title") Служба поддержки
-                    i(class="fas fa-chevron-right arrow-sup")
+        nav(class="footer__navigation footer__navigation_support")
+            p(class="navigation__title") Служба поддержки
 
-                ul(class="support__list support__list_rus") 
-                    li(class="list-item")
-                        a(class="list-item__text") Соглашения
-                    li(class="list-item")
-                        a(class="list-item__text") Сообщества
-                    li(class="list-item")
-                        a(class="list-item__text") Связь с нами
-                
-            .footer__blok-newsletter.footer__blok-newsletter_rus
-                h3(class="newsletter__title") Подписка
+            .js-footer__title-block
+                p(class="navigation__title") Служба поддержки
+                i(class="fas fa-chevron-right arrow-sup")
 
-                p(class="newsletter__txt") Получайте специальные предложения и новости сервиса
+            ul(class="navigation__list") 
+                li(class="list-item")
+                    a(class="list-item__text") Соглашения
+                li(class="list-item")
+                    a(class="list-item__text") Сообщества
+                li(class="list-item")
+                    a(class="list-item__text") Связь с нами
+            
+        .footer__blok-newsletter.footer__blok-newsletter_rus
+            h3(class="newsletter__title") Подписка
 
-                .newsletter__email-input
-                    include ./../text-inputs/email-input.pug
+            p(class="newsletter__txt") Получайте специальные предложения и новости сервиса
+
+            .newsletter__email-input
+                +email-input('Your email address')
 
 
     .bottom-line

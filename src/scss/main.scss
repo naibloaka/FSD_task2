@@ -10,26 +10,22 @@
 
 @import './src/blocks/numbers/numbers.scss';
 @import './src/blocks/header/header.scss';
-@import './src/blocks/header/header_eng.scss';
-@import './src/blocks/header/header_rus.scss';
 @import './src/blocks/footer/footer.scss';
-@import './src/blocks/footer/footer_eng.scss';
-@import './src/blocks/footer/footer_rus.scss';
 
-@import './src/pages/number-page/number-page.scss'; //page styles
+@import './../pages/search-room-page/search-room-page.scss';
 @import './src/blocks/dropdown/dropdown.scss';
 @import './src/blocks/number-block/number-block';
 @import './src/blocks/range-slider/range-slider.scss';
 @import './src/blocks/pagination/pagination.scss';
 @import './src/blocks/carousel/carousel.scss';
 
-@import './src/pages/index-page/index-page.scss'; //page styles
+@import './../pages/landing-page/landing-page.scss';
 @import './src/blocks/buttons/btn-mixin.scss';
 @import './src/blocks/number-find/number-find.scss';
 @import './src/blocks/calendar/calendar.scss';
 @import './src/blocks/email_input/email_input.scss';
 
-@import './src/pages/review-page/review-page.scss'; //page styles
+@import './../pages/room-details-page/room-details-page.scss';
 @import './src/blocks/information/information.scss';
 @import './src/blocks/like-checkbox/like-checkbox.scss';
 @import './../blocks/text-rules/text-rules.scss';
@@ -37,13 +33,13 @@
 @import './src/blocks/guests-feedback/guests-feedback.scss';
 @import './src/blocks/chart/chart.scss';
 
-@import './src/pages/register-page/register-page.scss'; //page styles
+@import './../pages/registration-page/registration-page.scss';
 @import './src/blocks/register-block/register-block.scss';
 @import './src/blocks/text-inputs/text-input-field.scss';
 @import './src/blocks/gender-radiobtn/gender-radiobtn.scss';
 @import './src/blocks/switch-btn/switch-btn.scss';
 
-@import './src/pages/login-page/login-page'; //page styles
+@import './../pages/singin-page/singin-page.scss';
 @import './src/blocks/login-block/login-block.scss';
 @import './src/blocks/star-rating/star-rating.scss';
 
@@ -56,8 +52,19 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: $regular;
-    font-size: 14px;
+}
+
+fieldset {
+    min-inline-size: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+}
+button {
+    outline: none;
 }
 
 body {
@@ -66,17 +73,4 @@ body {
 
 a {
     text-decoration: none;
-}
-
-h1 {
-    font-family: $quicksand_bold;
-    font-size: 24px;
-    letter-spacing: 1.4px;
-}
-
-.flex {
-    display: flex;
-}
-.fa-chevron-down {
-    color: $black50;
 }

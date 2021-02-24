@@ -4,6 +4,7 @@ block content
 
     include ./ui-mixin.pug
     include ./../blocks/text-inputs/input-text-field.pug
+    include ./../blocks/text-inputs/email-input.pug 
     include ./../blocks/calendar/calender-mixin.pug
     include ./../blocks/like-checkbox/like-checkbox.pug
     include ./../blocks/buttons/btn-mixin.pug
@@ -15,12 +16,129 @@ block content
     include ./../blocks/text-rules/text-rules.pug
     include ./../blocks/guests-feedback/guests-feedback.pug
     include ./../blocks/dropdown/dropdown-mixin.pug
+    include ./../blocks/check-box_btn/check-box_btn.pug
 
 
 
     .ui-logo
         img(src="assets/img/ui-logo.svg" class="ui-logo__logo")
 
+
+    .ui-kit-container
+        .text-block
+            label(class="uikit__title") Text Field
+            +text-input("Email")
+
+        .text-block1
+            label(class="uikit__title") Text Field
+            +text-input("This is pretty awesome")
+        
+        .drop-block1
+            +people-drop-buttons('взрослые', 'дети', 'младенцы', 'number-find-dropdown', "Dropdown")
+
+        .date-block1
+            label(class="uikit__title") masked text field
+            +text-input("ДД.ММ.ГГГГ")
+
+        .date-block2
+            .date-container
+                +clendar-from("ui-datepicker2", "date Dropdown")
+            .date-container
+                +clendar-to("ui-datepicker3", "date Dropdown")
+
+        .date-block3 
+            +one-block-calendar("ui-datepicker4", "filter date dropdown")
+
+        .email-block 
+            label(class="uikit__title") subscription text field
+            +email-input()
+
+        .drop-block2
+            +no-btns-dropdown('спальни', 'кровати', 'ванные комнаты', 'number-find-dropdown1', "dropdown")
+
+        .drop-block3
+            +no-btns-dropdown('спальни', 'кровати', 'ванные комнаты', 'number-find-dropdown2', "dropdown")
+
+        .checkList-block 
+              +extra-checkbox(false,'expandable checkbox list', 'Завтрак',
+                 'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
+                 'Шампунь', 'Телевизор', 'Шампунь')
+        
+        .checkList-block1 
+              +extra-checkbox(true,'expandable checkbox list', 'Завтрак',
+                 'Письменный стол','Стул для кормления', 'Кроватка', 'Телевизор',
+                 'Шампунь', 'Телевизор', 'Шампунь')
+
+        .info-comfort
+            +information('smile')
+            +information('house')
+
+        .checkBox-block 
+            +check-box-btns('Checkbox Buttons', 'Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
+
+        .radio-block 
+            label(class="uikit__title") Radio Buttons
+            include ./../blocks/gender-radiobtn/gender-radiobtn.pug
+
+        .toggle-block
+            label(class="uikit__title") Toggle
+            include ./../blocks/switch-btn/switch-btn-on.pug
+            include ./../blocks/switch-btn/switch-btn.pug
+
+        .like-btns
+            label(class="uikit__title") like button
+            .like-btns__block
+                +like-btn('like1',2,false)
+                +like-btn('like2',12,true)
+
+        .rate-block 
+            label(class="uikit__title") rate button
+            .rate-block__block 
+                +rating(4)
+                +rating(5)
+
+        .drop-block4
+            +people-drop-buttons('взрослые', 'дети', 'младенцы', '', "Dropdown")
+
+        .rich-check-block 
+            label(class="uikit__title") rich Checkbox Buttons
+            include ./../blocks/check-box_btn/check-rich.pug
+
+        .comment-block
+            +feedback(1,'Мурад Сарафанов','5 дней назад','',12,true,'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+
+        .range-slider-block
+            +range-slider("Range Slider")
+
+        .buttons-block 
+            label(class="uikit__title") buttons
+            .buttons-block__container1
+                .btn
+                    +purple-btn('CLICK ME','','')
+                .btn.opacity_btn
+                    +purple-btn('CLICK ME','','')
+            .buttons-block__container2
+                .btn
+                    +white-gradient('CLICK ME','','')
+                .btn.opacity_btn
+                    +white-gradient('CLICK ME','','')
+            .buttons-block__container3
+                p(class="click_me-txt click_me-txt_colored") CLICK ME
+                p(class="click_me-txt click_me-txt_grey") CLICK ME
+            .buttons-block__container4 
+                +purple-with-arrow('перейти к оплате','','')
+
+        .pagination-block
+            label(class="uikit__title") pagination
+            +pag-li(15, 'pagination')
+
+        .drop-block5
+            +people-drop-buttons('взрослые', 'дети', 'младенцы', '', "Dropdown")
+
+        .rules-block
+            label(class="uikit__title") bullet list
+            +rules('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
+//-
     .ui-wrap
         .col.col_1
             .col__block

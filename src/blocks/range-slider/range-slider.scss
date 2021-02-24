@@ -8,20 +8,21 @@
 .range-slider-input {
     border: none;
     outline: none;
-    font-size: 12px;
-    color: $black50;
     width: 140px;
     text-align: right;
+    @include text-style-small;
 }
 
-.range-slider__flex {
+.range-slider__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
+.range-slider__title {
+    @include formLabel;
+}
 #slider-range {
-    margin-top: 19px;
+    margin-top: 25px;
     span {
         background: linear-gradient(to top, #66d2ea, #6fcf97);
         border: 2px solid $white;

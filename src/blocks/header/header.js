@@ -1,13 +1,5 @@
-const menu = document.querySelector('.header__nav-btn');
-
-function menuClick() {
-  const list = document.getElementsByClassName('navigation-block');
-
-  if (list[0].style.display === 'none') {
-    list[0].style.display = 'block';
-  } else {
-    list[0].style.display = 'none';
-  }
+function headerNavShow() {
+  $(this).siblings('.header__navigation').toggle(300);
 }
 
-menu.addEventListener('click', menuClick);
+$('.header__nav-btn').on('click', headerNavShow);

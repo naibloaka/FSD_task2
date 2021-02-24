@@ -1,8 +1,12 @@
 .login-block {
-    background: $back;
-    box-shadow: $block_shadow;
-    padding: 25px 30px 33px 30px;
-    border-radius: $form-standart;
+    @include def-card;
+    margin: 0 auto;
+    height: 338px;
+    @media (max-width: $mobile) {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
 .login-block__wrap {
     width: 320px;
@@ -13,11 +17,11 @@
     }
 }
 .login-block__email {
-    margin-top: 21px;
+    margin-top: 17px;
 }
 .login-block__password {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 .login-block__paybtn {
-    margin-top: 19px;
+    margin-top: 20px;
 }

@@ -1,30 +1,57 @@
-@mixin for-h3 {
-    font-family: $bold;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $black_text;
-}
 @mixin formLabel {
     font-family: $bold;
     font-size: 12px;
     text-transform: uppercase;
     color: $black_text;
 }
-
 @mixin text-style {
     font-family: $regular;
     color: $black50;
     font-size: 14px;
 }
-
+@mixin text-style-small {
+    font-family: $regular;
+    color: $black50;
+    font-size: 12px;
+}
+@mixin black-grey-text {
+    font-family: $regular;
+    color: $black75;
+    font-size: 14px;
+}
+@mixin black-text {
+    font-family: $regular;
+    color: $black_text;
+    font-size: 14px;
+}
+@mixin bold-grey-text {
+    font-family: $bold;
+    color: $black50;
+    font-size: 14px;
+}
 @mixin title-style {
     font-family: $quicksand_bold;
     color: $black_text;
-    font-size: 24px;
+    font-size: 26px;
+    text-align: left;
 }
-
 @mixin subtitle-style {
     font-family: $quicksand_bold;
     color: $black_text;
     font-size: 12px;
+}
+@mixin subtitle-style14 {
+    font-family: $quicksand_bold;
+    color: $black_text;
+    font-size: 14px;
+}
+@mixin subtitle-style19 {
+    font-family: $quicksand_bold;
+    color: $black_text;
+    font-size: 14px;
+}
+@mixin subtitle14 {
+    font-family: $bold;
+    font-size: 14px;
+    color: $black75;
 }

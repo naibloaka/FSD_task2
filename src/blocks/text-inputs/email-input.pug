@@ -1,4 +1,6 @@
-.text-input
-    input(type="email" placeholder="Email" class="text-input__input" autocomplete="off")
-    .email-arrow
-        <i class="fas fa-arrow-right"></i>
+mixin email-input(placeholder)  
+    .text-input
+        input(type="email" placeholder=placeholder class="text-input__input" autocomplete="off")
+        .email-arrow
+            <i class="fas fa-arrow-right"></i>
+

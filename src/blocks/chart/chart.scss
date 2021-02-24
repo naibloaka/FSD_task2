@@ -31,8 +31,8 @@
     letter-spacing: -0.3px;
 }
 .chart__list-text {
+    @include black-grey-text;
     margin-left: 5px;
-    color: $black75;
 }
 .chart__list {
     list-style-type: none;

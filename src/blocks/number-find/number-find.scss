@@ -1,19 +1,7 @@
 .number-find {
-    display: block;
-    width: 380px;
-    height: 374px;
-}
-//styles for welcome-page
-.number-find,
-.number-find-calc {
-    padding-top: 20px;
-    border-radius: 5px;
-    background-color: $white;
-    display: block;
-    width: 380px;
+    @include def-card;
     height: 354px;
-    text-align: center;
-    box-shadow: $block_shadow;
+
     @media (max-width: $mobileSmall) {
         box-shadow: none;
         padding-top: 0;
@@ -22,12 +10,11 @@
         width: 100%;
     }
 }
+//styles for welcome-page
 .number-find__wrap {
     width: 320px;
-    margin: 20px auto 0 auto;
-    &--calc {
-        margin-top: 0px;
-    }
+    margin: 0 auto;
+
     @media (max-width: $mobileSmall) {
         margin-left: auto;
         margin-right: auto;
@@ -35,21 +22,15 @@
     }
 }
 .number-find__title {
-    text-align: left;
-    letter-spacing: 1.1px;
-    line-height: 29px;
+    margin-top: 20px;
+    @include title-style;
     @media (max-width: $mobileSmall) {
         text-align: center;
     }
 }
-.number-find__subtitle {
-    text-transform: uppercase;
-    font-family: $bold;
-    font-size: 12px;
-    margin-bottom: 6px;
-}
+
 .number-find__datepicker {
-    margin-top: 23px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -65,22 +46,31 @@
     }
 }
 .number-find__guests {
-    margin-top: 21px;
+    margin-top: 16px;
     text-align: left;
 }
 .number-find__button {
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 //styles for review-page
-.number-find-calc {
+
+.number-find_calc {
     height: 489px;
+
+    @media (max-width: $mobileSmall) {
+        box-shadow: none;
+        padding-top: 0;
+        border-top: 1px solid $border_invisible;
+        border-radius: 0;
+        width: 100%;
+    }
 }
-.number-find__datepicker-block {
-    display: flex;
-    justify-content: space-between;
+.number-find__datepicker_calc {
+    margin-top: 11px;
 }
-.number-find-calc__price {
+
+.number-find__price {
     margin-top: 22px;
     .price__price-price {
         flex-basis: 58px;
@@ -100,25 +90,25 @@
     margin-top: 21px;
     text-align: left;
 }
-.number-find-calc__text {
+.number-find__text {
     margin-top: 21px;
     text-align: left;
 }
-.calc-text__block {
+.number-find__text-line {
     display: flex;
     justify-content: space-between;
     margin-top: 17px;
+    @include black-grey-text;
     @media (max-width: $mobileSmallest) {
-        p {
+        .text-line__text {
             width: 160px;
         }
     }
 }
-.text2 {
-    position: relative;
+.text-line__text_info {
     &::after {
         content: 'i';
-        line-height: 22px;
+        line-height: 19px;
         color: $black25;
         font-size: 12px;
         display: inline-block;
@@ -127,15 +117,14 @@
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 50%;
-        margin-top: -3px;
         text-align: center;
         margin-left: 6px;
-        margin-top: 0px;
+        padding-right: 1px;
     }
 }
-.text3 {
-    width: 200px;
-    line-height: 17px;
+.text-line__text_short {
+    margin-top: -2px;
+    width: 190px;
     position: relative;
     &::after {
         content: 'i';
@@ -148,21 +137,18 @@
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 50%;
-        margin-top: -3px;
         text-align: center;
-        margin-left: 220px;
-        margin-top: -36px;
-        @media (max-width: $mobileSmallest) {
-            display: inline-block;
-            margin-left: 10px;
-            margin-top: 0;
-        }
+        position: absolute;
+        top: 0px;
+        left: 220px;
+        padding-right: 1px;
     }
 }
-.number-find-calc__result {
+
+.number-find__result {
     display: flex;
     justify-content: space-between;
-    margin-top: 48px;
+    margin-top: 35px;
     width: 100%;
 }
 .result-dots {

@@ -1,30 +1,36 @@
-.like-btn__checkbox{display: none;}
-.like-btn__fake{
+.like-btn__checkbox {
+    display: none;
+}
+.like-btn__fake {
     position: relative;
     display: flex;
     width: 38px;
     height: 18px;
     border-radius: 14px;
     background: $back;
-    
+    cursor: pointer;
 }
-.like-btn{position: relative;}
-.fa-heart{
+.like-btn {
+    position: relative;
+}
+.fa-heart {
     position: absolute;
-    top:5px;
+    top: 5px;
     left: 6px;
     color: $black25;
     font-size: 8px;
+    cursor: pointer;
 }
-.like-btn__count{
+.like-btn__count {
     position: absolute;
-    top:4px;
+    top: 4px;
     left: 20px;
     font-size: 10px;
     color: $black25;
-
+    cursor: pointer;
+    user-select: none;
 }
-.like-btn__gradient{
+.like-btn__gradient {
     border-radius: 14px;
     background: $border_faded;
     display: block;
@@ -32,27 +38,27 @@
     height: 20px;
     position: absolute;
     z-index: -1;
-    top:-1px;
-    left:-1px;
+    top: -1px;
+    left: -1px;
+    cursor: pointer;
 }
-.like-btn__checkbox:checked ~ .like-btn__gradient{
-    background:linear-gradient(to top, #8BA4F9, #BC9CFF)
+.like-btn__checkbox:checked ~ .like-btn__gradient {
+    background: linear-gradient(to top, #8ba4f9, #bc9cff);
 }
-.like-btn__checkbox:checked ~ .fa-heart{
+.like-btn__checkbox:checked ~ .fa-heart {
     color: $purple;
 }
-.like-btn__checkbox:checked ~ .like-btn__count{
+.like-btn__checkbox:checked ~ .like-btn__count {
     color: $purple;
 }
-.like-btn-cont:hover{
-    .like-btn__gradient{
-        background:linear-gradient(to top, #8BA4F9, #BC9CFF)
+.like-btn-cont:hover {
+    .like-btn__gradient {
+        background: linear-gradient(to top, #8ba4f9, #bc9cff);
     }
-    .fa-heart{
+    .fa-heart {
         color: $purple;
     }
-    .like-btn__count{
+    .like-btn__count {
         color: $purple;
     }
 }
-

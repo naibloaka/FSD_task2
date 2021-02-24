@@ -14,12 +14,11 @@
     margin-left: 12px;
 }
 .feedback__name-name {
-    color: $black75;
-    font-family: $bold;
+    @include subtitle14;
 }
 .feedback__name-days {
     margin-top: 7px;
-    color: $black75;
+    @include black-grey-text;
 }
 .feedback__text {
     display: flex;
@@ -31,7 +30,7 @@
     }
 }
 .feedback__text-feedback {
-    color: $black75;
+    @include black-grey-text;
     line-height: 23px;
     margin-left: 14px;
     @media (max-width: $mobile) {

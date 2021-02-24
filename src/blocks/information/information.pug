@@ -1,17 +1,17 @@
-mixin information(num)
-    if num == 'smile'
+mixin information(icon)
+    if icon == 'smile'
         .information__block
             img(src="assets/img/svg/smile.svg" class="information__img")
             .information__text-block
                 h3(class="information__subtitle") Комфорт
                 p(class="information__text") Шумопоглащающие стены
-    if num == 'house'
+    if icon == 'house'
         .information__block
             img(src="assets/img/svg/city.svg" class="information__img")
             .information__text-block
                 h3(class="information__subtitle") Удобство
                 p(class="information__text") Окно в каждой из спален
-    if num == 'fire'
+    if icon == 'fire'
         .information__block
             img(src="assets/img/svg/fire.svg" class="information__img")
             .information__text-block

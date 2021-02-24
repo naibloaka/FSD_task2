@@ -1,13 +1,13 @@
 mixin like-btn(id,val,bool)
     .like-block
-        .like-btn
+        fieldset(class="like-btn") 
             label(class="like-btn-cont")
                 -if(bool==true)
-                    input(type="checkbox"  id=id checked="checked" class="" class="like-btn__checkbox")
+                    input(type="checkbox"  id=id checked="checked" class="like-btn__checkbox")
                 -else
-                    input(type="checkbox" id=id class="" class="like-btn__checkbox")
+                    input(type="checkbox" id=id class="like-btn__checkbox")
                 .like-btn__fake
                 .like-btn__gradient
                 i(class="far fa-heart")
-                span(class="like-btn__count" id="span-"+id)=val
+                span(class="like-btn__count")=val
 

@@ -1,22 +1,22 @@
 header
-    .header
-        .header__logo
-            img(src='assets/img/logo.svg')
-        .header-user__navigation
-            ul(class="navigation-element")
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") Home
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") About Us
-                li(class="navigation-block navigation-arrow")
-                        a(class="navigation-block__elem") Services
-                        .arrow-down
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") Careers
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") News
-                li(class="navigation-block")
-                    a(class="navigation-block__elem") Documentation
+    figure(class="header__logo")
+        img(src='assets/img/logo.svg')
+    
+    nav(class="header__navigation header__navigation_user-eng") 
+        ul(class="navigation-block")
+            li(class="navigation-element")
+                a(class="navigation-element__elem") Home
+            li(class="navigation-element")
+                a(class="navigation-element__elem") About Us
+            li(class="navigation-element navigation-arrow")
+                    a(class="navigation-element__elem") Services
+                    .arrow-down
+            li(class="navigation-element")
+                a(class="navigation-element__elem") Careers
+            li(class="navigation-element")
+                a(class="navigation-element__elem") News
+            li(class="navigation-element")
+                a(class="navigation-element__elem") Documentation
 
-        .header-user__name
-            p(class="header-user__name-text") Cosmin Negoita
+    .header-user__name
+        p(class="header-user__name-text") Cosmin Negoita

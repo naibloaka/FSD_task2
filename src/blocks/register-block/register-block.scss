@@ -1,29 +1,34 @@
 .register-block {
-    display: block;
-    background: $back;
-    padding: 24px 30px 28px 30px;
-    box-shadow: $block_shadow;
-    border-radius: $form-standart;
+    @include def-card;
+    height: 626px;
+    @media (max-width: $mobile) {
+        width: 100%;
+        height: 800px;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
 .register__wrap {
     width: 320px;
     margin-left: auto;
     margin-right: auto;
+    border: none;
     @media (max-width: $mobile) {
         width: 80%;
     }
 }
-.register-block__title {
-    color: $black_text;
-    font-size: 24px;
-    font-family: $bold;
-    letter-spacing: -0.45px;
+.register-block__subtitle {
+    @include formLabel;
 }
-.register-block__name {
-    margin-top: 21px;
+.register-block__title {
+    margin-top: 18px;
+    @include title-style;
+}
+.register-block__person {
+    margin-top: 17px;
 }
 .register-block__secondname {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 .register-block__gender {
     display: flex;
@@ -31,27 +36,25 @@
     position: relative;
 }
 .register-block__birthday {
-    margin-top: 25px;
+    margin-top: 20px;
 }
-.register-block__subtitle {
-    @include for-h3;
-}
-.register-block__email {
-    margin-top: 23px;
+.register-block__entrens {
+    margin-top: 17px;
 }
 .register-block__password {
+    margin-top: 5px;
+}
+.register-block__btns {
     margin-top: 10px;
 }
-.register-block__swith {
-    margin-top: 10px;
-}
+
 .register-block__paybtn {
     margin-top: 20px;
 }
 .register-block__login {
     display: flex;
     justify-content: space-between;
-    margin-top: 29px;
+    margin-top: 30px;
     align-items: center;
     width: 321px;
     @media (max-width: $mobile) {
@@ -59,8 +62,7 @@
     }
 }
 .register-block__login-text {
-    color: $black_text;
-    //line-height: 40px;
+    @include black-text;
 }
 .register-block__login-btn {
     display: block;

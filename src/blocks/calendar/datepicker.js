@@ -106,7 +106,9 @@ $('#cards__datepicker').datepicker({
 });
 
 // adding apply button
-const okButton = '<span class="datepicker--button" data-action="hide">Применить</span>';
+const okButton = '<span class="datepicker--button " data-action="hide">Применить</span>';
 $('.datepicker--button[data-action="clear"]').each(function (index) {
-  $(okButton).insertBefore($(this));
+  if ($('.datepicker--buttons').is('.datepicker--button[data-action="hide"]') === false) {
+    $(okButton).insertAfter($(this));
+  }
 });

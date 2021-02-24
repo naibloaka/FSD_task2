@@ -3,7 +3,8 @@ mixin rules(...items)
         ul(class="rules__container")
             each item in items
                 li(class="rules__item")
-                    span(class="rules__text")=item
+                    .rules__item-circle
+                    p(class="rules__text")=item
 
 
 

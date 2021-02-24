@@ -2,7 +2,6 @@ const pagination_list = document.getElementsByClassName('pagination__list-item')
 const pagination_arrows = document.getElementsByClassName('pagination__arrow'); // arrows
 const pagination_dots = document.getElementsByClassName('pagination__list-dots'); // dots
 
-
 pagination_arrows[0].style.display = 'none';
 pagination_dots[0].style.display = 'none';
 for (let i = 3; i <= 13; i++) {
@@ -120,3 +119,21 @@ function arrow_prev(event) {
 
   around_block();
 }
+
+/*
+function hideElements() {
+  const paginationContainer = $('#pagination');
+  const selected = paginationContainer.children('.pagination-selected');
+
+  const paginationList = $('.pagination__list-item');
+
+  paginationList.each(function(i, val){
+    val.style.display = 'none';
+  })
+
+  if (selected.attr('id') === 'pagination-elem1') {
+
+  }
+}
+hideElements()
+*/

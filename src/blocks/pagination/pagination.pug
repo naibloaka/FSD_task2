@@ -1,15 +1,20 @@
 
-mixin pag-li()
-    .pagination
+mixin pag-li(max, id)
+    div(class="pagination" id=id)
         a(class="pagination__arrow" id="pagination-prev" href="#") <i class="fas fa-arrow-left"></i>
         ol(class="pagination__list")
-            - for(var i=1; i<=15; i++)
-                if i == 15
+            - for(var i=1; i<=max; i++)
+                
+                if i == max
                     li 
                         button(class="pagination__list-dots") ...
-
-                li
-                    button(class="pagination__list-item")= i
+                
+                if i == 1
+                    li 
+                        button(class="pagination__list-item pagination-selected")= i
+                else
+                    li
+                        button(class="pagination__list-item")= i
                 
                 if i == 1
                     li
