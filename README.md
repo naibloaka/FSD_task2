@@ -6,7 +6,7 @@
 
 [Room details](https://naibloaka.github.io/ToxinPages/room-details-page.html)
 
-[Registration](https://naibloaka.github.io/Toxin-Landing-page/registration-page.html)
+[Registration](https://naibloaka.github.io/ToxinPages/registration-page.html)
 
 [Sign in](https://naibloaka.github.io/ToxinPages/singin-page.html)
 
