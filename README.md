@@ -2,23 +2,23 @@
 
 [Landing page](https://Swamp-boy.github.io/ToxinPages/)
 
-[Search room](https://naibloaka.github.io/ToxinPages/search-room-page.html)
+[Search room](https://Swamp-boy.github.io/ToxinPages/search-room-page.html)
 
-[Room details](https://naibloaka.github.io/ToxinPages/room-details-page.html)
+[Room details](https://Swamp-boy.github.io/ToxinPages/room-details-page.html)
 
-[Registration](https://naibloaka.github.io/ToxinPages/registration-page.html)
+[Registration](https://Swamp-boy.github.io/ToxinPages/registration-page.html)
 
-[Sign in](https://naibloaka.github.io/ToxinPages/singin-page.html)
+[Sign in](https://Swamp-boy.github.io/ToxinPages/singin-page.html)
 
 UI-KIT
 
-[Colors](https://naibloaka.github.io/ToxinPages/colors.html)
+[Colors](https://Swamp-boy.github.io/ToxinPages/colors.html)
 
-[Cards](https://naibloaka.github.io/ToxinPages/cards.html)
+[Cards](https://Swamp-boy.github.io/ToxinPages/cards.html)
 
-[Headers and footers](https://naibloaka.github.io/ToxinPages/headers-and-footers.html)
+[Headers and footers](https://Swamp-boy.github.io/ToxinPages/headers-and-footers.html)
 
-[Form elements](https://naibloaka.github.io/ToxinPages/Form-elements.html)
+[Form elements](https://Swamp-boy.github.io/ToxinPages/Form-elements.html)
 
 
 
