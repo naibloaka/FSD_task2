@@ -1,6 +1,6 @@
 Вёрстка учебного макета отеля Toxin.
 
-[Landing page](https://naibloaka.github.io/ToxinPages/)
+[Landing page](https://Swamp-boy.github.io/ToxinPages/)
 
 [Search room](https://naibloaka.github.io/ToxinPages/search-room-page.html)
 
